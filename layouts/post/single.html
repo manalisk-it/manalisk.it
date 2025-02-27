@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ $mesi := slice "Gennaio" "Febbraio" "Marzo" "Aprile" "Maggio" "Giugno" "Luglio" "Agosto" "Settembre" "Ottobre"
+"Novembre" "Dicembre" }}
+{{ $mese := index $mesi (sub (.Date.Month) 1) }}
+
+<div class="container py-3">
+    <h1>{{ .Params.Title }}</h1>
+    <p class="blog-info">{{ .Params.Date.Day }} {{ $mese }} {{ .Params.Date.Year }} • {{ delimit .Params.authors ", " }}
+        {{ if isset .Params "readtime" }}
+        • ⏳ {{ .Params.readtime }}
+        min
+        {{ end }} </p>
+
+
+    {{ .Content }}
+</div>
+
+{{ end }}

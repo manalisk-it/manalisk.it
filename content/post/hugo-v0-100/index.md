@@ -7,8 +7,11 @@ images: ["hugo-logo.png"]
 categories: ["Hugo Release Notes"]
 tags: ["Hugo"]
 keywords: ["hugo v0.100"]
-authors: ["Bjørn Erik Pedersen"]
+authors: ["Bjørn Erik Pedersen","Giovanni Bel C"]
+readtime: 2
 ---
+
+Ciao belli
 
 ![Hugo](hugo-logo.svg)
 { .img-fluid .mb-5 }

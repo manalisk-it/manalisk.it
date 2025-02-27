@@ -1,7 +1,7 @@
 @use 'sass:color';
 @import "bootstrap/bootstrap.scss";
 
-$primary: #77dd77;
+$primary: #006400;
 
 .home {
     --bd-purple: #4c0bce;
@@ -15,7 +15,7 @@ $primary: #77dd77;
 
     .bd-masthead {
         padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba($primary, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba($orange, 0.5), transparent 50%);
+        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba($yellow, 0.5), transparent 50%);
     }
 
     .btn-bd-primary {
@@ -35,11 +35,10 @@ $primary: #77dd77;
 
 .navbar {
     @extend .navbar;
-
-
+    color: white;
     padding: .75rem 0;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba($primary, 1), rgba($primary, 0.95));
+    background-image: linear-gradient(to bottom, #222, rgba($primary, 0.95));
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
@@ -68,3 +67,23 @@ $primary: #77dd77;
         transform: rotate(-2deg) scale(1.1);
     }
 }
+
+.blog-info{
+    color: #626462; 
+    margin-bottom: 1.5em;
+}
+
+.footer-class{
+    background: linear-gradient(to bottom, $primary, #222);;
+    .gold-color{
+        color:white
+        
+    }   
+    a:hover{
+        color:#ffe484
+    }
+    a:active{
+        color:#ffe484
+    }
+}
+

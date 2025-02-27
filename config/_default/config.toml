@@ -1,9 +1,9 @@
 baseURL = 'https://basilisk.it/'
-title = "Hugo Bootstrap Theme"
-author = "Filipe Carneiro"
-copyright = "Open-source <a class=\"text-muted text-decoration-none\" href=\"https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE\">MIT</a> Licensed."
+title = "Basilisk"
+author = "Basilisk"
+copyright = "Open-source <a class=\"gold-color text-decoration-none\" href=\"https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE\">MIT</a> Licensed."
 
-timeZone = 'Europe/London'
+timeZone = 'Europe/Rome'
 
 # Multilingual
 defaultContentLanguage = "en"
