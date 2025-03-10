@@ -1,0 +1,24 @@
+[[main]]
+name = "Home"
+url = ""
+weight = 10
+
+[[main]]
+name = "Chi Siamo"
+url = "about"
+weight = 20
+title = "Scopri di più sulla nostra missione"
+
+
+[[main]]
+name = "Servizi"
+url = "services"
+weight = 30
+title = "Scopri i nostri servizi"
+
+[[main]]
+identifier = "blog"
+name = "Blog"
+url = "post"
+weight = 40
+title = "Leggi i nostri articoli"

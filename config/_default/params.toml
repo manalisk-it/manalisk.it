@@ -5,9 +5,9 @@
 # https://gohugo.io/templates/internal/#twitter-cards
 # https://schema.org/Thing
 # https://schema.org/Article
-description = "Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5."
-images = ['images/logo_b.webp','images/site-feature-image.png']
-mainMenuLogo = "images/logo_b.webp"
+description = "Potenzia il tuo business con l'Intelligenza Artificiale."
+images = ['images/logo_bok.png','images/site-feature-image.png']
+mainMenuLogo = "images/logo_bok.png"
 
 # For favicons
 ## Chrome Browser
@@ -26,5 +26,5 @@ footerAboutText = "We protect your website so you can provide a safe environment
 [options]
   bootStrapJs = true
   breadCrumb = true
-  listCategoryFilter = true
-  listTagFilter = true
+  listCategoryFilter = false
+  listTagFilter = false

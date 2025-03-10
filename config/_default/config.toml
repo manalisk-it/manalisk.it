@@ -6,7 +6,7 @@ copyright = "Open-source <a class=\"gold-color text-decoration-none\" href=\"htt
 timeZone = 'Europe/Rome'
 
 # Multilingual
-defaultContentLanguage = "en"
+defaultContentLanguage = "it"
 defaultContentLanguageInSubdir = false
 
 disableHugoGeneratorInject = true

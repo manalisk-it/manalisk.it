@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-{{ $mesi := slice "Gennaio" "Febbraio" "Marzo" "Aprile" "Maggio" "Giugno" "Luglio" "Agosto" "Settembre" "Ottobre"
+<!-- {{ $mesi := slice "Gennaio" "Febbraio" "Marzo" "Aprile" "Maggio" "Giugno" "Luglio" "Agosto" "Settembre" "Ottobre"
 "Novembre" "Dicembre" }}
-{{ $mese := index $mesi (sub (.Date.Month) 1) }}
+{{ $mese := index $mesi (sub (.Date.Month) 1) }} -->
 
 <div class="container py-3">
     <h1>{{ .Params.Title }}</h1>
-    <p class="blog-info">{{ .Params.Date.Day }} {{ $mese }} {{ .Params.Date.Year }} • {{ delimit .Params.authors ", " }}
+    <p class="blog-info"> {{ .Params.Date | time.Format ":date_long"}} • {{ delimit .Params.authors ", " }}
         {{ if isset .Params "readtime" }}
         • ⏳ {{ .Params.readtime }}
         min
@@ -15,5 +15,10 @@
 
     {{ .Content }}
 </div>
+
+<section class="section container my-3">
+    <h3 class="text-secondary text-center my-5">Leggi gli Ultimi Articoli</h3>
+    {{ partial "latest-posts" . }}
+  </section>
 
 {{ end }}

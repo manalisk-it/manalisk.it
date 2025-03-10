@@ -1,7 +1,7 @@
 @use 'sass:color';
 @import "bootstrap/bootstrap.scss";
 
-$primary: #006400;
+$primary: #00684A;
 
 .home {
     --bd-purple: #4c0bce;
@@ -15,7 +15,7 @@ $primary: #006400;
 
     .bd-masthead {
         padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba($yellow, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba($yellow, 0.5), transparent 50%);
+        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(#aaa, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(#aaa, 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(#666, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(#666, 0.5), transparent 50%);
     }
 
     .btn-bd-primary {
@@ -38,7 +38,7 @@ $primary: #006400;
     color: white;
     padding: .75rem 0;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #222, rgba($primary, 0.95));
+    background-image: linear-gradient(to bottom,$primary, rgba($primary, 0.95));
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
@@ -74,7 +74,7 @@ $primary: #006400;
 }
 
 .footer-class{
-    background: linear-gradient(to bottom, $primary, #222);;
+    background: linear-gradient(to bottom, $primary, $primary);;
     .gold-color{
         color:white
         
@@ -87,3 +87,81 @@ $primary: #006400;
     }
 }
 
+/* Stile generale del form */
+.contact-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stile delle etichette */
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Stile degli input e textarea */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effetto focus sugli input */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: rgb(0, 155, 110.288);
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Stile del pulsante */
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: $primary;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effetto hover sul pulsante */
+  .contact-form button:hover {
+    background: rgb(0, 155, 110);
+    color: white;
+    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+  }
+  .contact-form button:active {
+    background: rgb(0, 155, 110);
+    color: white;
+    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+  }
+
+  .contact-form button:focus {
+    background: rgb(0, 155, 110);
+    color: white;
+    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .contact-form {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
