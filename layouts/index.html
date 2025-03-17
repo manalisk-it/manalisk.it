@@ -3,11 +3,11 @@
 <section class="section bd-masthead">
   <div class="container-xxl">
     <div class="col-md-8 mx-auto text-center my-5">
-      <img class="d-block mx-auto mb-3" src="{{ `images/logo_bok.png` | relURL }}" width="150" height="150" alt="Bootstrap">
+      <img class="d-block mx-auto mb-3" src="{{ `images/bas_blue.png` | relURL }}" width="250" height="250" alt="Bootstrap">
       <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1>
       <p class="lead mb-4">{{ .Site.Params.Description }}</p>
       <p class="lead text-muted mb-4 ">Siamo dei professionisti specializzati in Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG). Grazie alle nostre tecnologie AI, aiutiamo le aziende a trasformare le sfide in opportunità di crescita.</p>
-      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/filipecarneiro/hugo-bootstrap-theme" role="button">Scopri i Nostri Servizi</a>
+      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="/services" role="button">Scopri i Nostri Servizi</a>
     </div>
   </div>
 </section>
@@ -21,6 +21,10 @@
 <section class="section container my-3">
   <h3 class="text-secondary text-center my-5">Leggi gli Ultimi Articoli</h3>
   {{ partial "latest-posts" . }}
+  
+  <div class="mx-auto text-center my-5">
+    <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="/post">Vai al Nostro Blog</a>
+  </div>
 </section>
 <!-- 
 <section class="section container my-3">

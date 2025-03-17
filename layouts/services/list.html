@@ -1,15 +1,17 @@
 {{ define "main" }}
-<div class="container mx-auto px-6 py-12">
+<div class="container py-5">
+    <h1 class="text-center mb-5">I nostri servizi</h1>
+
     {{ range $index, $service := .Site.Data.services }}
-        <div class="flex flex-col md:flex-row {{ if modBool $index 2 }}md:flex-row-reverse{{ end }} items-center my-12">
-            <div class="w-full md:w-1/2 p-6">
-                <h2 class="text-2xl font-bold">{{ $service.title }}</h2>
-                <p class="mt-4">{{ $service.description }}</p>
-            </div>
-            <div class="w-full md:w-1/2 p-6">
-                <img src="{{ $service.image }}" alt="{{ $service.title }}" class="rounded-lg shadow-lg">
-            </div>
+    <div class="row align-items-start mb-5 {{ if modBool $index 2 }} flex-row-reverse {{ end }}">
+        <div class="col-md-6">
+            <h2>{{ .title }}</h2>
+            <p>{{ .description }}</p>
         </div>
+        <div class="col-md-6 text-center">
+            <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow" style="max-width: 80%; max-height: 400px;">
+        </div>
+    </div>
     {{ end }}
 </div>
 {{ end }}

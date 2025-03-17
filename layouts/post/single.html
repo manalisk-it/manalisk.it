@@ -4,21 +4,88 @@
 "Novembre" "Dicembre" }}
 {{ $mese := index $mesi (sub (.Date.Month) 1) }} -->
 
-<div class="container py-3">
+<!-- Aggiungi metatag Open Graph solo se il contenuto è un post -->
+<!-- {{ if eq .Type "post" }}
+  <meta property="og:title" content="{{ .Params.Title }}">
+  <meta property="og:description" content="{{ .Params.description }}">
+  <meta property="og:image" content="{{ .Params.featured_image }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="article">
+{{ end }} -->
+
+<!-- <div class="container py-3">
     <h1>{{ .Params.Title }}</h1>
     <p class="blog-info"> {{ .Params.Date | time.Format ":date_long"}} • {{ delimit .Params.authors ", " }}
         {{ if isset .Params "readtime" }}
         • ⏳ {{ .Params.readtime }}
         min
         {{ end }} </p>
+        <h2 class="h4 py-3" style="font-weight: 300;">{{ .Params.description }}</h2>
+        <img src="{{ .Params.featured_image }}" width="100%" class="mb-4"></img>
 
 
     {{ .Content }}
+</div> -->
+
+<div class="container py-3 singlepost">
+    <h1>{{ .Params.Title }}</h1>
+    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+        <p class="blog-info mb-0">
+            {{ .Params.Date | time.Format ":date_long" }} •
+            {{ delimit .Params.authors ", " }}
+            {{ if isset .Params "readtime" }}
+            • ⏳ {{ .Params.readtime }} min
+            {{ end }}
+        </p>
+        <!-- Social share icons -->
+        <div class="social-share-icons">
+            <!-- Copia link -->
+            <a id="copiaBtn" style="text-decoration: none;" role="button" >
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-social feather-medium'>
+                    <use href="{{ `images/feather/feather-sprite.svg#link` | relURL }}" />
+                </svg> <!-- Icona per Copia Link -->
+            </a>
+
+            <!-- Facebook -->
+            <a style="text-decoration: none;" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+                target="_blank">
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-social feather-medium'>
+                    <use href="{{ `images/feather/feather-sprite.svg#facebook` | relURL }}" />
+                </svg>
+            </a>
+
+            <!-- Twitter -->
+            <a style="text-decoration: none;"
+                href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Params.Title }}" target="_blank">
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-social feather-medium'>
+                    <use href="{{ `images/feather/feather-sprite.svg#twitter` | relURL }}" />
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Params.Title }}&summary={{ .Params.description }}"
+                target="_blank">
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-social feather-medium' width="1em"
+                    height="1em">
+                    <use href="{{ `images/feather/feather-sprite.svg#linkedin` | relURL }}" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <h2 class="h4 py-3" style="font-weight: 300;">{{ .Params.description }}</h2>
+    {{ $image := .Resources.GetMatch .Params.featured_image }}
+    {{ if $image }}
+    <img src="{{ .Params.featured_image }}" width="100%" class="mb-4" alt="{{ .Params.title }}" />
+    {{ end }}
+    {{ .Content }}
 </div>
+
+
 
 <section class="section container my-3">
     <h3 class="text-secondary text-center my-5">Leggi gli Ultimi Articoli</h3>
     {{ partial "latest-posts" . }}
-  </section>
+</section>
 
 {{ end }}

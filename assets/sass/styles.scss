@@ -1,7 +1,11 @@
 @use 'sass:color';
 @import "bootstrap/bootstrap.scss";
 
-$primary: #00684A;
+// $primary: #00684A;
+// $primary-hover: rgb(0, 155, 110);
+
+$primary: #107e8d;
+$primary-hover: #15a6b9;
 
 .home {
     --bd-purple: #4c0bce;
@@ -56,6 +60,7 @@ $primary: #00684A;
 
         &:hover {
             transform: scale(1.01);
+            box-shadow: 5px 5px 15px rgba($primary, 0.3);
         }
     }
 }
@@ -86,6 +91,40 @@ $primary: #00684A;
         color:#ffe484
     }
 }
+
+a{
+  color: $primary;
+}
+
+a:hover, a:active{
+  color: $primary-hover;
+}
+
+// a:visited{
+//   color: purple;
+// }
+
+.text-primary{
+  color: $primary !important;
+}
+
+.feather-social{
+    color: $primary;
+}
+
+.feather-social:hover{
+    color: $primary-hover;
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .arrow {
+  transform: translateX(7px);
+}
+
+
 
 /* Stile generale del form */
 .contact-form {
@@ -141,18 +180,18 @@ $primary: #00684A;
   
   /* Effetto hover sul pulsante */
   .contact-form button:hover {
-    background: rgb(0, 155, 110);
+    background: $primary-hover;
     color: white;
     // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
   }
   .contact-form button:active {
-    background: rgb(0, 155, 110);
+    background: $primary-hover;
     color: white;
     // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
   }
 
   .contact-form button:focus {
-    background: rgb(0, 155, 110);
+    background: $primary-hover;
     color: white;
     // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
   }

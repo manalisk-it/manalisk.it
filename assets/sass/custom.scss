@@ -51,6 +51,11 @@ blockquote {
     fill: none;
 }
 
+.feather-medium {
+    width: 2em;
+    height: 2em;
+}
+
 .feather-big {
     width: 4em;
     height: 4em;
@@ -68,5 +73,12 @@ a /*.feather*/ {
     .feather-github:hover {
         stroke: $github-black;
         fill: $github-black;
+    }
+}
+
+
+.singlepost{
+    h2 {
+        margin: 1em 0em 1em 0;
     }
 }

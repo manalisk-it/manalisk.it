@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+
+<div class="container py-3">
+    {{ if or .Site.Params.options.listCategoryFilter .Site.Params.options.listTagFilter }}
+    <div class="row mb-3">
+
+        {{ if .Site.Params.options.listCategoryFilter }}
+        <div class="col-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2">
+                <use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}" />
+            </svg>
+            {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages.ByTitle }}
+            <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}">{{.Title}}</a>&nbsp;
+            {{end}}
+        </div>
+        {{ end }}
+
+        {{ if .Site.Params.options.listTagFilter }}
+        <div class="col-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2">
+                <use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}" />
+            </svg>
+            {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages.ByTitle }}
+            <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}">{{.Title}}</a>&nbsp;
+            {{end}}
+        </div>
+        {{ end }}
+
+    </div>
+    {{ end }}
+
+    {{ if ne .Kind "taxonomy" }}
+
+    {{ range .Pages }}
+    {{ $defaultImage := resources.Get .Site.Params.mainMenuLogo }}
+    <div class="card border-light-subtle mb-3">
+        <div class="row g-0">
+
+            <div class="col-md-4 d-flex align-items-center">
+                {{ $image := .Resources.GetMatch .Params.featured_image }}
+                {{ if $image }}
+
+                    {{ $resized := $image.Fill "600x400 Center webp" }}
+                    <img class="img-fluid rounded p-1" src="{{ $resized.RelPermalink }}" loading="lazy"
+            width="{{ $resized.Width }}" height="{{ $resized.Height }}"
+            alt="featured image {{ .Title }}">
+                {{ else if $defaultImage }}
+                    {{ $resized := $defaultImage.Fill "600x400 Center webp" }}
+
+                    <img class="img-fluid rounded p-1" src="{{ $resized.RelPermalink }}" loading="lazy"
+                        width="{{ $resized.Width }}" height="{{ $resized.Height }}"
+                        alt="Default site logo">
+                {{ end }}
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">{{ .Title }}</h2>
+
+                    <div class="card-subtitle text-muted mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feather">
+                            <use href="{{ `images/feather/feather-sprite.svg#calendar` | relURL }}" />
+                        </svg>
+                        <time class="ms-2" datetime="{{ .Lastmod.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{
+                            .Date | time.Format ":date_long" }}</time>
+                        {{ if .Site.Params.options.listCategoryFilter }}
+                        {{ if isset .Params "categories" }}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4">
+                            <use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}" />
+                        </svg>
+                        {{ range .Params.categories }}
+                        <a class="text-decoration-none text-muted ms-2"
+                            href="{{ `/categories/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                        {{end}}
+                        {{ end }}
+                        {{ end }}
+
+                        {{ if .Site.Params.options.listTagFilter }}
+                        {{ if isset .Params "tags" }}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4">
+                            <use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}" />
+                        </svg>
+                        {{ range .Params.tags }}
+                        <a class="text-decoration-none text-muted ms-2"
+                            href="{{ `/tags/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+
+                    <div class="card-text" style="margin-bottom: 50px;">
+                        {{ with .Params.description }}
+                        {{ . }}
+                        {{ else }}
+                        {{ .Summary | truncate 400 }}
+                        {{ end }}
+                    </div>
+
+                    <div style="position:absolute; bottom: 10px; right:20px">
+                        <h6 class="text-primary" style="text-align: right;">{{ if isset .Params "readtime" }} Leggi in {{ .Params.readtime }} minuti {{ else }} Leggi di più {{ end }} 
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 11h10m0 0l-5-5m5 5l-5 5" stroke="green" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            </h3>
+
+                    </div>
+
+                    <a class="stretched-link" href="{{.RelPermalink}}"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{ end }}
+
+    {{ end }}
+
+</div>
+{{ end }}

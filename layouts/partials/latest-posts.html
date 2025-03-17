@@ -1,10 +1,24 @@
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
     {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "post" ) }}
-        <div class="col">
+        <div class="col list">
 
             <div class="card h-100">
                 <div class="card-body">
+                    {{ $defaultImage := resources.Get .Site.Params.mainMenuLogo }}
+
+                    {{ $image := .Resources.GetMatch .Params.featured_image }}
+                    {{ if $image }}
+                    {{ $resized := $image.Fill "600x400 Center webp" }}
+                    <img class="img-fluid rounded p-1" src="{{ $resized.RelPermalink }}" loading="lazy"
+                        width="{{ $resized.Width }}" height="{{ $resized.Height }}"
+                        alt="featured image {{ .Title }}">
+                {{ else if $defaultImage }}
+                    {{ $resized := $defaultImage.Fill "600x400 Center webp" }}
+                    <img class="img-fluid rounded p-1" src="{{ $resized.RelPermalink }}" loading="lazy"
+                        width="{{ $resized.Width }}" height="{{ $resized.Height }}"
+                        alt="Default site logo">
+                {{ end }}
                     <h4 class="card-title">
                         <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
                             {{ .Title }}
@@ -23,8 +37,20 @@
                         {{ end }}
                     </p>
                 </div>
-                <div class="card-footer">
+                
+                <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
                     <small class="text-muted">{{ .Date | time.Format ":date_long" }}</small>
+                    <div style="display: flex;  align-items: center; gap:5px;">
+                        <h6 class="text-primary my-0" >{{ if isset .Params "readtime" }} {{ .Params.readtime }} {{ else }} {{ 3 }} {{ end }} min read
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 11h10m0 0l-5-5m5 5l-5 5" stroke="green" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            </h3>
+
+                    </div>
                 </div>
             </div>
  
