@@ -192,7 +192,7 @@ python
 
 Ora esegui:
 
-```python
+```python{linenos=inline, style=nord}
 import torch
 torch.cuda.is_available()
 ```
@@ -201,9 +201,8 @@ Se tutto è andato a buon fine, dovrebbe restituire `True`.
 
 Se ricevi un errore del tipo:
 
-```plaintext
-UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment...
-```
+`UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment...
+`
 
 Prova a riavviare il computer e ripetere il test, sperando di non incontrare altri errori.
 

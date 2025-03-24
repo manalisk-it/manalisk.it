@@ -82,3 +82,24 @@ a /*.feather*/ {
         margin: 1em 0em 1em 0;
     }
 }
+
+
+pre > code.language-sh, 
+pre > code.language-bash {
+    background-color: #2e3440; /* Sfondo scuro */
+    color: #85f1df; /* Testo verde per effetto terminale */
+    font-family: "Fira Code", monospace;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+  }
+
+
+  pre > code.language-py, 
+  pre > code.language-python {
+      font-family: "Fira Code", monospace;
+      padding: 10px;
+      border-radius: 25px;
+      display: block;
+    }
+
