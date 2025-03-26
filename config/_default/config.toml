@@ -1,7 +1,7 @@
 baseURL = 'https://basilisk.it/'
-title = "Deeplisk"
-author = "Basilisk"
-copyright = "Open-source <a class=\"gold-color text-decoration-none\" href=\"https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE\">MIT</a> Licensed."
+title = "Manalisk"
+author = "Manalisk"
+copyright = "Copyright © 2025 - Manalisk"
 
 timeZone = 'Europe/Rome'
 

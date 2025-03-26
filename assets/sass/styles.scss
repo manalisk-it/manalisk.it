@@ -202,5 +202,14 @@ a:hover, a:active{
       width: 90%;
       padding: 15px;
     }
+
+    .bd-masthead {
+      padding: 1rem 0 !important;
+  }
+
   }
   
+
+  .stroke-prim{
+    stroke: $primary;
+}
