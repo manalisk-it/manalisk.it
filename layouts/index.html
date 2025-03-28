@@ -4,8 +4,8 @@
   <div class="container-xxl">
     <div class="col-md-8 mx-auto text-center ">
       <img class="d-block mx-auto mb-3 img-fluid" style=" max-height: 450px;" src="{{ `images/ManaLogo2.png` | relURL }}" alt="Bootstrap">
-      <!-- <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1> -->
-      <p class="lead mb-4">{{ .Site.Params.Description }}</p>
+      <!-- <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1> {{ .Site.Params.Description }}-->
+      <p class="lead mb-4">Potenzia il tuo business con l'<span class="text-primary" style="font-weight: bold;">Intelligenza Artificiale</span></p>
       <p class="lead text-muted mb-4 ">Siamo dei professionisti specializzati in Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG). Grazie alle nostre tecnologie AI, aiutiamo le aziende a trasformare le sfide in opportunità di crescita.</p>
       <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="/services" role="button">Scopri i Nostri Servizi</a>
     </div>
@@ -13,19 +13,21 @@
 </section>
 
 <section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Cosa Offriamo</h3>
+  <h1 class="text-section-header text-center my-5">Cosa Offriamo</h1>
 
   {{ partial "features" . }}
 </section>
 
-<section class="section container my-3">
+<!-- <section class="section container my-3">
   <h3 class="text-secondary text-center my-5">Leggi gli Ultimi Articoli</h3>
   {{ partial "latest-posts" . }}
   
   <div class="mx-auto text-center my-5">
     <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="/post">Vai al Nostro Blog</a>
   </div>
-</section>
+</section> -->
+
+
 <!-- 
 <section class="section container my-3">
   <h3 class="text-secondary text-center my-5">Featured Pages</h3>
@@ -33,11 +35,12 @@
 </section> -->
 
 <section class="section container my-3 mx-auto">
-  <h3 class="text-secondary text-center my-5">Contattaci</h3>
+  <h1 class="text-section-header text-center my-5">Contattaci</h1>
 
-  <p class="lead text-center"> Vuoi sapere di più? Mandaci un email a <a href="mailto:info@basilisk.it">info[at]basilisk.it</a> o contattaci con il seguente form.</p>
+  <p class="lead text-center mb-5"> Vuoi sapere di più? Mandaci un email a <a href="mailto:info@manalisk.it">info[at]manalisk.it</a>.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!</p>
+  
 
-  {{ partial "contact-form" . }}
+  <!-- {{ partial "contact-form" . }} -->
 </section>
 
 {{ end }}

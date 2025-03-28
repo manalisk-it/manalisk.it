@@ -9,6 +9,8 @@ menu:
 
 # Contattaci
 
-Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info[at]basilisk.it](mailto:info@basilisk.it).
+Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info[at]manalisk.it](mailto:info@manalisk.it).
 
-Altrimenti, puoi usare il seguente form:
+Possiamo fissare una **chiamata o incontro gratuito** e discutere su come portare l'AI nella tua azienda!
+
+Abbiamo sede a Padova, ma lavoriamo spesso in remoto!

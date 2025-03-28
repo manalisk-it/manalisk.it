@@ -40,7 +40,7 @@
         <!-- Social share icons -->
         <div class="social-share-icons">
             <!-- Copia link -->
-            <a id="copiaBtn" style="text-decoration: none;" role="button" >
+            <a id="copiaBtn" style="text-decoration: none;" role="button">
                 <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-social feather-medium'>
                     <use href="{{ `images/feather/feather-sprite.svg#link` | relURL }}" />
                 </svg> <!-- Icona per Copia Link -->
@@ -76,7 +76,9 @@
     <h2 class="h4 py-3" style="font-weight: 300;">{{ .Params.description }}</h2>
     {{ $image := .Resources.GetMatch .Params.featured_image }}
     {{ if $image }}
-    <img src="{{ .Params.featured_image }}" width="100%" class="mb-4" alt="{{ .Params.title }}" />
+    <div class="text-center mb-4">
+        <img src="{{ .Params.featured_image }}" class="mb-4 lead-img" alt="{{ .Params.title }}" />
+    </div>
     {{ end }}
     {{ .Content }}
 </div>

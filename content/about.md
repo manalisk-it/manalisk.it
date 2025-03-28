@@ -1,6 +1,7 @@
 ---
 title: "Chi Siamo"
 draft: false
+layout: "about"
 ---
 
 # Chi Siamo
@@ -15,7 +16,7 @@ Il nostro team proviene dal mondo della **ricerca accademica e industriale**, co
 
 
 
-# La Nostra Missione
+## La Nostra Missione
 
 La nostra missione è trasformare la complessità dell'Intelligenza Artificiale in soluzioni semplici ed efficaci, capaci di generare valore concreto per aziende e organizzazioni.
 
@@ -27,15 +28,6 @@ Ci impegniamo a:
 
 Con la nostra esperienza e passione per l'innovazione, guidiamo i nostri clienti nel futuro dell'intelligenza artificiale.
 
----
 
-# Contattaci
 
-Siamo sempre disponibili per discutere le tue esigenze e trovare insieme la soluzione AI più adatta al tuo business.
 
-📩 **Email:** info@tuaazienda.com  
-📞 **Telefono:** +39 0123 456789  
-📍 **Sede:** Via Esempio, 10 - 00100, Città  
-🌍 **Sito Web:** [www.tuaazienda.com](https://www.tuaazienda.com)  
-
-Non esitare a scriverci per una consulenza gratuita o per scoprire come l'AI può rivoluzionare il tuo business!

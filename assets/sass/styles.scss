@@ -8,95 +8,100 @@ $primary: #107e8d;
 $primary-hover: #15a6b9;
 
 .home {
-    --bd-purple: #4c0bce;
-    --bd-violet: #712cf9;
-    --bd-accent: #ffe484;
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
-    --bd-accent-rgb: 255,228,132;
-    --bd-pink-rgb: 214,51,132;
+  --bd-purple: #4c0bce;
+  --bd-violet: #712cf9;
+  --bd-accent: #ffe484;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bd-accent-rgb: 255, 228, 132;
+  --bd-pink-rgb: 214, 51, 132;
 
 
 
-    .bd-masthead {
-        padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(#aaa, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(#aaa, 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(#666, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(#666, 0.5), transparent 50%);
-    }
+  .bd-masthead {
+    padding: 3rem 0;
+    background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(#aaa, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(#aaa, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(#666, 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(#666, 0.5), transparent 50%);
+  }
 
-    .btn-bd-primary {
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: #{$primary};
-        --bs-btn-border-color: #{color.adjust($primary, $lightness: 10%)};
-        --bs-btn-border-radius: .5rem;
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #{color.adjust($primary, $lightness: 10%)};;
-        --bs-btn-hover-border-color: #{color.adjust($primary, $lightness: 10%)};
-        --bs-btn-active-color: var(--bs-white);
-        --bs-btn-active-bg: #{color.adjust($primary, $lightness: -10%)};
-        --bs-btn-active-border-color: #{color.adjust($primary, $lightness: -10%)};
-    }
+  .btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: #{$primary};
+    --bs-btn-border-color: #{color.adjust($primary, $lightness: 10%)};
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{color.adjust($primary, $lightness: 10%)};
+    ;
+    --bs-btn-hover-border-color: #{color.adjust($primary, $lightness: 10%)};
+    --bs-btn-active-color: var(--bs-white);
+    --bs-btn-active-bg: #{color.adjust($primary, $lightness: -10%)};
+    --bs-btn-active-border-color: #{color.adjust($primary, $lightness: -10%)};
+  }
 }
 
 .navbar {
-    @extend .navbar;
-    color: white;
-    padding: .75rem 0;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,$primary, rgba($primary, 0.95));
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+  @extend .navbar;
+  color: white;
+  padding: .75rem 0;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, $primary, rgba($primary, 0.95));
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .text-violet {
-    color: #6528e0;
+  color: #6528e0;
 }
 
 .text-green {
-    color: $primary;
-}
-
-.list {
-    .card {
-        transition: transform 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.01);
-            box-shadow: 5px 5px 15px rgba($primary, 0.3);
-        }
-    }
-}
-
-.navbar-brand {
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-        transform: rotate(-2deg) scale(1.1);
-    }
-}
-
-.blog-info{
-    color: #626462; 
-    margin-bottom: 1.5em;
-}
-
-.footer-class{
-    background: linear-gradient(to bottom, $primary, $primary);;
-    .gold-color{
-        color:white
-        
-    }   
-    a:hover{
-        color:#ffe484
-    }
-    a:active{
-        color:#ffe484
-    }
-}
-
-a{
   color: $primary;
 }
 
-a:hover, a:active{
+.list {
+  .card {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 5px 5px 15px rgba($primary, 0.3);
+    }
+  }
+}
+
+.navbar-brand {
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(-2deg) scale(1.1);
+  }
+}
+
+.blog-info {
+  color: #626462;
+  margin-bottom: 1.5em;
+}
+
+.footer-class {
+  background: linear-gradient(to bottom, $primary, $primary);
+  ;
+
+  .gold-color {
+    color: white
+  }
+
+  a:hover {
+    color: #ffe484
+  }
+
+  a:active {
+    color: #ffe484
+  }
+}
+
+a {
+  color: $primary;
+}
+
+a:hover,
+a:active {
   color: $primary-hover;
 }
 
@@ -104,16 +109,22 @@ a:hover, a:active{
 //   color: purple;
 // }
 
-.text-primary{
+.text-primary {
   color: $primary !important;
 }
 
-.feather-social{
-    color: $primary;
+.text-section-header{
+  color: $primary !important;
+  font-weight: bold;
+  font-size: 42px;
 }
 
-.feather-social:hover{
-    color: $primary-hover;
+.feather-social {
+  color: $primary;
+}
+
+.feather-social:hover {
+  color: $primary-hover;
 }
 
 .arrow {
@@ -128,88 +139,124 @@ a:hover, a:active{
 
 /* Stile generale del form */
 .contact-form {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile delle etichette */
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Stile degli input e textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Effetto focus sugli input */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(0, 155, 110.288);
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Stile del pulsante */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: $primary;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Effetto hover sul pulsante */
+.contact-form button:hover {
+  background: $primary-hover;
+  color: white;
+  // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form button:active {
+  background: $primary-hover;
+  color: white;
+  // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form button:focus {
+  background: $primary-hover;
+  color: white;
+  // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+
+.lead-img{
+  width: 60%;
+}
+
+
+/* Responsive */
+@media (max-width: 1000px) {
+
+  .lead-img {
+    width: 80%;
   }
-  
-  /* Stile delle etichette */
-  .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-form {
+    width: 90%;
+    padding: 15px;
   }
-  
-  /* Stile degli input e textarea */
-  .contact-form input,
-  .contact-form textarea {
+
+  .bd-masthead {
+    padding: 1rem 0 !important;
+  }
+
+  .lead-img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease;
   }
-  
-  /* Effetto focus sugli input */
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: rgb(0, 155, 110.288);
-    outline: none;
-    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+
+}
+
+
+.stroke-prim {
+  stroke: $primary;
+}
+
+
+.teamheaders{
+  h1 {
+      margin: 0.5em 0em 1em 0;
+
+      color: $primary;
+      font-weight: bold;
   }
-  
-  /* Stile del pulsante */
-  .contact-form button {
-    width: 100%;
-    padding: 12px;
-    background: $primary;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    color: white;
+
+  h2 {
+    margin: 1em 0em 1em 0;
+    color: $primary;
     font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  /* Effetto hover sul pulsante */
-  .contact-form button:hover {
-    background: $primary-hover;
-    color: white;
-    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-  }
-  .contact-form button:active {
-    background: $primary-hover;
-    color: white;
-    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-  }
-
-  .contact-form button:focus {
-    background: $primary-hover;
-    color: white;
-    // box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    .contact-form {
-      width: 90%;
-      padding: 15px;
-    }
-
-    .bd-masthead {
-      padding: 1rem 0 !important;
-  }
-
-  }
-  
-
-  .stroke-prim{
-    stroke: $primary;
+}
 }

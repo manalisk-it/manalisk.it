@@ -2,13 +2,13 @@
 title: "Come installare Pytorch col supporto GPU su Ubuntu (Linux)"
 description: "Impariamo a installare cuda e pytorch!"
 date: 2025-03-18
-draft: false
+draft: true
 images: ["hugo-logo.png"]
-featured_image: "bootstrap-5-3.png"
+featured_image: "PyTorchGPU.png"
 categories: ["The Bootstrap Blog"]
 tags: ["Bootstrap"]
 keywords: ["bootstrap 5 3","bootstrap 5","bootstrap"]
-authors: ["Mark Otto"]
+authors: ["Pier Paolo Tricomi"]
 
 ---
 
@@ -16,6 +16,9 @@ authors: ["Mark Otto"]
 Questa guida dettagliata ti aiuterà passo passo a installare CUDA e PyTorch su Ubuntu (o più in generale su un sistema Linux).
 
 ---
+
+<!-- ![Hugo](hugo-logo.svg)
+{ .img-fluid .mb-5 } -->
 
 ## 1. Installare Python
 
