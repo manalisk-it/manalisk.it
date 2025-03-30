@@ -23,7 +23,7 @@ La nostra missione è trasformare la complessità dell'Intelligenza Artificiale 
 Ci impegniamo a:
 
 - **Garantire sicurezza e privacy**: sviluppiamo sistemi conformi ai più alti standard di protezione dei dati.
-- **Velocizzare l'innovazione**: riduciamo i tempi di sviluppo con metodologie agili e tecnologie all'avanguardia.
+- **Velocizzare l'innovazione**: riduciamo i tempi di sviluppo grazie alla nostra esperienza e approfondimento continuodi tecnologie all'avanguardia.
 - **Favorire la crescita**: aiutiamo le aziende a scalare e a ottenere un vantaggio competitivo attraverso l'AI.
 
 Con la nostra esperienza e passione per l'innovazione, guidiamo i nostri clienti nel futuro dell'intelligenza artificiale.

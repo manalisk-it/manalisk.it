@@ -6,8 +6,8 @@
 # https://schema.org/Thing
 # https://schema.org/Article
 description = "Potenzia il tuo business con l'Intelligenza Artificiale."
-images = ['images/ManaLogo.png','images/logo_bok.png','images/site-feature-image.png']
-mainMenuLogo = "images/ManaLogo.png"
+images = ['images/Manalisk.png','images/logo_bok.png','images/site-feature-image.png']
+mainMenuLogo = "images/Manalisk.png"
 
 # For favicons
 ## Chrome Browser
