@@ -6,6 +6,7 @@
 
 $primary: #107e8d;
 $primary-hover: #15a6b9;
+$navbar-color: #292e3a;
 
 .home {
   --bd-purple: #4c0bce;
@@ -43,7 +44,7 @@ $primary-hover: #15a6b9;
   color: white;
   padding: .75rem 0;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, $primary, rgba($primary, 0.95));
+  background-image: linear-gradient(to bottom, $navbar-color, rgba($navbar-color, 0.95));
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -69,8 +70,23 @@ $primary-hover: #15a6b9;
 .navbar-brand {
   transition: transform 0.2s ease-in-out;
 
+  svg {
+    transition: fill 0.2s ease-in-out;
+    fill: white;
+    height: 22px;
+    vertical-align: text-bottom;
+  }
+
   &:hover {
     transform: rotate(-2deg) scale(1.1);
+
+    svg {
+      fill: #59b5c3ff ;
+    }
+  }
+
+  img {
+    vertical-align: text-top;
   }
 }
 
@@ -80,7 +96,7 @@ $primary-hover: #15a6b9;
 }
 
 .footer-class {
-  background: linear-gradient(to bottom, $primary, $primary);
+  background: linear-gradient(to bottom, $navbar-color, rgba($navbar-color, 0.95));
   ;
 
   .gold-color {

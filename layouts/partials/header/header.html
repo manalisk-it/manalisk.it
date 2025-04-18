@@ -10,9 +10,10 @@
       <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
         {{ if isset .Site.Params "mainmenulogo" }}
         <img src="{{ .Site.Params.mainMenuLogo | relURL }}" alt="logo" width="32" height="32"
-          class="d-inline-block" style="vertical-align: bottom;">
+          class="d-inline-block">
         {{ end }}
-        {{ .Site.Title }}
+        {{ os.ReadFile "static/images/manalisk_text_white.svg" | safeHTML}}
+        {{/*color defined in the sass stylesheet*/}}
       </a>
 
       <!-- Menu Toggler -->
