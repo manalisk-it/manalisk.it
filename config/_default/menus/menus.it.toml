@@ -12,7 +12,7 @@ title = "Scopri di più sulla nostra missione"
 
 [[main]]
 name = "Servizi"
-url = "services"
+url = "/services/"
 weight = 30
 title = "Scopri i nostri servizi"
 

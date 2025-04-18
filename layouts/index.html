@@ -14,23 +14,25 @@
   </div>
 </section> -->
 
-<section class=" section  bd-masthead">
+<section class=" section bd-masthead">
   <div class="container hero">
-    <div class="hero-text">
-    <h1 class="logo-text mons text-center" style="font-size: 69px;">MANALISK</h1>
+    <div id="hero-text" class="hero-text hero-hidden">
+    <h1 class="logo-text mons text-center home-title" >MANALISK</h1>
     <h2 class="mb-4 subtitle text-center" >Potenzia il tuo business con l'AI</h2>
-    <p class="lead text-muted mb-4" style="text-align: justify;">Siamo dei professionisti specializzati in <b>Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)</b>. Grazie alle nostre tecnologie AI, <b>aiutiamo le aziende</b> a trasformare le sfide in opportunità di crescita.</p>
+    <p class="lead text-muted mb-4 mx-1" style="text-align: justify;">Siamo dei professionisti specializzati in <b>Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)</b>. Grazie alle nostre tecnologie AI, <b>aiutiamo le aziende</b> a trasformare le sfide in opportunità di crescita.</p>
 
   </div>
-  <div class="hero-image">
-    <img src='{{- (resources.Get "images/manalisk.png").RelPermalink -}}' style=" max-height: 350px;" alt="Immagine Hero" />
+  <div id="hero-image" class="hero-image hero-hidden2">
+    <img id="imgLogoManalisk" src='{{- (resources.Get "images/manalisk.png").RelPermalink -}}' style=" max-height: 350px;" alt="Immagine Logo Manalisk" />
   </div>
 
 </div>
 
 </section>
-<div class="text-center ">
-<button class="cta-button">Scopri i Nostri Servizi</button>
+
+
+<div class="text-center">
+<a id="hero-button" href="/services" class="cta-button hero-hidden3" href="/services">Scopri i Nostri Servizi</a>
 </div>
 
 <section class="section container my-3">

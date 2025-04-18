@@ -11,7 +11,7 @@ $navbar-color: #292e3a;
 .home {
   --bd-purple: #4c0bce;
   --bd-violet: #712cf9;
-  --bd-accent: #ffe484;
+  --bd-accent: #ffc684;
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
   --bd-accent-rgb: 255, 228, 132;
   --bd-pink-rgb: 214, 51, 132;
@@ -104,11 +104,11 @@ $navbar-color: #292e3a;
   }
 
   a:hover {
-    color: #ffe484
+    color: #25c3d8
   }
 
   a:active {
-    color: #ffe484
+    color: #25c3d8
   }
 }
 
@@ -130,7 +130,7 @@ a:active {
 }
 
 h3 {
-  color: #004154 !important;
+  color: $primary !important;
 }
 
 
@@ -292,18 +292,23 @@ h3 {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 156, 168, 0.2);
+  transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.3s ease, opacity 1s ease !important; /* Puoi lasciarla o rimuoverla */
+  text-decoration: none; /* 🔥 Rimuove la sottolineatura */
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #00c9e6, #006e78);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 156, 168, 0.3);
+  background: linear-gradient(135deg, #00c8e2, #0197a5);
+  box-shadow: 0 6px 16px rgba(0, 156, 168, 0.4); /* Appare subito senza transizione */
+  color: #ffffff;
+}
+
+.cta-button:visited {
+  color: #ffffff;
 }
 
 .cta-button:active {
   transform: scale(0.98);
+  color: #ffffff;
 }
 
 
@@ -318,6 +323,7 @@ h3 {
   flex:1;
   // min-width: 300px;
   // max-width: 500px;
+  padding-right: 1em;
   max-width: 700px;
 }
 
@@ -414,3 +420,74 @@ h3 {
 }
 
 
+ /* Animation classes */
+/* Animation */
+.hero-hidden {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.hero-hidden2 {
+  opacity: 0;
+  transform: translateX(-480px);
+}
+
+.hero-hidden3 {
+  opacity: 0;
+}
+
+.hero-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease;
+}
+
+.hero-visible2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.9s ease-out;
+}
+
+.hero-visible3 {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+
+#imgLogoManalisk {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/* Tablet orizzontale e oltre */
+@media (max-width: 1024px) {
+  #imgLogoManalisk {
+    max-width: 300px;
+  }
+}
+
+/* Tablet verticale / piccoli laptop */
+@media (max-width: 768px) {
+  #imgLogoManalisk {
+    max-width: 260px;
+  }
+}
+
+/* Smartphone grandi */
+@media (max-width: 480px) {
+  #imgLogoManalisk {
+    max-width: 230px;
+  }
+}
+
+/* Smartphone piccoli */
+@media (max-width: 360px) {
+  #imgLogoManalisk {
+    max-width: 210px;
+  }
+}
+
+.home-title{
+  font-size:  clamp(3rem, 6vw, 4rem);
+}
