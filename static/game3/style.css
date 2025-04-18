@@ -1,0 +1,36 @@
+body {
+    background-color: #222; /* Sfondo scuro */
+    color: #eee; /* Testo chiaro */
+    display: flex;
+    flex-direction: column; /* Mette titolo, canvas e UI in colonna */
+    align-items: center; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente (utile se il contenuto è poco) */
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh; /* Assicura che il body occupi almeno tutta l'altezza */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 1px solid #555; /* Bordo grigio scuro per visibilità */
+    background-color: #000; /* Sfondo nero per il canvas di gioco */
+    display: block; /* Rimuove spazi extra sotto il canvas */
+}
+
+#ui {
+    margin-top: 15px;
+    text-align: center;
+    color: #ccc;
+}
+
+#ui p {
+    margin: 5px 0;
+}
+
+#ui span {
+    font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manalisk - Browser Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manalisk</h1>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui">
+        <p>Vita: <span id="healthDisplay">100</span></p>
+        <p>Mana: <span id="manaDisplay">100</span></p>
+        <p>Dash (K): <span id="dashCooldownDisplay">Pronto</span></p>
+        <p>Scudo (L): <span id="shieldCooldownDisplay">Pronto</span></p>
+        <p>Ultimate (Spazio): <span id="ultimateManaCostDisplay">50</span> Mana</p>
+         <p style="font-size: small; margin-top: 20px;">Controlli: WASD = Muovi, J = Spara, K = Dash, L = Scudo, Spazio = Ultimate</p>
+    </div>
+
+    <script src="game.js" defer></script>
+</body>
+</html>
