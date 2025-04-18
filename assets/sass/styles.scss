@@ -110,12 +110,17 @@ a:active {
 // }
 
 .text-primary {
-  color: $primary !important;
+  color: #004154 !important;
 }
 
+h3 {
+  color: #004154 !important;
+}
+
+
 .text-section-header{
-  color: $primary !important;
-  font-weight: bold;
+  color: #004154 !important;
+  // font-weight: bold;
   font-size: 42px;
 }
 
@@ -250,13 +255,146 @@ a:active {
   h1 {
       margin: 0.5em 0em 1em 0;
 
-      color: $primary;
+      color: #004154;
       font-weight: bold;
   }
 
   h2 {
     margin: 1em 0em 1em 0;
-    color: $primary;
+    color: #004154;
     font-weight: bold;
 }
 }
+
+.cta-button {
+  background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */
+  color: white;
+  // font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 156, 168, 0.2);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #00c9e6, #006e78);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 156, 168, 0.3);
+}
+
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex:1;
+  // min-width: 300px;
+  // max-width: 500px;
+  max-width: 700px;
+}
+
+.logo-text {
+  color: #004154;
+  // letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #004154;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.hero-image img {
+  height: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BIZ UDPGothic';
+  src: url('/fonts/BIZUDPGothic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BIZ UDPGothic';
+  src: url('/fonts/BIZUDPGothic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Variable';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* range di pesi supportati */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans.ttf') format('truetype');
+  font-weight: 100 900; /* range di pesi supportati */
+  font-style: normal;
+  font-display: swap;
+}
+
+.biz-udpgothic-bold {
+  font-family: "BIZ UDPGothic";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mons {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-style: normal;
+}
+
+

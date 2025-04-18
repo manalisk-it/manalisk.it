@@ -1,19 +1,40 @@
 {{ define "main" }}
 
-<section class="section bd-masthead">
+<!-- <section class="section bd-masthead">
   <div class="container-xxl">
     <div class="col-md-8 mx-auto text-center ">
-      <img class="d-block mx-auto mb-3 img-fluid" style=" max-height: 450px;" src='{{- (resources.Get "images/manaliskScritta.png").RelPermalink -}}' alt="Manalisk Logo">
-      <!-- <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1> {{ .Site.Params.Description }}-->
-      <p class="lead mb-4">Potenzia il tuo business con l'<span class="text-primary" style="font-weight: bold;">Intelligenza Artificiale</span></p>
+      <img class="d-block mx-auto mb-3 img-fluid" style=" max-height: 350px;" src='{{- (resources.Get "images/manaliskScritta.png").RelPermalink -}}' alt="Manalisk Logo">
+      <h1 style="font-family:'Montserrat'; font-weight:700; letter-spacing: 2px;">MANALISK</h1>
+      <h2 class="mb-4">Potenzia il tuo business con l'<span class="text-primary" style="font-weight: bold;">Intelligenza Artificiale</span></h2>
+      
       <p class="lead text-muted mb-4 ">Siamo dei professionisti specializzati in <b>Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)</b>. Grazie alle nostre tecnologie AI, <b>aiutiamo le aziende</b> a trasformare le sfide in opportunità di crescita.</p>
-      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="/services" role="button">Scopri i Nostri Servizi</a>
+      <a class="btn btn-bd-primary btn-lg px-4 mb-2"  role="button">Scopri i Nostri Servizi</a>
+      <button class="cta-button" href="/services">Scopri i Nostri Servizi</button>
     </div>
   </div>
+</section> -->
+
+<section class=" section  bd-masthead">
+  <div class="container hero">
+    <div class="hero-text">
+    <h1 class="logo-text mons text-center" style="font-size: 69px;">MANALISK</h1>
+    <h2 class="mb-4 subtitle text-center" >Potenzia il tuo business con l'AI</h2>
+    <p class="lead text-muted mb-4" style="text-align: justify;">Siamo dei professionisti specializzati in <b>Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)</b>. Grazie alle nostre tecnologie AI, <b>aiutiamo le aziende</b> a trasformare le sfide in opportunità di crescita.</p>
+
+  </div>
+  <div class="hero-image">
+    <img src='{{- (resources.Get "images/manalisk.png").RelPermalink -}}' style=" max-height: 350px;" alt="Immagine Hero" />
+  </div>
+
+</div>
+
 </section>
+<div class="text-center ">
+<button class="cta-button">Scopri i Nostri Servizi</button>
+</div>
 
 <section class="section container my-3">
-  <h1 class="text-section-header text-center my-5">Cosa Offriamo</h1>
+  <h1 class="text-section-header text-center my-5" style='color:#000'>Cosa Offriamo</h1>
 
   {{ partial "features" . }}
 </section>
@@ -37,7 +58,7 @@
 <section class="section container my-3 mx-auto">
   <h1 class="text-section-header text-center my-5">Contattaci</h1>
 
-  <p class="lead text-center mb-5"> Vuoi sapere di più? Mandaci un email a <a href="mailto:info@manalisk.it">info[at]manalisk.it</a>.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!</p>
+  <p class="lead text-center mb-5"> Vuoi sapere di più? Mandaci un email a <a href="mailto:info@manalisk.it">info@manalisk.it</a>.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!</p>
   
 
   <!-- {{ partial "contact-form" . }} -->

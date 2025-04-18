@@ -9,7 +9,7 @@ menu:
 
 # Contattaci
 
-Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info[at]manalisk.it](mailto:info@manalisk.it).
+Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info@manalisk.it](mailto:info@manalisk.it).
 
 Possiamo fissare una **chiamata o incontro gratuito** e discutere su come portare l'AI nella tua azienda!
 
