@@ -7,49 +7,20 @@ menu:
   footer:
     weight: 90
 ---
-
-
-<!-- **TL;DR**: We do not use cookies and we do not collect any personal data.
-
-## Website visitors
-
-- No personal information is collected.
-- No information is stored in the browser.
-- No information is shared with, sent to or sold to third-parties.
-- No information is shared with advertising companies.
-- No information is mined and harvested for personal and behavioral trends.
-- No information is monetized.
-
-## Information we collect and what we use it for
-
-The server hosting this site can collect the following information:
-
-- Page URL
-- HTTP Referrer
-- Browser
-- Operating system
-- Device type
-- IP address
-
-All logs are discarded in every release.
-
-## Contact us
-
-[Contact us](/hugo-bootstrap-theme/contact/) if you have any questions.
-
-Effective Date: *15th May 2022* -->
-
 # Informativa sulla Privacy
 
 **Ultimo aggiornamento:** 18 Aprile 2025
 
-La presente informativa sulla privacy descrive come le informazioni vengono gestite in relazione al sito web [Nome del tuo sito web] (il "Sito").
+La presente informativa sulla privacy descrive come le informazioni vengono gestite in relazione al sito web "Manalisk" (il "Sito").
+
+**TL;DR**: Non raccogliamo alcun dato, tranne per i dati che decidi di fornirci volontariamente nel caso in cui ci contatti via email. Tuttavia, i
+nostri fornitori di hosting potrebbero raccogliere alcuni dati relativi all'accesso al sito per motivi di sicurezza.
 
 ## Dati Raccolti e Finalità del Trattamento
 
 Questo Sito non utilizza cookies per tracciare o memorizzare informazioni sugli utenti.
 
-Le uniche informazioni che potremmo raccogliere sono quelle che tu scegli di fornirci direttamente tramite eventuali moduli di contatto o indirizzi email presenti sul Sito. Queste informazioni (come il tuo nome, indirizzo email e qualsiasi altro dettaglio tu includa nel tuo messaggio) verranno utilizzate esclusivamente per rispondere alle tue richieste o comunicazioni.
+Le uniche informazioni che potremmo raccogliere sono quelle che tu scegli di fornirci direttamente tramite eventuali indirizzi email presenti sul Sito. Queste informazioni (come il tuo nome, indirizzo email e qualsiasi altro dettaglio tu includa nel tuo messaggio) verranno utilizzate esclusivamente per rispondere alle tue richieste o comunicazioni.
 
 ## Hosting
 
@@ -62,7 +33,7 @@ Le informazioni che ci fornisci direttamente non verranno condivise con terzi, a
 
 ## I Tuoi Diritti
 
-In quanto utente, hai il diritto di richiederci l'accesso ai tuoi dati personali che potremmo aver raccolto (tramite i tuoi messaggi), la loro rettifica o cancellazione, o la limitazione del trattamento. Per esercitare questi diritti, puoi contattarci all'indirizzo email indicato nella sezione "Titolare del Trattamento dei Dati".
+In quanto utente, hai il diritto di richiederci l'accesso ai tuoi dati personali che potremmo aver raccolto (tramite i tuoi messaggi), la loro rettifica o cancellazione, o la limitazione del trattamento. Per esercitare questi diritti, puoi contattarci all'indirizzo email indicato nella sezione "Contatti".
 
 ## Modifiche alla Presente Informativa sulla Privacy
 
