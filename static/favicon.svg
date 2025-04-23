@@ -1,6 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1em" height="1em"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shield-check" fill="#14bf98" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"></path>
-<path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="256" height="256"><svg width="256" height="256" viewBox="0 0 256 256" version="1.1" id="SvgjsSvg1015" inkscape:version="1.2 (dc2aedaf03, 2022-05-15)" sodipodi:docname="favicon_plain.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="SvgjsSodipodi:namedview1014" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" showgrid="false" showguides="true" inkscape:zoom="0.74564395" inkscape:cx="425.13588" inkscape:cy="91.196341" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="layer1">
+    <sodipodi:guide position="-70.258061,316.67741" orientation="0.70710678,-0.70710678" id="SvgjsSodipodi:guide1013" inkscape:locked="false"></sodipodi:guide>
+  </sodipodi:namedview>
+  <defs id="SvgjsDefs1012"></defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="SvgjsG1011" transform="translate(-79.838706,-30.870967)">
+    <rect style="opacity:0.99;fill:#292e3a;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round" id="SvgjsRect1010" width="256" height="256" x="79.838707" y="30.870968" rx="53.435112" ry="58.261547"></rect>
+    <g aria-label="M" id="SvgjsG1009" style="font-size:50.8px;line-height:1.25;letter-spacing:0px;word-spacing:0px;fill:#59b5c3;stroke-width:1.665" transform="matrix(3.192277,0,0,3.1922771,-175.02856,-67.677715)">
+      <path d="M 138.30067,45.567738 118.87714,64.991267 99.453613,45.567738 v 50.799999 h 6.972547 V 62.401463 l 12.45098,12.45098 12.45098,-12.45098 v 33.966274 h 6.97255 z" style="font-family:'FN OCTAHEDRON';-inkscape-font-specification:'FN OCTAHEDRON, Normal'" id="SvgjsPath1008"></path>
+    </g>
+  </g>
 </svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: contrast(0.8333333333333334) brightness(1.7); } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
 </style></svg>
