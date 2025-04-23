@@ -9,14 +9,13 @@
 
   image: "/images/documents.png"
 
-
 - title: "Servizi AI su misura"
   description: >
     Offriamo soluzioni AI su misura per **ottimizzare i processi aziendali**, **automatizzare attività ripetitive** 
     e migliorare la **gestione delle informazioni**. Creiamo **modelli personalizzati** per analisi avanzate, 
     supporto decisionale e automazione. Oltre ai **documenti**, lavoriamo con **immagini** (e.g., estrarre 
     informazioni dalle foto), **audio** (e.g., trascrizione automatica), e **grosse quantità di dati** (e.g., 
-    analisi storiche e previsioni). Dall’ottimizzazione dei flussi di lavoro all’integrazione di strumenti 
+    analisi storiche e previsioni). Dall'ottimizzazione dei flussi di lavoro all'integrazione di strumenti 
     intelligenti, sviluppiamo soluzioni che **aumentano efficienza e competitività**. Tutto questo in compliance
     con gli standard normativi. Se vuoi **migliorare i tuoi processi produttivi** con l'AI, puoi fidarti di noi!
   image: "/images/misuraAI.png"
@@ -29,8 +28,8 @@
     **LLM** (e.g., ChatGPT, Copilot) e **RAG** fino alla **sicurezza dei dati**, prevenzione al **phishing**, 
     analisi delle **minacce** e **difesa aziendale**. Adattiamo i programmi alle esigenze specifiche, con 
     **formazione pratica** su strumenti e tecnologie reali (e.g., Suite Google). Che tu sia un esperto o un manager,
-     forniamo le competenze per **innovare e proteggere il tuo business** con l’AI e la cybersecurity. Se cerchi 
-     della formazione di qualità, qui troverai ciò di cui hai bisogno!"
+     forniamo le competenze per **innovare e proteggere il tuo business** con l'AI e la cybersecurity. Se cerchi 
+     della formazione di qualità, qui troverai ciò di cui hai bisogno!
   image: "images/form.png"
 
 - title: "Consulenza e Brainstorming"
