@@ -323,7 +323,6 @@ h3 {
   flex:1;
   // min-width: 300px;
   // max-width: 500px;
-  padding-right: 1em;
   max-width: 700px;
 }
 
@@ -340,6 +339,7 @@ h3 {
 
 .hero-image {
   flex: 1;
+  padding-left: 1em;
   text-align: center;
   min-width: 300px;
   max-width: 500px;
