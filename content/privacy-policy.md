@@ -41,4 +41,4 @@ Potremmo aggiornare questa informativa sulla privacy di tanto in tanto. Ti invit
 
 ## Contatti
 
-Per qualsiasi domanda o chiarimento in merito a questa informativa sulla privacy, puoi contattarci all'indirizzo [info@manalisk.it](mailto:info@manalisk.it).
+Per qualsiasi domanda o chiarimento in merito a questa informativa sulla privacy, puoi contattarci all'indirizzo [info@basilisk.it](mailto:info@basilisk.it).
