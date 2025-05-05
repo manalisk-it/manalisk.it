@@ -34,3 +34,24 @@ canvas {
     font-weight: bold;
     color: #fff;
 }
+
+#ui #levelDisplay {
+    color: yellow; /* Evidenzia il livello */
+}
+
+#ui #powerupDisplay {
+    color: lightgreen; /* Evidenzia il powerup */
+    font-style: italic;
+}
+
+#ui #playerLevelDisplay {
+    color: gold;
+    font-weight: bold;
+}
+#ui #playerXPDisplay, #ui #playerXPToNextDisplay {
+    color: lightblue;
+}
+#ui #tempPowerupDisplay {
+    color: orange; /* Colore per powerup temporanei da nemici */
+    font-style: italic;
+}
