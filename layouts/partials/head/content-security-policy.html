@@ -1,2 +1,12 @@
 <!-- https://report-uri.com/home/generate -->
-<meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<!-- <meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"> -->
+<meta http-equiv="Content-Security-Policy" content="
+  script-src 'self';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  style-src-elem 'self' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  object-src 'none';
+  base-uri 'none';
+">
+
