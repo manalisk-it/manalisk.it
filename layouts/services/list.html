@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="container py-5">
     <h2 class="text-primary"><b>I Nostri Servizi</b></h2>
-    {{ range $index, $service := .Site.Data.services }}
+    {{ range $index, $service := .Page.Params.services }}
     <div style="margin-bottom: 5em; margin-top: 3em;" class="row align-items-start {{ if modBool $index 2 }} flex-row-reverse {{ end }}">
         <div class="col-md-6">
             <h3 style="margin-top: 0;">{{ .title }}</h3>

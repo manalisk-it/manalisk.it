@@ -21,10 +21,10 @@ enableEmoji = true
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = 'series'
-  author = "authors"
+#  tag = "tags"
+#  category = "categories"
+#  series = 'series'
+#  author = "authors"
 
 [sitemap]
   changefreq = "weekly"
