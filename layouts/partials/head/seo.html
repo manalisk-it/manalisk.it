@@ -1,4 +1,4 @@
-<title>{{ .Title }}</title>
+<title>{{ .Site.Title }} - {{ .Title }} - {{.Site.Params.shortDescription}}</title>
 
 {{ with .Description -}}
   <meta name="description" content="{{ . }}">

@@ -4,16 +4,15 @@
 
 <!-- Revision based on Google guide https://developers.google.com/search/docs/appearance/site-names#how-to-add-structured-data -->
 
-{{ with .Site.Params.webSite }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": {{ .name }},
-  {{ with .description -}}
+  "name": {{ .Site.Title }},
+  {{ with .Site.Params.description -}}
   "description": {{ . }},
   {{ end -}}
-  {{ with .image -}}
+  {{ with .Site.Params.mainMenuLogo -}}
   {{- with $image := resources.GetMatch . -}}
   {{- if ne $image.MediaType.SubType "svg" -}}
     {{- $image = $image.Resize "960x" -}}
@@ -21,15 +20,14 @@
   "image": {{ $image.Permalink }},
   {{ end -}}
   {{ end -}}
-  {{ with .copyrightHolder -}}
+  {{ with .Site.Author -}}
   "copyrightHolder": {
     "@type": "Organization",
-    "name": "{{ .name }}"
+    "name": "{{ . }}"
   },
   {{- end }}
-  {{ with .url -}}
+  {{ with .Site.BaseURL -}}
   "url": {{ . }}
   {{ end -}}
 }
 </script>
-{{ end }}

@@ -5,8 +5,9 @@
 # https://gohugo.io/templates/internal/#twitter-cards
 # https://schema.org/Thing
 # https://schema.org/Article
-description = "Potenzia il tuo business con l'Intelligenza Artificiale."
-images = ['images/manalisk.png','images/logo_bok.png','images/site-feature-image.png']
+description = "Team Manalisk: professionisti esperti di intelligenza artificiale (AI), con esperienza nell'integrazione delle nuove tecnologie in contesti aziendali"
+shortDescription = "Intelligenza Artificiale per il tuo business"
+images = ['images/manalisk.png']
 mainMenuLogo = "images/manalisk.png"
 
 # For favicons
@@ -16,12 +17,7 @@ themeColor = "#fff"
 # Alert
 alert = false
 alertDismissable = true
-alertText = "Introducing this new service! <a class=\"alert-link stretched-link\" href=\"https://salvus.site/\">Check out Total Security</a>"
-
-# Pre-footer
-footerAbout = true
-footerAboutTitle = "Few Words About Us"
-footerAboutText = "We protect your website so you can provide a safe environment to build trust and improve the user experience of your visitors.<br/><br/>Salvus Site is the partner that you can rely on for preventive and reactive cybersecurity."
+#alertText = "Introducing this new service! <a class=\"alert-link stretched-link\" href=\"https://salvus.site/\">Check out Total Security</a>"
 
 [options]
   bootStrapJs = true

@@ -1,7 +1,21 @@
 ---
 title: "Chi Siamo"
 draft: false
-layout: "about"
+layout: about
+params:
+  team:
+  - title: "Pier Paolo Tricomi"
+    description: > 
+      Ho conseguito un Ph.D. in AI & Cybersecurity all'Università di Padova, con esperienza di ricerca in Machine and Deep Learning, 
+      Data Analysis, e Privacy. Lavoro a stretto contatto con i clienti, traducendo esigenze di business in soluzioni innovative basate sull’AI.
+      Insegno da diversi anni ad aziende e università tematiche di intelligenza artificiale e Cybersecurity.
+    image: "images/PierPaoloTricomi.jpg"
+
+  - title: "Simeone Pizzi"
+    description: > 
+      Sono esperto di AI e Cybersecurity con esperienza nello sviluppo di soluzioni di sicurezza basate su LLM e infrastruttura cloud.
+      Sono appassionato dell'applicazione di tecnologie AI per la sicurezza e l'automazione.
+    image: "images/sime1.png"
 ---
 
 # Chi Siamo

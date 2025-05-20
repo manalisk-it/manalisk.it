@@ -1,8 +1,7 @@
 ---
 title: "Privacy Policy"
-description: " We do not use cookies and we do not collect any personal data."
+description: "Privacy Policy per il sito manalisk.it"
 draft: false
-tags: ["Privacy"]
 menu:
   footer:
     weight: 90
