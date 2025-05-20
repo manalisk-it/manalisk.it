@@ -46,3 +46,15 @@ params:
       richiedere competenze tecniche avanzate, e accessibili a tutte le imprese, grandi
       o piccole.
 ---
+
+## Cosa può fare l'AI per te?
+
+{{< lead class="mt-5">}}
+Sempre più aziende usano l'intelligenza artificiale per ottimizzare i processi, aumentare la produttività e innovare il proprio business.
+{{< /lead >}}
+
+{{< lead >}}
+*Vuoi scoprire come l'AI può aiutare la tua azienda?*
+Prenota una **call gratuita**: analizzeremo insieme le opportunità concrete per il tuo settore.
+{{< /lead >}}
+{{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-gratuita">}}

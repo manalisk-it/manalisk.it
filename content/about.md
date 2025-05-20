@@ -14,7 +14,7 @@ params:
   - title: "Simeone Pizzi"
     description: > 
       Sono esperto di AI e Cybersecurity con esperienza nello sviluppo di soluzioni di sicurezza basate su LLM e infrastruttura cloud.
-      Sono appassionato dell'applicazione di tecnologie AI per la sicurezza e l'automazione.
+      Sono appassionato dell'applicazione di tecnologie AI per la cybersecurity e l'automazione.
     image: "images/sime1.png"
 ---
 
