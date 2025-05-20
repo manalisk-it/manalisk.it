@@ -5,4 +5,4 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: sameorigin
-  Content-Security-Policy: script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'
+  Content-Security-Policy: script-src 'self' 'nonce-77245f1d7fb347a6bcfdd596183e9fae'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'

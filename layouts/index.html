@@ -19,7 +19,7 @@
     <div id="hero-text" class="hero-text hero-hidden">
     <h1 class="logo-text mons text-center home-title" >MANALISK</h1>
     <h2 class="mb-4 mons title text-center" >Potenzia il tuo business con l'AI! Offriamo<br> <span class="animated-gradient-text">Soluzioni AI Custom</span></h2>
-    <p class="lead text-muted mb-4 mx-1" style="text-align: justify;">Siamo dei professionisti specializzati in <b>Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)</b>. Grazie alle nostre tecnologie AI, <b>aiutiamo le aziende</b> a trasformare le sfide in opportunità di crescita.</p>
+    <p class="lead text-muted mb-4 mx-1" style="text-align: justify;">{{ .Page.Params.heroDescription | markdownify }}</p>
 
   </div>
   <div id="hero-image" class="hero-image hero-hidden2">
@@ -36,7 +36,7 @@
 </div> -->
 
 <section class="section container mb-3">
-  <h1 class="text-section-header text-center mb-5" style='color:#000'>Cosa può fare l'AI per te?</h1>
+  <h2 class="text-section-header text-center mb-5" style='color:#000'>Cosa può fare l'AI per te?</h1>
   <div class="text-center">
   <p class="lead " style="text-align: 
   center; ">Sempre più aziende usano l'intelligenza artificiale per ottimizzare i processi, aumentare la produttività e 
@@ -45,7 +45,7 @@
 <p class="lead mb-5"><i>Vuoi scoprire come l'AI può aiutare la tua azienda?</i>
 Prenota una <b>call gratuita</b>: analizzeremo insieme le opportunità concrete per il tuo settore.</p>
 
-<a href="/services" class="cta-button " href="/services">Prenota una Call Gratuita</a>
+<a class="cta-button " href="/prenota-una-chiamata-gratuita">Prenota una Call Gratuita</a>
 
   </div>
   
@@ -95,4 +95,64 @@ Prenota una <b>call gratuita</b>: analizzeremo insieme le opportunità concrete 
    {{ partial "contact-form" . }} 
 </section>-->
 
+
+{{ end }}
+{{ define "scripts" }}
+<script nonce="77245f1d7fb347a6bcfdd596183e9fae">
+  document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector('.animated-gradient-text');
+    const textsToCycle = [
+      {{- range .Page.Params.offers }}
+      "{{ . }}",
+      {{- end}}
+    ];
+    let currentIndex = 0;
+    let isAnimatingOut = false;
+  
+    function changeText() {
+      isAnimatingOut = true;
+      // Aggiungi una classe per l'animazione di uscita (es. fade-out, slide-up-out)
+      textElement.classList.add('text-fade-out'); // Dovrai definire questa classe in CSS
+  
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % textsToCycle.length;
+        textElement.textContent = textsToCycle[currentIndex];
+  
+        // Rimuovi la classe di uscita e aggiungi quella di entrata
+        textElement.classList.remove('text-fade-out');
+        textElement.classList.add('text-fade-in'); // Dovrai definire questa classe in CSS
+  
+        // Rimuovi la classe di entrata dopo che l'animazione è completata
+        // per permettere di rieseguirla correttamente
+        setTimeout(() => {
+          textElement.classList.remove('text-fade-in');
+          isAnimatingOut = false;
+        }, 400); // Durata dell'animazione di entrata
+  
+      }, 400); // Durata dell'animazione di uscita (deve corrispondere a quella definita in CSS)
+    }
+  
+    // Imposta il testo iniziale e l'animazione di entrata iniziale
+    if (textsToCycle.length > 0) {
+      textElement.textContent = textsToCycle[currentIndex];
+      // Simula un'animazione di entrata iniziale
+      setTimeout(() => {
+          textElement.style.opacity = '1';
+          textElement.style.transform = 'translateY(0)';
+          textElement.classList.add('text-fade-in'); // Applica l'animazione di entrata iniziale
+           setTimeout(() => {
+              textElement.classList.remove('text-fade-in');
+          }, 100); // Durata dell'animazione
+      }, 100); // Piccolo ritardo per assicurarsi che il DOM sia pronto
+    }
+  
+  
+    // Cambia il testo ogni X secondi
+    setInterval(() => {
+      if (!isAnimatingOut) { // Controlla per evitare sovrapposizioni di animazioni
+          changeText();
+      }
+    }, 4500); // Intervallo di cambio testo (es. 4 secondi)
+  });
+</script>
 {{ end }}

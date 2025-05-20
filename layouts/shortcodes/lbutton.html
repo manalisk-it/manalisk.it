@@ -1,0 +1,16 @@
+{{/*
+    Link Button Shortcode
+    
+    Create a link button
+  
+    Parameters:
+  
+      - "text" the text of the button
+      - "url" the link the button points to
+  
+    Example:
+  
+      {{< cbutton text="Login" url="https://example.org/login" >}}
+  
+*/}}
+<span class="btn-container"><a class="cta-button" href="{{ .Get "url"}}">{{ .Get "text"}}</a></span>

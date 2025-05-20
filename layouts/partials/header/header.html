@@ -113,11 +113,11 @@
           </ul>
         </div>
         {{ end }}
-
-        <div class="navbar-nav ms-auto"> <a href="/prenota-una-chiamata-gratuita/" class="cta-button-menu btn-sm btn-mobile-fit"> Prenota una Call Gratuita
-          </a>
+        {{ if default true .Page.Params.showBookingButton }}
+        <div class="navbar-nav ms-auto">
+          <a href="/prenota-una-chiamata-gratuita/" id="book-call-menu-button" class="cta-button-menu btn-sm btn-mobile-fit"> Prenota una Call Gratuita</a>
         </div>
-
+        {{ end }}
       </div>
     </div>
   </nav>
