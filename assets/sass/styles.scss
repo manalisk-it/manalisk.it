@@ -312,6 +312,34 @@ h3 {
   color: #ffffff;
 }
 
+.cta-button-menu {
+  background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */
+  color: white;
+  // font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 6px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* 🔥 Rimuove la sottolineatura */
+}
+
+.cta-button-menu:hover {
+  background: linear-gradient(135deg, #00c8e2, #0197a5);
+  box-shadow: 0 6px 16px rgba(0, 156, 168, 0.4); /* Appare subito senza transizione */
+  color: #ffffff;
+}
+
+.cta-button-menu:visited {
+  color: #ffffff;
+}
+
+.cta-button-menu:active {
+  transform: scale(0.98);
+  color: #ffffff;
+}
+
 
 .hero {
   display: flex;
@@ -551,4 +579,19 @@ h3 {
 .animated-gradient-text:not(.text-fade-in):not(.text-fade-out) {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+/* Stile per il pulsante nella navbar collassata */
+@media (max-width: 991.98px) { /* Breakpoint per navbar-expand-lg di Bootstrap 5 */
+  .navbar-collapse .btn-mobile-fit {
+    width: -webkit-fit-content; /* Per compatibilità con browser basati su WebKit come Chrome/Safari */
+    width: -moz-fit-content;    /* Per compatibilità con Firefox */
+    width: fit-content !important; /* Standard CSS, rende il bottone largo quanto il suo contenuto */
+    margin-left: auto;
+    margin-right: auto;
+    /* Opzionale: se vuoi un po' di margine attorno al bottone nel menu mobile */
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 0.5rem; */
+  }
 }

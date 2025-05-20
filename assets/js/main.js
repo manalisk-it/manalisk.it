@@ -29,10 +29,10 @@ window.addEventListener('load', () => {
       heroImage.classList.remove('hero-hidden2');
     }, 200);
 
-    setTimeout(() => {
-        heroButton.classList.add('hero-visible3');
-        heroButton.classList.remove('hero-hidden3');
-      }, 700);
+    // setTimeout(() => {
+    //     heroButton.classList.add('hero-visible3');
+    //     heroButton.classList.remove('hero-hidden3');
+    //   }, 700);
   });
 
 

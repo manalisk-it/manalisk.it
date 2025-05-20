@@ -30,15 +30,38 @@
 
 </section>
 
-
+<!-- 
 <div class="text-center">
 <a id="hero-button" href="/services" class="cta-button hero-hidden3" href="/services">Scopri i Nostri Servizi</a>
-</div>
+</div> -->
 
-<section class="section container my-3">
-  <h1 class="text-section-header text-center my-5" style='color:#000'>Cosa Offriamo</h1>
+<section class="section container mb-3">
+  <h1 class="text-section-header text-center mb-5" style='color:#000'>Cosa può fare l'AI per te?</h1>
+  <div class="text-center">
+  <p class="lead " style="text-align: 
+  center; ">Sempre più aziende usano l'intelligenza artificiale per ottimizzare i processi, aumentare la produttività e 
+  innovare il proprio business.
+
+<p class="lead mb-5"><i>Vuoi scoprire come l'AI può aiutare la tua azienda?</i>
+Prenota una <b>call gratuita</b>: analizzeremo insieme le opportunità concrete per il tuo settore.</p>
+
+<a href="/services" class="cta-button " href="/services">Prenota una Call Gratuita</a>
+
+  </div>
+  
+</section>
+
+
+
+<section class="section container" style="margin-top: 6em;">
+
+  <h2 class="text-section-header text-center my-5" style='color:#000'>I Nostri Pilastri</h2>
 
   {{ partial "features" . }}
+
+  <div class="text-center my-5">
+  <a  href="/services" class="cta-button" href="/services">Scopri i Nostri Servizi</a>
+    </div>
 </section>
 
 <!-- <section class="section container my-3">
@@ -57,13 +80,19 @@
   {{ partial "featured-pages" . }}
 </section> -->
 
-<section class="section container my-3 mx-auto">
+<div style="margin-top: 6em;">
+
+  {{ partial "contact" . }} 
+
+</div>
+
+<!-- <section class="section container mx-auto" style="margin-top: 6em;">
   <h1 class="text-section-header text-center my-5">Contattaci</h1>
 
   <p class="lead text-center mb-5"> Vuoi sapere di più? Mandaci un email a <a href="mailto:info@manalisk.it">info@manalisk.it</a>.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!</p>
   
 
-  <!-- {{ partial "contact-form" . }} -->
-</section>
+   {{ partial "contact-form" . }} 
+</section>-->
 
 {{ end }}

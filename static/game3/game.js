@@ -69,6 +69,13 @@ const HEALTH_RESTORE_AMOUNT = 25; // Quanta vita cura un cristallo
 // --- Aggiungi questa costante vicino all'inizio del file ---
 const GLOBAL_SCROLL_SPEED = 80; // Velocità (pixel/sec) con cui i drop scorrono a sinistra. Regola questo valore!
 
+// --- Costanti Specifiche per SpiderBoss ---
+const SPIDER_CONTACT_DAMAGE = 30;
+const SPIDER_WEB_PROJECTILE_COUNT = 12; // N. proiettili nella raggera
+const SPIDER_WEB_PROJECTILE_SPEED = 180;
+const SPIDER_WEB_PROJECTILE_DAMAGE = 5; // Danno basso, l'effetto è immobilizzare
+const SPIDER_IMMOBILIZE_DURATION = 2000; // 2 secondi
+
 const BOSS_SPECIFIC_POWERUP_CHANCE = 0.05; // 5% chance
 
 let notificationMessage = '';
@@ -386,7 +393,9 @@ class Player extends Entity {
         this.isBlinkDash = false; // Questo flag potrebbe diventare permanente
         this.shootExplosive = false;
         this.projectileEffects = []; // Effetti proiettile {type: 'gas', chance: 0.2}
-
+        this.isImmobilized = false;       // Nuovo: flag per immobilizzazione
+        this.immobilizeEndTime = 0;       // Nuovo: timestamp fine immobilizzazione
+        
 
         // Stato XP/Livello
         this.level = 1;
@@ -490,6 +499,22 @@ class Player extends Entity {
 
         // Aggiorna UI principale
         playerLevelDisplay.textContent = this.level;
+    }
+
+    // Nuovo metodo per immobilizzare il giocatore
+    immobilize(duration) {
+        if (this.isShieldActive) { // Lo scudo previene l'immobilizzazione
+            console.log("Immobilizzazione bloccata dallo scudo!");
+            return;
+        }
+        this.isImmobilized = true;
+        this.immobilizeEndTime = Date.now() + duration;
+        console.log(`Player IMMOBILIZZATO per ${duration / 1000}s!`);
+        // Opzionale: interrompi il dash se il player viene immobilizzato mentre dashava
+        if (this.isDashing) {
+            this.isDashing = false;
+            // this.speed = this.baseSpeed; // Se il dash modifica la velocità base
+        }
     }
 
     // Applica gli effetti basati sui livelli delle abilità
@@ -718,6 +743,30 @@ class Player extends Entity {
     
 
     update(deltaTime, keys, canvasWidth, canvasHeight, now) {
+         // --- Gestione Immobilizzazione (DA METTERE ALL'INIZIO DI UPDATE) ---
+        if (this.isImmobilized) {
+            if (now >= this.immobilizeEndTime) {
+                this.isImmobilized = false;
+                console.log("Player NON PIU' immobilizzato.");
+            } else {
+                // Se immobilizzato, permetti solo alcune azioni (es. sparare) o nessuna.
+                // Per ora, blocchiamo movimento e abilità tranne lo sparo base e ultimate.
+                if (keys['j'] || keys['J']) { // Permetti di sparare
+                    if (now - this.lastShotTime >= this.fireRateDelay) {
+                        this.shoot();
+                        this.lastShotTime = now;
+                    }
+                }
+                if (keys[' '] && this.canActivateUltimate) { // Permetti ultimate
+                   this.activateUltimate();
+                   this.canActivateUltimate = false;
+                }
+                // SALTA IL RESTO DELL'UPDATE (movimento, dash, scudo)
+                return;
+            }
+        }
+        // --- Fine Gestione Immobilizzazione ---
+        
         // --- Rigenerazione HP ---
         if (this.hpRegenRate > 0 && this.health < this.maxHealth) {
              if (now - this.lastRegenTime >= 1000) { // Ogni secondo
@@ -946,7 +995,28 @@ class Player extends Entity {
             context.stroke();
             context.lineWidth = 1;
         }
-         // Disegna barra vita sopra il giocatore? (Opzionale)
+
+         // --- NUOVO: Disegna Effetto Ragnatela se Immobilizzato ---
+        if (this.isImmobilized) {
+            ctx.save(); // Salva stato contesto
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.7)'; // Bianco semi-trasparente
+            ctx.lineWidth = 1.5;
+            const centerX = this.x + this.width / 2;
+            const centerY = this.y + this.height / 2;
+            const radius = Math.max(this.width, this.height) * 0.8; // Raggio della ragnatela
+
+            // Disegna alcune linee casuali per un effetto ragnatela semplice
+            for (let i = 0; i < 6; i++) { // 6 fili di ragnatela
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY); // Inizia dal centro del giocatore
+                const angle = (i / 6) * Math.PI * 2 + (Math.random() - 0.5) * 0.5; // Angoli distribuiti con un po' di casualità
+                ctx.lineTo(centerX + Math.cos(angle) * radius, centerY + Math.sin(angle) * radius);
+                ctx.stroke();
+            }
+            // Potresti aggiungere cerchi concentrici per un effetto più completo
+            ctx.restore(); // Ripristina stato contesto
+        }
+        // --- FINE EFFETTO RAGNATELA ---
     }
 
 
@@ -1029,11 +1099,13 @@ class Projectile extends Entity {
 
 // --- Classe Proiettile Nemico ---
 class EnemyProjectile extends Entity {
-    constructor(x, y, vx, vy, damage, size = 5, color = ENEMY_PROJECTILE_COLOR) {
+    constructor(x, y, vx, vy, damage, size = 5, color = ENEMY_PROJECTILE_COLOR,  appliesImmobilize = false, immobilizeDuration = 0) {
         super(x, y, size, size, color);
         this.vx = vx; // Velocità X
         this.vy = vy; // Velocità Y
         this.damage = damage;
+        this.appliesImmobilize = appliesImmobilize;     // Nuova proprietà
+        this.immobilizeDuration = immobilizeDuration; // Nuova proprietà
     }
 
     update(deltaTime) {
@@ -1708,57 +1780,388 @@ class MinionEnemy extends Enemy {
 // --- Boss Livello 1: Ragno (Spider) ---
 // (Implementazione scheletro, da definire meglio attacchi)
 class SpiderBoss extends Boss {
-     constructor(x, y) {
-        super(x, y, 60, 60, 800, 70, 'darkgrey', 500, 'Ragno Gigante');
-        this.attackCooldown = 3000;
+    constructor(x, y) {
+        super(x, y, 70, 70, 1200, 60, 'darkslategrey', 600, 'Ragno Tessitore'); // Nome aggiornato
+        this.attackCooldown = 2500;
+        this.shootCooldown = 1800;
+        this.lastMajorActionTime = 0;
+        this.lastShotTime = 0;
 
-        this.attackPatterns = [
-             { name: 'Web Shot', init: () => { this.attackState = { fired: false }; }, execute: this.webShot.bind(this) },
-             { name: 'Jump Attack', init: () => { this.attackState = { jumping: false, jumpHeight: -300, gravity: 800, vx: 0, vy: 0 }; }, execute: this.jumpAttack.bind(this) }
-        ];
-     }
+        this.webSpeed = 700; // Filo più veloce
 
-    webShot(deltaTime, now) {
-        // Spara un proiettile "ragnatela" che rallenta al contatto?
-         if (!this.attackState.fired && player) {
-            console.log("Spider shoots web!");
-             const dx = player.x - this.x;
-             const dy = player.y - this.y;
-             const dist = Math.sqrt(dx*dx + dy*dy);
-             const speed = 220;
-             const vx = (dx/dist) * speed;
-             const vy = (dy/dist) * speed;
-             // Crea un proiettile speciale che applica slow?
-             enemyProjectiles.push(new EnemyProjectile(this.x + this.width/2, this.y + this.height/2, vx, vy, 5, 10, 'white'));
-             this.attackState.fired = true;
-         }
-        return this.attackState.fired; // Attacco istantaneo (il proiettile fa il resto)
+        // Proprietà per il movimento generale
+        this.currentMovementAction = 'idle'; // 'idle', 'jumping', 'swingingSequence'
+        this.actionEndTime = 0;
+
+        // Proprietà per il salto (se lo vuoi mantenere, altrimenti puoi rimuoverle)
+        this.jumpVy = 0;
+        this.jumpGravity = 900;
+        this.jumpInitialVy = -400;
+        this.jumpHorizontalSpeed = 120;
+
+        // Proprietà per la sequenza di dondolio
+        this.fixedWebShootX = 0;  // X fissa per il lancio del filo verticale iniziale
+        this.swingState = 'none';   // 'none', 'shootingWebUp', 'retractingToCeiling', 'hanging',
+                                    // 'aimingDiagonalWeb', 'shootingDiagonalWeb', 
+                                    // 'swingingOnDiagonal', 'detachingFall'
+        this.webLine = {
+            active: false,
+            startX: 0, startY: 0,
+            endX: 0, endY: 0,
+            targetX: 0, targetY: 0, // Aggiunto per chiarezza dove il filo sta andando
+            maxLength: 0
+        };
+        this.webAnchor = { x: 0, y: 0 };     // Punto di ancoraggio del filo ATTUALE (verticale o diagonale)
+        this.isAttachedToWeb = false;        // True se il ragno è appeso/dondola attivamente
+        this.hangHeight = canvas.height / 2 - this.height / 2; // << RAGNO SALE A METÀ SCHERMO
+        this.hangDurationEndTime = 0;        // Quando finisce la fase 'hanging'
+
+        this.swingPivot = { x: 0, y: 0 };    // Punto di ancoraggio per il dondolio diagonale
+        this.swingRadius = 0;
+        this.swingAngle = 0;
+        this.swingAngularVelocity = 0;
+        this.swingMaxAngle = Math.PI / 2.8; // Angolo dondolio
     }
 
-     jumpAttack(deltaTime, now) {
-         let state = this.attackState;
-          if (!state.jumping) {
-             // Inizio salto: imposta velocità iniziale X verso il giocatore e Y verso l'alto
-             state.vx = player ? Math.sign(player.x - this.x) * this.speed * 1.5 : 0;
-             state.vy = state.jumpHeight; // Velocità verticale iniziale (negativa = su)
-             state.jumping = true;
-             console.log("Spider jumps!");
-         }
+    // Sovrascriviamo l'update del Boss base dopo la fase di ingresso
+    update(deltaTime, now) {
+        if (this.entryPhase) {
+            super.update(deltaTime, now);
+            if (!this.entryPhase) {
+                this.lastMajorActionTime = now;
+                this.lastShotTime = now;
+                this.actionEndTime = now; // Pronto per scegliere la prima azione
+                this.chooseNextMajorAction(now);
+            }
+            return;
+        }
 
-         // Applica movimento e gravità
-         this.x += state.vx * deltaTime;
-         this.y += state.vy * deltaTime;
-         state.vy += state.gravity * deltaTime; // Accelera verso il basso
+        if (this.isPetrified || this.isCocooned) return;
 
-         // Condizione di fine salto (es. tocca il "pavimento" virtuale o torna a Y iniziale?)
-         // Per semplicità, termina dopo un certo tempo o quando Y > canvas.height
-         if (this.y > canvas.height - this.height) {
-             this.y = canvas.height - this.height; // Atterra sul fondo
-              console.log("Spider landed.");
-             return true; // Attacco finito
-         }
-          return false; // Non finito finché in aria
-     }
+        if (now - this.lastShotTime >= this.shootCooldown && player) {
+            // Può sparare anche se appeso o dondola (tranne durante la caduta o il lancio del filo)
+            if (this.swingState === 'hanging' || this.swingState === 'swingingOnDiagonal' || this.currentMovementAction === 'idle' || this.currentMovementAction === 'jumping') {
+                this.performRadialWebShot();
+                this.lastShotTime = now;
+            }
+        }
+
+        if (now >= this.actionEndTime && this.swingState !== 'detachingFall') { // detachingFall ha la sua logica di fine
+            this.chooseNextMajorAction(now);
+        }
+        
+        switch (this.currentMovementAction) {
+            case 'jumping':
+                this.updateJump(deltaTime);
+                break;
+            case 'swingingSequence':
+                this.updateSwingingSequence(deltaTime, now);
+                break;
+            case 'idle':
+            default:
+                if (player) {
+                    const targetX = player.x - this.width / 2;
+                    if (this.x < targetX - 5) this.x += this.speed * 0.3 * deltaTime;
+                    else if (this.x > targetX + 5) this.x -= this.speed * 0.3 * deltaTime;
+                }
+                break;
+        }
+        this.x = Math.max(0, Math.min(canvas.width - this.width, this.x));
+        if (!this.isInGasCloud && this.slowFactor < 1.0) this.slowFactor = 1.0;
+        this.isInGasCloud = false;
+    }
+
+    chooseNextMajorAction(now) {
+        const rand = Math.random();
+        // Resetta stati del dondolio precedente
+        this.isAttachedToWeb = false;
+        this.webLine.active = false;
+
+        if (rand < 0.45 && this.swingState === 'none') { // Salto (solo se non è già in una sequenza di dondolio)
+            this.currentMovementAction = 'jumping';
+            this.y = Math.min(this.y, canvas.height - this.height -1);
+            this.jumpVy = this.jumpInitialVy;
+            this.actionEndTime = now + 2000 + Math.random() * 1000;
+            console.log("Ragno: Inizia Salto Gigante!");
+        } else if (this.swingState === 'none' || this.swingState === 'detachingFall') { // Inizia sequenza di dondolio
+            this.currentMovementAction = 'swingingSequence';
+            this.swingState = 'shootingWebUp';
+            this.fixedWebShootX = this.x + this.width / 2;
+            
+            this.webLine.startX = this.fixedWebShootX;
+            this.webLine.startY = this.y; // Dalla cima del ragno
+            this.webLine.endX = this.fixedWebShootX;
+            this.webLine.endY = this.y;
+            this.webLine.targetX = this.fixedWebShootX; // Target per il filo verticale
+            this.webLine.targetY = 0;                   // Soffitto
+            this.webLine.active = true;
+            this.webLine.maxLength = this.y - this.webLine.targetY; // Distanza dal soffitto
+            this.actionEndTime = now + 8000; // Timeout per l'intera sequenza
+            console.log("Ragno: Inizia Dondolio (Lancia Filo SU)");
+        } else { // Altrimenti, idle
+            this.currentMovementAction = 'idle';
+            this.swingState = 'none';
+            this.actionEndTime = now + 1500 + Math.random() * 1000;
+            console.log("Ragno: Idle/Riposizionamento.");
+        }
+        this.lastMajorActionTime = now;
+    }
+
+    
+   updateSwingingSequence(deltaTime, now) {
+        const bossCenterX = this.x + this.width / 2;
+        const bossTopY = this.y;
+        const bossCenterY = this.y + this.height / 2;
+
+        switch (this.swingState) {
+            case 'shootingWebUp':
+                // Il filo (webLine.endY) sale verso webLine.targetY (0)
+                this.webLine.endY -= this.webSpeed * deltaTime;
+                // webLine.endX rimane fisso a fixedWebShootX (impostato in chooseNextMajorAction)
+                this.webLine.endX = this.fixedWebShootX;
+
+
+                if (this.webLine.endY <= this.webLine.targetY) {
+                    this.webLine.endY = this.webLine.targetY; // Toccato soffitto
+                    this.webAnchor.x = this.fixedWebShootX;   // Ancora è dove il filo ha toccato
+                    this.webAnchor.y = this.webLine.targetY;
+                    this.isAttachedToWeb = true; // Consideralo attaccato per la ritirata
+                    this.webLine.active = false; // Il "proiettile" filo ha finito
+                    this.swingState = 'retractingToCeiling';
+                    console.log("Ragno: Filo SU ancorato a ("+this.webAnchor.x.toFixed(0)+","+this.webAnchor.y.toFixed(0)+"), inizia risalita.");
+                }
+                break;
+
+            case 'retractingToCeiling':
+                // Il ragno sale verso il punto di stazionamento (metà schermo)
+                let targetHangActualY = this.hangHeight; // Y assoluta a cui appendendersi
+                let dyToHang = targetHangActualY - this.y;
+                let dxToHang = this.webAnchor.x - bossCenterX; // Deve allinearsi sotto l'ancora
+
+                const distToHangPoint = Math.sqrt(dxToHang * dxToHang + dyToHang * dyToHang);
+                const retractionSpeed = this.webSpeed * 0.9; // Velocità di risalita
+
+                if (distToHangPoint < retractionSpeed * deltaTime * 1.1 || distToHangPoint === 0) {
+                    this.y = targetHangActualY;
+                    this.x = this.webAnchor.x - this.width / 2;
+                    this.swingState = 'hanging';
+                    this.hangDurationEndTime = now + 2000 + Math.random() * 1500; // Appeso 2-3.5 sec
+                    console.log("Ragno: Appeso a metà schermo sotto ("+this.webAnchor.x.toFixed(0)+","+this.webAnchor.y.toFixed(0)+").");
+                } else {
+                    this.y += (dyToHang / distToHangPoint) * retractionSpeed * deltaTime;
+                    this.x += (dxToHang / distToHangPoint) * retractionSpeed * deltaTime;
+                }
+                break;
+
+            case 'hanging':
+                // Rimane appeso, X allineata con webAnchor, Y a hangHeight
+                this.x = this.webAnchor.x - this.width / 2;
+                this.y = this.hangHeight;
+                if (now >= this.hangDurationEndTime) {
+                    this.swingState = 'aimingDiagonalWeb';
+                    console.log("Ragno: Fine stazionamento, mira per filo diagonale.");
+                }
+                break;
+
+            case 'aimingDiagonalWeb':
+                // Scegli un nuovo punto di ancoraggio sul soffitto per il dondolio
+                let newAnchorX = player ? player.x + (Math.random() - 0.5) * 150 : canvas.width * Math.random();
+                newAnchorX = Math.max(this.width, Math.min(canvas.width - this.width, newAnchorX)); // Clamp
+
+                this.webLine.startX = bossCenterX; // Il nuovo filo parte dal ragno (che è appeso)
+                this.webLine.startY = bossTopY;
+                this.webLine.endX = bossCenterX;
+                this.webLine.endY = bossTopY;
+                this.webLine.targetX = newAnchorX; // Nuovo target X sul soffitto
+                this.webLine.targetY = 0;          // Y è sempre il soffitto
+                this.webLine.active = true;
+                this.webLine.maxLength = Math.sqrt(Math.pow(newAnchorX - bossCenterX, 2) + Math.pow(0 - bossTopY, 2));
+                this.swingState = 'shootingDiagonalWeb';
+                console.log("Ragno: Lancia filo diagonale verso x:", newAnchorX.toFixed(0));
+                break;
+
+            case 'shootingDiagonalWeb':
+                // Il ragno è ancora appeso al primo filo (webAnchor) mentre spara il secondo
+                this.x = this.webAnchor.x - this.width / 2;
+                this.y = this.hangHeight;
+
+                // Estendi il secondo filo (webLine) verso webLine.targetX, webLine.targetY
+                let dxDiag = this.webLine.targetX - this.webLine.endX;
+                let dyDiag = this.webLine.targetY - this.webLine.endY;
+                let distDiag = Math.sqrt(dxDiag*dxDiag + dyDiag*dyDiag);
+
+                if (distDiag < this.webSpeed * deltaTime * 1.1 || distDiag === 0) {
+                    this.webLine.endX = this.webLine.targetX;
+                    this.webLine.endY = this.webLine.targetY;
+                    
+                    // Il primo filo sparisce (non è più disegnato, isAttachedToWeb = false)
+                    this.isAttachedToWeb = false; 
+                    
+                    // Il nuovo filo diagonale diventa il perno del dondolio
+                    this.swingPivot.x = this.webLine.targetX;
+                    this.swingPivot.y = this.webLine.targetY;
+                    // Calcola il raggio e l'angolo iniziale per il dondolio
+                    // Ora il ragno è alla fine del nuovo filo, quindi usiamo la sua posizione attuale
+                    // (che è ancora quella di 'hanging') per calcolare raggio e angolo.
+                    let currentDrawBossCenterX = this.x + this.width/2; // Posizione da cui parte il dondolio
+                    let currentDrawBossCenterY = this.y + this.height/2;
+                    this.swingRadius = Math.sqrt(Math.pow(currentDrawBossCenterX - this.swingPivot.x, 2) + Math.pow(currentDrawBossCenterY - this.swingPivot.y, 2));
+                    this.swingAngle = Math.atan2(currentDrawBossCenterX - this.swingPivot.x, currentDrawBossCenterY - this.swingPivot.y);
+                    this.swingAngularVelocity = (currentDrawBossCenterX > this.swingPivot.x ? -0.6 : 0.6) * (0.8 + Math.random() * 0.4) ; // Spinta iniziale decisa
+
+                    this.webLine.active = false; // Il filo proiettile ha finito
+                    this.swingState = 'swingingOnDiagonal';
+                    this.actionEndTime = now + 3500 + Math.random() * 1500; // Durata dondolio 3.5-5s
+                    console.log("Ragno: Ancorato per dondolio diagonale. Raggio:", this.swingRadius.toFixed(0), "Angolo:", this.swingAngle.toFixed(2));
+                } else {
+                    this.webLine.endX += (dxDiag / distDiag) * this.webSpeed * deltaTime;
+                    this.webLine.endY += (dyDiag / distDiag) * this.webSpeed * deltaTime;
+                }
+                break;
+
+            case 'swingingOnDiagonal':
+                const G_SWING = 0.3; // "Gravità" effettiva per il dondolio
+                this.swingAngularAcceleration = -(G_SWING / this.swingRadius) * Math.sin(this.swingAngle);
+                this.swingAngularVelocity += this.swingAngularAcceleration * deltaTime * 25; // Moltiplicatore per sensazione
+                this.swingAngularVelocity *= 0.995; // Smorzamento
+
+                // Limita velocità angolare per evitare dondolii troppo veloci/instabili
+                const MAX_ANGULAR_VELOCITY = Math.PI * 0.8; // Circa 144 gradi/sec
+                this.swingAngularVelocity = Math.max(-MAX_ANGULAR_VELOCITY, Math.min(MAX_ANGULAR_VELOCITY, this.swingAngularVelocity));
+
+                this.swingAngle += this.swingAngularVelocity * deltaTime;
+
+                this.x = this.swingPivot.x + this.swingRadius * Math.sin(this.swingAngle) - this.width / 2;
+                this.y = this.swingPivot.y + this.swingRadius * Math.cos(this.swingAngle) - this.height / 2;
+
+                // Condizione di fine dondolio: una sola oscillazione completa o tempo scaduto
+                // Per "una sola oscillazione" potremmo tracciare quando l'angolo inverte segno dopo aver superato un certo limite
+                // O più semplicemente, dopo un certo tempo e se ha raggiunto un'estensione.
+                if (now >= this.actionEndTime || (Math.abs(this.swingAngle) > this.swingMaxAngle * 0.8 && Math.sign(this.swingAngularVelocity) !== Math.sign(this.swingAngle) && this.swingAngle * this.swingAngularVelocity < 0 ) ) {
+                     // (L'ultima condizione è per quando l'angolo è ampio e la velocità sta per invertire = massima estensione)
+                    if (now > this.lastMajorActionTime + 2000) { // Assicurati che dondoli per un po'
+                        this.swingState = 'detachingFall';
+                        this.jumpVy = this.swingAngularVelocity * this.swingRadius * 0.2; // Spinta basata sulla velocità angolare
+                        this.jumpVx = -this.swingAngularVelocity * this.swingRadius * 0.1 * Math.cos(this.swingAngle); // Spinta laterale
+                        console.log("Ragno: Fine dondolio, si stacca per cadere.");
+                    }
+                }
+                break;
+
+            case 'detachingFall':
+                this.jumpVy += this.jumpGravity * deltaTime;
+                this.y += this.jumpVy * deltaTime;
+                if (this.jumpVx) { // Applica spinta laterale se presente
+                    this.x += this.jumpVx * deltaTime;
+                    this.jumpVx *= 0.98; // Smorza spinta laterale
+                }
+
+                if (this.y + this.height >= canvas.height) {
+                    this.y = canvas.height - this.height;
+                    this.jumpVy = 0;
+                    this.jumpVx = 0;
+                    this.swingState = 'none';
+                    this.currentMovementAction = 'idle';
+                    this.actionEndTime = now + 1000 + Math.random() * 1000;
+                    console.log("Ragno: Atterrato dopo caduta.");
+                }
+                break;
+        } // Fine switch (this.swingState)
+    } // Fine updateSwingingSequence
+
+    updateJump(deltaTime) {
+        this.jumpVy += this.jumpGravity * deltaTime;
+        this.y += this.jumpVy * deltaTime;
+
+        if (player) { // Muoviti orizzontalmente verso il giocatore durante il salto
+            const directionX = Math.sign(player.x - this.x);
+            this.x += directionX * this.jumpHorizontalSpeed * deltaTime * this.slowFactor;
+        }
+
+        // Atterraggio
+        if (this.y + this.height >= canvas.height) {
+            this.y = canvas.height - this.height; // Atterra sul fondo
+            this.jumpVy = 0;
+            // Non cambiare actionEndTime qui, lascia che scada naturalmente o venga interrotto da chooseNextMajorAction
+            if (this.currentMovementAction === 'jumping') { // Se stava ancora saltando formalmente
+                console.log("Ragno: Atterrato.");
+                // Potrebbe passare a 'idle' brevemente
+                // this.currentMovementAction = 'idle';
+                // this.actionEndTime = Date.now() + 500; // Breve pausa
+            }
+        }
+    }
+
+    updateSwing(deltaTime) {
+        if (!this.isAttachedToWeb) return;
+
+        // Fisica del pendolo semplificata
+        const gravityEffect = 0.1; // Intensità della "gravità" che riporta al centro
+        let angularAcceleration = -gravityEffect * Math.sin(this.swingAngle) / (this.webLength / 100); // Accel. angolare
+        this.swingAngularVelocity += angularAcceleration * deltaTime;
+        this.swingAngularVelocity *= 0.99; // Smorzamento per non dondolare all'infinito
+        this.swingAngle += this.swingAngularVelocity * deltaTime;
+
+        // Limita l'angolo massimo di dondolio
+        this.swingAngle = Math.max(-this.swingMaxAngle, Math.min(this.swingMaxAngle, this.swingAngle));
+
+        // Aggiorna posizione basata sull'angolo e lunghezza del filo
+        this.x = this.webAnchor.x - (this.webLength * Math.sin(this.swingAngle)) - this.width / 2;
+        this.y = this.webAnchor.y + (this.webLength * Math.cos(this.swingAngle));
+    }
+
+    performRadialWebShot() {
+        console.log(`${this.bossName} spara RAGGERA DI RAGNATELE!`);
+        const numProjectiles = SPIDER_WEB_PROJECTILE_COUNT;
+        const angleStep = (Math.PI * 2) / numProjectiles; // Angolo tra ogni proiettile
+
+        for (let i = 0; i < numProjectiles; i++) {
+            const angle = i * angleStep;
+            const projVx = Math.cos(angle) * SPIDER_WEB_PROJECTILE_SPEED;
+            const projVy = Math.sin(angle) * SPIDER_WEB_PROJECTILE_SPEED;
+
+            enemyProjectiles.push(new EnemyProjectile(
+                this.x + this.width / 2 - 3,  // Centro del boss (considerando piccola dim proiettile)
+                this.y + this.height / 2 - 3,
+                projVx,
+                projVy,
+                SPIDER_WEB_PROJECTILE_DAMAGE,
+                6,                         // Dimensione proiettile
+                '#EEEEEE',                 // Colore proiettile (bianco sporco per ragnatela)
+                true,                      // appliesImmobilize = true
+                SPIDER_IMMOBILIZE_DURATION // Durata immobilizzazione
+            ));
+        }
+    }
+
+    draw(context) {
+        super.draw(context); // Chiama Boss.draw() che disegna barra vita + entità boss
+
+        const bossCenterX = this.x + this.width / 2;
+        const bossTopY = this.y;
+        const bossCenterY = this.y + this.height / 2;
+
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#E0E0E0'; // Filo bianco-grigio
+
+        if (this.webLine.active) { // Filo in fase di lancio (verticale o diagonale)
+            ctx.beginPath();
+            ctx.moveTo(bossCenterX, bossTopY); // Parte dalla cima del ragno
+            ctx.lineTo(this.webLine.endX, this.webLine.endY); // Va verso la punta del filo
+            ctx.stroke();
+        } else if (this.isAttachedToWeb && this.swingState === 'hanging') { // Appeso verticalmente
+            ctx.beginPath();
+            ctx.moveTo(this.webAnchor.x, this.webAnchor.y); // Dal soffitto
+            ctx.lineTo(bossCenterX, bossTopY);              // Alla cima del ragno
+            ctx.stroke();
+        } else if (this.swingState === 'swingingOnDiagonal') { // Dondola sul filo diagonale
+            ctx.beginPath();
+            ctx.moveTo(this.swingPivot.x, this.swingPivot.y); // Dal perno diagonale
+            ctx.lineTo(bossCenterX, bossCenterY);             // Al centro del ragno
+            ctx.stroke();
+        }
+        ctx.lineWidth = 1; // Resetta
+    }
 }
 
 
@@ -2455,6 +2858,12 @@ function handleCollisions() {
         if (checkCollision(ep, player)) {
             ep.markedForDeletion = true; // Proiettile nemico scompare all'hit
             player.takeDamage(ep.damage, ep); // Passa proiettile come source
+
+            // --- NUOVO: Applica Immobilizzazione ---
+            if (ep.appliesImmobilize && typeof player.immobilize === 'function') {
+                player.immobilize(ep.immobilizeDuration);
+            }
+            // ---
         }
     });
 
@@ -2470,7 +2879,23 @@ function handleCollisions() {
     
             // --- CONTROLLA PRIMA I CASI SPECIFICI ---
     
-            if (target instanceof KamikazeEnemy && target.state === 'dashing') {
+            if (target instanceof SpiderBoss) {
+                console.log(`Collisione con Ragno Gigante! Danno: ${SPIDER_CONTACT_DAMAGE}`);
+                player.takeDamage(SPIDER_CONTACT_DAMAGE, target); // Danno da contatto specifico
+                // Logica di rimbalzo per il player (opzionale, ma consigliata)
+                const dx = player.x + player.width / 2 - (target.x + target.width / 2);
+                const dy = player.y + player.height / 2 - (target.y + target.height / 2);
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const bounceDistance = 40; // Rimbalzo un po' più forte
+                if (dist > 0) {
+                    player.x += (dx / dist) * bounceDistance;
+                    player.y += (dy / dist) * bounceDistance;
+                } else { player.x -= bounceDistance; } // Fallback
+                player.x = Math.max(0, Math.min(canvas.width - player.width, player.x)); // Clamp x
+                player.y = Math.max(0, Math.min(canvas.height - player.height, player.y)); // Clamp y
+
+            }
+            else if (target instanceof KamikazeEnemy && target.state === 'dashing') {
                 // --- COLLISIONE CON KAMIKAZE IN CARICA ---
                 console.log(`Collision with Dashing Kamikaze!`);
                 const kamikazeDamage = 30; // Danno elevato!

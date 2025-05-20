@@ -9,6 +9,25 @@
 
   image: "/images/documents.png"
 
+- title: "Gestione Documentale Intelligente"
+  description: >
+    Siamo esperti nel gestire i documenti in modo intelligente usando l'AI. Ad esempio:
+    
+    - possiamo rendere il **know how aziendale** facilmente accessibile
+
+    - Rendiamo i tuoi **documenti facili da interrogare**
+    
+    - **estraiamo dati** da essi in modo automatico
+
+
+     ai tuoi dipendenti tramite **chatbot**, aumentando la loro 
+    produttività e semplificando le operazioni complesse. Rendiamo i tuoi **documenti facili da interrogare**,
+     o **estraiamo dati** da essi in modo automatico, preciso, e strutturato. Ti aiutiamo a **cercare le 
+     informazioni rilevanti in grosse banche dati**, e le processiamo per velocizzare il tuo lavoro. Se cerchi
+      un **RAG** (Retrieval-Augmented Generation) per la tua azienda, sei nel posto giusto!
+
+  image: "/images/documents.png"
+
 - title: "Servizi AI su misura"
   description: >
     Offriamo soluzioni AI su misura per **ottimizzare i processi aziendali**, **automatizzare attività ripetitive** 
