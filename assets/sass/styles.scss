@@ -135,10 +135,11 @@ h3 {
 }
 
 
-.text-section-header{
+.text-section-header, .home .container h2{
   color: #004154 !important;
   // font-weight: bold;
   font-size: 42px;
+  text-align: center;
 }
 
 .feather-social {
@@ -284,6 +285,8 @@ h3 {
 }
 
 @import 'book-call.scss';
+@import 'home.scss';
+@import 'about.scss';
 
 .cta-button {
   background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */
