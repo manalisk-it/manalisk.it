@@ -1,19 +1,32 @@
 {{/* layouts/shortcodes/galleriaAvanzata.html */}}
-{{ $images := .Get "gallery_images" | default (.Page.Params.gallery_images) }}
+{{ $imagesData := .Get "gallery_images" | default .Page.Params.gallery_images }}
 
-{{ if $images }}
+{{ if $imagesData }}
 <div class="gallery-container-advanced">
-    {{ range $images }}
-    <div class="gallery-item-advanced">
-        <div class="image-wrapper">
-            <img src="{{ .src | relURL }}" alt="{{ .alt }}">
+    {{ range $imagesData }}
+        {{/* Prova a ottenere l'immagine dalla cartella 'assets' */}}
+        {{ $imageResource := resources.Get .src }}
+
+        {{ if $imageResource }}
+        <div class="gallery-item-advanced">
+            <div class="image-wrapper">
+                {{/* Ora usi $imageResource.RelPermalink o $imageResource.Permalink */}}
+                {{/* Puoi anche processare l'immagine qui, es: */}}
+                {{/* $processedImage := $imageResource.Resize "300x" */}}
+                {{/* <img src="{{ $processedImage.RelPermalink }}" alt="{{ .alt }}"> */}}
+                <img src="{{ $imageResource.RelPermalink }}" alt="{{ .alt }}">
+            </div>
+            <span class="line-connector"></span>
+            <p class="caption">{{ .caption | markdownify }}</p>
         </div>
-        {{/* La linea è ora qui, come fratello di image-wrapper */}}
-        <span class="line-connector"></span>
-        <p class="caption">{{ .caption  }}</p>
-    </div>
+        {{ else }}
+            <div class="gallery-item-advanced">
+                <p style="color: red;">Errore: Immagine non trovata in assets: "{{ .src }}"</p>
+                <p style="color: red;">Assicurati che il percorso sia corretto e relativo alla cartella 'assets' (es. "images/nomefile.png").</p>
+            </div>
+        {{ end }}
     {{ end }}
 </div>
 {{ else }}
-<p>Errore: Nessuna immagine fornita per la galleriaAvanzata.</p>
+<p>Errore: Nessuna immagine fornita per la galleriaAvanzata (parametro 'gallery_images' mancante).</p>
 {{ end }}
