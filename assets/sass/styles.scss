@@ -597,3 +597,14 @@ h3 {
     /* margin-bottom: 0.5rem; */
   }
 }
+
+
+.call-background{
+    background-image: linear-gradient(
+        180deg,
+        #F0F2F5 0%, /* Grigio chiaro */
+        #ffffff 60%,
+        #ffffff 100%
+    );
+    min-height: 100vh;
+}

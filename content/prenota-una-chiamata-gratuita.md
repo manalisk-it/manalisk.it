@@ -4,17 +4,34 @@ description: "Pagina di prenotazione per chiamata gratuita"
 layout: "book-call"
 params:
   showBookingButton: false
+page_class: "call-background"
+gallery_images:
+  - src: "images/analysis.png"
+    alt: "Icona di analisi del business"
+    caption: "1. Analizziamo il tuo Business"
+  - src: "/images/idea.png"
+    alt: "Icona di opportunità per il business"
+    caption: "2. Identifichiamo le Opportunità"
+  - src: "/images/roadmap.png"
+    alt: "Icona per i prossimi passi del business"
+    caption: "3. Definiamo i Prossimi Passi"
+  - src: "/images/q&a.png"
+    alt: "Icona di risposta alle domande"
+    caption: "4. Rispondiamo alle tue Domande"
 ---
 
-# Prenota una chiamata
 
-## AI in Azienda: Come iniziare?
+# AI in Azienda? Prenota una chiamata!
+
+## Scopri i Primi Passi in una Call Gratuita
+
+
+{{< gallery-call  >}}
+
 {{< lead >}}
-Scopri i Primi Passi in una Call Gratuita
-{{< /lead >}}
-
 Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti. Analizziamo i tuoi strumenti
 e processi aziendali e ti diciamo cosa puoi migliorare grazie all'**Intelligenza Artificiale**.
+{{< /lead >}}
 
 ### Cosa otterrai dalla call?
 

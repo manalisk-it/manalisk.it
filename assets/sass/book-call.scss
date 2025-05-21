@@ -3,16 +3,24 @@
     h1 {
       margin-top: 0.2em;
       text-align: center;
+      font-size: 3em;
     }
   
     h2 {
       margin-bottom: 0.1em;
       margin-top: 0.2em;
       text-align: center;
-      font-size: 3em;
       font-weight: 500;
     }
+
+    h3 {
+      margin-bottom: 1em;
+    }
   
+    li{
+      margin-bottom: 1em;
+    }
+
     .lead {
       text-align: center;
       align-self: center;
@@ -25,4 +33,174 @@
       margin-top: 2em;
       margin-bottom: 5em;
     }
+
+    
   }
+  /* assets/css/galleria-avanzata.css */
+
+/* === INIZIO BLOCCO ANIMAZIONE IMMAGINI === */
+
+/* 1. STATO INIZIALE DI BASE (applicato sempre, senza transizione definita qui) */
+.gallery-item-advanced,
+.gallery-item-advanced .line-connector {
+    opacity: 0;                          /* Iniziano invisibili */
+    transform: translateX(-40px);        /* Iniziano spostate a SINISTRA di 40px */
+    will-change: opacity, transform;     /* Ottimizzazione per il browser */
+}
+
+/* 2. CLASSE PER ABILITARE LA TRANSIZIONE FLUIDA (aggiunta da JS quando serve animazione) */
+.gallery-item-advanced.with-transition,
+.gallery-item-advanced .line-connector.with-transition {
+    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Definisce la transizione */
+}
+
+/* 3. STATO FINALE/VISIBILE (quando la classe .is-visible viene aggiunta da JS) */
+.gallery-item-advanced.is-visible,
+.gallery-item-advanced .line-connector.is-visible {
+    opacity: 1;
+    transform: translateX(0); /* Tornano alla loro posizione originale e diventano visibili */
+}
+
+/* === FINE BLOCCO ANIMAZIONE IMMAGINI === */
+
+/* --- Stili Strutturali per le Linee e Layout (Questi DEVONO rimanere e sono separati dall'animazione) --- */
+/* Esempio di come la linea appare strutturalmente: */
+@media (min-width: 992px) { /* O il tuo breakpoint per 4 colonne */
+    .gallery-container-advanced { /* Assicurati che i gap e altre proprietà di layout siano qui */
+        display: grid; /* Esempio */
+        /* gap: 20px;  Definisci il tuo gap qui o tramite la variabile --grid-column-gap se la usi*/
+        /* ... altre proprietà del contenitore ... */
+    }
+    .gallery-item-advanced:not(:nth-child(4n)):not(:last-child) .line-connector {
+        display: block; /* Cruciale per la visibilità strutturale della linea */
+    }
+
+    /* Assicurati che .line-connector abbia il suo posizionamento base
+       (position:absolute, left, top, width, height, ecc. come definito in precedenza per farla funzionare)
+       Questo posizionamento NON deve includere opacity o transform per l'animazione,
+       solo la sua geometria e il display:none di default se non sovrascritto. */
+    .line-connector {
+        /* Esempio delle proprietà di posizionamento della linea che dovresti già avere: */
+        /* position: absolute; */
+        /* height: var(--line-height, 3px); */
+        /* background-color: var(--line-color, #888); */
+        /* top: var(--image-radius, 75px); */
+        /* transform: translateY(-50%); // Questo è per il centraggio verticale, diverso da quello dell'animazione */
+        /* left: calc(50% + var(--image-radius, 75px)); */
+        /* width: calc(100% - var(--image-actual-width, 150px) + var(--grid-column-gap, 20px)); */
+        /* z-index: 0; */
+        display: none; /* Di default nascosta, a meno che una media query non la mostri */
+    }
+}
+/* ... altre media query per il layout a 2 e 1 colonna e per gestire il display:none delle .line-connector ... */
+.gallery-container-advanced {
+    display: grid;
+    gap: 20px; /* Spazio tra le celle della griglia */
+    padding: 10px;
+    justify-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.gallery-item-advanced {
+    position: relative; /* Contesto di posizionamento per la linea */
+    text-align: center;
+    width: 100%; /* Occupa tutta la cella della griglia */
+    /* max-width: 200px; Rimosso o commentato se 1fr deve dettare la larghezza pienamente */
+}
+
+.image-wrapper {
+    width: 150px;   /* Larghezza fissa dell'immagine */
+    height: 150px;  /* Altezza fissa dell'immagine */
+    margin: 0 auto; /* Centra l'image-wrapper all'interno di .gallery-item-advanced */
+    position: relative; /* Necessario per lo z-index */
+    z-index: 1;         /* Assicura che l'immagine (e il suo bordo) stia sopra la linea */
+}
+
+.gallery-item-advanced img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007f8a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    /* Aggiungi un colore di sfondo se le tue immagini potrebbero avere trasparenze
+       e non vuoi che la linea si veda sotto. */
+    background-color: white; /* O il colore di sfondo della tua pagina */
+}
+
+.gallery-item-advanced .caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.line-connector {
+    display: none;
+    position: absolute;
+    height: 3px;
+    background-color: #03a3b8;
+    /* Posizionamento Verticale:
+       75px è metà dell'altezza dell'image-wrapper (150px / 2).
+       Questo allinea la linea al centro verticale dell'immagine. */
+    top: 75px;
+    transform: translateY(-50%); /* Centratura verticale precisa */
+
+    /* Posizionamento Orizzontale e Larghezza:
+       'left' posiziona l'inizio della linea.
+       'width' definisce quanto si estende.
+       Il 100% qui si riferisce a .gallery-item-advanced (la cella della griglia).
+       150px è la larghezza dell'immagine.
+       75px è il raggio dell'immagine.
+       20px è il 'gap' della griglia.
+    */
+    left: calc(50% + 75px); /* Inizia dal bordo destro del cerchio dell'immagine */
+    width: calc((100% - 150px) + 20px);
+    /* Spiegazione della larghezza:
+       (100% - 150px) / 2  ==> Questo è lo spazio vuoto su UN lato dell'immagine
+                                 all'interno della sua cella .gallery-item-advanced
+                                 (cioè, la distanza dal bordo dell'immagine al bordo della cella).
+       + 20px                ==> Aggiungiamo la larghezza del 'gap' della griglia.
+
+       Risultato: La linea parte dal bordo destro dell'immagine corrente,
+                  attraversa lo spazio rimanente nella sua cella,
+                  e attraversa l'intero 'gap', fermandosi quindi al
+                  bordo sinistro della *cella* successiva.
+                  La parte della linea che entra nella cella successiva sarà
+                  nascosta dietro l'immagine successiva grazie allo z-index.
+    */
+    z-index: 0; /* Dietro .image-wrapper (che ha z-index: 1) */
+}
+
+/* --- LAYOUT RESPONSIVE E LOGICA LINEA (INVARIATO) --- */
+
+/* Default per schermi grandi: 4 colonne E MOSTRA LA LINEA */
+@media (min-width: 992px) {
+    .gallery-container-advanced {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery-item-advanced:not(:nth-child(4n)):not(:last-child) .line-connector {
+        display: block;
+    }
+
+}
+
+/* Schermi medi: 2 colonne, NESSUNA LINEA */
+@media (max-width: 991px) and (min-width: 600px) {
+    .gallery-container-advanced {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .line-connector {
+        display: none;
+    }
+}
+
+/* Schermi piccoli: 1 colonna, NESSUNA LINEA */
+@media (max-width: 599px) {
+    .gallery-container-advanced {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .line-connector {
+        display: none;
+    }
+}

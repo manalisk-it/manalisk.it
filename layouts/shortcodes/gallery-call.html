@@ -1,0 +1,19 @@
+{{/* layouts/shortcodes/galleriaAvanzata.html */}}
+{{ $images := .Get "gallery_images" | default (.Page.Params.gallery_images) }}
+
+{{ if $images }}
+<div class="gallery-container-advanced">
+    {{ range $images }}
+    <div class="gallery-item-advanced">
+        <div class="image-wrapper">
+            <img src="{{ .src | relURL }}" alt="{{ .alt }}">
+        </div>
+        {{/* La linea è ora qui, come fratello di image-wrapper */}}
+        <span class="line-connector"></span>
+        <p class="caption">{{ .caption  }}</p>
+    </div>
+    {{ end }}
+</div>
+{{ else }}
+<p>Errore: Nessuna immagine fornita per la galleriaAvanzata.</p>
+{{ end }}
