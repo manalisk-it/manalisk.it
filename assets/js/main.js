@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = Array.from(gallery.querySelectorAll('.gallery-item-advanced'));
     if (items.length === 0) return;
 
-    const DELAY_FIRST_IMAGE = 500;
-    const DELAY_START_SUCCESSIVE = 1500;
-    const INTERVAL_BETWEEN_SUCCESSIVE = 1000;
+    const DELAY_FIRST_IMAGE = 0;
+    const DELAY_START_SUCCESSIVE = 500;
+    const INTERVAL_BETWEEN_SUCCESSIVE = 500;
 
     function resetElementsState() {
         items.forEach(item => {

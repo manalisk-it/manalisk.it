@@ -23,7 +23,15 @@ gallery_images:
 
 # AI in Azienda? Prenota una chiamata!
 
-## Scopri i Primi Passi in una Call Gratuita
+{{< lead class="catchphrase my-4" >}}
+Scopri i Primi Passi in una Call Gratuita
+{{< /lead >}}
+
+{{< lead class="mb-5">}}
+*"Non restare a guardare la rivoluzione AI. Diventane protagonista!"*
+{{< /lead >}}
+
+{{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
 
 
 {{< gallery-call  >}}
@@ -41,11 +49,6 @@ e processi aziendali e ti diciamo cosa puoi migliorare grazie all'**Intelligenza
 * **Focus e Chiarezza:** Ottieni una visione strategica e risposte concrete, ottimizzando il tuo tempo.
 
 Durante la call analizzeremo le tue esigenze, identificheremo le opportunità, ti daremo suggerimenti concreti, e risponderemo alle tue domande!
-
-{{< lead class="my-3">}}
-*"Non restare a guardare la rivoluzione AI. Diventane protagonista!"*
-{{< /lead >}}
-{{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
 
 ## Preferisci un'email?
 
