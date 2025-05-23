@@ -1,0 +1,17 @@
+{{/*
+    Card Shortcode
+    
+    Create a centered link button
+  
+    Parameters:
+
+      - "class" additional classes
+      - "icon"
+      - "text"
+*/}}
+<span class="card-subtitle {{ .Get "class" }}">
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather">
+    <use href="/images/feather/feather-sprite.svg#{{ .Get "icon" }}" />
+  </svg>
+  <span>{{ .Get "text" }}</span>
+</span>

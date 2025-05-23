@@ -611,3 +611,23 @@ h3 {
     );
     min-height: 100vh;
 }
+
+.card-subtitle {
+
+  margin-right: 1em;
+
+  * {
+    vertical-align: text-bottom;
+  }
+
+  svg {
+    vertical-align: baseline;
+  }
+
+}
+
+.card-text {
+  p {
+    margin-bottom: 0.6em;
+  }
+}

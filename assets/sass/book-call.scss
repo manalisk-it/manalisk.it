@@ -1,8 +1,8 @@
 .book-call {
 
     h1 {
-      margin: 0.5em 0em 1em 0;
-
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
       color: #004154;
       font-weight: bold;
       font-size: 3em;
@@ -11,12 +11,12 @@
     h2 {
         font-size: 2rem;
         font-weight: 500;
+        margin-top: 1.5em;
     }
 
     h1, h2 {
-      margin-top: 0.2em;
-      margin-bottom: 0.2em;
       text-align: center;
+      color: #004154;
     }
 
     h3 {

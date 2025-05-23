@@ -1,0 +1,12 @@
+{{/*
+    Card Shortcode
+    
+    Create a centered link button
+  
+    Parameters:
+
+      - "class" additional classes
+*/}}
+<div class="card-text {{ .Get "class" }}">
+  {{ .Inner | .Page.RenderString }}
+</div>

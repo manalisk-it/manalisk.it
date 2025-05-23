@@ -52,6 +52,6 @@ Durante la call analizzeremo le tue esigenze, identificheremo le opportunità, t
 
 ## Preferisci un'email?
 
-{{< lead class="mt-5">}}
+{{< lead class="mt-3">}}
 Scrivici a [info@manalisk.it](mailto:info@manalisk.it) e ti risponderemo al più presto.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!
 {{< /lead >}}

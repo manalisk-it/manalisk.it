@@ -1,0 +1,18 @@
+{{/*
+    Lead Shortcode
+    
+    Create a centered link button
+  
+    Parameters:
+  
+      - "el" the type of the element. Defaults to "h3"
+      - "class" the additional classes. Defaults to none
+    Example:
+  
+      {{< lead el="h2" >}}
+      This is the **text** of the lead
+      {{< /lead >}}
+  
+*/}}
+{{- $el := compare.Default "h3" ( .Get "el")}}
+{{ printf "<%s class=\"card-title %s\">%s</%s>" $el (.Get "class" | default "") (.Inner | .Page.RenderString) $el | safeHTML }}
