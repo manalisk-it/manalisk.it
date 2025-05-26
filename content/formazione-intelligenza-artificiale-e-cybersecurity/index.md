@@ -20,6 +20,10 @@ title: Formazione Intelligenza Artificiale e Cybersecurity
 Progettiamo e realizziamo corsi di formazione pensati per aziende, università, ITS e professionisti che desiderano aggiornare o potenziare le proprie competenze.
 Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze specifiche di ogni realtà.
 
+Abbiamo una solida esperienza nella formazione su argomenti complessi come l'intelligenza artificiale e la cybersecurity, maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
+
+Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva per rendere accessibili anche i temi più avanzati. Progettiamo corsi chiari, pratici e adattabili alle esigenze di chi partecipa, con l'obiettivo di offrire strumenti applicabili nel lavoro quotidiano.
+
 Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
 Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
 
