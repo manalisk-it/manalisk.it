@@ -57,4 +57,4 @@ Sempre più aziende usano l'intelligenza artificiale per ottimizzare i processi,
 *Vuoi scoprire come l'AI può aiutare la tua azienda?*
 Prenota una **call gratuita**: analizzeremo insieme le opportunità concrete per il tuo settore.
 {{< /lead >}}
-{{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-gratuita">}}
+{{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-consulenza-gratuita">}}
