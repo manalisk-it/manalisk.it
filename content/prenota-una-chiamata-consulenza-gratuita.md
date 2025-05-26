@@ -20,7 +20,6 @@ gallery_images:
     caption: "4. Rispondiamo alle tue Domande"
 ---
 
-
 # AI in Azienda? Prenota una chiamata!
 
 {{< lead class="catchphrase my-4" >}}

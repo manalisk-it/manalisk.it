@@ -15,4 +15,4 @@
   
 */}}
 {{- $el := compare.Default "p" ( .Get "el")}}
-{{ printf "<%s class=\"lead %s\">%s</%s>" $el (.Get "class") (.Inner | .Page.RenderString) $el | safeHTML }}
+{{ printf "<%s class=\"lead %s\">%s</%s>" $el (.Get "class" | default "") (.Inner | .Page.RenderString) $el | safeHTML }}

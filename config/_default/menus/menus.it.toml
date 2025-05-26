@@ -12,10 +12,15 @@ title = "Scopri di più sulla nostra missione"
 
 [[main]]
 name = "Servizi"
-url = "/services/"
+url = "services"
 weight = 30
 title = "Scopri i nostri servizi"
 
+[[main]]
+name = "Formazione"
+url = "formazione-intelligenza-artificiale-e-cybersecurity"
+weight = 31
+title = "Scopri i nostri corsi di formazione AI e Cybersecurity"
 #[[main]]
 #identifier = "blog"
 #name = "Blog"

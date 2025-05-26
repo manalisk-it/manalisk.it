@@ -269,24 +269,23 @@ h3 {
 }
 
 
-.teamheaders {
-  h1 {
+h1 {
       margin: 0.5em 0em 1em 0;
 
       color: #004154;
-      font-weight: bold;
+      font-weight: 500;
   }
 
   h2 {
     margin: 1em 0em 1em 0;
     color: #004154;
-    font-weight: bold;
-}
+    font-weight: 500;
 }
 
 @import 'book-call.scss';
 @import 'home.scss';
 @import 'about.scss';
+@import 'services.scss';
 
 .cta-button {
   background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */

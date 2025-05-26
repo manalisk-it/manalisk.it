@@ -41,7 +41,3 @@ Ci impegniamo a:
 - **Favorire la crescita**: aiutiamo le aziende a scalare e a ottenere un vantaggio competitivo attraverso l'AI.
 
 Con la nostra esperienza e passione per l'innovazione, guidiamo i nostri clienti nel futuro dell'intelligenza artificiale.
-
-
-
-

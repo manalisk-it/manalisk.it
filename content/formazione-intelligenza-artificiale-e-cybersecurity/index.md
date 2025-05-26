@@ -1,5 +1,6 @@
 ---
-draft: true
+draft: false
+title: Formazione Intelligenza Artificiale e Cybersecurity
 # corsi previsti
 ## AI
 
@@ -7,19 +8,26 @@ draft: true
 ## * machine learning classico (sklearn)
 ## * nlp (preprocessing, b-o-w, tf-idf, svm, naive-bayes )
 ## * reti neurali per NLP (embedding, reti neurali, transformers pre-trainati)
+
+# Corsi avanzati, per il momento rimossi, da aggiungere con descrizione
+## * Reti Neurali per Dati Testuali - 12h - €1500 - 5-15 partecipanti - livello avanzato
+## * Ethical Hacking - 12h - €1500 - 5-15 partecipanti - livello avanzato
+
 ---
 
-# Corsi di formazione
+# Formazione su misura per aziende e professionisti
 
-Offriamo corsi di formazione per aziende, università, ITS, e professionisti.
+Progettiamo e realizziamo corsi di formazione pensati per aziende, università, ITS e professionisti che desiderano aggiornare o potenziare le proprie competenze.
+Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze specifiche di ogni realtà.
 
-Sono previsti degli sconti in caso di acquisti di pacchetti.
+Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
+Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
 
-I prezzi sono indicativi.
+## Corsi Intelligenza Artificiale
 
-> TODO: ampliare
+L'intelligenza artificiale sta trasformando profondamente processi, prodotti e modelli di business. I nostri corsi sono pensati per aiutare aziende e professionisti a comprendere e utilizzare le tecnologie AI in modo strategico e operativo, anche senza una formazione tecnica di partenza.
 
-## Corsi AI
+Dall'introduzione ai modelli generativi fino alle applicazioni pratiche nei diversi settori, offriamo percorsi chiari, concreti e aggiornati, con un taglio orientato ai risultati.
 
 {{< card >}}
   {{< card-title >}}Intelligenza Artificiale per il Business{{< /card-title >}}
@@ -45,28 +53,11 @@ Attraverso esempi reali, casi d'uso, e sessioni interattive, esploreremo le appl
   {{< /card-text >}}
 {{< /card >}}
 
-{{< card >}}
-  {{< card-title >}}Reti Neurali per Dati Testuali{{< /card-title >}}
-  {{< card-subtitle icon=clock text=12h class="text-muted">}}
-  {{< card-subtitle icon=user text="5-15 partecipanti" class="text-muted">}}
-  {{< card-subtitle icon=credit-card text="€1500" class="text-muted">}}
-  {{< card-subtitle icon=box text="Livello Avanzato" class="text-muted">}}
-  {{< card-text class="mt-3" >}}
-
-> TODO
-
-**Pre-requisiti**: Conoscenza base di python e delle librerie *pandas, numpy, matplotlib, seaborn*. Questi requisiti sono coperti dai corsi ...
-
-**Target**: sviluppatori, tecnici informatici
-
-**Argomenti trattati**:
-> TODO
-
-{{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Reti Neurali per Dati Testuali" class="mt-4 d-block text-end">}}
-  {{< /card-text >}}
-{{< /card >}}
-
 ## Corsi Cybersecurity
+
+La sicurezza digitale è una priorità trasversale che riguarda ogni organizzazione, a prescindere dalle dimensioni o dal settore di appartenenza. I nostri corsi di cybersecurity offrono le conoscenze fondamentali per riconoscere i principali rischi informatici e adottare misure di protezione efficaci.
+
+Con un approccio accessibile e concreto, aiutiamo aziende e professionisti a sviluppare una cultura della sicurezza, indispensabile per operare in un contesto digitale in continua evoluzione.
 
 {{< card >}}
   {{< card-title >}}Elementi di Sicurezza Digitale{{< /card-title >}}
@@ -93,28 +84,11 @@ In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore 
   {{< /card-text >}}
 {{< /card >}}
 
-{{< card >}}
-  {{< card-title >}}Ethical Hacking{{< /card-title >}}
-  {{< card-subtitle icon=clock text=12h >}}
-  {{< card-subtitle icon=user text="5-15 partecipanti" class="text-muted">}}
-  {{< card-subtitle icon=credit-card text="€1500" class="text-muted">}}
-  {{< card-subtitle icon=box text="Livello Avanzato" class="text-muted">}}
-  {{< card-text class="mt-3">}}
-
-> TODO
-
-**Pre-requisiti**: Conoscenza base di python e delle librerie *pandas, numpy, matplotlib, seaborn*. Questi requisiti sono coperti dai corsi ...
-
-**Target**: sviluppatori, tecnici informatici
-
-**Argomenti trattati**:
-> TODO
-
-
-{{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Elementi di Sicurezza Digitale" class="mt-4 d-block text-end">}}
-  {{< /card-text >}}
-{{< /card >}}
-
 ## Corsi Personalizzati
 
-> TODO
+Offriamo corsi personalizzati progettati per rispondere a specifiche esigenze tecniche e operative, in ambito AI e sicurezza informatica.
+I nostri percorsi sono strutturati per adattarsi al livello di competenza dei partecipanti -- da moduli introduttivi per team trasversali fino a sessioni avanzate per tecnici e specialisti.
+
+Collaboriamo con aziende e professionisti per definire contenuti mirati, esempi reali e casi d'uso rilevanti, garantendo un trasferimento di competenze immediatamente applicabile.
+
+Contattaci per definire insieme il programma formativo più adatto al tuo contesto. Scrivici a [info@manalisk.it](mailto:info@manalisk.it) e ti risponderemo al più presto.
