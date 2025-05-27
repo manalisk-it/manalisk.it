@@ -2,7 +2,7 @@
 title: "Consulenza Intelligenza Artificiale Padova"
 description: "Scopri i servizi di consulenza AI a Padova: soluzioni intelligenti su misura per aziende. Parla con i nostri esperti in intelligenza artificiale."
 layout: seo-page
-draft: true
+draft: false
 ---
 
 # Consulenza in Intelligenza Artificiale a Padova  
@@ -25,25 +25,27 @@ Non sei di Padova? Non preoccuparti, lavoriamo in remoto in tutto il mondo!
 
 {{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
 
-<!-- > TODO: Sei interessato alla cybersecurity? Visita la nostra [pagina dedicata](../services). -->
+<!-- TODO: Sei interessato alla cybersecurity? Visita la nostra [pagina dedicata](/services). -->
 
 
 ## Chi siamo
 
-Siamo dei **liberi professionisti esperti di intelligenza artificiale**, sia in ambito accademico che industriale. Siamo entrambi laureati Magistrali a pieni voti in Informatica all'Università di Padova. Grazie a un dottorato di ricerca in ambito AI e Cybersecurity, e anni di esperienza lavorativa e di ricerca, promuoviamo il **trasferimento tecnologico**: portiamo in azienda le soluzioni più recenti e performanti sviluppate in ambito accademico. I nostri anni di esperienza passati in Italia e all'estero ci permettono di adattare i modelli più recenti ai bisogni aziendali, nella **forma e misura richiesta dal cliente**. 
+Siamo dei **liberi professionisti esperti di intelligenza artificiale**, sia in ambito accademico che industriale. Siamo entrambi laureati Magistrali a pieni voti in Informatica all'Università di Padova. Uno di noi ha conseguito un dottorato di ricerca in AI e Cybersecurity, mentre l’altro ha collaborato come assistente ricercatore presso lo stesso ateneo.
 
-Se vuoi sapere di più su di Manalisk e la nostra missione, [clicca qui](../about).
+Questa combinazione di ricerca, sviluppo e applicazione pratica ci consente di portare in azienda le soluzioni più recenti e performanti provenienti dal mondo accademico. I nostri anni di esperienza passati in Italia e all'estero ci permettono di adattare i modelli più recenti ai bisogni aziendali, nella **forma e misura richieste dal cliente**. 
+
+Se vuoi sapere di più su di Manalisk e la nostra missione, [clicca qui](/about).
 
 ## Cosa Facciamo
 
-Aiutiamo le aziende a integrare soluzioni di intelligenza artificiale nei loro processi produttivi e strumenti. Ad esempio:
+Aiutiamo le aziende a integrare soluzioni di intelligenza artificiale nei loro strumenti e processi. Ad esempio:
 
 - Svolgiamo l'**analisi dei processi aziendali** e identifichiamo opportunità di automazione
-- Sviluppiamo **modelli di machine learning** e implementiamo **AI generativa** per migliorare strumenti e processi aziendali
-- Ottimizzazione della **gestione documentale** e dei flussi informativi, per aumentare la produttività dell'azienda
+- Sviluppiamo e alleniamo **modelli di machine learning su misura**, implementando anche **AI generativa** per migliorare strumenti e processi aziendali
+- Ottimiziamo la **gestione documentale** e i flussi informativi in azienda, per aumentarne la produttività
 - **Integriamo strumenti AI** nei sistemi esistenti, rinnovando e migliorando il business
 
-Se vuoi sapere di più sui servizi di Manalisk e cosa possiamo offrirti, [visita la pagina dedicata](../services).
+Se vuoi sapere di più sui servizi di Manalisk e cosa possiamo offrirti, [visita la pagina dedicata](/services).
 
 
 ## Come Lavoriamo
@@ -51,44 +53,40 @@ Se vuoi sapere di più sui servizi di Manalisk e cosa possiamo offrirti, [visita
 Per portare l'Intelligenza Artificiale in azienda, in Manalisk seguiamo un approccio strutturato e convalidato nel tempo:
 
 1. **Ascoltiamo le esigenze del cliente** e analizziamo il contesto in cui opera
-2. **Identifichiamo delle opportunità** per migliorare il suo business grazie all'AI
-3. **Proponiamo una soluzione** su misura
-4. **Implementiamo la soluzione** e forniamo supporto operativo
+1. **Identifichiamo delle opportunità** per migliorare il suo business grazie all'AI
+1. **Proponiamo una soluzione** su misura
+1. **Implementiamo la soluzione** e forniamo supporto operativo
 
-Se sei indeciso o non sai come procedere, non preoccuparti: la prima consulenza te la regaliamo noi! **Prenota subito una call gratuita** e senza impegno [cliccando qui](../prenota-una-chiamata-consulenza-gratuita/)! 
+Se sei indeciso o non sai come procedere, non preoccuparti: **Prenota subito una call gratuita** e senza impegno [cliccando qui](/prenota-una-chiamata-consulenza-gratuita/), e ti aiuteremo a chiarire le idee!
 
 ## La nostra Esperienza
 
-Nel nostro percorso professionale, abbiamo sviluppato diverse soluzioni di intelligenza artificiale per **migliorare i processi aziendali e risolvere problemi complessi**. Ad esempio:
+Nel nostro percorso professionale, maturato anche in contesti aziendali precedenti, abbiamo sviluppato diverse soluzioni di intelligenza artificiale per **migliorare i processi aziendali e risolvere problemi complessi**. Tra i progetti a cui abbiamo partecipato:
 
 - Abbiamo creato un modello di machine learning per **classificare automaticamente documenti** bancari di numerose tipologie, aumentando significativamente la produttività dei dipendenti.
 - Abbiamo sviluppato una soluzione basata su LLM (Large Language Models, es. ChatGPT) per **migliorare i processi logistici** di un'azienda nel settore della produzione. Questo le ha permesso di automatizzare e velocizzare attività ripetitive, **ottimizzando l'impiego delle risorse e riducendo i costi** di gestione.  
 - Abbiamo progettato e realizzato un modello basato su tecnologia OCR (estrazione di testo dalle immagini) in grado di **estrarre informazioni strutturate** a partire da immagini di dominio specifico, consentendo all'azienda di **velocizzare il suo core business** e avere un grande **vantaggio rispetto ai competitor**. 
 
-In ogni azienda ci sono processi ottimizzabili. Aumenta la produttività dei tuoi dipendenti e riduci gli sprechi di tempo. Diventa anche tu parte della rivoluzione AI!
+Oggi mettiamo questa esperienza al servizio dei nostri clienti. Abbiamo visto da vicino l’impatto dell’AI nei contesti aziendali. Ora lo portiamo nella tua realtà, con soluzioni pensate per generare risultati tangibili.
 
 ## Perché Scegliere Manalisk
 
 Crediamo che le competenze del nostro team si combinino perfettamente per offrire il miglior servizio alle aziende. Proponiamo:
 
 - **Competenze trasversali**: abbiamo esperienze in diversi settori come **processi produttivi, logistica, servizi cloud, gestione documentale, e sicurezza informatica**, e lavoriamo con diverse tipologie di dati (testo, numeri, immagini, audio).
-- **Prezzi competitivi**: lavoriamo come liberi professionisti, senza costi di struttura e massimizzando l'utilizzo del budget disponibile.
-- **Presenza locale e globale**: siamo attivi a Padova e provincia, operando spesso presso la sede del cliente, ma la nostra esperienza di collaborazioni soprattutto estere ci permette di lavorare efficientemente da remoto. 
+- **Prezzi competitivi**: seguiamo il motto "work smarter, not harder", e grazie alla nostra esperienza proponiamo soluzioni efficaci a misura di budget.
+- **Presenza locale e globale**: siamo attivi a Padova e provincia, operando spesso presso la sede del cliente, ma la nostra esperienza di collaborazioni soprattutto estere ci permette di lavorare efficientemente anche da remoto. 
 - **Esperienza internazionale**: abbiamo collaborato con **aziende e università estere**, ottenendo una visione ampia sulle possibilità di innovazione e valorizzazione delle risorse.
-- **Didattica e divulgazione**: insegniamo in **Università, ITS e aziende**, promuovendo la diffusione dell'intelligenza artificiale e formando nuovi talenti.
-
-
-
+- **Didattica e divulgazione**: abbiamo insegnato, e insegniamo tuttora, in **Università, ITS e aziende**, promuovendo la diffusione dell'intelligenza artificiale e formando nuovi talenti.
 
 ## Cerchi della Formazione?
 
-Vorresti portare l'AI in azienda ma pensi di non essere pronto? Spesso iniziamo le nostre collaborazioni con le aziende partendo dalla formazione. Conoscere questi strumenti darà a te e ai tuoi dipendenti diverse idee su come innovare. Proponiamo diversi corsi, anche su misura, pensati per:
-- Manager, dipendenti, decision maker, e amministrativi
+Vorresti portare l'AI in azienda ma pensi di non essere pronto? Spesso iniziamo le nostre collaborazioni con le aziende partendo proprio dalla formazione. Conoscere questi strumenti darà a te e ai tuoi dipendenti diverse spunti su cosa sia possibile innovare. Proponiamo diversi corsi, anche su misura, pensati per:
+- Manager, dipendenti, decision maker, e personale amministrativo
 - Team tecnici e operativi
 - Istituzioni e scuole professionali
 
-Visita la nostra [pagina dedicata alla formazione](../formazione-intelligenza-artificiale-e-cybersecurity/) per saperne di più!
-
+Visita la nostra [pagina dedicata alla formazione](/formazione-intelligenza-artificiale-e-cybersecurity/) per saperne di più!
 
 %%%SPLIT%%%
 
@@ -106,12 +104,12 @@ In molte aziende, soprattutto nel tessuto imprenditoriale di Padova e provincia,
 
 Grazie all’uso avanzato di **modelli predittivi, algoritmi di machine learning e intelligenza artificiale**, siamo in grado di analizzare in profondità i flussi di lavoro esistenti, identificare colli di bottiglia e proporre soluzioni personalizzate per ogni realtà aziendale.
 
-Con il nostro servizio di **consulenza AI per l’automazione dei processi**, le imprese possono:
+Con il nostro servizio di **consulenza AI per l’automazione dei processi** a Padova, le imprese possono:
 
-* **Snellire i flussi di lavoro** grazie a sistemi automatizzati su misura per il settore di riferimento;
+* **Snellire i flussi di lavoro** grazie a sistemi automatizzati su misura per l'azienda;
 * **Ridurre drasticamente gli errori manuali**, aumentando la precisione e l'affidabilità dei dati gestiti;
 * **Automatizzare attività ripetitive** come l'inserimento dati, la gestione documentale, l'invio di email o notifiche interne;
-* **Migliorare l’esperienza cliente** grazie a **chatbot intelligenti basati su ChatGPT** o tecnologie NLP simili, capaci di rispondere in modo naturale e immediato 24/7.
+* **Migliorare l’esperienza cliente** grazie a **chatbot intelligenti basati su ChatGPT**, LLM, o tecnologie NLP simili, capaci di rispondere in modo naturale e veloce 24/7.
 
 Intervenire oggi sull’automazione dei processi significa non solo guadagnare competitività, ma anche **costruire un modello di business più agile e scalabile**. La nostra esperienza nell’**implementazione di soluzioni AI a Padova** ci permette di accompagnare le imprese in un percorso di trasformazione digitale concreto e misurabile.
 
@@ -127,7 +125,7 @@ Attraverso strumenti avanzati di **analisi dei dati, machine learning e visualiz
 * Le dinamiche interne dei processi aziendali;
 * Le inefficienze operative che limitano la produttività.
 
-Il nostro approccio è basato sull’**integrazione di dashboard aziendali personalizzate**, accessibili anche da mobile, e **report automatici intelligenti**, che consentono una lettura chiara, sintetica e in tempo reale delle performance aziendali. Questo consente al management di prendere **decisioni rapide, consapevoli e basate sui dati** (*data-driven decision making*).
+Il nostro approccio è basato su **report automatici intelligenti**, che consentono una lettura chiara, sintetica e in tempo reale delle performance aziendali. Questo consente al management di prendere **decisioni rapide, consapevoli e basate sui dati** (*data-driven decision making*).
 
 Tra le tecnologie e gli strumenti che utilizziamo:
 
@@ -136,8 +134,6 @@ Tra le tecnologie e gli strumenti che utilizziamo:
 * **KPI predittivi basati sull’intelligenza artificiale**, che permettono di anticipare trend, criticità e opportunità, agendo in modo proattivo.
 
 Investire oggi nella valorizzazione dei dati significa **potenziare la competitività dell’impresa**, ottimizzare le strategie aziendali e creare nuove fonti di valore.
-
-
 
 ### ChatGPT e modelli linguistici: più valore alla comunicazione aziendale con l’Intelligenza Artificiale
 
