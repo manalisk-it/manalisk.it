@@ -23,6 +23,8 @@ Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze
 Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
 Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
 
+
+
 ## Corsi Intelligenza Artificiale
 
 L'intelligenza artificiale sta trasformando profondamente processi, prodotti e modelli di business. I nostri corsi sono pensati per aiutare aziende e professionisti a comprendere e utilizzare le tecnologie AI in modo strategico e operativo, anche senza una formazione tecnica di partenza.
@@ -46,7 +48,7 @@ Attraverso esempi reali, casi d'uso, e sessioni interattive, esploreremo le appl
 **Argomenti Trattati**:
 - *Introduzione all'Intelligenza Artificiale*: Una panoramica chiara e concreta su cos'è l'AI e perché oggi è diventata centrale nel mondo del lavoro.
 - *ChatGPT e LLMs*: Cosa sono i Large Language Models (LLMs), come possono essere utilizzati in azienda, e quali sono i loro limiti.
-- *Introduzione al Prompting*: Come interagire in modo efficace con ChatGPT per ottenere risposte utili dall'Intelligenza Artificiale: tecniche, esempi e buone pratiche.
+- *Introduzione al Prompting*: Come interagire in modo efficace con ChatGPT e LLM per ottenere risposte utili dall'Intelligenza Artificiale: tecniche, esempi e buone pratiche.
 - *Esercitazione Pratica*: I partecipanti mettono subito in pratica quanto appreso, lavorando su casi realistici.
 
 {{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Intelligenza Artificiale per il Business" class="mt-4 d-block text-end">}}

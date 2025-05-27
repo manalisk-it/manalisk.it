@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+
+{{/* Dividi .RawContent usando il delimitatore personalizzato */}}
+{{ $parts := split .RawContent "%%%SPLIT%%%" }}
+
+<section class="section container my-5 book-call">
+   {{ index $parts 0 | markdownify }}
+</section>
+
+
+
+<section class="section mx-auto banner-seo" >
+  <h2 class="text-section-header text-center my-5">Sei ancora indeciso?</h2>
+  <p class="lead text-center"> Mandaci un'email a <a href="mailto:info@manalisk.it">info@manalisk.it</a> o fissa una chiamata gratuita <a href="/prenota-una-chiamata-consulenza-gratuita">cliccando qui</a>.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!</p>
+  
+</section>
+
+<section class="section container my-5 book-call">
+   {{ index $parts 1 | markdownify }}
+</section>
+
+{{ end }}
+
