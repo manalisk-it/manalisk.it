@@ -20,7 +20,7 @@ gallery_images:
     caption: "4. Rispondiamo alle tue Domande"
 ---
 
-# AI in Azienda? Prenota una chiamata!
+# Vuoi portare l'AI in Azienda? Prenota una chiamata!
 
 {{< lead class="catchphrase my-4" >}}
 Scopri i Primi Passi in una Call Gratuita
