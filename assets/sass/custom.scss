@@ -81,6 +81,19 @@ a /*.feather*/ {
     h2 {
         margin: 1em 0em 1em 0;
     }
+
+    img{
+          display: block;
+        margin: 2em auto 0 auto;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        color: #6c757d; /* Colore grigio per il testo della didascalia */
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
 }
 
 

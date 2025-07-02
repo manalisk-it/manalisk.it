@@ -31,7 +31,7 @@
                     {{ end }}
                     <p class="card-text mt-3">
                         {{ with .Params.description }}
-                            {{ . }}
+                            {{ . | truncate 200}}
                         {{ else }}
                             {{ .Summary | truncate 200 }}
                         {{ end }}

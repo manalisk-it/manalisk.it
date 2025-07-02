@@ -74,11 +74,13 @@
     </div>
 
     <h2 class="h4 py-3" style="font-weight: 300;">{{ .Params.description }}</h2>
+    {{ if and (.Params.featured_image_visible) (.Params.featured_image) }}
     {{ $image := .Resources.GetMatch .Params.featured_image }}
     {{ if $image }}
     <div class="text-center mb-4">
         <img src="{{ .Params.featured_image }}" class="mb-4 lead-img" alt="{{ .Params.title }}" />
     </div>
+    {{ end }}
     {{ end }}
     {{ .Content }}
 </div>
