@@ -1,0 +1,10 @@
+name = "manalisk-it"
+
+pages_build_output_dir = "./public"
+
+[vars]
+DART_SASS_VERSION = "1.89.2"
+HUGO_VERSION = "0.147.9"
+
+[build]
+command = "./build.sh"
