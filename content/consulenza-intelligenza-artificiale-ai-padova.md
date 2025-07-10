@@ -40,7 +40,7 @@ Se vuoi sapere di più su di Manalisk e la nostra missione, [clicca qui](/about)
 
 Aiutiamo le aziende a integrare soluzioni di intelligenza artificiale nei loro strumenti e processi. Ad esempio:
 
-- Svolgiamo l'**analisi dei processi aziendali** e identifichiamo opportunità di automazione
+- Svolgiamo l'**analisi dei processi aziendali** e identifichiamo opportunità di **automazione**
 - Sviluppiamo e alleniamo **modelli di machine learning su misura**, implementando anche **AI generativa** per migliorare strumenti e processi aziendali
 - Ottimiziamo la **gestione documentale** e i flussi informativi in azienda, per aumentarne la produttività
 - **Integriamo strumenti AI** nei sistemi esistenti, rinnovando e migliorando il business
