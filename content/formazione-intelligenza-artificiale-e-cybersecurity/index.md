@@ -40,7 +40,7 @@ Dall'introduzione ai modelli generativi fino alle applicazioni pratiche nei dive
   {{< card-subtitle icon=clock text=8h class="text-muted">}}
   {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
   {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
-  {{< card-subtitle icon=box text="Livello Base" class="text-muted">}}
+  {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
   {{< card-text class="mt-3" >}}
 L'intelligenza artificiale (AI) non è più una tecnologia riservata alle grandi multinazionali: oggi può essere uno strumento concreto per migliorare l'efficienza, ridurre i costi e creare nuove opportunità anche per le piccole e medie imprese. Grazie ai più recenti modelli lingustici -- come ChatGPT, anche detti Large Language Models -- non è più necessario posssedere conoscenze tecniche per sfruttare al meglio questa tecnologia.<br>
 Attraverso esempi reali, casi d'uso, e sessioni interattive, esploreremo le applicazioni dell'AI in ambiti come il marketing, la gestione clienti, la produzione, la logistica.
@@ -70,7 +70,7 @@ Con un approccio accessibile e concreto, aiutiamo aziende e professionisti a svi
   {{< card-subtitle icon=clock text=8h >}}
   {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
   {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
-  {{< card-subtitle icon=box text="Livello Base" class="text-muted">}}
+  {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
   {{< card-text class="mt-3">}}
 
 In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore -- è esposta a rischi digitali. "Elementi di Sicurezza Digitale" è un corso introduttivo insegnare le basi della cybersecurity, e come proteggere in modo efficace i propri dati, strumenti e processi digitali. Senza tecnicismi e con esempi concreti, il corso offre una panoramica pratica dei pericoli online più comuni e delle misure essenziali per evitarli.

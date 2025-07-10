@@ -1,4 +1,4 @@
-- **Valutazione della sicurezza IT** (vulnerability assessment e penetration test)
+<!-- - **Valutazione della sicurezza IT** (vulnerability assessment e penetration test)
 
 # VA
 
@@ -15,4 +15,4 @@
 
 # campagne phishing 
 
-# consulenza transizione cloud in modo sicuro
+# consulenza transizione cloud in modo sicuro -->
