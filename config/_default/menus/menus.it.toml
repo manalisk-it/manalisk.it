@@ -11,19 +11,25 @@ title = "Scopri di più sulla nostra missione"
 
 
 [[main]]
-name = "Servizi"
-url = "services"
+name = "Intelligenza Artificiale"
+url = "services/servizi-intelligenza-artificiale"
 weight = 30
-title = "Scopri i nostri servizi"
+title = "Scopri i nostri servizi di intelligenza artificiale"
+
+[[main]]
+name = "Cybersecurity"
+url = "services/servizi-cybersecurity"
+weight = 40
+title = "Scopri i nostri servizi di cybersecurity"
 
 [[main]]
 name = "Formazione"
 url = "formazione-intelligenza-artificiale-e-cybersecurity"
-weight = 31
+weight = 50
 title = "Scopri i nostri corsi di formazione AI e Cybersecurity"
 #[[main]]
 #identifier = "blog"
 #name = "Blog"
 #url = "post"
-#weight = 40
+#weight = 60
 #title = "Leggi i nostri articoli"

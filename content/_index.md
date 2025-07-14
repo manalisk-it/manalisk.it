@@ -1,5 +1,6 @@
 ---
 title: Homepage
+menuitem: Home
 params:
   heroDescription: >
     Siamo un network di liberi professionisti specializzati in **Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)**. Grazie alle nostre tecnologie AI, **aiutiamo le aziende** a trasformare le sfide in opportunità di crescita.

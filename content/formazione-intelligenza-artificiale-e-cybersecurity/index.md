@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Formazione Intelligenza Artificiale e Cybersecurity
+menuitem: Formazione
 # corsi previsti
 ## AI
 

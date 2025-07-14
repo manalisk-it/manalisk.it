@@ -8,11 +8,23 @@
     <div class="d-md-flex flex-row {{ if not (modBool $index 2) }} flex-row-reverse {{ end }} align-items-center">
       <div class="flex-col px-5 text-center">
         {{ $img := resources.Get .image }}
-        <img src="{{ $img.RelPermalink }}" alt="{{ .title }}" class="img-fluid shadow img-team mb-5">
+        <img src="{{ $img.RelPermalink }}" alt="{{ .title }}" class="img-fluid shadow img-team mb-3">
+        <div class="team-links mb-3">
+          {{ if .linkedin }}
+            <a href="{{ .linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+              <img src="/images/linkedin-icon.png" alt="LinkedIn" style="width:24px;height:24px;vertical-align:middle;" />
+            </a>
+          {{ end }}
+          {{ if .cv }}
+            <a href="{{ .cv }}" target="_blank" rel="noopener" class="ms-2" title="Scarica CV">
+              <span style="vertical-align:middle;">Leggi il CV</span>
+            </a>
+          {{ end }}
+        </div>
       </div>  
       <div class="flex-col  px-5 {{ if not (modBool $index 2) }} text-end {{ end }}">
             <h3>{{ .title }}</h3>
-            <p>{{ .description }}</p>
+            <p>{{ .description | markdownify }}</p>
         </div>
     </div>
     {{ end }}

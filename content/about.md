@@ -2,14 +2,21 @@
 title: "Chi Siamo"
 draft: false
 layout: about
+menuitem: Chi Siamo
 params:
   team:
-  - title: "Pier Paolo Tricomi"
+  - title: "Pier Paolo Tricomi, Ph.D."
     description: > 
-      Ho conseguito un Ph.D. in AI & Cybersecurity all'Università di Padova, con esperienza di ricerca in Machine and Deep Learning, 
-      Data Analysis, e Privacy. Lavoro a stretto contatto con i clienti, traducendo esigenze di business in soluzioni innovative basate sull’AI.
-      Insegno da diversi anni ad aziende e università tematiche di intelligenza artificiale e Cybersecurity.
+      Ho conseguito un Dottorato di Ricerca in AI & Cybersecurity all'Università di Padova, con esperienza di ricerca in Machine and Deep Learning, 
+      Data Analysis, e Privacy.            
+
+      Ho studiato e svolto attività di ricerca in diverse università estere in Europa e negli Stati Uniti, come Vrije Universiteit Amsterdam, University of California, Irvine, e Northwestern University.  
+
+      Oggi con la mia esperienza lavoro a stretto contatto con aziende e professionisti, traducendo esigenze di business in soluzioni innovative basate sull'AI, adattando modelli di AI classica e generativa.
+      Insegno da diversi anni ad aziende e università tematiche di Intelligenza Artificiale e Cybersecurity.
     image: "images/PierPaoloTricomi.jpg"
+    cv: "/CVs/tricomi.pdf"
+    linkedin: "https://www.linkedin.com/in/pier-paolo-tricomi-phd/"
 
   - title: "Simeone Pizzi"
     description: > 
@@ -20,7 +27,7 @@ params:
 
 # Chi Siamo
 
-Siamo esperti nel settore dell'**Intelligenza Artificiale**, specializzati in **Machine Learning**, **Large Language Models (LLM)** e **Retrieval-Augmented Generation (RAG)**. Offriamo soluzioni tecnologiche avanzate per automatizzare processi, migliorare l'analisi dei dati e potenziare le interazioni digitali.
+Siamo un network di liberi professionisti esperti nel settore dell'**Intelligenza Artificiale**, specializzati in **Machine Learning**, **Large Language Models (LLM)** e **Retrieval-Augmented Generation (RAG)**. Offriamo soluzioni tecnologiche avanzate per automatizzare processi, migliorare l'analisi dei dati e potenziare le interazioni digitali.
 
 Il nostro team di esperti combina **innovazione**, **sicurezza** e **rapidità di sviluppo** per creare prodotti su misura che rispondano alle esigenze delle aziende moderne. Crediamo che l'AI debba essere non solo potente, ma anche sicura, etica e accessibile.
 
