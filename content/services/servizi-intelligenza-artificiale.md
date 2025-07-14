@@ -14,7 +14,7 @@ menuitem: Intelligenza Artificiale
 
 # Servizi di Intelligenza Artificiale
 
-Lavoriamo con l'Intelligenza Artificiale da prima che nascesse ChatGPT. Oggi se ne parla ovunque, spesso riducendola a una chat che risponde a tutto, ma a volte in modo impreciso. In realtà, l'AI è molto di più: è uno strumento concreto e potente per analizzare dati, automatizzare processi, supportare decisioni e migliorare l'efficienza del lavoro quotidiano.
+Lavoriamo con l'Intelligenza Artificiale da prima che nascesse ChatGPT. Oggi se ne parla ovunque, spesso riducendola a una chat che risponde a tutto con qualche imprecisione. In realtà, l'AI è molto di più: è uno strumento concreto e potente per analizzare dati, automatizzare processi, supportare decisioni e migliorare l'efficienza del lavoro quotidiano.
 
 Grazie alla nostra esperienza accademica e sul campo, siamo in grado di progettare soluzioni che adattano l'AI al tuo contesto specifico: da aziende con grandi archivi documentali, a realtà che vogliono ottimizzare i flussi interni, fino a chi sta muovendo i primi passi nella trasformazione digitale.
 
