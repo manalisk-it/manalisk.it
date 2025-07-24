@@ -1,46 +1,33 @@
 ---
 title: "I nostri servizi"
-type: "services"
-params:
-  services:
-    - title: "Gestione Documentale Intelligente"
-      description: >
-        Siamo esperti nel gestire i documenti in modo intelligente usando l'AI. Ad esempio, possiamo rendere il 
-        **know how aziendale** facilmente accessibile ai tuoi dipendenti tramite **chatbot**, aumentando la loro 
-        produttività e semplificando le operazioni complesse. Rendiamo i tuoi **documenti facili da interrogare**,
-        o **estraiamo dati** da essi in modo automatico, preciso, e strutturato. Ti aiutiamo a **cercare le 
-        informazioni rilevanti in grosse banche dati**, e le processiamo per velocizzare il tuo lavoro. Se cerchi
-        un **RAG** (Retrieval-Augmented Generation) per la tua azienda, sei nel posto giusto!
-      image: "/images/documents.png"
-
-    - title: "Servizi AI su misura"
-      description: >
-        Offriamo soluzioni AI su misura per **ottimizzare i processi aziendali**, **automatizzare attività ripetitive** 
-        e migliorare la **gestione delle informazioni**. Creiamo **modelli personalizzati** per analisi avanzate, 
-        supporto decisionale e automazione. Oltre ai **documenti**, lavoriamo con **immagini** (e.g., estrarre 
-        informazioni dalle foto), **audio** (e.g., trascrizione automatica), e **grosse quantità di dati** (e.g., 
-        analisi storiche e previsioni). Dall'ottimizzazione dei flussi di lavoro all'integrazione di strumenti 
-        intelligenti, sviluppiamo soluzioni che **aumentano efficienza e competitività**. Tutto questo in compliance
-        con gli standard normativi. Se vuoi **migliorare i tuoi processi produttivi** con l'AI, puoi fidarti di noi!
-      image: "/images/misuraAI.png"
-
-    - title: "Formazione in AI e Cybersecurity"
-      description: >
-        Offriamo **formazione avanzata in AI e cybersecurity**, combinando esperienza accademica e applicazioni 
-        pratiche. Da tempo insegniamo in **università, aziende e istituti privati**, coprendo sia aspetti 
-        **tecnici** che di **strategia e gestione**. I nostri corsi spaziano da **machine o deep learning**, utilizzo di
-        **LLM** (e.g., ChatGPT, Copilot) e **RAG** fino alla **sicurezza dei dati**, prevenzione al **phishing**, 
-        analisi delle **minacce** e **difesa aziendale**. Adattiamo i programmi alle esigenze specifiche, con 
-        **formazione pratica** su strumenti e tecnologie reali (e.g., Suite Google). Che tu sia un esperto o un manager,
-        forniamo le competenze per **innovare e proteggere il tuo business** con l'AI e la cybersecurity. Se cerchi 
-        della formazione di qualità, qui troverai ciò di cui hai bisogno!
-      image: "images/form.png"
-
-    - title: "Consulenza e Brainstorming"
-      description: "Se **vuoi portare l'AI nella tua azienda ma non sai da dove partire**, offriamo **consulenza strategica**
-        e sessioni di **brainstorming** per capire cosa fa al caso tuo. Parlando con manager, responsabili, e 
-        dipendenti della tua azienda, **identifichiamo opportunità di crescita** e **miglioramento dei processi**. 
-        Mostrando loro esempi concreti di come utilizzare l'AI, creiamo un terreno fertile per l'**innovazione basata 
-        sui vostri bisogni**. Se cerchi idee per la tua aziende e vuoi realizzarle, abbiamo quello che fa per te!"
-      image: "images/brainstorming.png"
 ---
+
+Siamo specializzati in servizi di **Cybersecurity** e **Intelligenza Artificiale** per aziende di ogni dimensione. Offriamo soluzioni personalizzate, consulenza e formazione per proteggere i tuoi dati e innovare i tuoi processi.
+
+{{< card >}}
+  {{< card-title >}}Intelligenza Artificiale{{< /card-title >}}
+  {{< card-subtitle icon=cpu text="Soluzioni su misura" class="text-muted">}}
+  {{< card-subtitle icon=clock text="Automazione, analisi, formazione" class="text-muted">}}
+  {{< card-text class="mt-3" >}}
+Lavoriamo con l'Intelligenza Artificiale da prima che nascesse ChatGPT. Oggi se ne parla ovunque, spesso riducendola a una chat che risponde a tutto con qualche imprecisione. In realtà, l'AI è molto di più: è uno strumento concreto e potente per analizzare dati, automatizzare processi, supportare decisioni e migliorare l'efficienza del lavoro quotidiano.
+
+Grazie alla nostra esperienza accademica e sul campo, siamo in grado di progettare soluzioni che adattano l'AI al tuo contesto specifico: da aziende con grandi archivi documentali, a realtà che vogliono ottimizzare i flussi interni, fino a chi sta muovendo i primi passi nella trasformazione digitale.
+
+{{< lbutton text="Scopri tutti i servizi AI" url="/services/servizi-intelligenza-artificiale/" class="mt-4 d-block text-end">}}
+  {{< /card-text >}}
+{{< /card >}}
+
+
+{{< card >}}
+  {{< card-title >}}Cybersecurity{{< /card-title >}}
+  {{< card-subtitle icon=shield text="Proteggi la tua azienda" class="text-muted">}}
+  {{< card-subtitle icon=clock text="Valutazione, monitoraggio, formazione" class="text-muted">}}
+  {{< card-text class="mt-3" >}}
+Nel 2024, il 90% delle aziende industriali italiane ha subito un attacco di cybersecurity, con esiti gravi nel 34% dei casi. Purtroppo il numero degli attacchi informatici aumenta, anche in Italia, ma le aziende non sono ancora pronte per proteggersi.
+
+Grazie alla nostra esperienza accademica e pratica, siamo in grado di valutare lo stato di sicurezza della tua azienda e proporti un percorso di miglioramento per difenderti efficacemente dagli attacchi, evitando ingenti perdite. Se sei stato vittima di un attacco o pensi di essere vulnerabile, possiamo aiutarti!
+
+{{< lbutton text="Scopri tutti i servizi Cybersecurity" url="/services/servizi-cybersecurity/" class="mt-4 d-block text-end">}}
+  {{< /card-text >}}
+{{< /card >}}
+

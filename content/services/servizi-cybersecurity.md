@@ -1,7 +1,6 @@
 ---
-title: Servizi Cybersecurity 
+title: Servizi Cybersecurity
 draft: False
-menuitem: Cybersecurity
 ---
 
 <!-- - **Valutazione della sicurezza IT** (vulnerability assessment e penetration test)
