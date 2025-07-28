@@ -64,6 +64,17 @@
                         </svg>
                         <time class="ms-2" datetime="{{ .Lastmod.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{
                             .Date | time.Format ":date_long" }}</time>
+                        {{ if isset .Params "readtime" }} 
+                                
+                            <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4">
+                                <use href="/images/feather/feather-sprite.svg#clock" />
+                            </svg>
+                            <span>
+                                {{ .Params.readtime }} minuti
+                            </span> 
+                        {{ end }}
+
+                        
                         {{ if .Site.Params.options.listCategoryFilter }}
                         {{ if isset .Params "categories" }}
                         <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4">
@@ -98,14 +109,14 @@
                     </div>
 
                     <div style="position:absolute; bottom: 10px; right:20px">
-                        <h6 class="text-primary" style="text-align: right;">{{ if isset .Params "readtime" }} Leggi in {{ .Params.readtime }} minuti {{ else }} Leggi di più {{ end }} 
+                        <span class="text-primary" style="text-align: right;">Leggi di più 
                             <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 11h10m0 0l-5-5m5 5l-5 5" class="stroke-prim" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
 
-                            </h3>
+                        </span>
 
                     </div>
 

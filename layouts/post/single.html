@@ -31,10 +31,30 @@
     <h1>{{ .Params.Title }}</h1>
     <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
         <p class="blog-info mb-0">
-            {{ .Params.Date | time.Format ":date_long" }} •
-            {{ delimit .Params.authors ", " }}
+            <span class="card-subtitle text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" class="feather">
+                    <use href="{{ `images/feather/feather-sprite.svg#calendar` | relURL }}" />
+                </svg>
+                <span>{{ .Params.Date | time.Format ":date_long" }}</span>
+            </span>
+            <span class="ms-4"></span> 
+            <span class="card-subtitle text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" class="feather">
+                    <use href="{{ `images/feather/feather-sprite.svg#user` | relURL }}" />
+                </svg>
+                <span>
+                {{ delimit .Params.authors ", " }}
+                </span>
+            </span>
             {{ if isset .Params "readtime" }}
-            • ⏳ {{ .Params.readtime }} min
+            <span class="card-subtitle text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4">
+                    <use href="/images/feather/feather-sprite.svg#clock" />
+                </svg>
+                <span>
+                {{ .Params.readtime }} min
+                </span>
+            </span>
             {{ end }}
         </p>
         <!-- Social share icons -->
