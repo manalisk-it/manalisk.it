@@ -7,27 +7,31 @@ params:
   offers:
   - Soluzioni AI Custom
   - Formazione
+  - Soluzioni Cybersecurity
+  - Adeguamento NIS2
   - Gestione Documentale
+  - Adeguamento ISO 27001
   - Data Analysis
   - Sistemi RAG
+  - Adeguamento GDPR
   - AI Security Assessment
-  - Soluzioni Cybersecurity
+  - Consulenza RegTech
   pillars:
   - title: Crescita e Innovazione
     icon: trending-up
     description: >
         Aiutiamo le aziende a scalare e innovare, sfruttando la potenza dell’Intelligenza
         Artificiale per creare vantaggi competitivi duraturi.
-  - title: Scalabilità e Personalizzazione
+  - title: Personalizzazione
     icon: globe
     description: > 
-      Offriamo soluzioni che crescono con le esigenze del cliente e si
+      Offriamo soluzioni scalabili che crescono con le esigenze del cliente e si
       adattano alle loro specifiche necessità, per garantire un’implementazione flessibile
       e su misura.
-  - title: Approccio Multidisciplinare
+  - title: Multidisciplinarità
     icon: users
     description: > 
-      Unifichiamo competenze tecniche e normative per offrire soluzioni end-to-end, sicure e conformi. Applichiamo i principi di security by design e compliance by default in ogni fase della consulenza.
+      Unifichiamo competenze tecniche e normative per offrire soluzioni end-to-end, sicure e conformi. Applichiamo i principi di security-by-design e compliance-by-default in ogni fase della consulenza.
   - title: Sicurezza e Privacy
     icon: shield
     description: > 
@@ -75,11 +79,6 @@ Progettiamo e realizziamo soluzioni su misura, da applicazioni software a sistem
 Offriamo anche servizi verticali di **cybersecurity** e **compliance**, come analisi del rischio, hardening infrastrutturale, penetration test e supporto alla governance della sicurezza, anche indipendentemente dai progetti di sviluppo.
 {{< /lead >}}
 
-{{< lbutton text="Scopri i Nostri Servizi" url="/prenota-una-chiamata-consulenza-gratuita">}}
+{{< lbutton text="Scopri i Nostri Servizi" url="/services">}}
 
 
-{{< lead >}}
-*Vuoi scoprire come innovare in modo responsabile e sostenibile?*
-Prenota una **call gratuita**: analizzeremo insieme le opportunità concrete per il tuo settore.
-{{< /lead >}}
-{{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-consulenza-gratuita">}}
