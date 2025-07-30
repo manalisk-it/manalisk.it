@@ -18,15 +18,15 @@ menuitem: Formazione
 
 # Formazione su misura per aziende e professionisti
 
-Progettiamo e realizziamo corsi di formazione pensati per aziende, università, ITS e professionisti che desiderano aggiornare o potenziare le proprie competenze.
+Progettiamo e realizziamo corsi di **formazione pensati per aziende, università, ITS e professionisti** che desiderano aggiornare o potenziare le proprie competenze.
 Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze specifiche di ogni realtà.
 
-Abbiamo una solida esperienza nella formazione su argomenti complessi come l'intelligenza artificiale e la cybersecurity, maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
+Abbiamo una solida esperienza nella formazione su argomenti complessi come l'**intelligenza artificiale e la cybersecurity**,  maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
 
-Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva per rendere accessibili anche i temi più avanzati. Progettiamo corsi chiari, pratici e adattabili alle esigenze di chi partecipa, con l'obiettivo di offrire strumenti applicabili nel lavoro quotidiano.
+Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva per rendere accessibili anche i temi più avanzati. Progettiamo **corsi chiari, pratici e adattabili alle esigenze di chi partecipa**, con l'obiettivo di offrire strumenti applicabili nel lavoro quotidiano.
 
 Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
-Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
+**Tutti i prezzi riportati sono indicativi: contattaci per un preventivo**.
 
 
 
@@ -82,7 +82,7 @@ In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore 
 
 **Argomenti Trattati**:
 - *Introduzione alla sicurezza digitale*:  Introduzione ai concetti fondamentali della cybersecurity e al loro impatto sulle aziende.
-- *Principali minacce informatiche*:  Panoramica sui rischi più diffusi come phishing, malware e ransomware, con esempi concreti.
+- *Principali minacce informatiche*:  Panoramica sui rischi più diffusi come **phishing, malware e ransomware**, con esempi concreti.
 - *La gestione sicura delle password*:  Metodi semplici ed efficaci per creare, conservare e gestire le credenziali aziendali.
 - *Email e comunicazioni digitali, cosa fare e cosa evitare*: Linee guida ed esempi pratici per riconoscere messaggi sospetti e gestire con attenzione link e allegati.
 - *Privacy e gestione dei dati aziendali*: Buone pratiche per trattare in modo corretto le informazioni sensibili.
@@ -94,7 +94,7 @@ In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore 
 ## Corsi Personalizzati
 
 Offriamo corsi personalizzati progettati per rispondere a specifiche esigenze tecniche e operative, in ambito AI e sicurezza informatica.
-I nostri percorsi sono strutturati per adattarsi al livello di competenza dei partecipanti -- da moduli introduttivi per team trasversali fino a sessioni avanzate per tecnici e specialisti.
+I nostri percorsi sono strutturati per **adattarsi al livello di competenza dei partecipanti** -- da moduli introduttivi per team trasversali fino a sessioni avanzate per tecnici e specialisti.
 
 Collaboriamo con aziende e professionisti per definire contenuti mirati, esempi reali e casi d'uso rilevanti, garantendo un trasferimento di competenze immediatamente applicabile.
 

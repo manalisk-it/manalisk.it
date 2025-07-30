@@ -3,7 +3,7 @@ title: Homepage
 menuitem: Home
 params:
   heroDescription: >
-    Siamo un network di liberi professionisti specializzati in **Intelligenza Artificiale, Machine Learning e modelli linguistici avanzati (LLM e RAG)**. Grazie alle nostre tecnologie AI, **aiutiamo le aziende** a trasformare le sfide in opportunità di crescita.
+    Siamo un network multidisciplinare di liberi professionisti specializzati in **Intelligenza Artificiale, Cybersecurity e Compliance**. Integriamo competenze tecniche e legali per offrire soluzioni complete che accompagnano le aziende in ogni fase del processo, dall'implementazione tecnologica alla conformità normativa.
   offers:
   - Soluzioni AI Custom
   - Formazione
@@ -21,14 +21,13 @@ params:
   - title: Scalabilità e Personalizzazione
     icon: globe
     description: > 
-      Offriamo soluzioni AI che crescono con le esigenze del cliente e si
+      Offriamo soluzioni che crescono con le esigenze del cliente e si
       adattano alle loro specifiche necessità, per garantire un’implementazione flessibile
       e su misura.
-  - title: Affidabilità e Precisione
-    icon: check
+  - title: Approccio Multidisciplinare
+    icon: users
     description: > 
-      Assicuriamo che i nostri sistemi AI siano stabili, performanti e in
-      grado di prendere decisioni accurate, riducendo i margini di errore.
+      Unifichiamo competenze tecniche e normative per offrire soluzioni end-to-end, sicure e conformi. Applichiamo i principi di security by design e compliance by default in ogni fase della consulenza.
   - title: Sicurezza e Privacy
     icon: shield
     description: > 
@@ -40,22 +39,47 @@ params:
     description: > 
       Dall’idea alla soluzione, trasformiamo progetti complessi in realtà
       in tempi rapidi, grazie alla nostra esperienza e a un workflow ottimizzato.
-  - title: Accessibilità e Facilità d'Uso
+  - title: Soluzioni Etiche
     icon: user-check
     description: > 
-      Le nostre soluzioni AI sono progettate per essere user-friendly, senza
-      richiedere competenze tecniche avanzate, e accessibili a tutte le imprese, grandi
-      o piccole.
+      Adottiamo un approccio human first, sviluppando soluzioni trasparenti, inclusive e responsabili. Riduciamo i bias e promuoviamo un impatto positivo su persone e società.
 ---
 
-## Cosa può fare l'AI per te?
-
+## Cosa possiamo fare per te
+<!-- 
 {{< lead class="mt-5">}}
-Sempre più aziende usano l'intelligenza artificiale per ottimizzare i processi, aumentare la produttività e innovare il proprio business.
+**Intelligenza Artificiale:** awrjoiarjwjio
 {{< /lead >}}
 
+
+{{< lead class="mt-5">}}
+**Intelligenza Artificiale:** awrjoiarjwjio
+{{< /lead >}}
+
+
+{{< lead class="mt-5">}}
+**Cybersecurity:** awraowroi
+{{< /lead >}}
+
+
+{{< lead class="mt-5">}}
+**Compliance:** **
+{{< /lead >}} -->
+
+
+{{< lead class="mt-5">}}
+Progettiamo e realizziamo soluzioni su misura, da applicazioni software a sistemi basati su **Intelligenza Artificiale**, costruite secondo principi di **security-by-design e compliant-by-default**, per garantire sicurezza, affidabilità e conformità normativa (GDPR, NIS2, ISO 27001).
+{{< /lead >}}
+
+{{< lead class="mt-3">}}
+Offriamo anche servizi verticali di **cybersecurity** e **compliance**, come analisi del rischio, hardening infrastrutturale, penetration test e supporto alla governance della sicurezza, anche indipendentemente dai progetti di sviluppo.
+{{< /lead >}}
+
+{{< lbutton text="Scopri i Nostri Servizi" url="/prenota-una-chiamata-consulenza-gratuita">}}
+
+
 {{< lead >}}
-*Vuoi scoprire come l'AI può aiutare la tua azienda?*
+*Vuoi scoprire come innovare in modo responsabile e sostenibile?*
 Prenota una **call gratuita**: analizzeremo insieme le opportunità concrete per il tuo settore.
 {{< /lead >}}
 {{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-consulenza-gratuita">}}

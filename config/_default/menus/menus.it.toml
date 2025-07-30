@@ -10,23 +10,32 @@ weight = 20
 title = "Scopri di più sulla nostra missione"
 
 
-# [[main]]
-# name = "Servizi"
-# url = "services"
-# weight = 25
-# title = "Scopri i nostri servizi di consulenza e sviluppo software"
+[[main]]
+name = "Servizi"
+url = "services"
+weight = 25
+title = "Scopri i nostri servizi di consulenza e sviluppo software"
 
 [[main]]
 name = "Intelligenza Artificiale"
 url = "services/servizi-intelligenza-artificiale"
 weight = 30
 title = "Scopri i nostri servizi di intelligenza artificiale"
+parent = "Servizi"
 
 [[main]]
 name = "Cybersecurity"
 url = "services/servizi-cybersecurity"
 weight = 40
 title = "Scopri i nostri servizi di cybersecurity"
+parent = "Servizi"
+
+[[main]]
+name = "Compliance"
+url = "services/servizi-compliance"
+weight = 45
+title = "Scopri i nostri servizi di compliance"
+parent = "Servizi"
 
 [[main]]
 name = "Formazione"
