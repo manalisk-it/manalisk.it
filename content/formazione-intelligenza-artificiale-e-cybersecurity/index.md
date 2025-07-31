@@ -21,7 +21,7 @@ menuitem: Formazione
 Progettiamo e realizziamo corsi di **formazione pensati per aziende, università, ITS e professionisti** che desiderano aggiornare o potenziare le proprie competenze.
 Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze specifiche di ogni realtà.
 
-Abbiamo una solida esperienza nella formazione su argomenti complessi come l'**intelligenza artificiale e la cybersecurity**,  maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
+Abbiamo una solida esperienza nella formazione su argomenti complessi come l'**intelligenza artificiale, la cybersecurity, e la compliance**,  maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
 
 Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva per rendere accessibili anche i temi più avanzati. Progettiamo **corsi chiari, pratici e adattabili alle esigenze di chi partecipa**, con l'obiettivo di offrire strumenti applicabili nel lavoro quotidiano.
 
@@ -90,6 +90,43 @@ In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore 
 {{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Elementi di Sicurezza Digitale" class="mt-4 d-block text-end">}}
   {{< /card-text >}}
 {{< /card >}}
+
+## Corsi Compliance
+
+La compliance è un elemento essenziale per ogni organizzazione che voglia operare in modo responsabile, sostenibile e conforme alle normative vigenti. I nostri corsi di compliance offrono una guida pratica per comprendere obblighi, rischi e opportunità legati alla gestione di dati, processi e responsabilità legali.
+
+Aiutiamo imprese, enti e professionisti a orientarsi tra regolamenti come il GDPR, il D.Lgs. 231/2001 e le nuove direttive europee, evitando errori che possono costare caro: basti pensare alle sanzioni fino a 20 milioni di euro per violazioni del GDPR, o ai procedimenti penali derivanti da inadempienze organizzative.
+
+I nostri percorsi formativi supportano lo sviluppo di una cultura della legalità e della trasparenza, oggi imprescindibile per tutelare reputazione, clienti e continuità del business.
+
+{{< card >}}
+
+  {{< card-title >}}Elementi di Privacy e Protezione dei Dati{{< /card-title >}}
+  {{< card-subtitle icon=clock text=8h >}}
+  {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
+  {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
+  {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
+  {{< card-text class="mt-3">}}
+
+La gestione dei dati personali è diventata una responsabilità per ogni organizzazione, indipendentemente dalle dimensioni o dal settore. “Elementi di Privacy e Protezione dei Dati” è un corso introduttivo pensato per aiutare aziende, enti e professionisti a comprendere i principi fondamentali del GDPR (Regolamento UE 2016/679) e a gestire in modo corretto e consapevole le informazioni personali. Attraverso esempi concreti e indicazioni operative, il corso fornisce le basi per costruire un sistema di gestione dei dati sicuro, trasparente e conforme alla normativa.
+
+
+**Pre-requisiti**: Nessuno
+
+**Target**: imprenditori, manager, dipendenti, professionisti, enti pubblici
+
+**Argomenti Trattati**:
+* *Perché la privacy è un tema strategico:* Il valore dei dati personali e le implicazioni per chi li tratta.
+* *I principi fondamentali del GDPR:* Correttezza, trasparenza, minimizzazione e responsabilizzazione.
+* *Ruoli e responsabilità:* Titolari, responsabili, e autorizzati al trattamento.
+* *Obblighi documentali e operativi:* Registro dei trattamenti, informative privacy, consensi, misure di sicurezza.
+* *Gestione delle violazioni e dei diritti degli interessati:* Cosa fare in caso di data breach e come rispondere a richieste di accesso, rettifica o cancellazione dei dati.
+
+{{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Elementi di Privacy e Protezione Dati" class="mt-4 d-block text-end">}}
+  {{< /card-text >}}
+{{< /card >}}
+
+
 
 ## Corsi Personalizzati
 

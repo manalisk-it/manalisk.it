@@ -23,6 +23,14 @@ params:
       Sono esperto di AI e Cybersecurity con esperienza nello sviluppo di soluzioni di sicurezza basate su LLM e infrastruttura cloud.
       Sono appassionato dell'applicazione di tecnologie AI per la cybersecurity e l'automazione.
     image: "images/sime1.png"
+
+  - title: "Nicola Bellotto, Ph.D."
+    description: >
+      Come temporary manager e consulente direzionale, trasformo l'adempimento degli obblighi normativi e la gestione dei processi in motori di crescita. Con un dottorato di ricerca in Giurisprudenza conseguito all’Università degli Studi di Padova e oltre dieci anni di esperienza, guido programmi di Corporate Governance, Risk & Compliance (231, GDPR, NIS2, ...), ricomprendo anche incarichi di Organismo di Vigilanza e Data Protection Officer per aziende nazionali e multinazionali. Grazie all'expertise accumulata affiancando le imprese, ridisegno e digitalizzo i principali processi interni (AFC, Operation, Supply chain, HR, ...), eliminando costi e inefficienze e assicurando, da un lato, performance misurabili, dall'altro la riduzione di rischi legali e frodi interne, tramite procedure snelle, controlli puntuali e monitoraggi continui. 
+    image: "images/NicolaBellotto2.jpg"
+    cv: "/CVs/bellotto.pdf"
+    linkedin: "https://www.linkedin.com/in/nicola-bellotto-phd/"
+     
 ---
 
 # Chi Siamo
