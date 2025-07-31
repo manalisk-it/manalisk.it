@@ -27,24 +27,23 @@ params:
 
 # Chi Siamo
 
-Siamo un network di liberi professionisti esperti nel settore dell'**Intelligenza Artificiale**, specializzati in **Machine Learning**, **Large Language Models (LLM)** e **Retrieval-Augmented Generation (RAG)**. Offriamo soluzioni tecnologiche avanzate per automatizzare processi, migliorare l'analisi dei dati e potenziare le interazioni digitali.
+Siamo un network di professionisti con competenze trasversali in **Intelligenza Artificiale**, **Cybersecurity** e **Compliance normativa**. Progettiamo soluzioni avanzate che aiutano aziende e organizzazioni a innovare, proteggere i propri dati e operare in piena conformità con le normative più attuali.
 
-Il nostro team di esperti combina **innovazione**, **sicurezza** e **rapidità di sviluppo** per creare prodotti su misura che rispondano alle esigenze delle aziende moderne. Crediamo che l'AI debba essere non solo potente, ma anche sicura, etica e accessibile.
+Crediamo che la vera innovazione nasca dall’integrazione di tecnologia, sicurezza e legalità. Per questo, il nostro approccio unisce:
+- la capacità di sviluppare sistemi di AI e Machine Learning su misura, per automatizzare processi e valorizzare i dati;
+- una solida esperienza nella cybersecurity, per garantire la protezione delle informazioni e la resilienza delle infrastrutture digitali;
+- una profonda conoscenza delle normative (come GDPR, NIS2, ISO 27001, AI Act), per accompagnare i clienti verso la piena compliance e ridurre i rischi legali e reputazionali.
 
-Abbiamo un solido background in **cybersecurity**, che ci permette di progettare soluzioni AI con un livello di protezione avanzato. Grazie alla nostra esperienza nella sicurezza informatica, adottiamo best practice per prevenire vulnerabilità e garantire la protezione dei dati.
-
-Il nostro team proviene dal mondo della **ricerca accademica e industriale**, con anni di esperienza nello sviluppo di algoritmi innovativi e nella pubblicazione di studi scientifici. Questo ci consente di essere sempre aggiornati sulle ultime scoperte nel campo dell'AI e di applicarle nei nostri progetti.
-
-
+Il nostro team proviene dal mondo della ricerca e dell’industria, e aggiorna costantemente le proprie competenze per offrire soluzioni efficaci, etiche e sempre all’avanguardia. Lavoriamo a stretto contatto con i clienti, adattando ogni progetto alle reali esigenze di business e supportando la crescita in modo sicuro e sostenibile.
 
 ## La Nostra Missione
 
-La nostra missione è trasformare la complessità dell'Intelligenza Artificiale in soluzioni semplici ed efficaci, capaci di generare valore concreto per aziende e organizzazioni.
+La nostra missione è rendere semplice e accessibile l’innovazione digitale, aiutando aziende e organizzazioni a crescere in modo sicuro, etico e conforme alle normative.
 
 Ci impegniamo a:
 
-- **Garantire sicurezza e privacy**: sviluppiamo sistemi conformi ai più alti standard di protezione dei dati.
-- **Velocizzare l'innovazione**: riduciamo i tempi di sviluppo grazie alla nostra esperienza e approfondimento continuodi tecnologie all'avanguardia.
-- **Favorire la crescita**: aiutiamo le aziende a scalare e a ottenere un vantaggio competitivo attraverso l'AI.
+- **Promuovere l’innovazione responsabile**: sviluppiamo soluzioni di Intelligenza Artificiale e automazione che generano valore concreto, migliorando processi e competitività.
+- **Garantire sicurezza e resilienza**: proteggiamo dati, infrastrutture e persone, adottando le migliori pratiche di cybersecurity e prevenendo i rischi informatici.
+- **Assicurare la conformità normativa**: accompagniamo i clienti nell’adeguamento alle principali normative su privacy, sicurezza e gestione dei dati, riducendo i rischi legali e rafforzando la fiducia degli stakeholder.
 
-Con la nostra esperienza e passione per l'innovazione, guidiamo i nostri clienti nel futuro dell'intelligenza artificiale.
+Con la nostra esperienza e passione per la tecnologia, guidiamo i nostri clienti verso un futuro digitale più sicuro, innovativo e sostenibile.
