@@ -19,7 +19,7 @@ authors: ["Pier Paolo Tricomi"]
 
 ## Chi è Clusit e da dove provengono i dati?
 
-Il **Clusit – Associazione Italiana per la Sicurezza Informatica** è l'organizzazione di riferimento in Italia per la promozione della cultura della cybersecurity. È composto da esperti, accademici, aziende, istituzioni e professionisti del settore, ed è noto per il suo impegno nella divulgazione, nella formazione e nel supporto a imprese e pubbliche amministrazioni nella comprensione dei rischi cyber e delle strategie di protezione.
+Il **Clusit - Associazione Italiana per la Sicurezza Informatica** è l'organizzazione di riferimento in Italia per la promozione della cultura della cybersecurity. È composto da esperti, accademici, aziende, istituzioni e professionisti del settore, ed è noto per il suo impegno nella divulgazione, nella formazione e nel supporto a imprese e pubbliche amministrazioni nella comprensione dei rischi cyber e delle strategie di protezione.
 
 Da ormai 13 edizioni, Clusit pubblica annualmente il **Rapporto Clusit sulla Sicurezza ICT in Italia e nel Mondo**, considerato una **fonte autorevole e indipendente** a livello nazionale, punto di riferimento per giornalisti, decisori pubblici, dirigenti aziendali, consulenti e accademici.
 
@@ -48,7 +48,7 @@ Tra i continenti più colpiti troviamo l'America al 35%, l'Europa al 30%, e l'As
 
 ## La situazione italiana: attacchi in costante aumento
 
-Nel **2024**, il Clusit ha registrato **357 attacchi gravi** contro organizzazioni italiane, con un incremento del **15,2% rispetto al 2023**. Una crescita continua che si inserisce in un trend allarmante: solo nel quinquennio 2020–2024, il numero complessivo di incidenti rilevati in Italia è **quasi decuplicato**, passando da 48 casi nel 2020 ai 357 attuali, come mostrtato in Figura 3.
+Nel **2024**, il Clusit ha registrato **357 attacchi gravi** contro organizzazioni italiane, con un incremento del **15,2% rispetto al 2023**. Una crescita continua che si inserisce in un trend allarmante: solo nel quinquennio 2020-2024, il numero complessivo di incidenti rilevati in Italia è **quasi decuplicato**, passando da 48 casi nel 2020 ai 357 attuali, come mostrtato in Figura 3.
 
 
 {{< blogfigure src="incidenti-cyber-italia-2024.png" alt="Distribuzione degli incidenti cyber in Italia nel periodo 2020-2024" caption="Figura 3. Distribuzione degli incidenti cyber in Italia nel periodo 2020-2024.">}}
@@ -184,7 +184,7 @@ Questa direttiva:
 
 * Amplia il numero di **settori obbligati ad adottare misure minime di sicurezza** (tra cui sanità, energia, trasporti, telecomunicazioni, produzione critica, servizi digitali, pubblica amministrazione, etc.)
 * Estende gli obblighi a **aziende medio-piccole** che, pur non essendo "grandi imprese", svolgono attività essenziali o importanti per l'economia e la società.
-* Rafforza il potere di **vigilanza e sanzione delle autorità competenti** (in Italia, l'ACN – Agenzia per la Cybersicurezza Nazionale)
+* Rafforza il potere di **vigilanza e sanzione delle autorità competenti** (in Italia, l'ACN - Agenzia per la Cybersicurezza Nazionale)
 
 ### A chi si applica la NIS2?
 
@@ -244,7 +244,7 @@ Scopri di più sui nostri [Servizi di Cybersecurity](/services/servizi-cybersecu
 
 ## Le PMI italiane sono sicure?
 
-Spoiler: purtroppo, no. Il report mostra i risultati di un'indagine condotta su 2.847 PMI Italiane. L'indagine si basa su audit effettuati dai **PID (Punti Impresa Digitale)** delle Camere di Commercio, utilizzando lo strumento di autovalutazione **PID Cyber Check** – sviluppato in collaborazione con DINTEC, IIT-CNR, ENEA e Unioncamere. I risultati evidenziano una **maturità cyber ancora troppo bassa**.
+Spoiler: purtroppo, no. Il report mostra i risultati di un'indagine condotta su 2.847 PMI Italiane. L'indagine si basa su audit effettuati dai **PID (Punti Impresa Digitale)** delle Camere di Commercio, utilizzando lo strumento di autovalutazione **PID Cyber Check** - sviluppato in collaborazione con DINTEC, IIT-CNR, ENEA e Unioncamere. I risultati evidenziano una **maturità cyber ancora troppo bassa**.
 
 In un Paese dove il **95% del tessuto economico è costituito da micro e piccole imprese**, la **cybersecurity non può più essere un lusso da grandi aziende**. Tuttavia, secondo quanto riportato nel report, la **stragrande maggioranza delle PMI italiane è impreparata a fronteggiare anche le minacce digitali più basilari**.
 
@@ -472,7 +472,7 @@ L’AI nel 2035 sarà pervasiva. Secondo il rapporto:
   * *AI Ethics Officer*
   * *Trainer di algoritmi*
   * *Analista comportamentale per sistemi AI*
-* Le competenze “human-centric” (empatia, giudizio critico, creatività) diventeranno ancora più preziose.
+* Le competenze "human-centric" (empatia, giudizio critico, creatività) diventeranno ancora più preziose.
 * La coesistenza uomo-macchina sarà centrale: l’AI non sostituirà, ma completerà le capacità umane.
 
 ### Sfide etiche e di governance
@@ -482,7 +482,7 @@ L’intersezione tra AI, lavoro e sicurezza pone nuove sfide:
 * **Responsabilità degli algoritmi**: chi risponde degli errori o dei bias?
 * **Trasparenza delle decisioni automatizzate**
 * **Protezione dei dati personali in ambienti lavorativi iper-digitalizzati**
-* **Inclusività**: il rischio di un “digital divide” tra chi ha accesso alle competenze e chi no.
+* **Inclusività**: il rischio di un "digital divide" tra chi ha accesso alle competenze e chi no.
 
 Il rapporto invita a sviluppare una governance condivisa e anticipatoria, che accompagni l’innovazione con regole chiare e un approccio etico.
 

@@ -108,7 +108,7 @@ I nostri percorsi formativi supportano lo sviluppo di una cultura della legalit�
   {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
   {{< card-text class="mt-3">}}
 
-La gestione dei dati personali è diventata una responsabilità per ogni organizzazione, indipendentemente dalle dimensioni o dal settore. “Elementi di Privacy e Protezione dei Dati” è un corso introduttivo pensato per aiutare aziende, enti e professionisti a comprendere i principi fondamentali del GDPR (Regolamento UE 2016/679) e a gestire in modo corretto e consapevole le informazioni personali. Attraverso esempi concreti e indicazioni operative, il corso fornisce le basi per costruire un sistema di gestione dei dati sicuro, trasparente e conforme alla normativa.
+La gestione dei dati personali è diventata una responsabilità per ogni organizzazione, indipendentemente dalle dimensioni o dal settore. "Elementi di Privacy e Protezione dei Dati" è un corso introduttivo pensato per aiutare aziende, enti e professionisti a comprendere i principi fondamentali del GDPR (Regolamento UE 2016/679) e a gestire in modo corretto e consapevole le informazioni personali. Attraverso esempi concreti e indicazioni operative, il corso fornisce le basi per costruire un sistema di gestione dei dati sicuro, trasparente e conforme alla normativa.
 
 
 **Pre-requisiti**: Nessuno
