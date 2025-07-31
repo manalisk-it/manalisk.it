@@ -20,14 +20,14 @@ gallery_images:
     caption: "4. Rispondiamo alle tue Domande"
 ---
 
-# Vuoi portare l'AI in Azienda? Prenota una chiamata!
+# Vuoi portare l'AI, la Cybersecurity o la Compliance nella tua azienda? Prenota una chiamata!
 
 {{< lead class="catchphrase my-4" >}}
-Scopri i Primi Passi in una Call Gratuita
+Scopri i Primi Passi in una Call Gratuita su **AI, Cybersecurity e Compliance**
 {{< /lead >}}
 
 {{< lead class="mb-5">}}
-*"Non restare a guardare la rivoluzione AI. Diventane protagonista!"*
+*"Non restare a guardare la rivoluzione digitale. Diventane protagonista!"*
 {{< /lead >}}
 
 {{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
@@ -36,18 +36,18 @@ Scopri i Primi Passi in una Call Gratuita
 {{< gallery-call  >}}
 
 {{< lead >}}
-Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti. Analizziamo i tuoi strumenti
-e processi aziendali e ti diciamo cosa puoi migliorare grazie all'**Intelligenza Artificiale**.
+Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti su **Intelligenza Artificiale, Cybersecurity e Compliance**. Analizziamo i tuoi strumenti, processi e bisogni aziendali e ti diciamo cosa puoi migliorare grazie alle tecnologie digitali, alla sicurezza informatica e alla conformità normativa.
 {{< /lead >}}
+
 
 ### Cosa otterrai dalla call?
 
-* **Analisi Rapida del Potenziale:** Individuiamo insieme dove l'AI può portare i maggiori benefici alla tua struttura e ai tuoi obiettivi.
-* **Idee Chiare e Praticabili:** Identifichiamo delle applicazioni AI realistiche e ad alto impatto per iniziare con il piede giusto.
-* **Primi Passi Definiti:** Delineiamo una mini-roadmap con le azioni prioritarie per avviare un progetto AI senza spreco di risorse.
+* **Analisi Rapida del Potenziale:** Individuiamo insieme dove AI, Cybersecurity o Compliance possono portare i maggiori benefici alla tua azienda o attività.
+* **Idee Chiare e Praticabili:** Identifichiamo soluzioni concrete e ad alto impatto, che siano realistiche e su misura per te.
+* **Primi Passi Definiti:** Delineiamo una mini-roadmap con le azioni prioritarie per avviare un progetto di innovazione, sicurezza o adeguamento normativo senza spreco di risorse.
 * **Focus e Chiarezza:** Ottieni una visione strategica e risposte concrete, ottimizzando il tuo tempo.
 
-Durante la call analizzeremo le tue esigenze, identificheremo le opportunità, ti daremo suggerimenti concreti, e risponderemo alle tue domande!
+Durante la call analizzeremo le tue esigenze, identificheremo le opportunità, ti daremo suggerimenti concreti e risponderemo alle tue domande, sia che riguardino l'Intelligenza Artificiale, la Cybersecurity o la Compliance!
 
 ## Preferisci un'email?
 

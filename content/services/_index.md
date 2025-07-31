@@ -5,7 +5,7 @@ title: "I nostri servizi"
 Siamo specializzati in servizi di **Cybersecurity** e **Intelligenza Artificiale** per aziende di ogni dimensione. Offriamo soluzioni personalizzate, consulenza e formazione per proteggere i tuoi dati e innovare i tuoi processi.
 
 {{< card >}}
-  {{< card-title >}}Intelligenza Artificiale{{< /card-title >}}
+  {{< card-title >}}[Intelligenza Artificiale](/services/servizi-intelligenza-artificiale/){{< /card-title >}}
   {{< card-subtitle icon=cpu text="Soluzioni su misura" class="text-muted">}}
   {{< card-subtitle icon=box text="Automazione, analisi, formazione" class="text-muted">}}
   {{< card-text class="mt-3" >}}
@@ -19,7 +19,7 @@ Grazie alla nostra esperienza accademica e sul campo, siamo in grado di progetta
 
 
 {{< card >}}
-  {{< card-title >}}Cybersecurity{{< /card-title >}}
+  {{< card-title >}}[Cybersecurity](/services/servizi-cybersecurity/){{< /card-title >}}
   {{< card-subtitle icon=shield text="Proteggi la tua azienda" class="text-muted">}}
   {{< card-subtitle icon=box text="Valutazione, monitoraggio, formazione" class="text-muted">}}
   {{< card-text class="mt-3" >}}
@@ -33,7 +33,7 @@ Grazie alla nostra esperienza accademica e pratica, siamo in grado di valutare l
 
 
 {{< card >}}
-  {{< card-title >}}Compliance{{< /card-title >}}
+  {{< card-title >}}[Compliance](/services/servizi-compliance/){{< /card-title >}}
   {{< card-subtitle icon=book text="Rispetta le normative" class="text-muted">}}
   {{< card-subtitle icon=box text="Valutazione, monitoraggio, formazione" class="text-muted">}}
   {{< card-text class="mt-3" >}}
