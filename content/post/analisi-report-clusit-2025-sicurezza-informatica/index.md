@@ -2,24 +2,54 @@
 title: "La situazione della Cybersecurity in Italia - Analisi del Report Clusit 2025"
 description: "In questo articolo analizziamo i principali dati del Rapporto Clusit 2025 sulla sicurezza informatica, con un focus sull'Italia e sulle PMI. Parleremo dei settori più colpiti dai cyber attacchi, del ruolo dell'Intelligenza Artificiale, degli obblighi introdotti dalla direttiva europea NIS2, e dei costi (spesso sottovalutati) di un incidente informatico. Approfondiamo la situazione della cybersecurity in Italia, capendo cosa si rischia e come proteggersi."
 date: 2025-07-24
-draft: true
-images: ["hugo-logo.png"]
+draft: false
 featured_image: "incidenti-cybersecurity-2020-2024.png"
 featured_image_visible: False
-categories: ["The Bootstrap Blog"]
-tags: ["Bootstrap"]
-keywords: ["bootstrap 5 3","bootstrap 5","bootstrap"]
-authors: ["Pier Paolo Tricomi"]
+categories:
+- Cybersecurity
+tags:
+- Cybersecurity
+keywords:
+- Cybersecurity
+- Sicurezza Informatica
+- Clusit
+- NIS2
+- PMI
+- Cyber Attacchi
+- Ransomware
+- Phishing
+- Malware
+- Data Breach
+- GDPR
+- Protezione Dati
+- Sicurezza Aziendale
+- Cyber Risk
+- Difesa Informatica
+- Cyber Threats
+- Incidenti Informatici
+- Sicurezza Digitale
+authors:
+- Pier Paolo Tricomi
 
 ---
 
-**Nota**: Le immagini riportate in questo articolo provengono dal report Clusit 2025 consultabile al seguente link: [Report Clusit 2025](https://clusit.it/rapporto-clusit/)
+> **Nota**: Le immagini riportate in questo articolo provengono dal report Clusit 2025 consultabile al seguente link: [Report Clusit 2025](https://clusit.it/rapporto-clusit/)
 
+## Introduzione
 
+In questo post analizziamo la situazione della cybersecurity in Italia attingendo ai dati del **Rapporto Clusit 2025**, considerato una delle fonti più autorevoli e indipendenti sulla sicurezza ICT a livello nazionale.
+
+Il panorama globale che emerge è allarmante: tra il 2020 e il 2024, gli attacchi informatici gravi sono quasi raddoppiati. In questo contesto, l'Italia si trova in una posizione di eccezionale vulnerabilità. Nel 2024, il nostro Paese ha subito il **10,1% di tutti gli attacchi gravi noti nel mondo**. Questo dato sproporzionato, che vede l'Italia molto più colpita di altre nazioni europee come Francia (4%), Germania e Regno Unito (3%), non è casuale. Si tratta piuttosto di un chiaro **indicatore di debolezza sistemica**, dovuto a una scarsa preparazione e a una mancanza di cultura diffusa della cybersicurezza. Il numero di incidenti rilevati in Italia è, infatti, quasi decuplicato nel solo quinquennio 2020-2024.
+
+Il report rivela che nessun settore può più considerarsi al sicuro: **News/Multimedia, Manifatturiero, Governativo/Militare, Trasporti e Servizi Professionali** sono tra i più colpiti. Per quanto riguarda le PMI, che costituiscono il 95% del tessuto economico italiano, la situazione è altrettanto preoccupante. Il 37,8% delle PMI ha dichiarato di aver subito attacchi informatici, con il phishing come minaccia principale.
+
+Un altro tema cruciale emerso dal rapporto è il ruolo ambivalente dell'**Intelligenza Artificiale (AI)** nella cybersecurity. L'AI può essere un'alleata formidabile nella difesa digitale, ma nelle mani sbagliate diventa un'arma devastante. I criminali informatici stanno integrando l'AI nei loro arsenali per condurre attacchi più mirati e difficili da intercettare, mentre le stesse tecnologie possono essere utilizzate per migliorare il rilevamento delle minacce e la risposta automatizzata.
+
+Per proteggersi in questo contesto, è fondamentale partire dalla consapevolezza del rischio e adottare misure concrete, specialmente alla luce della nuova direttiva europea **NIS2**, che entrerà pienamente in vigore nel 2025.
 
 ## Chi è Clusit e da dove provengono i dati?
 
-Il **Clusit – Associazione Italiana per la Sicurezza Informatica** è l'organizzazione di riferimento in Italia per la promozione della cultura della cybersecurity. È composto da esperti, accademici, aziende, istituzioni e professionisti del settore, ed è noto per il suo impegno nella divulgazione, nella formazione e nel supporto a imprese e pubbliche amministrazioni nella comprensione dei rischi cyber e delle strategie di protezione.
+Il **Clusit - Associazione Italiana per la Sicurezza Informatica** è l'organizzazione di riferimento in Italia per la promozione della cultura della cybersecurity. È composto da esperti, accademici, aziende, istituzioni e professionisti del settore, ed è noto per il suo impegno nella divulgazione, nella formazione e nel supporto a imprese e pubbliche amministrazioni nella comprensione dei rischi cyber e delle strategie di protezione.
 
 Da ormai 13 edizioni, Clusit pubblica annualmente il **Rapporto Clusit sulla Sicurezza ICT in Italia e nel Mondo**, considerato una **fonte autorevole e indipendente** a livello nazionale, punto di riferimento per giornalisti, decisori pubblici, dirigenti aziendali, consulenti e accademici.
 
@@ -37,25 +67,25 @@ Il Clusit utilizza solo fonti verificate che rendano il report **affidabile e tr
 
 ## Panoramica globale sulla Cybersecurity
 
-Gli attacchi di cybersecuirty sono sempre più frequenti a livello globale. La Figura 1 mostra l'andamento degli attacchi **noti** (molto spesso le aziende non sono a conoscenza degli attacchi subiti!) e di particolare gravità tra il 2020 e il 2024. Si vede chiaramente come gli incidenti globali siano quasi raddoppiati, passati da 1.874 nel 2020 a 3.541 nel 2024, ossia un **+89%**. Di questi attacchi, circa **9 su 10 sono condotti da cybercriminali**, dimostrando come la criminalità organizzata stia puntando sempre di più allo spazio informatico. L'8% degli attacchi è condotto invece da Hacktivisti (Attivisti che operano tramite hacking, ad esempio *Anonymous*) contro organizzazioni politiche e governative. 
+Gli attacchi di cybersecurity sono sempre più frequenti a livello globale. La Figura 1 mostra l'andamento degli attacchi **noti** - molto spesso infatti le aziende non sono a conoscenza degli attacchi subiti - e di particolare gravità tra il 2020 e il 2024. Si vede chiaramente come gli incidenti globali siano quasi raddoppiati, passati da 1.874 nel 2020 a 3.541 nel 2024, ossia un **+89%**. Di questi attacchi, circa **9 su 10 sono condotti da cybercriminali**, dimostrando come la criminalità organizzata stia puntando sempre di più allo spazio informatico. L'8% degli attacchi è condotto invece da Hacktivisti (Attivisti che operano tramite hacking, ad esempio *Anonymous*) contro organizzazioni politiche e governative.
 
 {{< blogfigure src="incidenti-cybersecurity-2020-2024.png" alt="Andamento degli incidenti cyber nel periodo 2020-2024." caption="Figura 1. Andamento degli incidenti cyber nel periodo 2020-2024." >}}
 
-Tra i continenti più colpiti troviamo l'America al 35%, l'Europa al 30%, e l'Asia al 12%. Molti attacchi comprendono diverse regioni (17% dei casi), mentre la regione meno colpita e l'Africa. Tra le **modalità di attacco più comuni**, mostrate in Figura 2, troviamo **Malware** (Software malevolo, 32%), sfruttamento di **vulnerabilità** (15%) e attacchi **DDoS** (impedire il corretto funzionamento del sistema informatico, 8%). Anche il **Phishing** ha un ruolo sempre crescente nella panoramica degli attacchi, dove viene sfruttato l'errore umano,  che sappiamo essere l'anello più debole della catena. 
+Tra i continenti più colpiti troviamo l'America al 35%, l'Europa al 30%, e l'Asia al 12%. Molti attacchi comprendono diverse regioni (17% dei casi), mentre la regione meno colpita è l'Africa. Tra le **modalità di attacco più comuni**, mostrate in Figura 2, troviamo **Malware** (Software malevolo, 32%), sfruttamento di **vulnerabilità** (15%) e attacchi **DDoS** (impedire il corretto funzionamento del sistema informatico, 8%). Anche il **Phishing** ha un ruolo sempre crescente nella panoramica degli attacchi, dove viene sfruttato l'errore umano,  che sappiamo essere l'anello più debole della catena.
 
 {{< blogfigure src="tecniche-attacchi-cybersecurity-globali-2024.png" alt="Distribuzione delle tecniche di attacco." caption="Figura 2. Distribuzione delle tecniche di attacco." >}}
 
 
 ## La situazione italiana: attacchi in costante aumento
 
-Nel **2024**, il Clusit ha registrato **357 attacchi gravi** contro organizzazioni italiane, con un incremento del **15,2% rispetto al 2023**. Una crescita continua che si inserisce in un trend allarmante: solo nel quinquennio 2020–2024, il numero complessivo di incidenti rilevati in Italia è **quasi decuplicato**, passando da 48 casi nel 2020 ai 357 attuali, come mostrtato in Figura 3.
+Nel **2024**, il Clusit ha registrato **357 attacchi gravi** contro organizzazioni italiane, con un incremento del **15,2% rispetto al 2023**. Una crescita continua che si inserisce in un trend allarmante: solo nel quinquennio 2020-2024, il numero complessivo di incidenti rilevati in Italia è **quasi decuplicato**, passando da 48 casi nel 2020 ai 357 attuali, come mostrato in Figura 3.
 
 
 {{< blogfigure src="incidenti-cyber-italia-2024.png" alt="Distribuzione degli incidenti cyber in Italia nel periodo 2020-2024" caption="Figura 3. Distribuzione degli incidenti cyber in Italia nel periodo 2020-2024.">}}
 
-Ma ciò che più preoccupa è la **sproporzione tra l'impatto e la "dimensione" del nostro Paese**. Pur rappresentando solo lo **0,7% della popolazione mondiale** e circa l'**1,8% del PIL globale**, l'Italia ha subito il **10,1% di tutti gli attacchi informatici gravi noti nel mondo** nel 2024, come mostrato in Figura 4. Un dato allarmante, che ci posiziona tra i Paesi più colpiti in assoluto. Infatti, altri paesi Europei sono ben al di sotto di questa percentuale: La Francia registra il 4% degli attacchi totali, mentre Germania e Regno Unito solo il 3%.
+Ma ciò che più preoccupa è la **sproporzione tra la quantità di attacchi e la "dimensione" del nostro Paese**. Pur rappresentando solo lo **0,7% della popolazione mondiale** e circa l'**1,8% del PIL globale**, l'Italia ha subito il **10,1% di tutti gli attacchi informatici gravi noti nel mondo** nel 2024, come mostrato in Figura 4. Un dato allarmante, che ci posiziona tra i Paesi più colpiti in assoluto. Infatti, altri paesi Europei sono ben al di sotto di questa percentuale: La Francia registra il 4% degli attacchi totali, mentre Germania e Regno Unito solo il 3%.
 
-Questa sproporzione non può essere spiegata solo da un maggiore livello di disclosure (cioè, il fatto che da noi si segnalano più incidenti rispetto ad altri Paesi). Si tratta piuttosto di un **indicatore di debolezza sistemica**: l'Italia è vista come un Paese in cui è facile ottenere risultati, per via della **scarsa preparazione a difendersi** e della **mancanza di cultura diffusa della sicurezza**.
+Questa sproporzione non può essere spiegata solo da un maggiore livello di disclosure (il numero di incidenti *segnalati* e resi pubblici). Si tratta piuttosto di un **indicatore di debolezza sistemica**: l'Italia è vista come un Paese in cui è facile ottenere risultati, per via della **scarsa preparazione a difendersi** e della **mancanza di cultura diffusa della cybersicurezza**.
 
 {{< blogfigure src="incidenti-cyber-italia-vs-global.png" alt="Incidenza degli incidenti in Italia rispetto al campione globale - 2020-2024." caption="Figura 4. Incidenza degli incidenti in Italia rispetto al campione globale - 2020-2024." >}}
 
@@ -67,18 +97,18 @@ Per spiegare come mai l'Italia risulti tra uno dei bersagli principale dei cyber
 
 Negli ultimi anni, anche a causa della pandemia, molte aziende e pubbliche amministrazioni italiane hanno accelerato la digitalizzazione, introducendo smart working, utilizzo del cloud, o digitalizzazione dei processi.
 
-Purtroppo, come spesso accade nell'adozione veloce o sviluppo di nuove tecnologie, ci si **dimentica di progettare la sicurezza** fin dall'inizio. In termini pratici, questo si è tradotto ad esempio in:
+Purtroppo, come spesso accade nell'adozione veloce o sviluppo di nuove tecnologie, non si adotta il pricipio di *security by design*, ossia ci si **dimentica di introdurre la sicurezza** a partire dalla progettazione. In termini pratici, questo si è tradotto ad esempio in:
 
-* server esposti su internet con configurazioni di default;
-* VPN improvvisate e senza Multi-Factor Authentication (Autenticazione a più fattori);
-* interi database accessibili con credenziali deboli;
+* server esposti su internet con **configurazioni di default**;
+* VPN improvvisate e con **assenza di Multi-Factor Authentication (Autenticazione a più fattori)**;
+* interi database accessibili con **credenziali deboli**;
 * backup non protetti (e spesso nemmeno testati).
 
-In altre parole, si è creata una superficie d'attacco molto ampia e poco protetta. E purtroppo, quando l'attacco arriva, il danno è reale ed è difficile rimediare. Tra i danni più comuni troviamo il blocco dei servizi, perdite economiche, danni reputazionali e nei casi peggiori anche responsabilità penale.
+In altre parole, si è creata una superficie d'attacco molto ampia e poco protetta. E purtroppo, quando l'attacco arriva, il danno è reale ed è difficile rimediare. Tra i danni più comuni troviamo il blocco dei servizi, perdite economiche, danni reputazionali e in alcuni casi anche responsabilità penale.
 
 #### 2. Cybercriminali sempre più "industrializzati"
 
-Un tempo, per essere "hacker" e condurre attacchi informatici servivano competenze tecniche avanzate, di certo non alla portata di tutti. Oggi, al contrario, basta un po' di denaro e un accesso al dark web. Infatti, i Cybercriminali hanno sviluppato strumenti e servizi "pronti all'uso" che basta acquistare per condurre attacchi complessi senza il know-how tecnico necessario. In questo modello, definito **Cybercrime-as-a-Service (CaaS)**, chiunque può acquistare:
+Un tempo, per essere "hacker" e condurre attacchi informatici servivano competenze tecniche avanzate, di certo non alla portata di tutti. Oggi, al contrario, basta un po' di denaro e un accesso al dark web. Infatti, i Cybercriminali hanno sviluppato strumenti e servizi "pronti all'uso", che è possibile acquistare per condurre attacchi complessi senza possedere il know-how tecnico necessario. In questo modello, definito **Cybercrime-as-a-Service (CaaS)**, chiunque può acquistare:
 
 * malware preconfezionato;
 * credenziali rubate per l'accesso iniziale;
@@ -86,23 +116,21 @@ Un tempo, per essere "hacker" e condurre attacchi informatici servivano competen
 * servizi DDoS "a noleggio";
 * accesso a intere botnet.
 
-Sebbene chi sviluppa questi strumenti sia altamente specializzato, non è necessario che lo sia anche chi li usa. Questo significa che anche gruppi o compagnie con poche capacità possono lanciare attacchi efficaci, a basso costo, e su larga scala. E paesi come l'Italia, con molte realtà digitali ma scarsamente protette, diventano obiettivi ideali.
+Sebbene chi sviluppa questi strumenti sia altamente specializzato, questo non è necessariamente il caso di chi li utilizza. In altre parole, **gli attaccanti non devono essere esperti di cybersecurity**, purché gli strumenti che usano lo siano. E se gli strumenti sono facili da usare, anche gruppi o compagnie con poche conoscenze tecniche possono lanciare attacchi efficaci, a basso costo, e su larga scala. E paesi come l'Italia, con molte realtà digitali ma scarsamente protette, diventano obiettivi ideali.
 
 #### 3. Cultura della sicurezza debole o inesistente
 
-Qui forse troviamo il punto più critico, ossia che **la sicurezza informatica non è ancora percepita come un bisogno o tema strategico**, ma più come una questione di bassissima priorità (se non inesistente). Troppe volte abbiamo sentito dirigenti d'azienda dire "perché dovrebbero attaccare proprio me? Non ha senso buttare soldi per qualcosa di inutile". 
-
-Infatti, in molte PMI o enti pubblici, la sicurezza è vista come:
+Qui forse troviamo il punto più critico, ossia che **la sicurezza informatica non è ancora percepita come un bisogno o tema strategico**, ma più come una questione di bassissima priorità (se non inesistente). Infatti, in molte PMI o enti pubblici, la sicurezza è vista come:
 
 * una spesa da minimizzare,
 * un "tema tecnico" che riguarda solo l'IT,
 * qualcosa che si risolve con l'antivirus.
 
-Il più grande problema della cybersecurity è proprio questo. Se non porta un beneficio visibile e immediato, allora viene vista solo come un peso per l'azienda. Purtroppo però, come mostrano i dati, sempre più aziende ricevono attacchi informatici. Il 37,8% delle PMI hanno dichiarato di aver subito un attacco informatico, con il Phishing come minaccia principale. 
+Purtroppo però, come mostrano i dati, sempre più aziende ricevono attacchi informatici. Il 37,8% delle PMI hanno dichiarato di aver subito un attacco informatico, con il Phishing come minaccia principale.
 
-Purtroppo manca una visione di insieme. Manca la comprensione del rischio. Spesso non ci sono nemmeno politiche di base come il cambio periodico delle password, la formazione dei dipendenti, dei backup, o un piano di risposta agli incidenti.
+Culturalmente, mancano una visione di insieme e una comprensione del rischio reale, spesso con mancanza di formazione dei dipendenti, nessuna politica di backup, e nessun piano di risposta agli incidenti.
 
-Il risultato è che **l'Italia non è solo attaccabile: è vulnerabile!**. E i cybercriminali hanno già iniziato e continueranno a sfruttare questo dato di fatto.
+Il risultato è che **l'Italia non è solo attaccabile: è vulnerabile!**, e i cybercriminali lo sanno bene.
 
 
 ### Che tipo di attacchi subiamo?
@@ -112,7 +140,7 @@ Come mostrato in Figura 5, in Italia il **78% degli incidenti è attribuito al C
 {{< blogfigure src="attaccanti-italia-2024.png" alt="Attaccanti in Italia nel 2024." caption="Figura 5. Attaccanti in Italia nel 2024." >}}
 
 
-### Quali sono i settori italiani più colpiti? 
+### Quali sono i settori italiani più colpiti?
 
 La Figura 6 mostra da distribuzione delle vittime in Italia nel 2024. Una delle novità più sorprendenti del 2024 è il **sorpasso del settore News/Multimedia**, che balza in cima alla classifica delle vittime italiane con il **18% degli attacchi**. Il motivo? Un'impennata di attacchi "dimostrativi" legati a fenomeni di hacktivismo geopolitico, disinformazione e tentativi di manipolare l'opinione pubblica. Seguono poi:
 
@@ -123,9 +151,7 @@ La Figura 6 mostra da distribuzione delle vittime in Italia nel 2024. Una delle 
 
 {{< blogfigure src="vittime-cybersecurity-italia-2024.png" alt="Distribuzione delle vittime in Italia nel 2024." caption="Figura 6. Distribuzione delle vittime in Italia nel 2024." >}}
 
-Questi dati evidenziano come **nessun settore possa più considerarsi "non interessante" per i criminali informatici**. Qualsiasi azienda che preveda un minimo di automazione o un collegamento a Internet deve avere come priorità la sicurezza informatica. Continuare a pensare che il bersaglio sarà sempre qualcun altro è estremamente pericoloso al giorno d'oggi.
-
-Sempre più settori hanno fatto grandi passi avanti nella digitalizzazione di servizi e processi aziendali. Ma **digitalizzare senza proteggere significa amplificare il rischio**. Il Rapporto Clusit conferma che **il gap tra digitalizzazione e cybersecurity è ancora troppo ampio**.
+Questi dati evidenziano come **nessun settore possa più considerarsi "non interessante" per i criminali informatici**. Qualsiasi azienda che preveda un minimo di automazione o un collegamento a Internet deve avere come priorità la sicurezza informatica, anche grazie al fatto che sempre più settori hanno fatto grandi passi avanti nella digitalizzazione di servizi e processi aziendali. Ma **digitalizzare senza proteggere significa amplificare il rischio**. Il Rapporto Clusit conferma che **il gap tra digitalizzazione e cybersecurity è ancora troppo ampio**.
 
 Per invertire la tendenza servono:
 
@@ -133,13 +159,11 @@ Per invertire la tendenza servono:
 * Collaborazioni pubblico-privato per alzare il livello di difesa collettiva
 * Un cambio di mentalità soprattutto nelle PMI, spesso viste come "anelli deboli" della supply chain
 
-
 ## Intelligenza Artificiale e Cybersecurity: alleata o nemica?
 
 Nel panorama della cybersicurezza del 2025, l'**Intelligenza Artificiale (AI)** gioca un ruolo sempre più centrale. È uno **strumento potentissimo**, ma anche **ambivalente**: può essere un'alleata formidabile nella difesa digitale, ma nelle mani sbagliate diventa un'arma devastante.
 
 Il **Rapporto Clusit 2025** lo sottolinea chiaramente: l'**AI è un moltiplicatore di potenza**, sia per chi attacca che per chi difende.
-
 
 ### Come viene usata l'AI dai cybercriminali?
 
@@ -152,7 +176,6 @@ I criminali informatici stanno integrando l'AI nei loro arsenali in modo sempre 
 
 L'uso dell'AI ha quindi come risultato attacchi più mirati, frequenti, e difficili da intercettare anche per chi ha già soluzioni di sicurezza in atto.
 
-
 ### Come può l'AI diventare un alleato nella difesa?
 
 Fortunatamente, le stesse tecnologie possono (e devono) essere usate anche **per proteggersi**. L'AI infatti viene usata in diversi contesti, ad esempio:
@@ -160,21 +183,17 @@ Fortunatamente, le stesse tecnologie possono (e devono) essere usate anche **per
 * **Rilevamento delle minacce in tempo reale**: l'AI analizza milioni di log e dati in pochi secondi, rilevando pattern anomali o segnali di compromissione invisibili all'occhio umano.
 * **Prevenzione e risposta automatizzata**: strumenti basati su AI possono isolare una macchina (o endpoint) compromessa, bloccare una connessione sospetta o eseguire azioni correttive immediatamente, senza aspettare l'intervento umano (spesso lento, che può avvenire in un secondo momento).
 * **Protezione degli ambienti cloud e ibridi**: con l'aumento della complessità dei sistemi IT, l'AI è in grado di analizzare e offrire una "mappa dinamica" del rischio in ambienti distribuiti e multi-cloud, fornendo un monitoraggio più efficace di quello manuale.
-* **Riduzione dei falsi positivi**: uno dei problemi principali della sicurezza tradizionale è la quantità di allarmi inutili, spesso basati su regole statiche. L'AI migliora la qualità delle segnalazioni basandosi su modelli più accurati, aiutando gli analisti a concentrarsi solo sulle segnalazioni critiche.
-
+* **Riduzione dei falsi positivi**: uno dei problemi principali della sicurezza tradizionale è la quantità di allarmi inutili, spesso basati su regole statiche. L'AI può migliorare la qualità delle segnalazioni basandosi su modelli più dinamici, aiutando gli analisti a concentrarsi solo sulle segnalazioni critiche.
 
 ### Quindi l'AI è un rischio o opportunità? Dipende da chi agisce prima
 
-Il vero punto non è se l'AI sia buona o cattiva. È **chi la adotta per primo**, e con quali risorse. Se le imprese italiane, in particolare le PMI, rimangono indietro, i criminali avranno sempre il vantaggio.
+L'importante non è se l'AI sia buona o cattiva,  ma **chi sia ad adottarla per primo**, e con quali risorse. Se le imprese italiane, in particolare le PMI, rimangono indietro, i criminali avranno sempre il vantaggio.
 
-**Il Clusit suggerisce una chiave fondamentale**: non è più sufficiente dotarsi di strumenti "tradizionali" di sicurezza (che spesso non sono nemmeno presenti). Serve **una postura proattiva, intelligente, e adattiva**. E l'AI, se ben addestrata e governata, può fare la differenza.
+**Il report Clusit fornisce un suggerimento chiave**: non è più sufficiente dotarsi di strumenti "tradizionali" di sicurezza (che restano comunque fondamentali). Serve **una postura proattiva, intelligente, e adattiva**. E l'AI, se ben addestrata e governata, può fare la differenza.
 
 ## Arriva la NIS2: per le aziende è obbligatorio proteggersi
 
-Nel 2025 entrerà pienamente in vigore la **Direttiva NIS2**, la nuova normativa europea che rivoluziona il concetto di responsabilità digitale per aziende ed enti pubblici. A differenza della precedente direttiva NIS (Network and Information Security), che interessava solo un numero limitato di infrastrutture critiche, la NIS2 **estende il perimetro in modo molto ampio**, coinvolgendo anche **molte PMI** e realtà del settore privato.
-
-Vediamo insieme cosa riguarda! Puoi anche fare il nostro test gratuito per capire se devi rispettare la NIS2, lo trovi qui: TODO.
-
+Nel 2025 sta entrando in vigore la **Direttiva NIS2**, la nuova normativa europea che rivoluziona il concetto di responsabilità digitale per aziende ed enti pubblici. A differenza della precedente direttiva NIS (Network and Information Security), che interessava solo un numero limitato di infrastrutture critiche, la NIS2 **estende il perimetro in modo molto ampio**, coinvolgendo anche **molte PMI** e realtà del settore privato.
 
 ### Cos'è esattamente la NIS2?
 
@@ -184,13 +203,13 @@ Questa direttiva:
 
 * Amplia il numero di **settori obbligati ad adottare misure minime di sicurezza** (tra cui sanità, energia, trasporti, telecomunicazioni, produzione critica, servizi digitali, pubblica amministrazione, etc.)
 * Estende gli obblighi a **aziende medio-piccole** che, pur non essendo "grandi imprese", svolgono attività essenziali o importanti per l'economia e la società.
-* Rafforza il potere di **vigilanza e sanzione delle autorità competenti** (in Italia, l'ACN – Agenzia per la Cybersicurezza Nazionale)
+* Rafforza il potere di **vigilanza e sanzione delle autorità competenti** (in Italia, l'ACN - Agenzia per la Cybersicurezza Nazionale)
 
 ### A chi si applica la NIS2?
 
 La direttiva **NIS2** si applica a due categorie di organizzazioni, che sono obbligate a rispettarla:
 
-* **Entità essenziali**: grandi imprese (oltre 250 dipendenti o fatturato annuo superiore a 50 milioni di euro) che operano in settori ad alta criticità, come:
+* **Entità essenziali**: grandi imprese (oltre 250 dipendenti, o fatturato annuo superiore a 50 milioni di euro) che operano in settori ad alta criticità, come:
   * energia (elettricità, gas, idrogeno),
   * trasporti (strada, ferrovia, aria, mare),
   * banche e finanza,
@@ -201,19 +220,15 @@ La direttiva **NIS2** si applica a due categorie di organizzazioni, che sono obb
   * pubblica amministrazione centrale e regionale,
   * spazio (infrastrutture terrestri).
 
-
-
-* **Entità importanti**: imprese medie (oltre 50 dipendenti o fatturato annuo sopra i 10 milioni di euro) attive:
+* **Entità importanti**: medie imprese (oltre 50 dipendenti, o fatturato annuo sopra i 10 milioni di euro) attive:
   * negli stessi settori ad alta criticità sopra elencati,
   * oppure in altri settori rilevanti come: logistica, gestione rifiuti, prodotti chimici, alimentare, manifatturiero, motori di ricerca, social network e centri di ricerca.
 
 **Anche le aziende più piccole** possono rientrare nella NIS2 se:
-* sono l’unico fornitore di un servizio essenziale,
-* o se un’interruzione del loro servizio può avere impatti seri su salute, sicurezza pubblica o ordine nazionale.
+* sono l'unico fornitore di un servizio essenziale,
+* o se un'interruzione del loro servizio può avere impatti seri su salute, sicurezza pubblica o ordine nazionale.
 
-Infine, **alcuni enti pubblici e fornitori di servizi digitali** sono soggetti alla direttiva indipendentemente dalla dimensione, con l’eccezione di chi opera in ambiti di difesa, sicurezza nazionale o forze dell’ordine.
-
-Scopri se sei obbligato a rispettare la NIS2 facendo il nostro TEST GRATUITO (TODO).
+Infine, **alcuni enti pubblici e fornitori di servizi digitali** sono soggetti alla direttiva indipendentemente dalla dimensione, con l'eccezione di chi opera in ambiti di difesa, sicurezza nazionale o forze dell'ordine.
 
 ### Cosa prevede la NIS2?
 
@@ -223,7 +238,7 @@ Le organizzazioni che rientrano tra i soggetti obbligati dovranno:
 * **Notificare obbligatoriamente ogni incidente di sicurezza grave** entro **24 ore** dalla scoperta, pena sanzioni
 * **Condurre valutazioni regolari dei rischi** e avere un piano documentato di gestione e risposta agli incidenti
 * **Designare un responsabile interno per la sicurezza delle informazioni**
-* **Affrontare sanzioni fino al 2% del fatturato annuo**, in caso di violazioni gravi o ripetute
+* **Affrontare sanzioni fino a 10 milioni oppure a 2% del fatturato annuo**, in caso di violazioni gravi o ripetute
 
 
 ### E se sei una PMI?
@@ -231,7 +246,6 @@ Le organizzazioni che rientrano tra i soggetti obbligati dovranno:
 La NIS2 non è una normativa solo per le "grandi aziende". Le **PMI che operano in settori considerati "essenziali" o "importanti"**, o che fanno parte di filiere strategiche (es. fornitori di servizi sanitari, digitali, produttori industriali), **possono rientrare tra gli obbligati** anche se non superano i 250 dipendenti.
 
 **Attenzione**: se fornisci servizi a un'azienda soggetta a NIS2, **potresti comunque essere coinvolto** attraverso obblighi contrattuali, audit o controlli di conformità.
-
 
 ### Perché agire subito?
 
@@ -244,20 +258,20 @@ Scopri di più sui nostri [Servizi di Cybersecurity](/services/servizi-cybersecu
 
 ## Le PMI italiane sono sicure?
 
-Spoiler: purtroppo, no. Il report mostra i risultati di un'indagine condotta su 2.847 PMI Italiane. L'indagine si basa su audit effettuati dai **PID (Punti Impresa Digitale)** delle Camere di Commercio, utilizzando lo strumento di autovalutazione **PID Cyber Check** – sviluppato in collaborazione con DINTEC, IIT-CNR, ENEA e Unioncamere. I risultati evidenziano una **maturità cyber ancora troppo bassa**.
+Il report mostra i risultati di un'indagine condotta su 2.847 PMI Italiane. L'indagine si basa su audit effettuati dai **PID (Punti Impresa Digitale)** delle Camere di Commercio, utilizzando lo strumento di autovalutazione **PID Cyber Check** - sviluppato in collaborazione con DINTEC, IIT-CNR, ENEA e Unioncamere. I risultati evidenziano una **maturità cyber ancora troppo bassa**.
 
 In un Paese dove il **95% del tessuto economico è costituito da micro e piccole imprese**, la **cybersecurity non può più essere un lusso da grandi aziende**. Tuttavia, secondo quanto riportato nel report, la **stragrande maggioranza delle PMI italiane è impreparata a fronteggiare anche le minacce digitali più basilari**.
 
-Come mostrato in Figura 7, la maggior parte delle aziende si colloca in una fascia di rischio medio (72,4%). Questa è indubitamente una situazione preoccupante, visto che la maggiorparte delle PMI del nostro paese non ha un livello di sicurezza adeguato, esponendosi a potenziali minacce e vulnerabilità. 
+Come mostrato in Figura 7, la maggior parte delle aziende si colloca in una fascia di rischio medio (72,4%). Questa è indubitamente una situazione preoccupante, visto che la maggior parte delle PMI del nostro paese non ha un livello di sicurezza adeguato, esponendosi a potenziali minacce e vulnerabilità.
 
 {{< blogfigure src="fasce-rischio-pmi-italia-cybersecurity.png" alt="Fasce di rischio delle Imprese." caption="Figura 7. Fasce di rischio delle Imprese." >}}
 
 
-La gravità della situazione è mostrata dal fatto che il 37,8% delle PMI ha dichiarato di aver subito attacchi informatici. **Più di un terzo delle imprese è stato vittima di cybercriminali!**. La Figura 8 evidenzia le tipologie di attacco più frequenti: 
+La gravità della situazione è mostrata dal fatto che il 37,8% delle PMI ha dichiarato di aver subito attacchi informatici. **Più di un terzo delle imprese è stato vittima di cybercriminali!**. La Figura 8 evidenzia le tipologie di attacco più frequenti:
+
 * **Phishing**: la minaccia principale, mostra che i dipendenti e gli utenti finali sono l'anello debole della catena di sicurezza. L'unico modo efficace per prevenire e contrastare il phishing è la formazione.
-* **Malware**: anche i software malevoli sono un problema rilevante. Insegnare ai dipendenti i punti di accesso dei Malware e avere strumenti di difesa adeguati può aiutare a ridurre i pericoli.
-* **Web App Attack**: Le interfacce Web sono un grosso punto d'accesso per i Cybercriminali. Svolgere Vulnerability Assessment e Penetration Test aiuta le aziende a proteggersi preventivamente.
-* **Ransomware**: Una minaccia sempre più frequente, dove i dati aziendali vengono cryptati e restituiti solo tramite riscatto. I danni economici sono spesso elevati, ed è facile incorrere in conseguenze legali al momento del pagamento, o non ricevere indietro i dati una volta pagato! Backup regolari in ambienti isolati possono rimuovere completamente la minaccia.
+* **Malware**: anche i software malevoli sono un problema rilevante. Insegnare ai dipendenti i punti di ingresso dei Malware e avere strumenti di difesa adeguati può aiutare a ridurre i pericoli.
+* **Ransomware**: Una minaccia sempre più frequente, dove i dati aziendali vengono cryptati e restituiti solo tramite riscatto. I danni economici sono spesso elevati, ed è facile incorrere in conseguenze legali al momento del pagamento, o non ricevere indietro i dati una volta pagato. Backup regolari in ambienti isolati possono rimuovere completamente la minaccia.
 * **Comportamenti Scorretti**:  la mancanza di formazione interna e consapevolezza sono anch'esse cause frequenti di attacchi informatici.
 
 Se sei curioso sugli attacchi ransomware che avvengono regolarmente sul nostro paese, dai un'occhiata a questa [dashboard interattiva](https://ransomfeed.it/).
@@ -266,7 +280,7 @@ Se sei curioso sugli attacchi ransomware che avvengono regolarmente sul nostro p
 
 ### Quali sono le PMI più colpite?
 
-#### Distribuzione per settore 
+#### Distribuzione per settore
 
 I settori più colpiti sono il **Manifatturiero** (25,7%), **Alimentazione, Alloggio, Viaggi** (17,8%), **Servizi professionali, scientifici e tecnici** (17%) e **Rivendita al dettaglio** (9,1%). Tra le vulnerabilità in comune tra questi settori troviamo infrastrutture e macchinari obsoleti, l'utilizzo di dispositivi IoT senza sicurezza, o configurazioni (password) di default, che i cybercriminali possono sfruttare facilmente. Anche le informazioni sensibili dei clienti (come quelle di pagamento) risultano molto appetibili per gli attaccanti,, e spesso si trovano in settori come quello dei viaggi, o della rivendita al dettaglio.
 La distribuzione completa è mostrata in Figura 9.
@@ -288,10 +302,9 @@ A livello di fatturato, il 50% delle aziende con meno di un milione di fatturato
 
 #### Distribuzione per posizione geografica
 
-Le risposte sono pervenute in modo bilanciato dal territorio italiano: 37,6% Dal Nord Italia, 36,4% dal Centro Italia, e 26% dal Sud e Isole. Questo dimostra come i problemi non siano limitati solo a regioni specifiche. E' emerso anche che molte aziende hanno effettivamente implementato misure di sicurezza come aggiornamenti automatici, firewall o antivirus, ma il 49% ha dichiarato di non analizzare le informazioni registrate. 
+Le risposte sono pervenute in modo bilanciato dal territorio italiano: 37,6% Dal Nord Italia, 36,4% dal Centro Italia, e 26% dal Sud e Isole. Questo dimostra come i problemi non siano limitati solo a regioni specifiche. E' emerso anche che molte aziende hanno effettivamente implementato misure di sicurezza come aggiornamenti automatici, firewall o antivirus, ma il 49% ha dichiarato di non analizzare le informazioni registrate.
 
 **Avere misure di sicurezza è necessario ma non sufficiente. Bisogna che siano supportate da competenze e processi interni!**
-
 
 ### Cosa manca alle PMI italiane?
 
@@ -312,7 +325,6 @@ I cybercriminali hanno capito che le PMI:
 * **Pagano i riscatti**, perché fermare l'operatività anche solo per 48 ore può significare perdita di clienti, ordini, reputazione
 
 Attaccare una PMI **è spesso più semplice** che attaccare una grande azienda. E a volte, **serve proprio per entrare nella supply chain** di un fornitore più grande.
-
 
 ### Cosa fare per proteggersi? Iniziare è molto semplice
 
@@ -366,7 +378,7 @@ Per molte microimprese, questa cifra **equivale a diversi mesi (o anni) di margi
 * Mancata consegna di commesse strategiche
 * In casi estremi: fallimento
 
-Come si evince dalla Figura 12, quasi il 70% degli attacchi presentano un impatto critico o elevato. Pertanto, anche sperare che l'attacco ricevuto sia di bassa entità non è una strategia affidabile. 
+Come si evince dalla Figura 12, quasi il 70% degli attacchi presentano un impatto critico o elevato. Pertanto, anche sperare che l'attacco ricevuto sia di bassa entità non è una strategia affidabile.
 
 {{< blogfigure src="severity-attacchi-cybersecurity-2024.png" alt="Figura 12. Distribuzione della Severity nel 2024." caption="Figura 12. Distribuzione della Severity nel 2024." >}}
 
@@ -389,7 +401,6 @@ Nel contesto attuale della cybersicurezza, **la vulnerabilità non è più solo 
 
 Il **Rapporto Clusit 2025** chiarisce che un'impresa non può più considerarsi protetta se non lo sono anche i suoi fornitori.
 
-
 ### Perché le aziende piccole sono un bersaglio?
 
 I cybercriminali hanno capito che **le grandi aziende hanno difese solide**, spesso presidiate da team di cybersecurity interni. Per questo, puntano a **penetrare da un ingresso secondario**: un fornitore più piccolo, meno protetto, magari con accesso remoto ai sistemi centrali (via VPN, ERP condivisi, e-mail).
@@ -397,7 +408,6 @@ I cybercriminali hanno capito che **le grandi aziende hanno difese solide**, spe
 Ecco alcuni scenari tipici:
 
 * Un piccolo studio tecnico subisce un attacco e, senza saperlo, diventa veicolo di malware verso il cliente industriale principale.
-* Un fornitore di servizi cloud locale viene violato, esponendo i dati di decine di clienti più grandi.
 * Un consulente con accessi amministrativi ai server di una PA viene compromesso, permettendo un attacco mirato ai sistemi centrali.
 
 In questi casi, **la PMI diventa inconsapevolmente "l'anello debole" che apre la porta agli aggressori**.
@@ -420,94 +430,22 @@ Ecco alcune azioni concrete che ogni impresa può avviare oggi stesso:
 
 1. **Mappare i fornitori critici**: chi ha accesso ai sistemi aziendali? Chi gestisce dati sensibili?
 2. **Stabilire requisiti minimi di sicurezza** nei contratti
-3. **Chiedere ai fornitori un'autovalutazione (es. PID Cyber Check)**
+3. **Chiedere ai fornitori un'autovalutazione**
 4. **Verificare regolarmente gli accessi esterni e i permessi IT**
 5. **Condividere con i partner aggiornamenti su minacce e buone pratiche**
 
 Se invece sei tu il fornitore, dimostrare di avere una buona postura di sicurezza **può diventare un vantaggio commerciale**, in grado di differenziarti dalla concorrenza.
 
-## Il futuro della cybersecurity: cosa ci attende nel 2035?
-
-Come sarà il nostro lavoro, e soprattutto la nostra **vita digitale**, nel 2035?
-Il report Clusit cerca di rispondere in una sezione visionaria e stimolantie interrogando esperti, accademici, e responsabili aziendali su come l'evoluzione tecnologica e la cybersicurezza plasmeranno il nostro futuro.
-
-### Il contesto: digitalizzazione e complessità
-
-Nel 2035, il lavoro sarà immerso in un ecosistema digitale dominato da:
-
-* **Automazione avanzata** e diffusione dell’intelligenza artificiale nei processi decisionali.
-* **Lavoro ibrido** e distribuito, grazie a infrastrutture cloud e connessioni sempre attive.
-* **Aumento della superficie d’attacco**: più dispositivi connessi significa più vulnerabilità.
-
-Questa trasformazione sarà tanto tecnologica quanto culturale: il lavoro umano dovrà riorientarsi per interagire efficacemente con sistemi intelligenti e gestire nuove complessità.
-
-### La centralità della cybersecurity
-
-Nel mondo del 2035, la cybersecurity non sarà più un’attività a margine, ma una competenza trasversale e strategica. Il Rapporto Clusit evidenzia che:
-
-* Tutti i lavoratori (non solo gli specialisti) dovranno avere competenze di base in sicurezza digitale.
-* Le minacce cyber cresceranno in volume, sofisticatezza e impatto.
-* Le aziende dovranno investire in:
-  * **Security by design**
-  * **Formazione continua**
-  * **Collaborazione pubblico-privato**
-
-Questo si traduce anche nella nascita ed evoluzioni di professioni come:
-
-* *Cyber Resilience Manager*
-* *Esperti di threat intelligence basata su AI*
-* *Analisti di sicurezza per ambienti virtuali e immersivi*
-
-### Il ruolo dell’Intelligenza Artificiale
-
-L’AI nel 2035 sarà pervasiva. Secondo il rapporto:
-
-* Automatizzerà attività ripetitive, ma anche analisi complesse.
-* Sarà impiegata in ambiti critici come sanità, finanza, giustizia e pubblica amministrazione.
-* Supporterà le decisioni umane, ma solleverà interrogativi etici e legali.
-
-**Implicazioni per il lavoro:**
-
-* Nasceranno nuove figure professionali come:
-  * *AI Ethics Officer*
-  * *Trainer di algoritmi*
-  * *Analista comportamentale per sistemi AI*
-* Le competenze “human-centric” (empatia, giudizio critico, creatività) diventeranno ancora più preziose.
-* La coesistenza uomo-macchina sarà centrale: l’AI non sostituirà, ma completerà le capacità umane.
-
-### Sfide etiche e di governance
-
-L’intersezione tra AI, lavoro e sicurezza pone nuove sfide:
-
-* **Responsabilità degli algoritmi**: chi risponde degli errori o dei bias?
-* **Trasparenza delle decisioni automatizzate**
-* **Protezione dei dati personali in ambienti lavorativi iper-digitalizzati**
-* **Inclusività**: il rischio di un “digital divide” tra chi ha accesso alle competenze e chi no.
-
-Il rapporto invita a sviluppare una governance condivisa e anticipatoria, che accompagni l’innovazione con regole chiare e un approccio etico.
-
-### Prepararsi al 2035: cosa fare oggi?
-
-Il capitolo si conclude con un appello all’azione. Per affrontare le sfide del lavoro futuro, individui e organizzazioni devono:
-
-* **Investire nella formazione** continua, soprattutto nelle competenze digitali e trasversali.
-* **Promuovere la cultura della sicurezza** e della responsabilità digitale.
-* **Favorire l’integrazione uomo-macchina** in modo sostenibile ed equo.
-* **Adottare un approccio proattivo** al cambiamento tecnologico.
-
-Secondo il report, il lavoro nel 2035 sarà radicalmente diverso, ma non disumanizzato. Sarà un lavoro potenziato dalla tecnologia, dove l’intelligenza artificiale e la cybersecurity giocheranno ruoli chiave. Prepararsi oggi a questo scenario significa costruire competenze, consapevolezza e resilienza, per non subire il futuro, ma guidarlo.
-
-
 ## Conclusione: cosa puoi fare oggi per proteggere la tua azienda
 
-### Non aspettare l'attacco. Inizia a difenderti ora.
+### Non aspettare l'attacco, inizia a difenderti ora
 
 Dopo aver letto dati, scenari e rischi reali riportati dal **Rapporto Clusit 2025**, dovrebbe essere chiaro che la **cybersecurity non è più un tema tecnico da delegare all'IT**. È un **fattore di sopravvivenza per ogni azienda**, grande o piccola che sia.
 
 La buona notizia è che **si può fare molto**, anche con risorse limitate, per iniziare **subito a ridurre il rischio**.
 
 
-### Cinque azioni concrete da avviare subito:
+### Cinque azioni concrete da avviare subito
 
 1. **Fai un check-up della tua sicurezza digitale:**
    Parti da un'autovalutazione come il **PID Cyber Check** (gratuito, fornito dalle Camere di Commercio). Ti aiuterà a capire dove sei esposto e quali aree migliorare, anche se non sei un esperto.
@@ -526,6 +464,6 @@ La buona notizia è che **si può fare molto**, anche con risorse limitate, per 
 
 ### Ti serve aiuto?
 
-Se non sei pronto ad affrontare questo percorso da solo, noi di Manalisk possiamo aiutarti. Con la nostra esperienza ti accompagneremo nel rendere la tua azienda sicura, defininendo insieme le priorità adeguate al tuo budget. La cybersecurity è un processo incrementale, non serve investire da subito decine di migliaia di euro. Una [formazione di cybersecurity base per i dipendenti](/formazione-intelligenza-artificiale-e-cybersecurity/) e un vulnerability assessment sono spesso un ottimo punto di partenza per ridurre il rischio e i possibili danni. 
+Se non sei pronto ad affrontare questo percorso da solo, noi di Manalisk possiamo aiutarti. Con la nostra esperienza ti accompagneremo nel rendere la tua azienda sicura, defininendo insieme le priorità adeguate al tuo budget. La cybersecurity è un processo incrementale, non serve investire da subito decine di migliaia di euro. Una [formazione di cybersecurity base per i dipendenti](/formazione-intelligenza-artificiale-e-cybersecurity/) e un vulnerability assessment sono spesso un ottimo punto di partenza per ridurre il rischio e i possibili danni.
 
 Contattaci per una [prima consulenza è gratuita](/prenota-una-chiamata-consulenza-gratuita/)!, capiremo insieme il piano d'azione migliore per mettere la tua azienda al sicuro!
