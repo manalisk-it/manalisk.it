@@ -17,12 +17,19 @@ params:
     image: "images/PierPaoloTricomi.jpg"
     cv: "/CVs/tricomi.pdf"
     linkedin: "https://www.linkedin.com/in/pier-paolo-tricomi-phd/"
-
   - title: "Simeone Pizzi"
     description: > 
-      Sono esperto di AI e Cybersecurity con esperienza nello sviluppo di soluzioni di sicurezza basate su LLM e infrastruttura cloud.
-      Sono appassionato dell'applicazione di tecnologie AI per la cybersecurity e l'automazione.
+      Professionista specializzato in Cybersecurity e Intelligenza Artificiale, ho conseguito la Laurea Magistrale in Informatica con lode presso l'Università degli Studi di Padova.
+
+      Ho maturato esperienza pratica in contesti innovativi, tra cui uno spin-off universitario impegnato nel trasferimento tecnologico e una realtà aziendale orientata allo sviluppo SaaS. In questi ambienti ho contribuito allo sviluppo di soluzioni avanzate, come sistemi di rilevamento phishing basati su LLM e servizi di estrazione dati da testo libero, e svolto attività di penetration testing e vulnerability assessment. Mi sono inoltre occupato della progettazione e gestione di infrastrutture cloud complesse e dello sviluppo back-end, con ampio utilizzo dei servizi cloud AWS.
+
+      In ambito accademico, ho lavorato come Assegnista di Ricerca su tecniche di analisi statica per l'individuazione di vulnerabilità in applicazioni Android. Ho inoltre affiancato l'attività didattica come Teaching Assistant e Tutor Didattico.
+
+    cv: /CVs/pizzi.pdf
+    linkedin: https://www.linkedin.com/in/sime1/
+
     image: "images/sime1.png"
+
 ---
 
 # Chi Siamo

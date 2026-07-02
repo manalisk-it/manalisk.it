@@ -20,9 +20,10 @@ Grazie alla nostra esperienza accademica e sul campo, siamo in grado di progetta
 Qui sotto trovi una panoramica dei servizi più richiesti:
 puoi usarli come ispirazione, combinarli tra loro o chiederci qualcosa di completamente personalizzato.
 
-**Se non sai da dove cominciare, contattaci: possiamo parlarne insieme, senza impegno. [Prenota qui](/prenota-una-chiamata-consulenza-gratuita/)**
-
-
+**Se non sai da dove cominciare, contattaci: possiamo parlarne insieme, senza impegno.**
+<div class="lead-button">
+{{< lbutton text="Prenota una Call Gratuita" url="/prenota-una-chiamata-consulenza-gratuita">}}
+</div>
 
 {{< card >}}
   {{< card-title >}}AI per Documenti Aziendali{{< /card-title >}}

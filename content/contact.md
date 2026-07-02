@@ -10,7 +10,7 @@ menu:
 
 Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info@manalisk.it](mailto:info@manalisk.it).
 
-Possiamo fissare una **chiamata o incontro gratuito** e discutere su come portare l'AI nella tua azienda!
+Possiamo fissare una [chiamata o incontro gratuito](/prenota-una-chiamata-consulenza-gratuita/) e discutere su come portare l'AI nella tua azienda!
 
 Abbiamo sede a Padova, ma lavoriamo spesso in remoto!
 
