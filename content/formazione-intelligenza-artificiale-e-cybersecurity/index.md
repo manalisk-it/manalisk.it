@@ -28,6 +28,9 @@ Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva pe
 Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
 Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
 
+Cerchi un percorso dedicato all'uso sicuro e consapevole dell'AI in azienda?
+[Scopri la formazione AI aziendale e l'AI Literacy & Governance Sprint](/formazione-ai-aziendale/).
+
 
 
 ## Corsi Intelligenza Artificiale

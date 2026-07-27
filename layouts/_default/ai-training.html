@@ -1,0 +1,177 @@
+{{ define "main" }}
+{{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
+
+<main class="ai-training">
+  <section class="ai-training__hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="ai-training__eyebrow">Formazione AI per aziende</p>
+          <h1>Porta l'AI in azienda.<br><span>Con più competenza e meno rischi.</span></h1>
+          <p class="ai-training__hero-copy">Un percorso pratico per aiutare persone e team a usare strumenti come ChatGPT in modo sicuro, consapevole e davvero utile nel lavoro quotidiano.</p>
+          <div class="ai-training__actions">
+            <a class="ai-training__button ai-training__button--primary" href="{{ $bookingURL }}">Parliamo della tua azienda</a>
+            <a class="ai-training__button ai-training__button--secondary" href="#percorso">Scopri il percorso</a>
+          </div>
+          <p class="ai-training__microcopy">Prima call gratuita · Percorso su misura · In presenza o da remoto</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="ai-training__hero-card">
+            <p class="ai-training__hero-card-label">Non il solito corso teorico</p>
+            <ul>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Casi d'uso reali della tua azienda</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Regole operative facili da applicare</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Materiali e attività documentabili</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Competenze calibrate sui diversi ruoli</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__proof">
+    <div class="container">
+      <div class="ai-training__proof-grid">
+        <div><strong>Approccio pratico</strong><span>Esempi ed esercitazioni, non solo slide</span></div>
+        <div><strong>Competenze tecniche</strong><span>Esperienza in AI, cybersecurity e ricerca</span></div>
+        <div><strong>Formazione su misura</strong><span>Per PMI, team e organizzazioni</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section">
+    <div class="container">
+      <div class="ai-training__section-heading">
+        <p class="ai-training__eyebrow">Il problema</p>
+        <h2>L'AI è già entrata in azienda. Spesso prima delle regole.</h2>
+        <p>I team la usano per scrivere, analizzare, tradurre e prendere decisioni. Senza indicazioni chiare, però, aumentano rischi ed errori evitabili.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4"><article class="ai-training__risk-card"><span class="ai-training__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><h3>Dati condivisi senza criterio</h3><p>Informazioni personali, riservate o aziendali possono finire negli strumenti sbagliati.</p></article></div>
+        <div class="col-md-4"><article class="ai-training__risk-card"><span class="ai-training__icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span><h3>Output credibili ma errati</h3><p>Allucinazioni, fonti inesistenti e risposte imprecise diventano un problema se nessuno verifica.</p></article></div>
+        <div class="col-md-4"><article class="ai-training__risk-card"><span class="ai-training__icon"><i class="fa-solid fa-user-secret" aria-hidden="true"></i></span><h3>Shadow AI e processi opachi</h3><p>Ogni persona sceglie strumenti e modalità diverse, senza visibilità né responsabilità definite.</p></article></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section ai-training__section--tint" id="ai-act">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <p class="ai-training__eyebrow">AI Act, senza allarmismi</p>
+          <h2>Cosa prevede davvero l'articolo 4</h2>
+          <p class="ai-training__legal-intro">Non esiste un corso standard obbligatorio né un “certificato AI Act” universale. Esiste la necessità di adottare misure adeguate al contesto.</p>
+          <a class="ai-training__source-link" href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/ita" target="_blank" rel="noopener">Leggi il testo su EUR-Lex <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-lg-7">
+          <div class="ai-training__legal-card">
+            <p>L'articolo 4, aggiornato dal Regolamento (UE) 2026/1744, richiede a provider e deployer di sistemi AI di adottare misure per sostenere lo sviluppo dell'alfabetizzazione AI delle persone che operano con questi sistemi per loro conto.</p>
+            <div class="ai-training__legal-points">
+              <div><span>01</span><p>Le misure vanno adattate a conoscenze, esperienza, formazione e ruolo delle persone.</p></div>
+              <div><span>02</span><p>Contano il contesto d'uso e le persone su cui il sistema può avere effetti.</p></div>
+              <div><span>03</span><p>Non è richiesto garantire uno specifico livello di competenza per ogni individuo.</p></div>
+            </div>
+            <p class="ai-training__disclaimer">La formazione è una parte di un percorso organizzativo più ampio e non sostituisce una valutazione legale nei casi complessi o ad alto rischio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section">
+    <div class="container">
+      <div class="ai-training__section-heading">
+        <p class="ai-training__eyebrow">A chi serve</p>
+        <h2>Contenuti diversi per responsabilità diverse</h2>
+        <p>Un percorso efficace non tratta allo stesso modo chi corregge una mail, chi seleziona candidati e chi sviluppa un sistema AI.</p>
+      </div>
+      <div class="ai-training__audience-grid">
+        <article><span>01</span><h3>Persone e team</h3><p>Uso quotidiano di strumenti generativi, dati, verifica degli output e comportamenti sicuri.</p></article>
+        <article><span>02</span><h3>Manager e referenti</h3><p>Scelta degli strumenti, responsabilità, casi d'uso, regole interne e gestione dei rischi.</p></article>
+        <article><span>03</span><h3>Team tecnici</h3><p>Limiti dei modelli, sicurezza, integrazione, valutazione e supervisione dei sistemi.</p></article>
+        <article><span>04</span><h3>Funzioni sensibili</h3><p>Approfondimenti dedicati per HR, legale, marketing e ruoli che incidono sulle persone.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section ai-training__section--dark" id="percorso">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="ai-training__eyebrow">Il percorso</p>
+          <h2>AI Literacy &amp;<br>Governance Sprint</h2>
+          <p>Partiamo da come l'AI viene usata davvero, formiamo le persone e lasciamo strumenti concreti per governarla nel tempo.</p>
+          <div class="ai-training__price"><span>Percorsi personalizzati</span><strong>da 1.500 € + IVA</strong></div>
+          <a class="ai-training__button ai-training__button--light" href="{{ $bookingURL }}">Richiedi un confronto</a>
+        </div>
+        <div class="col-lg-7">
+          <ol class="ai-training__steps">
+            <li><span>01</span><div><h3>Ascolto e mappatura</h3><p>Questionario e call iniziale per capire strumenti, ruoli, casi d'uso e criticità.</p></div></li>
+            <li><span>02</span><div><h3>Workshop aziendale</h3><p>Sessione pratica di 2–3 ore, calibrata sul livello dei partecipanti e sul loro lavoro.</p></div></li>
+            <li><span>03</span><div><h3>Sessione per i referenti</h3><p>Un incontro dedicato a decisioni, responsabilità, strumenti autorizzati e prossime azioni.</p></div></li>
+            <li><span>04</span><div><h3>Kit operativo</h3><p>Linee guida, checklist, materiali e registro delle attività formative da mantenere in azienda.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section">
+    <div class="container">
+      <div class="ai-training__section-heading"><p class="ai-training__eyebrow">Programma essenziale</p><h2>Le competenze che diventano comportamenti</h2></div>
+      <div class="ai-training__topics">
+        <span>Come funziona l'AI generativa</span><span>Allucinazioni e verifica</span><span>Dati personali e riservati</span><span>Copyright e contenuti generati</span><span>Prompt injection e sicurezza</span><span>Strumenti autorizzati e shadow AI</span><span>Responsabilità umana</span><span>AI Act e governance</span><span>Casi d'uso per ruolo</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section ai-training__section--tint">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="ai-training__eyebrow">Perché Manalisk</p>
+          <h2>Competenza tecnica, chiarezza didattica</h2>
+          <p class="ai-training__large-copy">Lavoriamo ogni giorno con intelligenza artificiale e cybersecurity. Abbiamo esperienza nella formazione in aziende, università e ITS: sappiamo rendere accessibili concetti complessi senza svuotarli di significato.</p>
+          <a class="ai-training__text-link" href="/about/">Scopri chi siamo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-lg-6">
+          <div class="ai-training__values">
+            <div><i class="fa-solid fa-flask" aria-hidden="true"></i><span><strong>Ricerca e pratica</strong>Competenze aggiornate e applicate a problemi reali.</span></div>
+            <div><i class="fa-solid fa-people-group" aria-hidden="true"></i><span><strong>Esperienza didattica</strong>Contenuti comprensibili per pubblici diversi.</span></div>
+            <div><i class="fa-solid fa-sliders" aria-hidden="true"></i><span><strong>Nessun pacchetto copia-incolla</strong>Il percorso parte dal contesto dell'azienda.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__section">
+    <div class="container ai-training__faq">
+      <div class="ai-training__section-heading"><p class="ai-training__eyebrow">Domande frequenti</p><h2>Prima di iniziare</h2></div>
+      <div class="accordion accordion-flush" id="aiTrainingFaq">
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Chi usa ChatGPT solo per rivedere una mail deve essere formato?</button></h3><div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#aiTrainingFaq"><div class="accordion-body">È opportuno che sappia almeno quali dati non condividere, come verificare l'output e quali strumenti sono autorizzati. Il livello di approfondimento va proporzionato al caso d'uso e al ruolo.</div></div></div>
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Il corso rilascia una certificazione AI Act?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#aiTrainingFaq"><div class="accordion-body">L'AI Act non definisce un certificato universale. Forniamo materiali e un registro delle attività svolte, utili a documentare il percorso intrapreso dall'organizzazione.</div></div></div>
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Il percorso è adatto anche a chi non ha competenze tecniche?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#aiTrainingFaq"><div class="accordion-body">Sì. Il linguaggio, gli esempi e le esercitazioni vengono adattati ai partecipanti. Possiamo prevedere moduli differenti per personale operativo, management e team tecnici.</div></div></div>
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Si può svolgere in presenza?</button></h3><div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#aiTrainingFaq"><div class="accordion-body">Sì. Organizziamo percorsi in presenza, in particolare a Padova e nel Nord Italia, oppure da remoto per aziende in tutta Italia.</div></div></div>
+        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">Avete anche corsi tecnici o di cybersecurity?</button></h3><div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#aiTrainingFaq"><div class="accordion-body">Sì. Consulta il <a href="/formazione-intelligenza-artificiale-e-cybersecurity/">catalogo della formazione</a> oppure contattaci per progettare un programma personalizzato.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-training__final-cta">
+    <div class="container">
+      <div class="ai-training__final-cta-inner">
+        <div><p class="ai-training__eyebrow">Il primo passo è semplice</p><h2>Capire come la tua azienda sta già usando l'AI.</h2><p>In una call gratuita valutiamo insieme persone, strumenti e priorità. Se possiamo aiutarti, disegniamo il percorso adatto.</p></div>
+        <div><a class="ai-training__button ai-training__button--light" href="{{ $bookingURL }}">Prenota una call gratuita</a><a class="ai-training__email-link" href="mailto:info@manalisk.it?subject=Formazione%20AI%20aziendale">oppure scrivi a info@manalisk.it</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
+
+{{ define "scripts" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Formazione AI aziendale","provider":{"@type":"Organization","name":"Manalisk","url":"https://manalisk.it/"},"areaServed":"IT","serviceType":"Formazione aziendale sull'intelligenza artificiale","url":"{{ .Permalink }}"}
+</script>
+{{ end }}
