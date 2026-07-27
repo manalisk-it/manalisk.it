@@ -1,0 +1,97 @@
+{{ define "main" }}
+{{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
+
+<main class="ai-services-modern">
+  <section class="aim-hero">
+    <div class="container aim-container">
+      <p class="aim-eyebrow">{{ .Params.hero.eyebrow }}</p>
+      <h1>{{ .Params.hero.title }}</h1>
+      <p class="aim-lead">{{ .Params.hero.text }}</p>
+      <div class="aim-actions">
+        <a class="aim-button aim-button--primary" href="#servizi-ai">{{ .Params.hero.primary_cta }}</a>
+        <a class="aim-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="aim-services" id="servizi-ai">
+    <div class="container aim-container">
+      <header class="aim-heading">
+        <p class="aim-eyebrow">{{ .Params.services_intro.eyebrow }}</p>
+        <h2>{{ .Params.services_intro.title }}</h2>
+        <p>{{ .Params.services_intro.text }}</p>
+      </header>
+
+      <div class="aim-service-list">
+        {{ range .Params.services }}
+        <article class="aim-service-card">
+          <div class="aim-service-main">
+            <p class="aim-service-kicker">{{ .kicker }}</p>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+            <div class="aim-tags">
+              <span>{{ .duration }}</span>
+              <span>{{ .output }}</span>
+            </div>
+          </div>
+          <div class="aim-service-examples">
+            <h4>Esempi d'uso</h4>
+            <ul>
+              {{ range .examples }}
+              <li>{{ . | markdownify }}</li>
+              {{ end }}
+            </ul>
+            {{ if .link }}
+            <a href="{{ .link }}">{{ .link_text }}</a>
+            {{ else }}
+            <a href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">Parliamo di questo servizio</a>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="aim-method" id="metodo">
+    <div class="container aim-container">
+      <div class="aim-method-grid">
+        <div class="aim-method-heading">
+          <p class="aim-eyebrow">{{ .Params.method.eyebrow }}</p>
+          <h2>{{ .Params.method.title }}</h2>
+          <p>{{ .Params.method.text }}</p>
+        </div>
+        <ol class="aim-steps">
+          {{ range $index, $step := .Params.method.steps }}
+          <li>
+            <span>{{ printf "%02d" (add $index 1) }}</span>
+            <div>
+              <strong>{{ $step.title }}</strong>
+              <p>{{ $step.text }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="aim-final">
+    <div class="container aim-container">
+      <p class="aim-eyebrow">{{ .Params.final_cta.eyebrow }}</p>
+      <h2>{{ .Params.final_cta.title }}</h2>
+      <p>{{ .Params.final_cta.text }}</p>
+      <div class="aim-actions aim-actions--center">
+        <a class="aim-button aim-button--primary" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
+        <a class="aim-email" href="mailto:info@manalisk.it?subject=Servizi%20Intelligenza%20Artificiale">{{ .Params.final_cta.email }}</a>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
+
+{{ define "scripts" }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Servizi di intelligenza artificiale","provider":{"@type":"Organization","name":"Manalisk","url":"https://manalisk.it/"},"areaServed":"IT","serviceType":"Consulenza e sviluppo di soluzioni di intelligenza artificiale","url":"{{ .Permalink }}"}
+</script>
+{{ end }}

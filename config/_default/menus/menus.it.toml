@@ -30,9 +30,9 @@ title = "Scopri i nostri servizi di cybersecurity"
 
 [[main]]
 name = "Formazione"
-url = "formazione-ai-aziendale"
+url = "formazione-intelligenza-artificiale-e-cybersecurity"
 weight = 50
-title = "Scopri la formazione AI aziendale di Manalisk"
+title = "Scopri i nostri corsi di formazione AI e Cybersecurity"
 
 [[main]]
 identifier = "blog"

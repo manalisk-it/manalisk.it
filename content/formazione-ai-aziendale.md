@@ -1,6 +1,6 @@
 ---
-title: "Formazione AI aziendale: uso sicuro e consapevole"
-description: "Formazione pratica sull'intelligenza artificiale per aziende: competenze, linee guida e strumenti per usare l'AI in modo sicuro, produttivo e documentabile."
+title: "Formazione AI Act per dipendenti e dirigenti"
+description: "Formazione AI Act per aziende: corsi per dipendenti e dirigenti su articolo 4, uso responsabile, governance, Digital Omnibus e sistemi AI ad alto rischio."
 layout: ai-training
 menuitem: Formazione
 page_class: ai-training-page
