@@ -8,13 +8,13 @@
       <h1>{{ .Params.hero.title }}</h1>
       <p class="aim-lead">{{ .Params.hero.text }}</p>
       <div class="aim-actions">
-        <a class="aim-button aim-button--primary" href="#servizi-ai">{{ .Params.hero.primary_cta }}</a>
+        <a class="aim-button aim-button--primary" href="#servizi">{{ .Params.hero.primary_cta }}</a>
         <a class="aim-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
       </div>
     </div>
   </section>
 
-  <section class="aim-services" id="servizi-ai">
+  <section class="aim-services" id="servizi">
     <div class="container aim-container">
       <header class="aim-heading">
         <p class="aim-eyebrow">{{ .Params.services_intro.eyebrow }}</p>
@@ -83,7 +83,7 @@
       <p>{{ .Params.final_cta.text }}</p>
       <div class="aim-actions aim-actions--center">
         <a class="aim-button aim-button--primary" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
-        <a class="aim-email" href="mailto:info@manalisk.it?subject=Servizi%20Intelligenza%20Artificiale">{{ .Params.final_cta.email }}</a>
+        <a class="aim-email" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.final_cta.email }}</a>
       </div>
     </div>
   </section>

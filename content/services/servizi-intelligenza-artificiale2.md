@@ -6,6 +6,7 @@ layout: ai-services-modern
 page_class: ai-services-modern-page
 noindex: true
 calendar_url: /prenota-una-chiamata-consulenza-gratuita/
+email_subject: Servizi Intelligenza Artificiale
 
 hero:
   eyebrow: Cosa facciamo
