@@ -289,6 +289,7 @@ h1 {
 @import 'seo-page.scss';
 @import 'ai-training.scss';
 @import 'ai-services-modern.scss';
+@import 'modern-catalogue.scss';
 
 .cta-button {
   background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */
@@ -300,7 +301,7 @@ h1 {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.3s ease, opacity 1s ease !important; /* Puoi lasciarla o rimuoverla */
+  transition: background 180ms ease, transform 180ms ease, box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1), opacity 180ms ease !important;
   text-decoration: none; /* 🔥 Rimuove la sottolineatura */
 }
 

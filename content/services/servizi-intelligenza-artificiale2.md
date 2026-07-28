@@ -1,38 +1,40 @@
 ---
-title: Servizi Intelligenza Artificiale — proposta grafica
-description: Proposta alternativa per la pagina dei servizi di intelligenza artificiale di Manalisk.
+title: Servizi di Intelligenza Artificiale | Manalisk
+linkTitle: Servizi AI
+description: Soluzioni AI per automatizzare attività, consultare documenti, estrarre informazioni e analizzare dati aziendali.
 draft: true
 layout: ai-services-modern
-page_class: ai-services-modern-page
+page_class: ai-services-modern-page modern-catalogue-page
+variant: practical
 noindex: true
 calendar_url: /prenota-una-chiamata-consulenza-gratuita/
 email_subject: Servizi Intelligenza Artificiale
+service_contact_label: Valutiamo questo caso
+primary_button_class: cta-button
 
 hero:
-  eyebrow: Cosa facciamo
-  title: Servizi di intelligenza artificiale
+  eyebrow: Servizi AI
+  title: AI applicata ai processi aziendali
   text: >-
-    Progettiamo soluzioni su misura per organizzare documenti, trovare informazioni,
-    analizzare dati e automatizzare attività ripetitive. L'AI può leggere archivi,
-    estrarre informazioni e riconoscere pattern: noi partiamo dai processi reali
-    dell'azienda per capire dove può creare valore concreto. Lavoriamo con queste
-    tecnologie da prima che nascesse ChatGPT.
-  primary_cta: Vedi i servizi
-  secondary_cta: Oppure prenota una call gratuita
+    Partiamo da documenti, dati e attività che oggi richiedono troppo tempo.
+    Verifichiamo se l'AI può semplificarli, proviamo la soluzione su un caso reale
+    e la integriamo negli strumenti già utilizzati. Se l'AI non serve, lo diciamo.
+  primary_cta: Guarda gli ambiti di lavoro
+  secondary_cta: Raccontaci il processo
 
 services_intro:
-  eyebrow: Servizi disponibili
-  title: I nostri servizi AI
+  eyebrow: Ambiti di lavoro
+  title: Dove possiamo intervenire
   text: >-
-    Puoi partire da un singolo caso d'uso, combinare più servizi o chiederci
-    una soluzione completamente personalizzata.
+    Non serve partire da un progetto enorme. Possiamo affrontare un singolo
+    passaggio operativo, verificare il risultato e decidere come proseguire.
 
 services:
-  - kicker: Processi connessi
-    title: Automazioni e integrazioni con i sistemi esistenti
+  - kicker: Automazioni
+    title: Automatizzare attività e passaggi tra sistemi
     description: >-
-      Colleghiamo strumenti, gestionali e canali di comunicazione per automatizzare
-      passaggi ripetitivi e far circolare le informazioni senza continui inserimenti manuali.
+      Colleghiamo gestionali, moduli, email e altri strumenti per evitare copie
+      manuali, aggiornamenti ripetuti e passaggi di informazioni tra sistemi.
     duration: 2–12 settimane
     output: Automazioni e integrazioni
     contact_subject: Automazioni e integrazioni AI
@@ -41,11 +43,11 @@ services:
       - "**Email e messaggistica:** classificazione delle richieste, preparazione o invio di risposte e instradamento verso la persona corretta, anche su WhatsApp."
       - "**Gestionali e CRM:** sincronizzazione dei dati, aggiornamento delle schede e creazione automatica di attività tra sistemi diversi."
 
-  - kicker: Documenti e archivi
-    title: AI per documenti aziendali
+  - kicker: Documenti
+    title: Organizzare e consultare documenti
     description: >-
-      Semplifichiamo e velocizziamo la gestione dei documenti: digitalizzazione,
-      classificazione, organizzazione e recupero delle informazioni con meno intervento manuale.
+      Digitalizziamo, classifichiamo e rendiamo ricercabili archivi che oggi
+      richiedono consultazione manuale o dipendono dalla memoria delle persone.
     duration: 2–16 settimane
     output: Software personalizzato
     contact_subject: AI per documenti aziendali
@@ -54,12 +56,11 @@ services:
       - "**Classificazione automatica dei contratti:** l'AI li ordina per tipologia o data e assegna metadati utili per la ricerca."
       - "**Ordinamento di documenti legali:** atti e contratti vengono suddivisi per tipologia, anno o controparte, facilitando consultazione e audit."
 
-  - kicker: Conoscenza aziendale
-    title: Smart Search e RAG
+  - kicker: Ricerca interna
+    title: Cercare informazioni con fonti verificabili
     description: >-
-      Trasformiamo grandi archivi di testi in sistemi di ricerca semantica. Le persone
-      possono fare domande in linguaggio naturale e ottenere risposte fondate sui
-      contenuti esistenti, con riferimenti verificabili.
+      Creiamo sistemi che rispondono a domande usando procedure, contratti e
+      documenti aziendali, indicando i passaggi da cui proviene ogni risposta.
     duration: 2–12 settimane
     output: Software personalizzato
     contact_subject: Smart Search e RAG
@@ -68,12 +69,11 @@ services:
       - "**Per una casa editrice:** lettori e redattori possono consultare intere collane in linguaggio naturale."
       - "**Per un ente formativo o di ricerca:** pubblicazioni, dispense e materiali didattici diventano più semplici da consultare."
 
-  - kicker: Dai contenuti ai dati
-    title: Estrazione di dati strutturati
+  - kicker: Estrazione
+    title: Trasformare documenti in dati
     description: >-
-      Estraiamo automaticamente informazioni da PDF, email, contratti, tabelle,
-      immagini e formati non standardizzati, organizzandole in dati pronti per
-      essere analizzati o integrati.
+      Leggiamo PDF, email, contratti, tabelle e immagini per estrarre le
+      informazioni necessarie e passarle a database, fogli di lavoro o gestionali.
     duration: 3–15 settimane
     output: Software personalizzato
     contact_subject: Estrazione di dati strutturati
@@ -82,11 +82,11 @@ services:
       - "**Per la logistica:** estrazione di orari e indicazioni di consegna da integrare nei flussi operativi."
       - "**Per un editore o reparto tecnico:** creazione di database strutturati a partire da schemi, disegni e immagini."
 
-  - kicker: Comprendere ciò che accade
-    title: Analisi dei dati
+  - kicker: Analisi
+    title: Capire cosa dicono i dati
     description: >-
-      Trasformiamo dati grezzi provenienti da Excel, database, CRM o ERP in analisi
-      e visualizzazioni utili a migliorare processi, strategie e decisioni.
+      Riuniamo dati provenienti da Excel, database, CRM o ERP e li trasformiamo
+      in analisi e visualizzazioni utilizzabili nelle decisioni quotidiane.
     duration: 1–4 settimane
     output: Report o dashboard
     contact_subject: Analisi dei dati
@@ -95,11 +95,11 @@ services:
       - "**Per il team commerciale:** analisi delle performance di prodotti, clienti, territori e campagne."
       - "**Per la direzione operativa:** confronto tra tempi previsti e reali e individuazione dei colli di bottiglia."
 
-  - kicker: Guardare in avanti
-    title: Previsioni con machine learning
+  - kicker: Previsioni
+    title: Fare previsioni sui dati storici
     description: >-
-      Utilizziamo i dati storici per costruire modelli predittivi adattati al
-      contesto reale dell'azienda, rendendo pianificazione e decisioni più informate.
+      Verifichiamo se quantità e qualità dei dati permettono di stimare domanda,
+      volumi, costi o flussi futuri con un margine d'errore utile.
     duration: 4–16 settimane
     output: Modello personalizzato
     contact_subject: Previsioni con machine learning
@@ -108,11 +108,11 @@ services:
       - "**Per la logistica:** stima anticipata dei volumi per ottimizzare turni, mezzi e costi."
       - "**Per l'amministrazione:** previsione dei flussi di cassa e delle scadenze per gestire meglio la liquidità."
 
-  - kicker: Dalla priorità al progetto
-    title: Consulenza AI su misura
+  - kicker: Consulenza
+    title: Capire da dove iniziare
     description: >-
-      Analizziamo i processi, identifichiamo dove l'AI può produrre valore concreto
-      e costruiamo una roadmap, accompagnando l'azienda dalla strategia all'implementazione.
+      Analizziamo attività, dati e vincoli per scegliere un primo caso d'uso
+      realistico, definire le priorità e arrivare a un prototipo verificabile.
     duration: 2–12 settimane
     output: Roadmap o software
     contact_subject: Consulenza AI su misura
@@ -121,11 +121,11 @@ services:
       - "**Per un'azienda strutturata:** analisi dei flussi per integrare l'AI in più reparti con soluzioni coerenti."
       - "**Per una realtà in crescita:** scelta delle tecnologie, definizione delle priorità e validazione dei casi d'uso tramite prototipi."
 
-  - kicker: Competenze e autonomia
-    title: Formazione in ambito AI
+  - kicker: Formazione
+    title: Formare chi userà l'AI
     description: >-
-      Creiamo percorsi per team tecnici, personale operativo e management, adattando
-      linguaggio, casi ed esercitazioni alle responsabilità dei partecipanti.
+      Prepariamo percorsi per management, personale operativo e team tecnici,
+      usando esempi ed esercitazioni vicini al lavoro dei partecipanti.
     duration: 4–36 ore
     output: In presenza o online
     link: /formazione-intelligenza-artificiale-e-cybersecurity/
@@ -136,28 +136,28 @@ services:
       - "**Per il team IT:** formazione tecnica sull'integrazione dei modelli e sulla valutazione delle tecnologie disponibili."
 
 method:
-  eyebrow: Il metodo
-  title: Prima il problema. Poi la tecnologia.
+  eyebrow: Come lavoriamo
+  title: Verifichiamo prima di costruire
   text: >-
-    Un progetto utile nasce dalla comprensione del processo e dei dati disponibili.
-    Per questo iniziamo in piccolo, verifichiamo il valore e costruiamo solo ciò
-    che serve davvero.
+    Un'idea promettente può non funzionare con i dati o gli strumenti disponibili.
+    Per questo controlliamo presto la fattibilità e proviamo il caso d'uso prima
+    di estendere il progetto.
   steps:
-    - title: Comprendiamo
-      text: Obiettivi, persone, strumenti e vincoli.
-    - title: Validiamo
-      text: Dati, fattibilità e risultato atteso.
-    - title: Realizziamo
-      text: Prototipo, soluzione e integrazione.
-    - title: Trasferiamo
-      text: Competenze e indicazioni per l'utilizzo.
+    - title: Capire il processo
+      text: Chi fa cosa, con quali strumenti e dove si perde tempo.
+    - title: Controllare dati e vincoli
+      text: Qualità dei dati, accessi, rischi e risultato atteso.
+    - title: Provare su un caso reale
+      text: Un prototipo piccolo, valutato su esempi rappresentativi.
+    - title: Integrare e documentare
+      text: La soluzione negli strumenti di lavoro, con istruzioni chiare.
 
 final_cta:
-  eyebrow: Non trovi esattamente ciò che cerchi?
-  title: Partiamo dal processo che vuoi migliorare
+  eyebrow: Hai un processo in mente?
+  title: Raccontaci cosa vuoi semplificare
   text: >-
-    In una prima call gratuita capiamo insieme se l'AI è lo strumento giusto
-    e quale potrebbe essere il passo iniziale più sensato.
-  primary: Prenota una call gratuita
+    In una prima call capiamo se esiste un caso d'uso sensato e quale prova
+    conviene fare. Se non vediamo un vantaggio concreto, te lo diciamo subito.
+  primary: Prenota una prima call
   email: Oppure scrivici a info@manalisk.it
 ---

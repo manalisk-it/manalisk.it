@@ -3,28 +3,30 @@ title: Servizi Cybersecurity — proposta grafica
 description: Proposta alternativa per la pagina dei servizi di cybersecurity di Manalisk.
 draft: true
 layout: ai-services-modern
-page_class: ai-services-modern-page
+page_class: ai-services-modern-page modern-catalogue-page
+variant: practical
 noindex: true
 calendar_url: /prenota-una-chiamata-consulenza-gratuita-cyber/
 email_subject: Servizi Cybersecurity
+service_contact_label: Valutiamo questo caso
+primary_button_class: cta-button
 
 hero:
-  eyebrow: Cosa facciamo
-  title: Servizi di cybersecurity
+  eyebrow: Servizi cybersecurity
+  title: Verificare e ridurre i rischi informatici
   text: >-
-    Valutiamo lo stato di sicurezza di infrastrutture, applicazioni e processi
-    aziendali, individuiamo le vulnerabilità e costruiamo percorsi di miglioramento
-    concreti. Uniamo esperienza accademica e pratica per aiutare le organizzazioni
-    a prevenire gli attacchi, ridurne l'impatto e reagire in modo più efficace.
-  primary_cta: Vedi i servizi
-  secondary_cta: Oppure prenota una call gratuita
+    Controlliamo infrastrutture, applicazioni e processi per individuare
+    vulnerabilità, esposizioni e punti deboli. Poi definiamo gli interventi in
+    base al rischio reale, alle priorità e alle risorse disponibili.
+  primary_cta: Guarda gli ambiti di lavoro
+  secondary_cta: Raccontaci il problema
 
 services_intro:
-  eyebrow: Servizi disponibili
-  title: I nostri servizi cybersecurity
+  eyebrow: Ambiti di lavoro
+  title: Dove possiamo intervenire
   text: >-
-    Puoi partire da una verifica specifica, combinare più attività o chiederci
-    un percorso costruito sulle caratteristiche della tua infrastruttura.
+    Possiamo partire da una verifica specifica, affrontare un problema già
+    individuato oppure definire un percorso più ampio sulla tua infrastruttura.
 
 services:
   - kicker: Individuare i punti deboli
@@ -137,12 +139,12 @@ services:
       - "**Per team IT e tecnici:** configurazioni sicure, gestione degli accessi, vulnerabilità comuni e pratiche di incident response."
 
 method:
-  eyebrow: Il metodo
-  title: Conoscere il rischio. Ridurlo con priorità.
+  eyebrow: Come lavoriamo
+  title: Verifichiamo prima di intervenire
   text: >-
-    La sicurezza non nasce da un singolo prodotto. Partiamo dal contesto tecnico
-    e organizzativo, verifichiamo i rischi reali e costruiamo un percorso sostenibile,
-    concentrando gli interventi dove producono più valore.
+    Partiamo dal contesto tecnico e organizzativo, controlliamo i rischi reali
+    e ordiniamo gli interventi per priorità. In questo modo è chiaro cosa
+    correggere subito, cosa pianificare e cosa monitorare.
   steps:
     - title: Comprendiamo
       text: Infrastruttura, dati, persone e obiettivi.
@@ -154,11 +156,11 @@ method:
       text: Procedure, competenze e miglioramento continuo.
 
 final_cta:
-  eyebrow: Non sai da dove cominciare?
-  title: Partiamo dallo stato di sicurezza attuale
+  eyebrow: Hai un problema o un dubbio?
+  title: Partiamo dalla situazione attuale
   text: >-
-    In una prima call gratuita comprendiamo il contesto, le priorità e il servizio
-    più adatto per ridurre concretamente il rischio.
+    In una prima call capiamo il contesto, le priorità e quale verifica può
+    produrre informazioni utili. Se non serve un intervento, lo diciamo.
   primary: Prenota una call gratuita
   email: Oppure scrivici a info@manalisk.it
 ---

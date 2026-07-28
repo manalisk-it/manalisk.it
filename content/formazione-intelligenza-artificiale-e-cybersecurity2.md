@@ -3,22 +3,25 @@ title: Formazione Intelligenza Artificiale e Cybersecurity — proposta grafica
 description: Corsi di formazione su intelligenza artificiale e cybersecurity per aziende, università, ITS e professionisti.
 draft: true
 layout: ai-services-modern
-page_class: ai-services-modern-page
+page_class: ai-services-modern-page modern-catalogue-page
+variant: practical
 noindex: true
 calendar_url: /prenota-una-chiamata-consulenza-gratuita/
 email_subject: Formazione Intelligenza Artificiale e Cybersecurity
+service_contact_label: Valutiamo questo percorso
+primary_button_class: cta-button
 schema_name: Formazione Intelligenza Artificiale e Cybersecurity
 schema_service_type: Formazione aziendale in intelligenza artificiale e cybersecurity
 
 hero:
   eyebrow: Formazione
-  title: Competenze utili, applicabili nel lavoro
+  title: Formazione AI e cybersecurity per il lavoro
   text: >-
     Progettiamo corsi di intelligenza artificiale e cybersecurity per aziende,
-    università, ITS e professionisti. I programmi sono chiari, pratici e adattabili
-    al livello e agli obiettivi dei partecipanti, anche quando i temi sono complessi.
-  primary_cta: Scopri i corsi
-  secondary_cta: Oppure prenota una call gratuita
+    università, ITS e professionisti. Adattiamo programma, linguaggio ed esempi
+    alle competenze di partenza e a ciò che i partecipanti devono saper fare.
+  primary_cta: Guarda i corsi
+  secondary_cta: Raccontaci cosa serve
 
 stats:
   - value: 1.000+
@@ -31,8 +34,8 @@ stats:
     label: esperienza con pubblici e ruoli differenti
 
 services_intro:
-  eyebrow: Percorsi disponibili
-  title: Corsi introduttivi e programmi su misura
+  eyebrow: Corsi disponibili
+  title: Corsi di base e percorsi su misura
   text: >-
     Puoi scegliere un corso di base oppure costruire con noi un percorso dedicato.
     I prezzi indicati sono orientativi; sono disponibili condizioni dedicate per
@@ -47,7 +50,7 @@ services:
       strumenti in ambiti come marketing, gestione clienti, produzione e logistica,
       senza richiedere competenze tecniche di partenza.
     metadata:
-      - 8 ore
+      - 4 ore
       - 5–25 partecipanti
       - 750 € indicativi
       - Livello base
@@ -67,7 +70,7 @@ services:
       dati, strumenti e processi aziendali. Il linguaggio è accessibile e gli esempi
       aiutano a tradurre i principi di sicurezza in comportamenti quotidiani.
     metadata:
-      - 8 ore
+      - 4 ore
       - 5–25 partecipanti
       - 750 € indicativi
       - Livello base
@@ -81,22 +84,47 @@ services:
       - "**Email e comunicazioni:** come riconoscere messaggi sospetti, link e allegati pericolosi."
       - "**Privacy e dati aziendali:** buone pratiche per trattare le informazioni sensibili."
 
-  - kicker: Uso sicuro e consapevole dell'AI
-    title: AI Literacy e formazione AI aziendale
+  - kicker: Per chi utilizza l'AI
+    title: AI Act Essentials
     description: >-
-      Percorsi dedicati a dipendenti e dirigenti per usare e governare
-      l'intelligenza artificiale in modo responsabile, proporzionato al ruolo
-      e documentabile.
+      Un percorso pratico per dipendenti che usano strumenti come ChatGPT,
+      Microsoft Copilot o assistenti analoghi. Affrontiamo dati, verifica degli
+      output, strumenti autorizzati e comportamenti corretti nel lavoro.
     metadata:
-      - Percorsi dedicati
-      - Dipendenti e dirigenti
-    details_label: A chi si rivolge
-    highlight: true
-    link: /formazione-ai-aziendale/
-    link_text: Scopri la formazione AI aziendale
+      - 4 ore
+      - Fino a 20 partecipanti
+      - 750 €
+      - In presenza o online
+    details_label: Cosa imparano i partecipanti
+    highlight: false
+    contact_subject: AI Act Essentials per dipendenti
+    contact_label: Richiedi questo percorso
     examples:
-      - "**Per chi utilizza l'AI:** dati, verifica degli output, strumenti autorizzati e rischi essenziali."
-      - "**Per chi governa l'AI:** responsabilità, policy, procurement e priorità organizzative."
+      - "**Dati e riservatezza:** informazioni personali, aziendali e contenuti che non devono essere inseriti negli strumenti."
+      - "**Output da verificare:** allucinazioni, errori e responsabilità sui contenuti prodotti."
+      - "**Uso quotidiano:** strumenti autorizzati, shadow AI, copyright, prompt injection e phishing."
+      - "**Regole interne:** comportamenti e policy da applicare nei casi d'uso reali dell'azienda."
+
+  - kicker: Per chi governa l'AI
+    title: AI Act for Management
+    description: >-
+      Un percorso per dirigenti, imprenditori e responsabili che devono decidere
+      quali strumenti adottare, come governarne l'uso e quali responsabilità,
+      controlli e priorità organizzative definire.
+    metadata:
+      - 4 ore
+      - Fino a 10 partecipanti
+      - 1.200 €
+      - In presenza o online
+    details_label: Cosa affrontiamo insieme
+    highlight: false
+    contact_subject: AI Act for Management
+    contact_label: Richiedi questo percorso
+    examples:
+      - "**Responsabilità:** ruolo dell'organizzazione e supervisione umana."
+      - "**Strumenti e casi d'uso:** mappatura degli utilizzi ordinari, sensibili e ad alto rischio."
+      - "**Governance:** criteri di procurement, strumenti autorizzati e policy interna."
+      - "**Piano d'azione:** priorità e prossimi passi per l'azienda."
 
   - kicker: Programmi personalizzati
     title: Un corso costruito sul tuo contesto
@@ -117,12 +145,11 @@ services:
       - "**Per università, ITS e centri di ricerca:** programmi coerenti con obiettivi didattici e profilo dei partecipanti."
 
 method:
-  eyebrow: Il metodo
-  title: Dal contesto alla pratica
+  eyebrow: Come lavoriamo
+  title: Partiamo da chi deve imparare
   text: >-
-    Coniughiamo esperienza accademica e aziendale, aggiornamento continuo e
-    chiarezza espositiva. Ogni percorso è progettato per trasferire competenze
-    utilizzabili, non soltanto nozioni.
+    Prima definiamo ruoli, competenze iniziali e obiettivi. Poi scegliamo
+    contenuti, esempi ed esercitazioni che possano essere riutilizzati nel lavoro.
   steps:
     - title: Ascoltiamo
       text: Obiettivi, ruoli e competenze di partenza.
@@ -134,8 +161,8 @@ method:
       text: Materiali e strumenti applicabili nel lavoro.
 
 final_cta:
-  eyebrow: Non sai quale percorso scegliere?
-  title: Definiamo insieme il programma più adatto
+  eyebrow: Devi organizzare un corso?
+  title: Definiamo partecipanti, obiettivi e programma
   text: >-
     In una prima call gratuita raccogliamo le esigenze, il livello dei partecipanti
     e gli obiettivi formativi per proporti il percorso più utile.

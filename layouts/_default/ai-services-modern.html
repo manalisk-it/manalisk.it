@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
 {{ $variant := .Params.variant | default "" }}
+{{ $serviceContactLabel := .Params.service_contact_label | default "Parliamo di questo servizio" }}
+{{ $primaryButtonClass := .Params.primary_button_class | default "" }}
 
 <main class="ai-services-modern{{ with $variant }} ai-services-modern--{{ . }}{{ end }}">
   <section class="aim-hero">
@@ -10,8 +12,8 @@
       <h1>{{ .Params.hero.title }}</h1>
       <p class="aim-lead">{{ .Params.hero.text }}</p>
       <div class="aim-actions">
-        <a class="aim-button aim-button--primary" href="#servizi">{{ .Params.hero.primary_cta }}</a>
-        <a class="aim-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
+        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="#servizi">{{ .Params.hero.primary_cta }}</a>
+        <a class="modern-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
       </div>
     </div>
   </section>
@@ -95,9 +97,9 @@
               {{ end }}
             </ul>
             {{ if .link }}
-            <a href="{{ .link }}">{{ .link_text }}</a>
+            <a class="modern-text-link aim-service-link" href="{{ .link }}">{{ .link_text }}</a>
             {{ else }}
-            <a href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">{{ .contact_label | default "Parliamo di questo servizio" }}</a>
+            <a class="modern-text-link aim-service-link" href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">{{ .contact_label | default $serviceContactLabel }}</a>
             {{ end }}
           </div>
         </article>
@@ -135,7 +137,7 @@
       <h2>{{ .Params.final_cta.title }}</h2>
       <p>{{ .Params.final_cta.text }}</p>
       <div class="aim-actions aim-actions--center">
-        <a class="aim-button aim-button--primary" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
+        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
         <a class="aim-email" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.final_cta.email }}</a>
       </div>
     </div>

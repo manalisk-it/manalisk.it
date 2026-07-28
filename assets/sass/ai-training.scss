@@ -1,18 +1,14 @@
 .ai-training-page {
   background: #fff;
-
-  .header-breadcrumb {
-    display: none;
-  }
 }
 
 .ai-act-landing {
   --act-ink: #102b34;
   --act-muted: #546b72;
-  --act-teal: #107e8d;
-  --act-dark-teal: #075b67;
-  --act-aqua: #4bc5d2;
-  --act-soft: #edf6f7;
+  --act-teal: #009fba;
+  --act-dark-teal: #007582;
+  --act-aqua: #42d1e3;
+  --act-soft: #f2f8f9;
   --act-line: rgba(16, 43, 52, 0.14);
   color: var(--act-ink);
   font-family: "Inter", sans-serif;
@@ -23,34 +19,30 @@
 
   h1, h2, h3 {
     color: var(--act-ink);
-    font-family: "Sora", sans-serif;
-    letter-spacing: -0.035em;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.025em;
   }
 
   h1 {
     max-width: 900px;
     margin-bottom: 1.25rem;
-    font-size: clamp(2.6rem, 5.2vw, 4.8rem);
-    font-weight: 650;
-    line-height: 1.04;
+    font-size: clamp(2.1rem, 4vw, 3.25rem);
+    font-weight: 630;
+    line-height: 1.1;
   }
 
   h2 {
     margin-bottom: 1rem;
-    font-size: clamp(1.9rem, 3.4vw, 3.1rem);
-    font-weight: 600;
+    font-size: clamp(2rem, 3.7vw, 3.2rem);
+    font-weight: 620;
     line-height: 1.12;
   }
 
   h3 {
     margin-bottom: 0.5rem;
-    font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+    font-size: clamp(1.55rem, 2.5vw, 2.1rem);
     font-weight: 650;
   }
-}
-
-.ai-act-container {
-  max-width: 1000px;
 }
 
 .ai-act-eyebrow {
@@ -63,10 +55,8 @@
 }
 
 .ai-act-hero {
-  padding: clamp(4rem, 7vw, 6rem) 0;
-  background:
-    radial-gradient(circle at 90% 5%, rgba(75, 197, 210, 0.2), transparent 24rem),
-    linear-gradient(145deg, #f8fbfc, #eef7f8);
+  padding: clamp(1.5rem, 3.2vw, 2.5rem) 0 clamp(2rem, 4vw, 3rem);
+  background: transparent;
 }
 
 .ai-act-lead {
@@ -100,50 +90,9 @@
   }
 }
 
-.ai-act-button--primary {
-  background: var(--act-teal);
-  box-shadow: 0 0.7rem 1.5rem rgba(16, 126, 141, 0.18);
-  color: #fff;
-
-  &:hover {
-    background: var(--act-dark-teal);
-    color: #fff;
-  }
-}
-
-.ai-act-button--secondary {
-  border-color: var(--act-line);
-  background: #fff;
-  color: var(--act-ink);
-
-  &:hover {
-    border-color: var(--act-teal);
-    color: var(--act-dark-teal);
-  }
-}
-
-.ai-act-button--dark {
-  background: var(--act-ink);
-  color: #fff;
-
-  &:hover {
-    background: #071c23;
-    color: #fff;
-  }
-}
-
-.ai-act-button--light {
-  background: #fff;
-  color: var(--act-dark-teal);
-
-  &:hover {
-    box-shadow: 0 0.75rem 1.7rem rgba(0, 0, 0, 0.18);
-    color: var(--act-dark-teal);
-  }
-}
-
 .ai-act-requirement {
-  padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+  padding: clamp(3.25rem, 6vw, 4.5rem) 0;
+  background: #fff;
 }
 
 .ai-act-requirement-grid {
@@ -190,7 +139,7 @@
   padding: 1.5rem 0;
   border-top: 1px solid var(--act-line);
   border-bottom: 1px solid var(--act-line);
-  background: var(--act-soft);
+  background: linear-gradient(145deg, #fbfdfd, #f2f8f9);
 }
 
 .ai-act-stats {
@@ -214,7 +163,7 @@
   strong {
     margin-bottom: 0.25rem;
     color: var(--act-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.15rem;
   }
 
@@ -226,11 +175,12 @@
 }
 
 .ai-act-section {
-  padding: clamp(4rem, 8vw, 6.5rem) 0;
+  padding: clamp(3.25rem, 6vw, 4.75rem) 0;
+  background: #fff;
 }
 
 .ai-act-section--soft {
-  background: var(--act-soft);
+  background: linear-gradient(145deg, #fbfdfd, #f2f8f9);
 }
 
 .ai-act-heading {
@@ -249,8 +199,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .ai-act-package {
@@ -261,7 +209,7 @@
   border-top: 5px solid var(--act-teal);
   border-radius: 0.9rem;
   background: #fff;
-  box-shadow: 0 1rem 2.8rem rgba(20, 64, 75, 0.08);
+  box-shadow: none;
 
   h4 {
     margin: 1.5rem 0 0.8rem;
@@ -371,7 +319,7 @@
 
   strong {
     color: var(--act-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.7rem;
   }
 }
@@ -389,12 +337,11 @@
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 2rem;
   align-items: center;
-  max-width: 1100px;
-  margin: 1.5rem auto 0;
+  margin: 1.5rem 0 0;
   padding: clamp(1.5rem, 3vw, 2.2rem);
   border: 1px solid rgba(16, 126, 141, 0.3);
   border-radius: 0.9rem;
-  background: linear-gradient(135deg, #fff, #f3fafb);
+  background: #fff;
 
   h3 {
     margin-bottom: 0.55rem;
@@ -423,16 +370,16 @@
   strong {
     margin-bottom: 0.7rem;
     color: var(--act-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 2rem;
   }
 }
 
 .ai-act-deliverables {
-  display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: clamp(2rem, 6vw, 5rem);
   align-items: start;
+  padding-left: clamp(1.5rem, 4vw, 3rem);
 
   ul {
     display: grid;
@@ -497,18 +444,19 @@
 }
 
 .ai-act-final {
-  padding: clamp(4rem, 7vw, 5.5rem) 0;
-  background: var(--act-teal);
-  color: #fff;
+  padding: clamp(3.25rem, 6vw, 4.5rem) 0;
+  border-top: 1px solid var(--act-line);
+  background: linear-gradient(145deg, #fbfdfd, #f2f8f9);
+  color: var(--act-ink);
   text-align: center;
 
   .ai-act-eyebrow, h2 {
-    color: #fff;
+    color: var(--act-ink);
   }
 
   p:not(.ai-act-eyebrow) {
     margin-bottom: 1.5rem;
-    color: #daf0f2;
+    color: var(--act-muted);
     font-size: 1.08rem;
   }
 }
@@ -518,27 +466,13 @@
   align-items: center;
 }
 
-.ai-act-final-email {
-  color: #fff;
-  font-weight: 700;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
 .ai-act-seo {
-  padding: clamp(4rem, 8vw, 6.5rem) 0;
+  padding: clamp(3.25rem, 6vw, 4.75rem) 0;
   border-top: 1px solid var(--act-line);
   background: #fff;
 }
 
-.ai-act-seo-container {
-  max-width: 960px;
-}
-
 .ai-act-seo-header {
-  max-width: 820px;
   margin-bottom: 2rem;
 
   > p:last-child {
@@ -574,7 +508,6 @@
 }
 
 .ai-act-seo-content {
-  max-width: 820px;
 
   h2 {
     margin: 3.25rem 0 1rem;
@@ -616,11 +549,12 @@
   margin-top: 3.5rem;
   padding: clamp(1.5rem, 4vw, 2.5rem);
   border-radius: 0.9rem;
-  background: var(--act-ink);
-  color: #fff;
+  border: 1px solid var(--act-line);
+  background: linear-gradient(145deg, #fbfdfd, #f2f8f9);
+  color: var(--act-ink);
 
   h2, p {
-    color: #fff;
+    color: var(--act-ink);
   }
 
   h2 {
@@ -628,7 +562,7 @@
   }
 
   p {
-    color: #d8e5e8;
+    color: var(--act-muted);
   }
 }
 
