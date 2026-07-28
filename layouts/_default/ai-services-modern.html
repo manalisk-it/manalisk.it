@@ -1,9 +1,11 @@
 {{ define "main" }}
 {{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
+{{ $variant := .Params.variant | default "" }}
 
-<main class="ai-services-modern">
+<main class="ai-services-modern{{ with $variant }} ai-services-modern--{{ . }}{{ end }}">
   <section class="aim-hero">
     <div class="container aim-container">
+      {{ with .Params.hero.code }}<p class="aim-page-code">{{ . }}</p>{{ end }}
       <p class="aim-eyebrow">{{ .Params.hero.eyebrow }}</p>
       <h1>{{ .Params.hero.title }}</h1>
       <p class="aim-lead">{{ .Params.hero.text }}</p>
@@ -14,6 +16,48 @@
     </div>
   </section>
 
+  {{ with .Params.stats }}
+  <section class="aim-authority" aria-label="Esperienza formativa Manalisk">
+    <div class="container">
+      <div class="aim-stats">
+        {{ range . }}
+        <div>
+          <strong>{{ .value }}</strong>
+          <span>{{ .label }}</span>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.manifesto }}
+  <section class="aim-manifesto">
+    <div class="container aim-container">
+      <div class="aim-manifesto-grid">
+        <div class="aim-manifesto-index">
+          <span>{{ .code }}</span>
+          <strong>{{ .label }}</strong>
+        </div>
+        <div class="aim-manifesto-content">
+          <p class="aim-eyebrow">{{ .eyebrow }}</p>
+          <h2>{{ .title }}</h2>
+          <p>{{ .text }}</p>
+          <div class="aim-principles">
+            {{ range .principles }}
+            <div>
+              <span>{{ .code }}</span>
+              <strong>{{ .title }}</strong>
+              <p>{{ .text }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
   <section class="aim-services" id="servizi">
     <div class="container aim-container">
       <header class="aim-heading">
@@ -23,19 +67,28 @@
       </header>
 
       <div class="aim-service-list">
-        {{ range .Params.services }}
-        <article class="aim-service-card">
+        {{ range $index, $service := .Params.services }}
+        <article class="aim-service-card{{ if .highlight }} aim-service-card--training{{ end }}">
+          {{ if eq $variant "editorial" }}
+          <span class="aim-service-number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+          {{ end }}
           <div class="aim-service-main">
             <p class="aim-service-kicker">{{ .kicker }}</p>
             <h3>{{ .title }}</h3>
             <p>{{ .description }}</p>
             <div class="aim-tags">
+              {{ with .metadata }}
+              {{ range . }}
+              <span>{{ . }}</span>
+              {{ end }}
+              {{ else }}
               <span>{{ .duration }}</span>
               <span>{{ .output }}</span>
+              {{ end }}
             </div>
           </div>
           <div class="aim-service-examples">
-            <h4>Esempi d'uso</h4>
+            <h4>{{ .details_label | default "Esempi d'uso" }}</h4>
             <ul>
               {{ range .examples }}
               <li>{{ . | markdownify }}</li>
@@ -44,7 +97,7 @@
             {{ if .link }}
             <a href="{{ .link }}">{{ .link_text }}</a>
             {{ else }}
-            <a href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">Parliamo di questo servizio</a>
+            <a href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">{{ .contact_label | default "Parliamo di questo servizio" }}</a>
             {{ end }}
           </div>
         </article>
@@ -91,7 +144,9 @@
 {{ end }}
 
 {{ define "scripts" }}
+{{ $schemaName := .Params.schema_name | default .Title }}
+{{ $schemaType := .Params.schema_service_type | default .Params.email_subject }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Servizi di intelligenza artificiale","provider":{"@type":"Organization","name":"Manalisk","url":"https://manalisk.it/"},"areaServed":"IT","serviceType":"Consulenza e sviluppo di soluzioni di intelligenza artificiale","url":"{{ .Permalink }}"}
+{"@context":"https://schema.org","@type":"Service","name":"{{ $schemaName }}","provider":{"@type":"Organization","name":"Manalisk","url":"https://manalisk.it/"},"areaServed":"IT","serviceType":"{{ $schemaType }}","url":"{{ .Permalink }}"}
 </script>
 {{ end }}

@@ -51,6 +51,16 @@
   text-transform: uppercase;
 }
 
+.aim-page-code {
+  margin-bottom: 1.4rem;
+  color: var(--aim-muted);
+  font-family: monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .aim-hero {
   padding: clamp(2.3rem, 5vw, 3.8rem) 0;
   border-bottom: 1px solid var(--aim-line);
@@ -130,6 +140,134 @@
   background: #fff;
 }
 
+.aim-authority {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--aim-line);
+  background: var(--aim-soft);
+}
+
+.aim-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  div {
+    padding: 0.4rem 1rem;
+    border-right: 1px solid var(--aim-line);
+    text-align: center;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    margin-bottom: 0.25rem;
+    color: var(--aim-ink);
+    font-family: "Sora", sans-serif;
+    font-size: 1.15rem;
+  }
+
+  span {
+    color: var(--aim-muted);
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+}
+
+.aim-manifesto {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+  background: var(--aim-ink);
+  color: #fff;
+}
+
+.aim-manifesto-grid {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(2rem, 7vw, 7rem);
+}
+
+.aim-manifesto-index {
+  padding-top: 0.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+  span,
+  strong {
+    display: block;
+  }
+
+  span {
+    margin: 0.75rem 0 0.25rem;
+    color: var(--aim-aqua);
+    font-family: monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  strong {
+    font-family: "Sora", sans-serif;
+    font-size: 0.9rem;
+  }
+}
+
+.aim-manifesto-content {
+  .aim-eyebrow,
+  h2 {
+    color: #fff;
+  }
+
+  h2 {
+    max-width: 760px;
+  }
+
+  > p:not(.aim-eyebrow) {
+    max-width: 720px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}
+
+.aim-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+
+  div {
+    padding: 1.3rem 1.3rem 0 0;
+  }
+
+  span,
+  strong {
+    display: block;
+  }
+
+  span {
+    margin-bottom: 0.65rem;
+    color: var(--aim-aqua);
+    font-family: monospace;
+    font-size: 0.72rem;
+  }
+
+  strong {
+    margin-bottom: 0.4rem;
+    font-family: "Sora", sans-serif;
+    font-size: 0.95rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+}
+
 .aim-heading {
   max-width: 760px;
   margin: 0 0 clamp(2.3rem, 5vw, 3.5rem);
@@ -153,6 +291,7 @@
 }
 
 .aim-service-card {
+  position: relative;
   display: block;
   padding: clamp(1.5rem, 3.5vw, 2.5rem);
   border: 1px solid var(--aim-line);
@@ -164,6 +303,14 @@
     color: var(--aim-muted);
     line-height: 1.65;
   }
+}
+
+.aim-service-number {
+  color: var(--aim-teal);
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 .aim-service-card--training {
@@ -337,10 +484,166 @@
   }
 }
 
+.ai-services-modern--editorial {
+  .aim-hero {
+    background: #f8fbfb;
+  }
+
+  .aim-hero .aim-container {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: calc(var(--bs-gutter-x) * 0.5);
+      width: clamp(3rem, 8vw, 7rem);
+      height: 0.32rem;
+      background: linear-gradient(90deg, var(--aim-teal) 0 62%, var(--aim-aqua) 62%);
+      content: "";
+    }
+  }
+
+  .aim-hero h1 {
+    max-width: 760px;
+    font-size: clamp(2.15rem, 4vw, 3.15rem);
+  }
+
+  .aim-authority {
+    padding: 0;
+    background: #fff;
+  }
+
+  .aim-stats div {
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+    text-align: left;
+  }
+
+  .aim-services {
+    background: #f8fafb;
+  }
+
+  .aim-service-list {
+    gap: 0;
+  }
+
+  .aim-service-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-top: 2px solid var(--aim-line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .aim-service-card--training {
+    border-color: var(--aim-teal);
+    background: linear-gradient(90deg, rgba(237, 246, 247, 0.78), transparent);
+  }
+
+  .aim-service-number {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+  }
+
+  .aim-tags span {
+    border: 1px solid var(--aim-line);
+    border-radius: 0.2rem;
+    background: transparent;
+  }
+
+  .aim-service-examples {
+    margin-top: 0;
+    padding: 0 0 0 clamp(1.5rem, 4vw, 3rem);
+    border-top: 0;
+    border-left: 1px solid var(--aim-line);
+
+    a {
+      text-align: left;
+    }
+  }
+
+  .aim-method {
+    background: var(--aim-ink);
+    color: #fff;
+
+    .aim-eyebrow,
+    h2,
+    strong {
+      color: #fff;
+    }
+
+    .aim-method-heading > p:last-child,
+    .aim-steps p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+  }
+
+  .aim-steps {
+    li {
+      border-color: rgba(75, 197, 210, 0.45);
+    }
+
+    span {
+      border-radius: 0.2rem;
+      background: var(--aim-aqua);
+      box-shadow: 0 0 0 5px var(--aim-ink);
+      color: var(--aim-ink);
+    }
+  }
+
+  .aim-final {
+    text-align: left;
+
+    > .container > p:not(.aim-eyebrow) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .aim-actions--center {
+      justify-content: flex-start;
+    }
+  }
+}
+
 @media (max-width: 991.98px) {
+  .aim-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.5rem;
+
+    div:nth-child(2) {
+      border-right: 0;
+    }
+  }
+
   .aim-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 3rem;
+  }
+
+  .aim-manifesto-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .aim-manifesto-index {
+    max-width: 220px;
+  }
+
+  .ai-services-modern--editorial .aim-service-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ai-services-modern--editorial .aim-service-examples {
+    padding: 1.5rem 0 0;
+    border-top: 1px solid var(--aim-line);
+    border-left: 0;
   }
 }
 
@@ -366,6 +669,35 @@
     text-align: left;
   }
 
+  .aim-stats {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+
+    div {
+      padding: 0.85rem 0;
+      border-right: 0;
+      border-bottom: 1px solid var(--aim-line);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .aim-principles {
+    grid-template-columns: 1fr;
+
+    div {
+      padding-top: 1.2rem;
+      padding-right: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
   .aim-service-examples {
     margin-top: 0.5rem;
     padding: 1.25rem 0 0;
@@ -389,6 +721,10 @@
       margin: 0 0 0.8rem -2.65rem;
       box-shadow: 0 0 0 5px var(--aim-soft);
     }
+  }
+
+  .ai-services-modern--editorial .aim-steps span {
+    box-shadow: 0 0 0 5px var(--aim-ink);
   }
 }
 
