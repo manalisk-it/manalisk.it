@@ -1,0 +1,120 @@
+{{ define "main" }}
+<main class="catalogue-profile-page">
+  {{ with .Params.hero }}
+  <section class="catalogue-hero catalogue-section--surface">
+    <div class="container">
+      <p class="catalogue-eyebrow">{{ .eyebrow }}</p>
+      <h1>{{ .title }}</h1>
+      <p class="catalogue-lead">{{ .text }}</p>
+      {{ with .positioning }}
+      <div class="catalogue-callout">
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.team }}
+  <section class="catalogue-section catalogue-section--white" id="team">
+    <div class="container">
+      {{ with $.Params.team_intro }}
+      <header class="catalogue-heading">
+        <p class="catalogue-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </header>
+      {{ end }}
+
+      <div class="catalogue-profile-list">
+        {{ range . }}
+        {{ $profile := . }}
+        <article class="catalogue-profile-card">
+          <div class="catalogue-profile-media">
+            {{ $image := resources.Get .image }}
+            {{ with $image }}
+            <img src="{{ .RelPermalink }}" alt="{{ $profile.name }}" class="catalogue-profile-image">
+            {{ end }}
+          </div>
+          <div class="catalogue-profile-content">
+            <p class="catalogue-profile-focus">{{ .focus }}</p>
+            <h3>{{ .name }}</h3>
+            <div class="catalogue-profile-description">{{ .description | markdownify }}</div>
+            {{ with .links }}
+            <div class="catalogue-profile-links">
+              {{ range . }}
+              <a class="modern-text-link" href="{{ .url }}"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
+                {{ with .icon }}<img src="{{ . }}" alt="" aria-hidden="true" class="catalogue-link-icon">{{ end }}
+                <span>{{ .label }}</span>
+              </a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.mission }}
+  <section class="catalogue-section catalogue-section--surface">
+    <div class="container">
+      <header class="catalogue-heading">
+        <p class="catalogue-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </header>
+      {{ with .principles }}
+      <div class="catalogue-card-grid catalogue-card-list">
+        {{ range . }}
+        <article class="catalogue-info-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.competencies }}
+  <section class="catalogue-section catalogue-section--white">
+    <div class="container">
+      <header class="catalogue-heading">
+        <p class="catalogue-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </header>
+      {{ with .items }}
+      <div class="catalogue-card-grid catalogue-card-list">
+        {{ range . }}
+        <article class="catalogue-info-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.final_cta }}
+  <section class="catalogue-final catalogue-section--surface">
+    <div class="container">
+      <p class="catalogue-eyebrow">{{ .eyebrow }}</p>
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      <div class="catalogue-actions">
+        <a class="cta-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+        <a class="modern-text-link" href="{{ .secondary.url }}">{{ .secondary.label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}
