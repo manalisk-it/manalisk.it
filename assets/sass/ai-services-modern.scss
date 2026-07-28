@@ -20,7 +20,7 @@
   }
 
   h1 {
-    max-width: 900px;
+    // max-width: 900px;
     margin-bottom: 1rem;
     font-size: clamp(2.1rem, 4vw, 3.25rem);
     font-weight: 630;
@@ -68,7 +68,7 @@
 }
 
 .aim-lead {
-  max-width: 900px;
+  // max-width: 900px;
   margin-bottom: 1.35rem;
   color: var(--aim-muted);
   font-size: clamp(1.02rem, 1.6vw, 1.18rem);
@@ -613,7 +613,7 @@
   --aim-soft: #f2f8f9;
 
   .aim-hero {
-    padding: clamp(1.5rem, 3.2vw, 2.5rem) 0 clamp(2rem, 4vw, 3rem);
+    padding: clamp(1.5rem, 1vw, 2.5rem) 0 clamp(2rem, 4vw, 3rem);
     background: transparent;
   }
 
