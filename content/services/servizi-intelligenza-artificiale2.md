@@ -1,7 +1,7 @@
 ---
 title: Servizi Intelligenza Artificiale — proposta grafica
 description: Proposta alternativa per la pagina dei servizi di intelligenza artificiale di Manalisk.
-draft: false
+draft: true
 layout: ai-services-modern
 page_class: ai-services-modern-page
 noindex: true

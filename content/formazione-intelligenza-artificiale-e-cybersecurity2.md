@@ -1,7 +1,7 @@
 ---
 title: Formazione Intelligenza Artificiale e Cybersecurity — proposta grafica
 description: Corsi di formazione su intelligenza artificiale e cybersecurity per aziende, università, ITS e professionisti.
-draft: false
+draft: true
 layout: ai-services-modern
 page_class: ai-services-modern-page
 noindex: true

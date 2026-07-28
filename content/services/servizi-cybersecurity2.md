@@ -1,7 +1,7 @@
 ---
 title: Servizi Cybersecurity — proposta grafica
 description: Proposta alternativa per la pagina dei servizi di cybersecurity di Manalisk.
-draft: false
+draft: true
 layout: ai-services-modern
 page_class: ai-services-modern-page
 noindex: true
