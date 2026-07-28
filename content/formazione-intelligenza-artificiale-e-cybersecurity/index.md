@@ -41,7 +41,7 @@ Dall'introduzione ai modelli generativi fino alle applicazioni pratiche nei dive
 
 {{< card >}}
   {{< card-title >}}Intelligenza Artificiale per il Business{{< /card-title >}}
-  {{< card-subtitle icon=clock text=8h class="text-muted">}}
+  {{< card-subtitle icon=clock text=4h class="text-muted">}}
   {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
   {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
   {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
@@ -71,7 +71,7 @@ Con un approccio accessibile e concreto, aiutiamo aziende e professionisti a svi
 
 {{< card >}}
   {{< card-title >}}Elementi di Sicurezza Digitale{{< /card-title >}}
-  {{< card-subtitle icon=clock text=8h >}}
+  {{< card-subtitle icon=clock text=4h >}}
   {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
   {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
   {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
