@@ -1,0 +1,961 @@
+.home-modern-page {
+  --home-ink: var(--catalogue-ink);
+  --home-muted: var(--catalogue-muted);
+  --home-accent: var(--catalogue-accent);
+  --home-accent-dark: var(--catalogue-accent-dark);
+  --home-line: var(--catalogue-line);
+  --home-surface: var(--catalogue-surface);
+  --home-cyber: #174e63;
+  --home-training: #9b6424;
+
+  color: var(--home-ink);
+  font-family: "Inter", sans-serif;
+
+  #content {
+    background: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--home-ink) !important;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  h1 {
+    max-width: 960px;
+    margin-bottom: 1.1rem;
+    font-size: clamp(2.45rem, 5.3vw, 4.9rem);
+    font-weight: 700;
+    line-height: 1.01;
+  }
+
+  h2 {
+    margin-bottom: 0.85rem;
+    font-size: clamp(1.8rem, 3.4vw, 2.75rem);
+    font-weight: 680;
+    line-height: 1.13;
+  }
+
+  h3 {
+    margin-bottom: 0.6rem;
+    font-size: clamp(1.12rem, 1.8vw, 1.42rem);
+    font-weight: 700;
+    line-height: 1.28;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    min-height: 3.15rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+}
+
+.home-modern-eyebrow,
+.home-modern-card-eyebrow {
+  margin-bottom: 0.6rem;
+  color: var(--home-accent-dark);
+  font-size: 0.75rem;
+  font-weight: 820;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+}
+
+.home-modern-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.6rem, 3.6vw, 3rem) 0 clamp(3rem, 5vw, 4.5rem);
+  border-bottom: 1px solid var(--home-line);
+  background:
+    radial-gradient(circle at 92% 8%, rgba(0, 181, 204, 0.13), transparent 23rem),
+    radial-gradient(circle at 7% 90%, rgba(16, 43, 52, 0.06), transparent 25rem),
+    var(--home-surface);
+}
+
+.home-modern-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  margin-bottom: clamp(1.2rem, 2.3vw, 1.8rem);
+  animation: home-modern-enter-left 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.home-modern-brand-text {
+  padding-left: 1rem;
+  border-left: 1px solid rgba(16, 43, 52, 0.2);
+
+  .home-modern-eyebrow {
+    margin: 0.35rem 0 0;
+  }
+}
+
+.home-modern-wordmark {
+  margin-bottom: 0;
+  color: #004154;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: clamp(2.25rem, 4.3vw, 3.55rem);
+  font-weight: 760;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.home-modern-emblem {
+  width: clamp(4.6rem, 7vw, 6.2rem);
+  height: auto;
+}
+
+.home-modern-hero-copy {
+  max-width: 930px;
+
+  h1 {
+    animation: home-modern-enter-left 760ms 90ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+.home-modern-hero-details {
+  animation: home-modern-enter-left 760ms 170ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.home-modern-lead {
+  max-width: 850px;
+  margin-bottom: 0.75rem;
+  color: var(--home-ink);
+  font-size: clamp(1.08rem, 1.55vw, 1.26rem);
+  line-height: 1.6;
+}
+
+.home-modern-audience {
+  max-width: 780px;
+  margin-bottom: 1.35rem;
+  color: var(--home-muted);
+  line-height: 1.62;
+}
+
+.home-modern-cta-note {
+  max-width: 700px;
+  margin: 0.75rem 0 0;
+  color: var(--home-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.home-modern-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  align-items: center;
+}
+
+.home-modern-service-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.home-modern-service-card {
+  position: relative;
+  display: flex;
+  min-height: 13.5rem;
+  flex-direction: column;
+  padding: clamp(1.2rem, 2.5vw, 1.65rem);
+  overflow: hidden;
+  border: 1px solid var(--home-line);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--home-ink);
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 220ms ease;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0.24rem;
+    background: var(--card-accent);
+    content: "";
+  }
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--card-accent) 45%, transparent);
+    box-shadow: 0 1rem 2.2rem rgba(16, 43, 52, 0.11);
+    color: var(--home-ink);
+    transform: translateY(-0.25rem);
+  }
+
+  h2 {
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.3rem, 2vw, 1.65rem);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: var(--home-muted);
+    line-height: 1.53;
+  }
+}
+
+.home-modern-service-card--ai {
+  --card-accent: var(--home-accent);
+}
+
+.home-modern-service-card--cyber {
+  --card-accent: var(--home-cyber);
+}
+
+.home-modern-service-card--training {
+  --card-accent: var(--home-training);
+}
+
+.home-modern-service-code {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 1.75rem;
+  align-items: center;
+  margin-bottom: 1.1rem;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-accent) 12%, white);
+  color: var(--card-accent);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.home-modern-service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  color: var(--card-accent);
+  font-size: 0.9rem;
+  font-weight: 780;
+}
+
+.home-modern-stats {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--home-line);
+  background: #fff;
+}
+
+.home-modern-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-modern-stat {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem clamp(1rem, 3vw, 2rem);
+  border-right: 1px solid var(--home-line);
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  > strong {
+    color: var(--home-accent-dark);
+    font-size: clamp(2rem, 3.6vw, 3.25rem);
+    font-weight: 740;
+    letter-spacing: -0.05em;
+    line-height: 1;
+  }
+
+  .home-modern-stat-label {
+    margin-bottom: 0.1rem;
+    color: var(--home-ink);
+    font-size: 0.98rem;
+    font-weight: 720;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--home-muted);
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+}
+
+.home-modern-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+}
+
+.home-modern-section--white {
+  background: #fff;
+}
+
+.home-modern-section--surface {
+  background: var(--home-surface);
+}
+
+.home-modern-heading {
+  max-width: 760px;
+
+  > p:last-child {
+    margin-bottom: 0;
+    color: var(--home-muted);
+    font-size: 1.02rem;
+    line-height: 1.67;
+  }
+}
+
+.home-modern-heading--wide {
+  max-width: 870px;
+  margin-bottom: clamp(2rem, 5vw, 3.2rem);
+}
+
+.home-modern-split-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.68fr) minmax(16rem, 0.32fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: end;
+  margin-bottom: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.home-modern-section-note {
+  margin-bottom: 0.3rem;
+  padding: 1rem 0 1rem 1.3rem;
+  border-left: 0.2rem solid var(--home-accent);
+  color: var(--home-muted);
+  font-size: 0.83rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.home-modern-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.home-modern-problem {
+  grid-column: span 4;
+  min-height: 12.5rem;
+  padding: clamp(1.25rem, 2.7vw, 1.8rem);
+  border: 1px solid var(--home-line);
+  border-radius: 0.75rem;
+  background: var(--home-surface);
+
+  &--1,
+  &--2 {
+    grid-column: span 6;
+    min-height: 14rem;
+  }
+
+  > span {
+    display: block;
+    margin-bottom: 1.7rem;
+    color: var(--home-accent-dark);
+    font-size: 0.72rem;
+    font-weight: 820;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--home-muted);
+    line-height: 1.58;
+  }
+}
+
+.home-modern-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.home-modern-example {
+  display: flex;
+  min-height: 31rem;
+  flex-direction: column;
+  padding: clamp(1.35rem, 2.7vw, 1.85rem);
+  border: 1px solid var(--home-line);
+  border-radius: 0.8rem;
+  background: #fff;
+
+  > h3 {
+    min-height: 4.6rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.home-modern-example-body {
+  display: grid;
+  gap: 1rem;
+
+  > div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--home-line);
+  }
+
+  span,
+  .home-modern-output span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--home-muted);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--home-muted);
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+}
+
+.home-modern-output {
+  margin-top: auto;
+  padding: 1rem;
+  border-radius: 0.55rem;
+  background: var(--home-surface);
+
+  span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--home-muted);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  strong {
+    color: var(--home-ink);
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+}
+
+.home-modern-method-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(0, 181, 204, 0.16), transparent 22rem),
+    #102b34;
+
+  .home-modern-eyebrow {
+    color: #61d3df;
+  }
+
+  h2,
+  h3 {
+    color: #fff !important;
+  }
+}
+
+.home-modern-method-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: end;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+
+  .home-modern-eyebrow {
+    grid-column: 1;
+  }
+
+  h2 {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+
+  > p:last-child {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.68;
+  }
+}
+
+.home-modern-method {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding: 1.4rem clamp(1rem, 2.4vw, 1.7rem);
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+
+  li > span {
+    display: block;
+    margin-bottom: 2rem;
+    color: #61d3df;
+    font-size: 0.74rem;
+    font-weight: 820;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+}
+
+.home-modern-about {
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-modern-about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.52fr) minmax(20rem, 0.48fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+}
+
+.home-modern-about-copy {
+  > p:not(.home-modern-eyebrow) {
+    color: var(--home-muted);
+    line-height: 1.67;
+  }
+}
+
+.home-modern-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.5rem 0 0.55rem;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--home-line);
+    border-radius: 999px;
+    background: var(--home-surface);
+    color: var(--home-ink);
+    font-size: 0.78rem;
+    font-weight: 680;
+  }
+}
+
+.home-modern-people {
+  position: relative;
+  min-height: 31rem;
+
+  &::before {
+    position: absolute;
+    inset: 8% 2% 4% 15%;
+    border-radius: 50% 45% 42% 48%;
+    background: var(--home-surface);
+    content: "";
+  }
+}
+
+.home-modern-person {
+  position: absolute;
+  z-index: 1;
+  width: min(70%, 18.5rem);
+
+  &:first-child {
+    top: 0;
+    left: 0;
+  }
+
+  &:last-child {
+    right: 0;
+    bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 0.9;
+    border: 0.45rem solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2.5rem rgba(16, 43, 52, 0.13);
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  > div {
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 1.4rem);
+    margin: -2.2rem auto 0;
+    padding: 0.8rem 0.95rem;
+    border: 1px solid var(--home-line);
+    border-radius: 0.65rem;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  h3 {
+    margin-bottom: 0.15rem;
+    font-size: 0.98rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--home-muted);
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
+
+.home-modern-faq {
+  border-top: 1px solid var(--home-line);
+  background: var(--home-surface);
+}
+
+.home-modern-faq-grid {
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.34fr) minmax(0, 0.66fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: start;
+}
+
+.home-modern-faq {
+  .accordion {
+    border-top: 1px solid var(--home-line);
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-active-color: var(--home-ink);
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: var(--home-line);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(0, 159, 186, 0.16);
+  }
+
+  .accordion-button {
+    padding: 1.25rem 0;
+    color: var(--home-ink);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 720;
+  }
+
+  .accordion-body {
+    padding: 0 0 1.4rem;
+    color: var(--home-muted);
+    line-height: 1.65;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.home-modern-final {
+  padding: clamp(4rem, 8vw, 6.5rem) 0;
+  background:
+    radial-gradient(circle at 88% 35%, rgba(0, 181, 204, 0.2), transparent 20rem),
+    #102b34;
+
+  .home-modern-eyebrow {
+    color: #61d3df;
+  }
+
+  h2 {
+    max-width: 850px;
+    color: #fff !important;
+  }
+
+  > .container > p:not(.home-modern-eyebrow) {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.03rem;
+    line-height: 1.67;
+  }
+}
+
+.home-modern-final-link {
+  display: inline-flex;
+  min-height: 3.15rem;
+  align-items: center;
+  padding: 0.8rem 0.35rem;
+  color: #fff;
+  font-weight: 720;
+  text-decoration: none;
+
+  &:hover {
+    color: #61d3df;
+    text-decoration: underline;
+    text-underline-offset: 0.18rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-modern-service-switcher,
+  .home-modern-example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-modern-service-card {
+    min-height: 0;
+  }
+
+  .home-modern-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-modern-stat {
+    padding: 1rem 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--home-line);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .home-modern-problem {
+    grid-column: span 6;
+
+    &--1,
+    &--2 {
+      grid-column: span 6;
+    }
+  }
+
+  .home-modern-example {
+    min-height: 0;
+
+    > h3 {
+      min-height: 0;
+    }
+  }
+
+  .home-modern-example-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-modern-method {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    li {
+      padding: 1.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:nth-child(2) {
+        padding-right: 0;
+        border-right: 0;
+      }
+
+      &:nth-child(3) {
+        padding-left: 0;
+        border-bottom: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .home-modern-about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-modern-people {
+    width: min(100%, 40rem);
+    margin: 0 auto;
+  }
+
+  .home-modern-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-modern-hero {
+    padding-top: 1.25rem;
+  }
+
+  .home-modern-brand {
+    gap: 0.65rem;
+  }
+
+  .home-modern-brand-text {
+    padding-left: 0.65rem;
+
+    .home-modern-eyebrow {
+      font-size: 0.64rem;
+      letter-spacing: 0.07em;
+    }
+  }
+
+  .home-modern-wordmark {
+    font-size: clamp(2rem, 11vw, 2.5rem);
+  }
+
+  .home-modern-emblem {
+    width: 4rem;
+  }
+
+  .home-modern-service-switcher {
+    gap: 0.7rem;
+  }
+
+  .home-modern-split-heading,
+  .home-modern-method-heading {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-modern-section-note {
+    margin-bottom: 0;
+  }
+
+  .home-modern-method-heading {
+    .home-modern-eyebrow,
+    h2,
+    > p:last-child {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
+
+  .home-modern-problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-modern-problem,
+  .home-modern-problem--1,
+  .home-modern-problem--2 {
+    grid-column: 1;
+    min-height: 0;
+  }
+
+  .home-modern-example-body {
+    grid-template-columns: 1fr;
+  }
+
+  .home-modern-method {
+    grid-template-columns: 1fr;
+
+    li,
+    li:first-child,
+    li:nth-child(2),
+    li:nth-child(3),
+    li:last-child {
+      padding: 1.25rem 0;
+      border-right: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    li:last-child {
+      border-bottom: 0;
+    }
+
+    li > span {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .home-modern-people {
+    display: grid;
+    min-height: 0;
+    gap: 1rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .home-modern-person,
+  .home-modern-person:first-child,
+  .home-modern-person:last-child {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid var(--home-line);
+    border-radius: 0.75rem;
+    background: var(--home-surface);
+  }
+
+  .home-modern-person {
+    img {
+      width: 6.5rem;
+      border-width: 0.25rem;
+      border-radius: 0.6rem;
+      box-shadow: none;
+    }
+
+    > div {
+      width: auto;
+      margin: 0;
+      padding: 0 0 0 0.8rem;
+      border: 0;
+      background: transparent;
+    }
+  }
+
+  .home-modern-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-modern-brand,
+  .home-modern-hero-copy h1,
+  .home-modern-hero-details,
+  .home-modern-service-card,
+  .home-modern-page .cta-button {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes home-modern-enter-left {
+  from {
+    opacity: 0;
+    transform: translateX(-2.6rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

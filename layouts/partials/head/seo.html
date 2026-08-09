@@ -1,4 +1,8 @@
-<title>{{ .Site.Title }} - {{ .Title }} - {{.Site.Params.shortDescription}}</title>
+{{ with .Params.seo_title -}}
+  <title>{{ . }}</title>
+{{ else -}}
+  <title>{{ .Site.Title }} - {{ .Title }} - {{.Site.Params.shortDescription}}</title>
+{{ end -}}
 
 {{ with .Description -}}
   <meta name="description" content="{{ . }}">

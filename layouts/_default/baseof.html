@@ -15,7 +15,7 @@
 <body class="{{ .Scratch.Get `class` }} d-flex flex-column min-vh-100 {{ .Params.page_class }}">
     {{- partial "header/header.html" . -}}
     <div id="content">
-        {{ if and (.Site.Params.options.breadCrumb) (ne .Kind "home") -}}
+        {{ if and (.Site.Params.options.breadCrumb) (ne .Kind "home") (not .Params.hide_breadcrumb) -}}
             {{- partial "header/breadcrumb.html" . -}}
         {{ end }}
         {{- block "main" . }}{{- end }}
