@@ -56,7 +56,7 @@
 
 <!-- will load JSON-LD Schemas in pages -->
 <!-- https://schema.org/docs/schemas.html -->
-{{ if .IsPage }}
+{{ if and .IsPage (not .Params.schema_home3) }}
   <!-- Article structured data -->
   {{- partial "head/schema-article.html" .  -}}
 {{ end }}
@@ -91,6 +91,10 @@
 {{ end }}
 
 <!-- FAQPage structured data -->
-{{ if .Params.faq -}}
+{{ if and .Params.faq (ne .Params.faq_schema false) -}}
   {{- partial "head/schema-faq.html" .  -}}
+{{ end }}
+
+{{ if .Params.schema_home3 -}}
+  {{- partial "head/schema-home3.html" . -}}
 {{ end }}

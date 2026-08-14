@@ -1,0 +1,26 @@
+{{ with .Params.footer }}
+<footer class="home3-footer">
+  <div class="container">
+    <div class="home3-footer__grid">
+      <div class="home3-footer__brand">
+        <a href="{{ $.Params.header.brand_url }}">{{ $.Params.header.brand_label }}</a>
+        <p>{{ .tagline }}</p>
+      </div>
+      {{ range .columns }}
+      <div class="home3-footer__column">
+        <h2>{{ .title }}</h2>
+        <ul>
+          {{ range .links }}
+          <li><a href="{{ .url }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+    <div class="home3-footer__bottom">
+      <p>{{ $.Site.Copyright | safeHTML }}</p>
+      <p>AI · automazione · formazione · cybersecurity</p>
+    </div>
+  </div>
+</footer>
+{{ end }}

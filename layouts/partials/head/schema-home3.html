@@ -1,0 +1,36 @@
+{{- with .Params.organization -}}
+  {{- $logoURL := "" -}}
+  {{- with resources.Get .logo -}}
+    {{- $logoURL = .Permalink -}}
+  {{- end -}}
+  {{- $people := slice -}}
+  {{- range .members -}}
+    {{- $person := dict
+      "@type" "Person"
+      "name" .name
+      "jobTitle" .job_title
+      "url" .profile_url
+    -}}
+    {{- $people = $people | append $person -}}
+  {{- end -}}
+  {{- $organization := dict
+    "@context" "https://schema.org"
+    "@type" "Organization"
+    "@id" (printf "%s#organization" .url)
+    "name" .name
+    "url" .url
+    "email" .email
+    "description" .description
+    "logo" $logoURL
+    "member" $people
+  -}}
+  {{- $website := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "@id" (printf "%s#website" .url)
+    "name" .name
+    "url" .url
+    "publisher" (dict "@id" (printf "%s#organization" .url))
+  -}}
+  <script type="application/ld+json">{{ slice $organization $website | jsonify | safeJS }}</script>
+{{- end -}}

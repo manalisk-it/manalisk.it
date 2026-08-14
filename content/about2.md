@@ -1,7 +1,7 @@
 ---
 title: "Chi siamo"
 linkTitle: "Chi siamo"
-description: "Professionisti dell'intelligenza artificiale e della cybersecurity con esperienza nella ricerca, nello sviluppo software e nella formazione."
+description: "Professionisti dell'intelligenza artificiale, cybersecurity, privacy e AI governance con esperienza nella ricerca, nello sviluppo e nei processi aziendali."
 draft: true
 layout: catalogue-profile
 url: /about2/
@@ -10,10 +10,10 @@ noindex: true
 
 hero:
   eyebrow: Chi siamo
-  title: Professionisti dell'AI e della Cybersecurity
+  title: Competenze complementari per portare l'AI in azienda
   text: >-
     Manalisk riunisce liberi professionisti con esperienza nella ricerca, nello
-    sviluppo software, nella sicurezza informatica e nella formazione. Lavoriamo
+    sviluppo software, nella sicurezza informatica, nella privacy e nella governance. Lavoriamo
     con aziende e organizzazioni per applicare l'AI dove può produrre un risultato
     concreto e verificabile, senza presentarla come la risposta a ogni problema.
   positioning:
@@ -28,8 +28,11 @@ team_intro:
   eyebrow: Il team
   title: Il Nostro Background
   text: >-
-    Manalisk è il nome con cui collaboriamo. Mettiamo in comune percorsi che uniscono ricerca
-    accademica, esperienza tecnica e attività didattica.
+    Manalisk è il nome con cui collaboriamo. Mettiamo in comune ricerca
+    accademica, esperienza tecnica, conoscenza dei processi e competenze su
+    privacy e governance per affrontare insieme l'adozione dell'AI. Lavoriamo
+    su questi temi da prima della diffusione di ChatGPT, tra ricerca, sviluppo
+    di modelli e applicazioni concrete.
 
 team:
   - name: "Pier Paolo Tricomi, Ph.D."
@@ -74,6 +77,28 @@ team:
         url: "/CVs/pizzi.pdf"
         external: true
 
+  - name: "Nicola Bellotto, Ph.D."
+    focus: "Privacy, AI governance e processi aziendali"
+    description: >-
+      Ha conseguito un dottorato di ricerca in Giurisprudenza all'Università di
+      Padova e ha oltre dieci anni di esperienza come temporary manager e
+      consulente direzionale. Segue programmi di corporate governance, risk e
+      compliance, con incarichi anche come Organismo di Vigilanza e Data
+      Protection Officer per aziende nazionali e multinazionali.
+
+      Affianca le imprese sui temi di privacy, AI Act e governance e nella
+      revisione e digitalizzazione dei processi interni, tra cui amministrazione
+      e finanza, operation, supply chain e risorse umane.
+    image: "images/NicolaBellotto2.jpg"
+    links:
+      - label: Profilo LinkedIn
+        url: "https://www.linkedin.com/in/nicola-bellotto-phd/"
+        external: true
+        icon: "/images/linkedin-icon.png"
+      - label: Leggi il CV
+        url: "/CVs/bellotto.pdf"
+        external: true
+
 mission:
   eyebrow: Il nostro modo di lavorare
   title: Tecnologia utile, verificabile e sostenibile
@@ -104,7 +129,7 @@ competencies:
   title: Ricerca e lavoro sul campo
   text: >-
     Uniamo competenze complementari per affrontare progettazione, sviluppo,
-    sicurezza e trasferimento delle conoscenze senza trattarli come attività
+    sicurezza, privacy, governance e formazione senza trattarli come attività
     separate.
   items:
     - title: Intelligenza artificiale applicata
@@ -117,6 +142,10 @@ competencies:
         Vulnerability assessment, penetration testing, analisi delle
         vulnerabilità, sicurezza cloud e protezione dei dati per considerare i
         rischi insieme alle funzionalità.
+    - title: Privacy, AI governance e processi
+      text: >-
+        GDPR, AI Act, ruoli, policy e revisione dei processi per progettare
+        soluzioni che possano essere adottate e governate nel contesto aziendale.
     - title: Ricerca e formazione
       text: >-
         Esperienza nella ricerca accademica e industriale, nella pubblicazione
