@@ -135,6 +135,15 @@ services:
       - "**Per marketing e vendite:** workshop pratici sull'impiego responsabile degli strumenti generativi."
       - "**Per il team IT:** formazione tecnica sull'integrazione dei modelli e sulla valutazione delle tecnologie disponibili."
 
+local_callout:
+  eyebrow: Presenza locale
+  title: Cerchi una consulenza AI a Padova?
+  text: >-
+    La landing locale raccoglie informazioni per aziende e professionisti di
+    Padova e provincia, con possibilità di incontri in presenza.
+  label: Vai alla consulenza AI a Padova
+  url: /consulenza-intelligenza-artificiale-ai-padova2/
+
 method:
   eyebrow: Come lavoriamo
   title: Verifichiamo prima di costruire

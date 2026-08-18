@@ -138,6 +138,15 @@ services:
       - "**Per il personale non tecnico:** sessioni pratiche su phishing, password, uso corretto degli strumenti e riconoscimento dei comportamenti a rischio."
       - "**Per team IT e tecnici:** configurazioni sicure, gestione degli accessi, vulnerabilità comuni e pratiche di incident response."
 
+local_callout:
+  eyebrow: Presenza locale
+  title: Cerchi una consulenza cybersecurity a Padova?
+  text: >-
+    La landing locale raccoglie informazioni per aziende e professionisti di
+    Padova e provincia, con possibilità di incontri e attività in presenza.
+  label: Vai alla consulenza cybersecurity a Padova
+  url: /consulenza-cybersecurity-sicurezza-informatica-padova2/
+
 method:
   eyebrow: Come lavoriamo
   title: Verifichiamo prima di intervenire

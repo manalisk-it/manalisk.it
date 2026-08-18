@@ -1,0 +1,27 @@
+{{- with .Params.schema_local_service -}}
+  {{- $page := $.Permalink -}}
+  {{- $providerID := printf "%s#provider" $page -}}
+  {{- $serviceID := printf "%s#service" $page -}}
+  {{- $area := dict "@type" "City" "name" .area_name -}}
+  {{- $provider := dict
+    "@type" "ProfessionalService"
+    "@id" $providerID
+    "name" .provider_name
+    "url" $page
+    "email" .email
+    "description" .provider_description
+    "areaServed" $area
+  -}}
+  {{- $service := dict
+    "@type" "Service"
+    "@id" $serviceID
+    "name" .name
+    "serviceType" .service_type
+    "description" $.Description
+    "url" $page
+    "provider" (dict "@id" $providerID)
+    "areaServed" $area
+  -}}
+  {{- $graph := dict "@context" "https://schema.org" "@graph" (slice $provider $service) -}}
+  <script type="application/ld+json">{{ $graph | jsonify | safeJS }}</script>
+{{- end -}}

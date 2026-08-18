@@ -378,6 +378,11 @@ faq:
 location:
   title: Siamo a Padova.
   text: Lavoriamo con aziende in Veneto e, da remoto, in tutta Italia.
+  links:
+    - label: Consulenza AI e automazione a Padova
+      url: /consulenza-intelligenza-artificiale-ai-padova2/
+    - label: Consulenza cybersecurity a Padova
+      url: /consulenza-cybersecurity-sicurezza-informatica-padova2/
 
 final_cta:
   eyebrow: Parliamone

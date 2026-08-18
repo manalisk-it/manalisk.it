@@ -3,6 +3,26 @@
 This repository contains the Manalisk website, built with Hugo and Bootstrap.
 Follow these conventions when creating, restructuring, or reviewing pages.
 
+## Approved positioning and current direction
+
+- Use `home3` as the current visual reference for new work, without copying its
+  experimental navbar or footer into the production chrome.
+- Present Manalisk primarily as the team that brings AI into business processes
+  through automation, integrations, and custom software.
+- Keep AI training and cybersecurity visible as important supporting services,
+  while maintaining AI and automation as the primary positioning.
+- Do not present compliance as a standalone Manalisk service and do not promote
+  or link to `servizi-compliance`.
+- Describe the team consistently: Pier Paolo Tricomi covers AI, research, and
+  training; Simeone Pizzi covers cybersecurity and software development; Nicola
+  Bellotto covers privacy, AI governance, and business processes.
+- Keep the `home3` navbar and footer experimental until their global adoption is
+  explicitly approved.
+- Prefer concrete, informative language over promotional promises.
+- Local landing pages should target genuine geographic intent, remain distinct
+  from national service pages, and use contextual links from relevant pages
+  instead of adding new production-navbar entries.
+
 ## Hugo architecture
 
 - Keep content and presentation separate.

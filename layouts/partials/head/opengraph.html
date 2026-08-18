@@ -8,7 +8,7 @@
 
 <meta property="og:title" content="{{ .Params.seo_title | default .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-<meta property="og:type" content="{{ if or .IsHome .Params.schema_home3 }}website{{ else }}article{{ end }}">
+<meta property="og:type" content="{{ if or .IsHome .Params.schema_home3 .Params.schema_local_service }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 
 {{- with $.Params.images -}}
@@ -32,7 +32,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- if and .IsPage (not .Params.schema_home3) }}
+{{- if and .IsPage (not .Params.schema_home3) (not .Params.schema_local_service) }}
   <meta property="article:section" content="{{ .Section }}">
   {{ with .PublishDate }}
     <meta property="article:published_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>

@@ -108,6 +108,19 @@
     </div>
   </section>
 
+  {{ with .Params.local_callout }}
+  <aside class="aim-local-callout">
+    <div class="container aim-container">
+      <p class="aim-eyebrow">{{ .eyebrow }}</p>
+      <div>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+        <a class="modern-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </aside>
+  {{ end }}
+
   <section class="aim-method" id="metodo">
     <div class="container aim-container">
       <div class="aim-method-grid">

@@ -273,6 +273,11 @@
   <section class="home3-location" aria-label="Dove lavoriamo">
     <div class="container">
       <p><strong>{{ .title }}</strong> {{ .text }}</p>
+      {{ with .links }}
+      <div class="home3-location__links">
+        {{ range . }}<a class="home3-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>{{ end }}
+      </div>
+      {{ end }}
     </div>
   </section>
   {{ end }}
