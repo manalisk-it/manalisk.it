@@ -155,19 +155,7 @@
         <h2>{{ .title }}</h2>
       </div>
       {{ end }}
-      <div class="accordion accordion-flush" id="aiActFaq">
-        {{ range $index, $faq := . }}
-        {{ $faqID := printf "ai-act-faq-%d" (add $index 1) }}
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button{{ if ne $index 0 }} collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $faqID }}" aria-expanded="{{ if eq $index 0 }}true{{ else }}false{{ end }}" aria-controls="{{ $faqID }}">{{ $faq.question }}</button>
-          </h3>
-          <div id="{{ $faqID }}" class="accordion-collapse collapse{{ if eq $index 0 }} show{{ end }}" data-bs-parent="#aiActFaq">
-            <div class="accordion-body">{{ $faq.answer }}</div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
+      {{ partial "components/faq-accordion.html" (dict "items" . "id" "aiActFaq" "prefix" "ai-act-faq" "open_first" true) }}
     </div>
   </section>
   {{ end }}

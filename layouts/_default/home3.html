@@ -251,19 +251,7 @@
         <div class="home3-heading">
           <p class="home3-eyebrow">{{ .eyebrow }}</p><h2>{{ .title }}</h2><p>{{ .text }}</p>
         </div>
-        <div class="accordion accordion-flush" id="home3Faq">
-          {{ range $index, $item := .items }}
-          {{ $faqID := printf "home3-faq-%d" (add $index 1) }}
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button{{ if ne $index 0 }} collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $faqID }}" aria-expanded="{{ if eq $index 0 }}true{{ else }}false{{ end }}" aria-controls="{{ $faqID }}">{{ $item.question }}</button>
-            </h3>
-            <div id="{{ $faqID }}" class="accordion-collapse collapse{{ if eq $index 0 }} show{{ end }}" data-bs-parent="#home3Faq">
-              <div class="accordion-body">{{ $item.answer | markdownify }}</div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
+        {{ partial "components/faq-accordion.html" (dict "items" .items "id" "home3Faq" "prefix" "home3-faq" "open_first" true) }}
       </div>
     </div>
   </section>

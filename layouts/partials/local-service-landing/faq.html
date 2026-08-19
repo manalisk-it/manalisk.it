@@ -5,18 +5,6 @@
       <h2>{{ .title }}</h2>
       <p>{{ .text }}</p>
     </div>
-    <div class="accordion accordion-flush" id="localLandingFaq">
-      {{ range $index, $item := .items }}
-      {{ $faqID := printf "local-faq-%d" (add $index 1) }}
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button{{ if ne $index 0 }} collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $faqID }}" aria-expanded="{{ if eq $index 0 }}true{{ else }}false{{ end }}" aria-controls="{{ $faqID }}">{{ $item.question }}</button>
-        </h3>
-        <div id="{{ $faqID }}" class="accordion-collapse collapse{{ if eq $index 0 }} show{{ end }}" data-bs-parent="#localLandingFaq">
-          <div class="accordion-body">{{ $item.answer | markdownify }}</div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
+    {{ partial "components/faq-accordion.html" (dict "items" .items "id" "localLandingFaq" "prefix" "local-faq" "open_first" true) }}
   </div>
 </section>

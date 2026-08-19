@@ -1,0 +1,20 @@
+{{ $items := .items }}
+{{ $accordionID := .id }}
+{{ $itemPrefix := .prefix }}
+{{ $openFirst := true }}
+{{ if isset . "open_first" }}{{ $openFirst = .open_first }}{{ end }}
+
+<div class="accordion accordion-flush shared-faq-accordion" id="{{ $accordionID }}">
+  {{ range $index, $item := $items }}
+    {{ $faqID := printf "%s-%d" $itemPrefix (add $index 1) }}
+    {{ $isOpen := and $openFirst (eq $index 0) }}
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button{{ if not $isOpen }} collapsed{{ end }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $faqID }}" aria-expanded="{{ $isOpen }}" aria-controls="{{ $faqID }}">{{ $item.question }}</button>
+      </h3>
+      <div id="{{ $faqID }}" class="accordion-collapse collapse{{ if $isOpen }} show{{ end }}" data-bs-parent="#{{ $accordionID }}">
+        <div class="accordion-body">{{ $item.answer | markdownify }}</div>
+      </div>
+    </div>
+  {{ end }}
+</div>
