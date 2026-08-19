@@ -5,8 +5,7 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 
 ## Approved positioning and current direction
 
-- Use `home3` as the current visual reference for new work, without copying its
-  experimental navbar or footer into the production chrome.
+- Use `home3` as the current visual reference for new work.
 - Present Manalisk primarily as the team that brings AI into business processes
   through automation, integrations, and custom software.
 - Keep AI training and cybersecurity visible as important supporting services,
@@ -16,8 +15,9 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 - Describe the team consistently: Pier Paolo Tricomi covers AI, research, and
   training; Simeone Pizzi covers cybersecurity and software development; Nicola
   Bellotto covers privacy, AI governance, and business processes.
-- Keep the `home3` navbar and footer experimental until their global adoption is
-  explicitly approved.
+- Use the shared `home3` navbar and footer as the production chrome throughout
+  the site. Keep their navigation data centralized rather than duplicating it
+  in individual pages.
 - Prefer concrete, informative language over promotional promises.
 - Local landing pages should target genuine geographic intent, remain distinct
   from national service pages, and use contextual links from relevant pages
@@ -45,9 +45,8 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 - Preserve the existing Manalisk logo, colors, typography, navbar, breadcrumb,
   and footer.
 - Use a modern, restrained, informative visual style.
-- Use `"Inter", sans-serif` for both body copy and headings in the current
-  catalogue design system. Prefer direct typography over display fonts that
-  make the site feel promotional or stylized.
+- Use `"Hanken Grotesk", sans-serif` for body copy and `"Archivo", sans-serif`
+  for headings throughout the site, matching the approved `home3` typography.
 - Use direct, practical headings and copy. Avoid agency language, inflated
   claims, abstract slogans, and filler that does not help the reader understand
   the service, process, output, or next step.
@@ -76,7 +75,7 @@ Follow these conventions when creating, restructuring, or reviewing pages.
   shared colors, spacing, typography, breadcrumb, button, and link behavior in
   reusable Sass classes or variables rather than copying rules into individual
   page selectors.
-- Breadcrumbs should be integrated into the page surface, use Inter, follow the
+- Breadcrumbs should be integrated into the page surface, use Hanken Grotesk, follow the
   Bootstrap container axis, and use the main ink color at rest with the cyan
   accent reserved for hover.
 - When a new page needs the same service catalogue information architecture,

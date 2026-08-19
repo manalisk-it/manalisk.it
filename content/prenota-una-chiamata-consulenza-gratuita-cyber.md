@@ -1,56 +1,73 @@
 ---
-title: "Prenota una chiamata"
-description: "Pagina di prenotazione per chiamata gratuita"
-layout: "book-call"
-params:
-  showBookingButton: false
-page_class: "call-background"
-gallery_images:
-  - src: "images/posture.png"
-    alt: "Icona di analisi del business"
-    caption: "1. Analizziamo la tua postura cyber"
-  - src: "images/vulnerabilities.png"
-    alt: "Icona di analisi postura"
-    caption: "2. Individuiamo le potenziali criticità"
-  - src: "images/roadmap.png"
-    alt: "Icona per i prossimi passi del business"
-    caption: "3. Definiamo i Prossimi Passi"
-  - src: "images/q&a.png"
-    alt: "Icona di risposta alle domande"
-    caption: "4. Rispondiamo alle tue Domande"
+title: Prenota una call sulla cybersecurity
+seo_title: "Prenota una call sulla cybersecurity | Manalisk"
+linkTitle: Call cybersecurity
+description: Prenota una prima call gratuita di 30–45 minuti con Manalisk per parlare di sicurezza informatica, applicazioni, infrastrutture e formazione cyber.
+draft: false
+layout: booking-modern
+page_class: modern-catalogue-page booking-modern-page
+disable_article_schema: true
+og_type: website
+showBookingButton: false
+calendar_url: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG
+email_subject: Prima call sulla cybersecurity
+
+hero:
+  eyebrow: Prima call gratuita
+  title: Prenota una call sulla cybersecurity
+  text: In 30–45 minuti comprendiamo il sistema, il dubbio o il rischio da affrontare e definiamo quali informazioni servono per una prima valutazione tecnica.
+  meta: 30–45 minuti · online · senza impegno
+  primary_label: Scegli giorno e orario
+  email_label: Preferisci scriverci?
+  booking_note: Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+
+useful:
+  eyebrow: Quando può essere utile
+  title: Partiamo dal dubbio concreto, non dal nome del servizio
+  text: Non devi sapere già se serva un assessment, un penetration test o un altro tipo di verifica.
+  items:
+    - Vuoi verificare un'applicazione, un SaaS, un'infrastruttura o un ambiente cloud.
+    - Hai sviluppato software anche con strumenti AI e vuoi valutarne la sicurezza prima della pubblicazione.
+    - Devi chiarire il perimetro di una verifica tecnica o comprendere quali controlli siano proporzionati.
+    - Vuoi organizzare formazione sulla sicurezza per dipendenti, responsabili o personale tecnico.
+
+process:
+  eyebrow: Come si svolge
+  title: Raccogliamo il contesto prima di definire le verifiche
+  text: Una prima conversazione non sostituisce un assessment tecnico, ma permette di impostarlo correttamente.
+  steps:
+    - title: Descrivi il sistema o il problema
+      text: Raccogliamo obiettivo, componenti coinvolti, possibile urgenza e persone che conoscono il contesto tecnico.
+    - title: Identifichiamo le informazioni necessarie
+      text: Capiamo quali elementi, documenti o accessi controllati potrebbero servire per una valutazione preliminare.
+    - title: Definiamo perimetro e passo successivo
+      text: Concordiamo l'eventuale approfondimento necessario prima di stimare attività, tempi e costi.
+
+after:
+  eyebrow: Dopo la call
+  title: Prima del preventivo può servire un approfondimento tecnico
+  paragraphs:
+    - In molti casi chiediamo documentazione o accessi controllati per comprendere architettura, configurazioni e superficie da verificare. Quando necessario possiamo firmare un NDA prima di ricevere informazioni riservate.
+    - Solo dopo aver chiarito perimetro, autorizzazioni, vincoli e output possiamo formulare una proposta attendibile. La prima call non viene presentata come una verifica completa della sicurezza.
+
+faq:
+  title: Cosa sapere prima di prenotare
+  items:
+    - question: Quanto dura la prima call?
+      answer: La prima call dura normalmente 30–45 minuti ed è gratuita e senza impegno.
+    - question: Devo sapere già quale verifica richiedere?
+      answer: No. È sufficiente descrivere il sistema, il dubbio o l'obiettivo. Valutiamo insieme quali informazioni servano per scegliere un'attività proporzionata.
+    - question: La call comprende già un assessment di sicurezza?
+      answer: No. Serve a raccogliere il contesto e a definire l'eventuale approfondimento tecnico. Un assessment richiede un perimetro, autorizzazioni e verifiche concordate.
+    - question: Come gestite informazioni e accessi riservati?
+      answer: Durante la prima call non è necessario condividere credenziali o dati sensibili. Se servono documentazione o accessi controllati, ne concordiamo modalità e perimetro e possiamo firmare un NDA.
+    - question: Possiamo incontrarci in azienda?
+      answer: Molte attività possono essere preparate da remoto. A Padova e provincia possiamo svolgere in presenza gli incontri o le verifiche che richiedono accesso a reti, dispositivi o referenti locali.
+
+final_cta:
+  eyebrow: Scegli quando sentirci
+  title: Descrivi il sistema o il dubbio da verificare
+  text: "Non è necessario conoscere già il nome dell'intervento: partiamo dal contesto reale per capire quale verifica possa produrre evidenze utili."
+  primary_label: Prenota la call gratuita
+  email_label: Scrivi a info@manalisk.it
 ---
-
-# Vuoi mettere in sicurezza la tua Azienda? Prenota una chiamata!
-
-{{< lead class="catchphrase my-4" >}}
-Scopri i Primi Passi in una Call Gratuita
-{{< /lead >}}
-
-{{< lead class="mb-5">}}
-*"Non aspettare un attacco per proteggere la tua azienda. Prevenire vale più che curare."*
-{{< /lead >}}
-
-{{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
-
-
-{{< gallery-call  >}}
-
-{{< lead >}}
-Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti. Analizziamo i tuoi sistemi
-e processi aziendali e ti diciamo dove puoi migliorare la tua **sicurezza informatica**.
-{{< /lead >}}
-
-### Cosa otterrai dalla call?
-
-* **Analisi Rapida dei Rischi:** Individuiamo insieme dove la tua infrastruttura è più esposta a minacce e vulnerabilità.
-* **Interventi Chiari e Praticabili:** Identifichiamo azioni di sicurezza realistiche e ad alto impatto per iniziare con il piede giusto.
-* **Primi Passi Definiti:** Delineiamo una mini-roadmap con le azioni prioritarie per mettere in sicurezza i tuoi sistemi senza spreco di risorse.
-* **Focus e Chiarezza:** Ottieni una visione strategica e risposte concrete, ottimizzando il tuo tempo.
-
-Durante la call analizzeremo le tue esigenze, identificheremo i rischi e le priorità, ti daremo suggerimenti concreti, e risponderemo alle tue domande!
-
-## Preferisci un'email?
-
-{{< lead class="mt-3">}}
-Scrivici a [info@manalisk.it](mailto:info@manalisk.it) e ti risponderemo al più presto.<br>Capiremo insieme come mettere in sicurezza la tua azienda!
-{{< /lead >}}

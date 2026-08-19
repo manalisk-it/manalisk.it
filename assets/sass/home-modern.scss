@@ -9,7 +9,7 @@
   --home-training: #9b6424;
 
   color: var(--home-ink);
-  font-family: "Inter", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 
   #content {
     background: #fff;
@@ -26,7 +26,7 @@
   h2,
   h3 {
     color: var(--home-ink) !important;
-    font-family: "Inter", sans-serif;
+    font-family: "Archivo", sans-serif;
     letter-spacing: -0.025em;
   }
 
@@ -103,7 +103,7 @@
 .home-modern-wordmark {
   margin-bottom: 0;
   color: #004154;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: clamp(2.25rem, 4.3vw, 3.55rem);
   font-weight: 760;
   letter-spacing: 0.025em;
@@ -657,7 +657,7 @@
   .accordion-button {
     padding: 1.25rem 0;
     color: var(--home-ink);
-    font-family: "Inter", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-size: 1rem;
     font-weight: 720;
   }

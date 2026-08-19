@@ -1,57 +1,168 @@
 ---
-title: "Chi Siamo"
+title: "Chi siamo"
+seo_title: "Chi siamo | Manalisk"
+linkTitle: "Chi siamo"
+description: "Professionisti dell'intelligenza artificiale, cybersecurity, privacy e AI governance con esperienza nella ricerca, nello sviluppo e nei processi aziendali."
 draft: false
-layout: about
-menuitem: Chi Siamo
-params:
-  team:
-  - title: "Pier Paolo Tricomi, Ph.D."
-    description: > 
-      Ho conseguito un Dottorato di Ricerca in AI & Cybersecurity all'Università di Padova, con esperienza di ricerca in Machine and Deep Learning, 
-      Data Analysis, e Privacy.            
+layout: catalogue-profile
+page_class: modern-catalogue-page
+disable_article_schema: true
+og_type: website
 
-      Ho studiato e svolto attività di ricerca in diverse università estere in Europa e negli Stati Uniti, come Vrije Universiteit Amsterdam, University of California, Irvine, e Northwestern University.  
+hero:
+  eyebrow: Chi siamo
+  title: Competenze complementari per portare l'AI in azienda
+  text: >-
+    Manalisk riunisce liberi professionisti con esperienza nella ricerca, nello
+    sviluppo software, nella sicurezza informatica, nella privacy e nella governance. Lavoriamo
+    con aziende e organizzazioni per applicare l'AI dove può produrre un risultato
+    concreto e verificabile, senza presentarla come la risposta a ogni problema.
+  positioning:
+    title: Prima il problema, poi la tecnologia
+    text: >-
+      Partiamo dal processo, dai dati disponibili e dai vincoli tecnici e
+      organizzativi. Verifichiamo le ipotesi su casi reali e valutiamo il risultato
+      prima di estendere un progetto. Se l'AI non serve, oppure non è sufficientemente
+      affidabile per quel contesto, lo diciamo.
 
-      Oggi con la mia esperienza lavoro a stretto contatto con aziende e professionisti, traducendo esigenze di business in soluzioni innovative basate sull'AI, adattando modelli di AI classica e generativa.
-      Insegno da diversi anni ad aziende e università tematiche di Intelligenza Artificiale e Cybersecurity.
+team_intro:
+  eyebrow: Il team
+  title: Il Nostro Background
+  text: >-
+    Manalisk è il nome con cui collaboriamo. Mettiamo in comune ricerca
+    accademica, esperienza tecnica, conoscenza dei processi e competenze su
+    privacy e governance per affrontare insieme l'adozione dell'AI. Lavoriamo
+    su questi temi da prima della diffusione di ChatGPT, tra ricerca, sviluppo
+    di modelli e applicazioni concrete.
+
+team:
+  - name: "Pier Paolo Tricomi, Ph.D."
+    focus: "Intelligenza artificiale, ricerca e formazione"
+    description: >-
+      Ha conseguito un dottorato di ricerca in AI & Cybersecurity all'Università
+      di Padova. Ha studiato e svolto attività di ricerca presso Vrije Universiteit
+      Amsterdam, University of California, Irvine e Northwestern University.
+
+      Si occupa di machine e deep learning, analisi dei dati, privacy, AI classica
+      e generativa. Lavora con aziende e professionisti e insegna da diversi anni
+      temi di intelligenza artificiale e cybersecurity in aziende e università.
     image: "images/PierPaoloTricomi.jpg"
-    cv: "/CVs/tricomi.pdf"
-    linkedin: "https://www.linkedin.com/in/pier-paolo-tricomi-phd/"
-  - title: "Simeone Pizzi"
-    description: > 
-      Professionista specializzato in Cybersecurity e Intelligenza Artificiale, ho conseguito la Laurea Magistrale in Informatica con lode presso l'Università degli Studi di Padova.
+    links:
+      - label: Profilo LinkedIn
+        url: "https://www.linkedin.com/in/pier-paolo-tricomi-phd/"
+        external: true
+        icon: "/images/linkedin-icon.png"
+      - label: Leggi il CV
+        url: "/CVs/tricomi.pdf"
+        external: true
 
-      Ho maturato esperienza pratica in contesti innovativi, tra cui uno spin-off universitario impegnato nel trasferimento tecnologico e una realtà aziendale orientata allo sviluppo SaaS. In questi ambienti ho contribuito allo sviluppo di soluzioni avanzate, come sistemi di rilevamento phishing basati su LLM e servizi di estrazione dati da testo libero, e svolto attività di penetration testing e vulnerability assessment. Mi sono inoltre occupato della progettazione e gestione di infrastrutture cloud complesse e dello sviluppo back-end, con ampio utilizzo dei servizi cloud AWS.
+  - name: "Simeone Pizzi"
+    focus: "Cybersecurity, sviluppo software e ricerca"
+    description: >-
+      Ha conseguito la laurea magistrale in Informatica con lode all'Università
+      di Padova. Ha lavorato nel trasferimento tecnologico e nello sviluppo SaaS,
+      occupandosi di sistemi di rilevamento del phishing basati su LLM, estrazione
+      di dati da testo, penetration testing, vulnerability assessment, sviluppo
+      back-end e infrastrutture cloud AWS.
 
-      In ambito accademico, ho lavorato come Assegnista di Ricerca su tecniche di analisi statica per l'individuazione di vulnerabilità in applicazioni Android. Ho inoltre affiancato l'attività didattica come Teaching Assistant e Tutor Didattico.
-
-    cv: /CVs/pizzi.pdf
-    linkedin: https://www.linkedin.com/in/sime1/
-
+      Come assegnista di ricerca ha lavorato su tecniche di analisi statica per
+      individuare vulnerabilità nelle applicazioni Android. Ha inoltre svolto
+      attività didattica come Teaching Assistant e Tutor Didattico.
     image: "images/sime1.png"
+    links:
+      - label: Profilo LinkedIn
+        url: "https://www.linkedin.com/in/sime1/"
+        external: true
+        icon: "/images/linkedin-icon.png"
+      - label: Leggi il CV
+        url: "/CVs/pizzi.pdf"
+        external: true
 
+  - name: "Nicola Bellotto, Ph.D."
+    focus: "Privacy, AI governance e processi aziendali"
+    description: >-
+      Ha conseguito un dottorato di ricerca in Giurisprudenza all'Università di
+      Padova e ha oltre dieci anni di esperienza come temporary manager e
+      consulente direzionale. Segue programmi di corporate governance, risk e
+      compliance, con incarichi anche come Organismo di Vigilanza e Data
+      Protection Officer per aziende nazionali e multinazionali.
+
+      Affianca le imprese sui temi di privacy, AI Act e governance e nella
+      revisione e digitalizzazione dei processi interni, tra cui amministrazione
+      e finanza, operation, supply chain e risorse umane.
+    image: "images/NicolaBellotto2.jpg"
+    links:
+      - label: Profilo LinkedIn
+        url: "https://www.linkedin.com/in/nicola-bellotto-phd/"
+        external: true
+        icon: "/images/linkedin-icon.png"
+      - label: Leggi il CV
+        url: "/CVs/bellotto.pdf"
+        external: true
+
+mission:
+  eyebrow: Il nostro modo di lavorare
+  title: Tecnologia utile, verificabile e sostenibile
+  text: >-
+    Vogliamo rendere l'intelligenza artificiale comprensibile e utilizzabile nei
+    processi reali, senza separarla dai temi della sicurezza, della privacy e
+    della responsabilità. L'obiettivo non è introdurre AI a ogni costo, ma
+    costruire strumenti che possano essere verificati, utilizzati e mantenuti
+    nel tempo.
+  principles:
+    - title: Sicurezza e privacy fin dall'inizio
+      text: >-
+        Consideriamo dati, accessi, infrastruttura e possibili vulnerabilità già
+        durante l'analisi e la progettazione, non soltanto alla fine del progetto.
+    - title: Prototipi rapidi, decisioni informate
+      text: >-
+        Realizziamo prove circoscritte su dati e casi d'uso rappresentativi per
+        verificare presto fattibilità, qualità dei risultati e limiti, prima di
+        investire in uno sviluppo più ampio.
+    - title: Crescita sostenibile
+      text: >-
+        Progettiamo soluzioni che possano integrarsi negli strumenti esistenti,
+        essere comprese da chi le utilizza ed evolvere insieme alle esigenze
+        dell'organizzazione.
+
+competencies:
+  eyebrow: Competenze
+  title: Ricerca e lavoro sul campo
+  text: >-
+    Uniamo competenze complementari per affrontare progettazione, sviluppo,
+    sicurezza, privacy, governance e formazione senza trattarli come attività
+    separate.
+  items:
+    - title: Intelligenza artificiale applicata
+      text: >-
+        Machine learning, deep learning, modelli linguistici, RAG, analisi dei
+        dati e automazione per semplificare processi, consultare informazioni e
+        costruire interazioni digitali più utili.
+    - title: Cybersecurity e infrastrutture
+      text: >-
+        Vulnerability assessment, penetration testing, analisi delle
+        vulnerabilità, sicurezza cloud e protezione dei dati per considerare i
+        rischi insieme alle funzionalità.
+    - title: Privacy, AI governance e processi
+      text: >-
+        GDPR, AI Act, ruoli, policy e revisione dei processi per progettare
+        soluzioni che possano essere adottate e governate nel contesto aziendale.
+    - title: Ricerca e formazione
+      text: >-
+        Esperienza nella ricerca accademica e industriale, nella pubblicazione
+        scientifica e nella didattica per aziende e università, con linguaggi ed
+        esempi adatti a pubblici differenti.
+
+final_cta:
+  eyebrow: Parliamone
+  title: Hai un problema concreto da valutare?
+  text: >-
+    Possiamo partire da una call o da una mail con qualche informazione sul
+    contesto. Capiremo se possiamo essere utili e quale primo passo ha senso fare.
+  primary:
+    label: Prenota una call gratuita
+    url: /contact/
+  secondary:
+    label: Scrivi a info@manalisk.it
+    url: "mailto:info@manalisk.it?subject=Informazioni%20su%20Manalisk"
 ---
-
-# Chi Siamo
-
-Siamo un network di liberi professionisti esperti nel settore dell'**Intelligenza Artificiale**, specializzati in **Machine Learning**, **Large Language Models (LLM)** e **Retrieval-Augmented Generation (RAG)**. Offriamo soluzioni tecnologiche avanzate per automatizzare processi, migliorare l'analisi dei dati e potenziare le interazioni digitali.
-
-Il nostro team di esperti combina **innovazione**, **sicurezza** e **rapidità di sviluppo** per creare prodotti su misura che rispondano alle esigenze delle aziende moderne. Crediamo che l'AI debba essere non solo potente, ma anche sicura, etica e accessibile.
-
-Abbiamo un solido background in **cybersecurity**, che ci permette di progettare soluzioni AI con un livello di protezione avanzato. Grazie alla nostra esperienza nella sicurezza informatica, adottiamo best practice per prevenire vulnerabilità e garantire la protezione dei dati.
-
-Il nostro team proviene dal mondo della **ricerca accademica e industriale**, con anni di esperienza nello sviluppo di algoritmi innovativi e nella pubblicazione di studi scientifici. Questo ci consente di essere sempre aggiornati sulle ultime scoperte nel campo dell'AI e di applicarle nei nostri progetti.
-
-
-
-## La Nostra Missione
-
-La nostra missione è trasformare la complessità dell'Intelligenza Artificiale in soluzioni semplici ed efficaci, capaci di generare valore concreto per aziende e organizzazioni.
-
-Ci impegniamo a:
-
-- **Garantire sicurezza e privacy**: sviluppiamo sistemi conformi ai più alti standard di protezione dei dati.
-- **Velocizzare l'innovazione**: riduciamo i tempi di sviluppo grazie alla nostra esperienza e approfondimento continuodi tecnologie all'avanguardia.
-- **Favorire la crescita**: aiutiamo le aziende a scalare e a ottenere un vantaggio competitivo attraverso l'AI.
-
-Con la nostra esperienza e passione per l'innovazione, guidiamo i nostri clienti nel futuro dell'intelligenza artificiale.

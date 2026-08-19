@@ -1,104 +1,173 @@
 ---
-draft: false
 title: Formazione Intelligenza Artificiale e Cybersecurity
-menuitem: Formazione
-# corsi previsti
-## AI
+seo_title: "Formazione AI e cybersecurity per aziende | Manalisk"
+description: Corsi di formazione su intelligenza artificiale e cybersecurity per aziende, università, ITS e professionisti.
+draft: false
+layout: ai-services-modern
+page_class: ai-services-modern-page modern-catalogue-page
+variant: practical
+calendar_url: /prenota-una-chiamata-consulenza-gratuita-formazione/
+email_subject: Formazione Intelligenza Artificiale e Cybersecurity
+service_contact_label: Valutiamo questo percorso
+primary_button_class: cta-button
+schema_name: Formazione Intelligenza Artificiale e Cybersecurity
+schema_service_type: Formazione aziendale in intelligenza artificiale e cybersecurity
+disable_article_schema: true
+og_type: website
 
-## * python per data analysis (pandas, numpy, visualization)
-## * machine learning classico (sklearn)
-## * nlp (preprocessing, b-o-w, tf-idf, svm, naive-bayes )
-## * reti neurali per NLP (embedding, reti neurali, transformers pre-trainati)
+hero:
+  eyebrow: Formazione
+  title: Formazione AI e cybersecurity per il lavoro
+  text: >-
+    Progettiamo corsi di intelligenza artificiale e cybersecurity per aziende,
+    università, ITS e professionisti. Adattiamo programma, linguaggio ed esempi
+    alle competenze di partenza e a ciò che i partecipanti devono saper fare.
+  primary_cta: Guarda i corsi
+  secondary_cta: Raccontaci cosa serve
 
-# Corsi avanzati, per il momento rimossi, da aggiungere con descrizione
-## * Reti Neurali per Dati Testuali - 12h - €1500 - 5-15 partecipanti - livello avanzato
-## * Ethical Hacking - 12h - €1500 - 5-15 partecipanti - livello avanzato
+stats:
+  - value: 1.000+
+    label: ore di formazione erogate
+  - value: 15+
+    label: aziende già formate
+  - value: 10+
+    label: settori coinvolti
+  - value: Aziende, università e ITS
+    label: esperienza con pubblici e ruoli differenti
 
+services_intro:
+  eyebrow: Corsi disponibili
+  title: Corsi di base e percorsi su misura
+  text: >-
+    Puoi scegliere un corso di base oppure costruire con noi un percorso dedicato.
+    I prezzi indicati sono orientativi; sono disponibili condizioni dedicate per
+    pacchetti formativi multipli.
+
+services:
+  - kicker: Intelligenza artificiale
+    title: Intelligenza Artificiale per il Business
+    description: >-
+      Un'introduzione concreta all'AI generativa e ai modelli linguistici come
+      ChatGPT. Attraverso esempi e attività interattive vediamo come usare questi
+      strumenti in ambiti come marketing, gestione clienti, produzione e logistica,
+      senza richiedere competenze tecniche di partenza.
+    metadata:
+      - 4 ore
+      - 5–25 partecipanti
+      - 750 € indicativi
+      - Livello base
+    details_label: Argomenti trattati
+    contact_subject: Formazione Intelligenza Artificiale per il Business
+    contact_label: Scrivici per questo corso
+    examples:
+      - "**Introduzione all'intelligenza artificiale:** che cos'è l'AI e perché è diventata rilevante nel lavoro."
+      - "**ChatGPT e Large Language Models:** possibilità d'uso in azienda e principali limiti."
+      - "**Introduzione al prompting:** tecniche, esempi e buone pratiche per ottenere risposte utili."
+      - "**Esercitazione pratica:** applicazione dei concetti a casi realistici."
+
+  - kicker: Cybersecurity
+    title: Elementi di Sicurezza Digitale
+    description: >-
+      Un corso introduttivo per riconoscere i rischi digitali più comuni e proteggere
+      dati, strumenti e processi aziendali. Il linguaggio è accessibile e gli esempi
+      aiutano a tradurre i principi di sicurezza in comportamenti quotidiani.
+    metadata:
+      - 4 ore
+      - 5–25 partecipanti
+      - 750 € indicativi
+      - Livello base
+    details_label: Argomenti trattati
+    contact_subject: Formazione Elementi di Sicurezza Digitale
+    contact_label: Scrivici per questo corso
+    examples:
+      - "**Fondamenti di sicurezza digitale:** concetti essenziali e impatto sulle aziende."
+      - "**Minacce informatiche:** phishing, malware e ransomware spiegati con esempi concreti."
+      - "**Password e credenziali:** metodi efficaci per crearle, conservarle e gestirle."
+      - "**Email e comunicazioni:** come riconoscere messaggi sospetti, link e allegati pericolosi."
+      - "**Privacy e dati aziendali:** buone pratiche per trattare le informazioni sensibili."
+
+  - kicker: Per chi utilizza l'AI
+    title: AI Act Essentials
+    description: >-
+      Un percorso pratico per dipendenti che usano strumenti come ChatGPT,
+      Microsoft Copilot o assistenti analoghi. Affrontiamo dati, verifica degli
+      output, strumenti autorizzati e comportamenti corretti nel lavoro.
+    metadata:
+      - 4 ore
+      - Fino a 20 partecipanti
+      - 750 €
+      - In presenza o online
+    details_label: Cosa imparano i partecipanti
+    highlight: false
+    contact_subject: AI Act Essentials per dipendenti
+    contact_label: Richiedi questo percorso
+    examples:
+      - "**Dati e riservatezza:** informazioni personali, aziendali e contenuti che non devono essere inseriti negli strumenti."
+      - "**Output da verificare:** allucinazioni, errori e responsabilità sui contenuti prodotti."
+      - "**Uso quotidiano:** strumenti autorizzati, shadow AI, copyright, prompt injection e phishing."
+      - "**Regole interne:** comportamenti e policy da applicare nei casi d'uso reali dell'azienda."
+
+  - kicker: Per chi governa l'AI
+    title: AI Act for Management
+    description: >-
+      Un percorso per dirigenti, imprenditori e responsabili che devono decidere
+      quali strumenti adottare, come governarne l'uso e quali responsabilità,
+      controlli e priorità organizzative definire.
+    metadata:
+      - 4 ore
+      - Fino a 10 partecipanti
+      - 1.200 €
+      - In presenza o online
+    details_label: Cosa affrontiamo insieme
+    highlight: false
+    contact_subject: AI Act for Management
+    contact_label: Richiedi questo percorso
+    examples:
+      - "**Responsabilità:** ruolo dell'organizzazione e supervisione umana."
+      - "**Strumenti e casi d'uso:** mappatura degli utilizzi ordinari, sensibili e ad alto rischio."
+      - "**Governance:** criteri di procurement, strumenti autorizzati e policy interna."
+      - "**Piano d'azione:** priorità e prossimi passi per l'azienda."
+
+  - kicker: Programmi personalizzati
+    title: Un corso costruito sul tuo contesto
+    description: >-
+      Progettiamo percorsi per esigenze tecniche e operative specifiche, dai moduli
+      introduttivi per team trasversali alle sessioni avanzate per tecnici e
+      specialisti. Definiamo insieme contenuti, esempi e casi d'uso rilevanti.
+    metadata:
+      - Durata da definire
+      - In presenza o online
+      - Programma su misura
+    details_label: Possibili percorsi
+    contact_subject: Corso personalizzato AI e Cybersecurity
+    contact_label: Costruiamo il tuo corso
+    examples:
+      - "**Per un team aziendale:** esempi ed esercitazioni basati sugli strumenti e sui processi realmente utilizzati."
+      - "**Per tecnici e specialisti:** approfondimenti avanzati calibrati sulle competenze di partenza."
+      - "**Per università, ITS e centri di ricerca:** programmi coerenti con obiettivi didattici e profilo dei partecipanti."
+
+method:
+  eyebrow: Come lavoriamo
+  title: Partiamo da chi deve imparare
+  text: >-
+    Prima definiamo ruoli, competenze iniziali e obiettivi. Poi scegliamo
+    contenuti, esempi ed esercitazioni che possano essere riutilizzati nel lavoro.
+  steps:
+    - title: Ascoltiamo
+      text: Obiettivi, ruoli e competenze di partenza.
+    - title: Progettiamo
+      text: Programma, linguaggio ed esempi pertinenti.
+    - title: Coinvolgiamo
+      text: Lezioni chiare, casi reali ed esercitazioni.
+    - title: Trasferiamo
+      text: Materiali e strumenti applicabili nel lavoro.
+
+final_cta:
+  eyebrow: Devi organizzare un corso?
+  title: Definiamo partecipanti, obiettivi e programma
+  text: >-
+    In una prima call gratuita raccogliamo le esigenze, il livello dei partecipanti
+    e gli obiettivi formativi per proporti il percorso più utile.
+  primary: Prenota una call gratuita
+  email: Oppure scrivici a info@manalisk.it
 ---
-
-# Formazione su misura per aziende e professionisti
-
-Progettiamo e realizziamo corsi di formazione pensati per aziende, università, ITS e professionisti che desiderano aggiornare o potenziare le proprie competenze.
-Offriamo programmi modulari, flessibili e personalizzabili in base alle esigenze specifiche di ogni realtà.
-
-Abbiamo una solida esperienza nella formazione su argomenti complessi come l'intelligenza artificiale e la cybersecurity, maturata sia in contesti aziendali che accademici. Nel corso degli anni abbiamo collaborato con università, ITS e centri di ricerca, progettando percorsi didattici efficaci ed aggiornati.
-
-Coniughiamo competenza tecnica, aggiornamento continuo e chiarezza espositiva per rendere accessibili anche i temi più avanzati. Progettiamo corsi chiari, pratici e adattabili alle esigenze di chi partecipa, con l'obiettivo di offrire strumenti applicabili nel lavoro quotidiano.
-
-Sono disponibili sconti dedicati per l'acquisto di pacchetti formativi multipli.
-Tutti i prezzi riportati sono indicativi: contattaci per un preventivo.
-
-Cerchi un percorso dedicato all'uso sicuro e consapevole dell'AI in azienda?
-[Scopri la formazione AI aziendale e l'AI Literacy & Governance Sprint](/formazione-ai-aziendale/).
-
-
-
-## Corsi Intelligenza Artificiale
-
-L'intelligenza artificiale sta trasformando profondamente processi, prodotti e modelli di business. I nostri corsi sono pensati per aiutare aziende e professionisti a comprendere e utilizzare le tecnologie AI in modo strategico e operativo, anche senza una formazione tecnica di partenza.
-
-Dall'introduzione ai modelli generativi fino alle applicazioni pratiche nei diversi settori, offriamo percorsi chiari, concreti e aggiornati, con un taglio orientato ai risultati.
-
-{{< card >}}
-  {{< card-title >}}Intelligenza Artificiale per il Business{{< /card-title >}}
-  {{< card-subtitle icon=clock text=4h class="text-muted">}}
-  {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
-  {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
-  {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
-  {{< card-text class="mt-3" >}}
-L'intelligenza artificiale (AI) non è più una tecnologia riservata alle grandi multinazionali: oggi può essere uno strumento concreto per migliorare l'efficienza, ridurre i costi e creare nuove opportunità anche per le piccole e medie imprese. Grazie ai più recenti modelli lingustici -- come ChatGPT, anche detti Large Language Models -- non è più necessario posssedere conoscenze tecniche per sfruttare al meglio questa tecnologia.<br>
-Attraverso esempi reali, casi d'uso, e sessioni interattive, esploreremo le applicazioni dell'AI in ambiti come il marketing, la gestione clienti, la produzione, la logistica.
-
-**Pre-requisiti**: Nessuno
-
-**Target**: imprenditori, manager, dipendenti
-
-**Argomenti Trattati**:
-- *Introduzione all'Intelligenza Artificiale*: Una panoramica chiara e concreta su cos'è l'AI e perché oggi è diventata centrale nel mondo del lavoro.
-- *ChatGPT e LLMs*: Cosa sono i Large Language Models (LLMs), come possono essere utilizzati in azienda, e quali sono i loro limiti.
-- *Introduzione al Prompting*: Come interagire in modo efficace con ChatGPT e LLM per ottenere risposte utili dall'Intelligenza Artificiale: tecniche, esempi e buone pratiche.
-- *Esercitazione Pratica*: I partecipanti mettono subito in pratica quanto appreso, lavorando su casi realistici.
-
-{{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Intelligenza Artificiale per il Business" class="mt-4 d-block text-end">}}
-  {{< /card-text >}}
-{{< /card >}}
-
-## Corsi Cybersecurity
-
-La sicurezza digitale è una priorità trasversale che riguarda ogni organizzazione, a prescindere dalle dimensioni o dal settore di appartenenza. I nostri corsi di cybersecurity offrono le conoscenze fondamentali per riconoscere i principali rischi informatici e adottare misure di protezione efficaci.
-
-Con un approccio accessibile e concreto, aiutiamo aziende e professionisti a sviluppare una cultura della sicurezza, indispensabile per operare in un contesto digitale in continua evoluzione.
-
-{{< card >}}
-  {{< card-title >}}Elementi di Sicurezza Digitale{{< /card-title >}}
-  {{< card-subtitle icon=clock text=4h >}}
-  {{< card-subtitle icon=user text="5-25 partecipanti" class="text-muted">}}
-  {{< card-subtitle icon=credit-card text="€750" class="text-muted">}}
-  {{< card-subtitle icon=book-open text="Livello Base" class="text-muted">}}
-  {{< card-text class="mt-3">}}
-
-In un mondo sempre più connesso, ogni azienda -- indipendentemente dal settore -- è esposta a rischi digitali. "Elementi di Sicurezza Digitale" è un corso introduttivo insegnare le basi della cybersecurity, e come proteggere in modo efficace i propri dati, strumenti e processi digitali. Senza tecnicismi e con esempi concreti, il corso offre una panoramica pratica dei pericoli online più comuni e delle misure essenziali per evitarli.
-
-**Pre-requisiti**: Nessuno
-
-**Target**: imprenditori, manager, dipendenti
-
-**Argomenti Trattati**:
-- *Introduzione alla sicurezza digitale*:  Introduzione ai concetti fondamentali della cybersecurity e al loro impatto sulle aziende.
-- *Principali minacce informatiche*:  Panoramica sui rischi più diffusi come phishing, malware e ransomware, con esempi concreti.
-- *La gestione sicura delle password*:  Metodi semplici ed efficaci per creare, conservare e gestire le credenziali aziendali.
-- *Email e comunicazioni digitali, cosa fare e cosa evitare*: Linee guida ed esempi pratici per riconoscere messaggi sospetti e gestire con attenzione link e allegati.
-- *Privacy e gestione dei dati aziendali*: Buone pratiche per trattare in modo corretto le informazioni sensibili.
-
-{{< lbutton text="Scrivici per questo corso" url="mailto:info@manalisk.it?subject=Formazione Elementi di Sicurezza Digitale" class="mt-4 d-block text-end">}}
-  {{< /card-text >}}
-{{< /card >}}
-
-## Corsi Personalizzati
-
-Offriamo corsi personalizzati progettati per rispondere a specifiche esigenze tecniche e operative, in ambito AI e sicurezza informatica.
-I nostri percorsi sono strutturati per adattarsi al livello di competenza dei partecipanti -- da moduli introduttivi per team trasversali fino a sessioni avanzate per tecnici e specialisti.
-
-Collaboriamo con aziende e professionisti per definire contenuti mirati, esempi reali e casi d'uso rilevanti, garantendo un trasferimento di competenze immediatamente applicabile.
-
-Contattaci per definire insieme il programma formativo più adatto al tuo contesto. Scrivici a [info@manalisk.it](mailto:info@manalisk.it) e ti risponderemo al più presto.

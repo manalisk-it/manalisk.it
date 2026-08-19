@@ -1,11 +1,11 @@
 ---
 title: Prenota una call sulla formazione
+seo_title: "Prenota una call sulla formazione | Manalisk"
 linkTitle: Call formazione
 description: Prenota una prima call gratuita di 30–45 minuti con Manalisk per progettare formazione aziendale su intelligenza artificiale e cybersecurity.
-draft: true
+draft: false
 layout: booking-modern
 page_class: modern-catalogue-page booking-modern-page
-noindex: true
 disable_article_schema: true
 og_type: website
 showBookingButton: false

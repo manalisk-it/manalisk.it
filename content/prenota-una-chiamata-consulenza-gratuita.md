@@ -1,56 +1,73 @@
 ---
-title: "Prenota una chiamata"
-description: "Pagina di prenotazione per chiamata gratuita"
-layout: "book-call"
-params:
-  showBookingButton: false
-page_class: "call-background"
-gallery_images:
-  - src: "images/analysis.png"
-    alt: "Icona di analisi del business"
-    caption: "1. Analizziamo il tuo Business"
-  - src: "images/idea.png"
-    alt: "Icona di opportunità per il business"
-    caption: "2. Identifichiamo le Opportunità"
-  - src: "images/roadmap.png"
-    alt: "Icona per i prossimi passi del business"
-    caption: "3. Definiamo i Prossimi Passi"
-  - src: "images/q&a.png"
-    alt: "Icona di risposta alle domande"
-    caption: "4. Rispondiamo alle tue Domande"
+title: Prenota una call su AI e automazione
+seo_title: "Prenota una call su AI e automazione | Manalisk"
+linkTitle: Call AI e automazione
+description: Prenota una prima call gratuita di 30–45 minuti con Manalisk per parlare di intelligenza artificiale, automazione e processi aziendali.
+draft: false
+layout: booking-modern
+page_class: modern-catalogue-page booking-modern-page
+disable_article_schema: true
+og_type: website
+showBookingButton: false
+calendar_url: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG
+email_subject: Prima call su AI e automazione
+
+hero:
+  eyebrow: Prima call gratuita
+  title: Prenota una call su AI e automazione
+  text: In 30–45 minuti comprendiamo il tuo contesto, individuiamo un possibile punto di partenza e valutiamo insieme il passo successivo.
+  meta: 30–45 minuti · online · senza impegno
+  primary_label: Scegli giorno e orario
+  email_label: Preferisci scriverci?
+  booking_note: Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+
+useful:
+  eyebrow: Quando può essere utile
+  title: Possiamo partire da un'idea o da un processo da osservare
+  text: Non serve conoscere già la tecnologia o avere un progetto completamente definito.
+  items:
+    - Hai un'idea per usare l'AI e vuoi capire come renderla concreta.
+    - Vuoi ridurre attività ripetitive, passaggi manuali o trasferimenti di dati tra strumenti.
+    - Stai valutando un'integrazione, un'automazione o un software su misura.
+    - Vuoi capire se sia più opportuno partire da un progetto, da un prototipo o dalla formazione.
+
+process:
+  eyebrow: Come si svolge
+  title: Un primo confronto concreto sul tuo lavoro
+  text: La call serve a capire il problema prima di parlare della soluzione.
+  steps:
+    - title: Ci racconti il contesto
+      text: Puoi partire da un'idea già formulata oppure mostrarci come viene svolto oggi un processo.
+    - title: Individuiamo le opportunità
+      text: Cerchiamo insieme le attività più ripetitive, i passaggi critici e i punti nei quali l'AI o l'automazione potrebbero essere utili.
+    - title: Definiamo il passo successivo
+      text: Valutiamo un possibile progetto iniziale e quali informazioni, esempi o dati servono per approfondirlo.
+
+after:
+  eyebrow: Dopo la call
+  title: La proposta dipende da quanto il caso è già definito
+  paragraphs:
+    - Se l'esigenza è semplice e sufficientemente chiara, possiamo procedere verso una proposta. Negli altri casi chiediamo esempi, dati o un ulteriore confronto per comprendere meglio il processo.
+    - Non proponiamo automaticamente un software su misura. Quando è più proporzionato, possiamo partire da formazione, strumenti già disponibili o da un intervento molto mirato.
+
+faq:
+  title: Cosa sapere prima di prenotare
+  items:
+    - question: Quanto dura la prima call?
+      answer: La prima call dura normalmente 30–45 minuti ed è gratuita e senza impegno.
+    - question: Devo avere già un progetto AI definito?
+      answer: No. Puoi arrivare con un'idea oppure descriverci le attività e i processi che oggi richiedono più tempo. Ti aiutiamo a individuare un possibile punto di partenza.
+    - question: Devo preparare dati o documenti?
+      answer: Non è necessario per il primo incontro. Se emergono aspetti da approfondire, concordiamo successivamente quali esempi o dati siano davvero utili e come condividerli.
+    - question: Possiamo incontrarci in azienda?
+      answer: Lavoriamo da remoto in tutta Italia e, quando è utile osservare direttamente i processi, possiamo incontrare le aziende a Padova e provincia.
+    - question: Cosa succede dopo la call?
+      answer: Se il caso è già definito possiamo preparare una proposta. Più spesso concordiamo un breve approfondimento per verificare processo, dati e fattibilità prima di stimare il progetto.
+
+final_cta:
+  eyebrow: Scegli quando sentirci
+  title: Raccontaci l'idea o il processo che vuoi migliorare
+  text: "Se non sai ancora quale soluzione serva, va bene: il primo obiettivo è comprendere il problema e individuare una direzione sensata."
+  primary_label: Prenota la call gratuita
+  email_label: Scrivi a info@manalisk.it
 ---
-
-# Vuoi portare l'AI in Azienda? Prenota una chiamata!
-
-{{< lead class="catchphrase my-4" >}}
-Scopri i Primi Passi in una Call Gratuita
-{{< /lead >}}
-
-{{< lead class="mb-5">}}
-*"Non restare a guardare la rivoluzione AI. Diventane protagonista!"*
-{{< /lead >}}
-
-{{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
-
-
-{{< gallery-call  >}}
-
-{{< lead >}}
-Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti. Analizziamo i tuoi strumenti
-e processi aziendali e ti diciamo cosa puoi migliorare grazie all'**Intelligenza Artificiale**.
-{{< /lead >}}
-
-### Cosa otterrai dalla call?
-
-* **Analisi Rapida del Potenziale:** Individuiamo insieme dove l'AI può portare i maggiori benefici alla tua struttura e ai tuoi obiettivi.
-* **Idee Chiare e Praticabili:** Identifichiamo delle applicazioni AI realistiche e ad alto impatto per iniziare con il piede giusto.
-* **Primi Passi Definiti:** Delineiamo una mini-roadmap con le azioni prioritarie per avviare un progetto AI senza spreco di risorse.
-* **Focus e Chiarezza:** Ottieni una visione strategica e risposte concrete, ottimizzando il tuo tempo.
-
-Durante la call analizzeremo le tue esigenze, identificheremo le opportunità, ti daremo suggerimenti concreti, e risponderemo alle tue domande!
-
-## Preferisci un'email?
-
-{{< lead class="mt-3">}}
-Scrivici a [info@manalisk.it](mailto:info@manalisk.it) e ti risponderemo al più presto.<br>Capiremo insieme come portare l'Intelligenza Artificiale nella tua azienda!
-{{< /lead >}}

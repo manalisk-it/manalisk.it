@@ -1,4 +1,4 @@
-.home3-page {
+:root {
   --home3-ink: #10222a;
   --home3-muted: #55676e;
   --home3-accent: #12a0b0;
@@ -7,6 +7,9 @@
   --home3-line: #e7eef0;
   --home3-surface: #f6fafb;
   --home3-warm: #8a5a16;
+}
+
+.home3-page {
   background: #fff;
   color: var(--home3-ink);
   font-family: "Hanken Grotesk", sans-serif;

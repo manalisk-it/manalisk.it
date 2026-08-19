@@ -1,208 +1,355 @@
 ---
-title: "Consulenza Intelligenza Artificiale Padova"
-description: "Scopri i servizi di consulenza AI a Padova: soluzioni intelligenti su misura per aziende. Parla con i nostri esperti in intelligenza artificiale."
-layout: seo-page
+title: "Consulenza AI e automazione a Padova"
+seo_title: "Consulenza AI e automazione a Padova | Manalisk"
+description: "Consulenza AI a Padova: veniamo in azienda, analizziamo i processi e realizziamo automazioni, integrazioni e soluzioni su misura."
 draft: false
+layout: local-service-landing
+page_class: modern-catalogue-page local-service-landing-page
+theme: ai
+layout_variant: classic
+visual_variant: local-conversion
+
+schema_local_service:
+  name: Consulenza AI e automazione a Padova
+  service_type: Consulenza in intelligenza artificiale, automazione e integrazione dei processi
+  provider_name: Manalisk
+  provider_description: Professionisti che applicano intelligenza artificiale, automazione e sviluppo software ai processi aziendali.
+  email: info@manalisk.it
+  area_name: Padova
+
+team_visual:
+  aria_label: Professionisti coinvolti nei progetti AI di Manalisk
+  members:
+    - name: Pier Paolo Tricomi, Ph.D.
+      role: AI, ricerca e formazione
+      proof: Otto anni di esperienza in AI, ricerca a Padova, UCI e Northwestern e formazione per più di 15 aziende.
+      image: images/PierPaoloTricomi.jpg
+      alt: Pier Paolo Tricomi, consulente e ricercatore AI di Manalisk
+    - name: Simeone Pizzi
+      role: Sviluppo software e cybersecurity
+      proof: Laurea magistrale con lode, ricerca all'Università di Padova ed esperienza nello sviluppo software.
+      image: images/sime1.png
+      alt: Simeone Pizzi, sviluppatore software e specialista cybersecurity di Manalisk
+    - name: Nicola Bellotto, Ph.D.
+      role: Legale, privacy e AI governance
+      proof: Supporta il team nella valutazione di dati, fornitori, responsabilità e utilizzo degli strumenti AI.
+      image: images/NicolaBellotto2.jpg
+      alt: Nicola Bellotto, consulente legale, privacy e AI governance di Manalisk
+
+faq:
+  eyebrow: Domande frequenti
+  title: Prima di iniziare
+  text: Le informazioni pratiche per capire come possiamo affrontare un primo caso d'uso.
+  items:
+    - question: Lavorate solo con aziende di Padova?
+      answer: No. A Padova e provincia possiamo incontrare il cliente e osservare i processi in azienda; seguiamo inoltre progetti da remoto in tutta Italia.
+    - question: Cosa succede durante la prima call gratuita?
+      answer: La call dura normalmente 30–45 minuti. Partiamo dall'idea del cliente oppure ricostruiamo le attività più ripetitive, valutiamo dove può avere senso intervenire e individuiamo un possibile primo progetto.
+    - question: Serve già sapere quale soluzione AI realizzare?
+      answer: No. La prima analisi serve a capire se occorre davvero l'AI, se basta un'automazione tradizionale e quali dati, strumenti e persone sono coinvolti.
+    - question: Cosa succede dopo la prima call?
+      answer: Se il caso è già chiaro possiamo preparare una proposta. Più spesso chiediamo alcuni esempi o approfondiamo il processo prima di definire attività, tempi e investimento.
+    - question: Dobbiamo sostituire i software che utilizziamo?
+      answer: Non necessariamente. Quando accessi e integrazioni lo consentono, colleghiamo gestionali, CRM, email, database e altri strumenti già presenti.
+    - question: Quanto tempo serve per vedere una prima soluzione?
+      answer: Dipende da dati e sistemi coinvolti. Per un caso circoscritto, una prima versione verificabile può spesso essere realizzata entro circa due mesi; la stima viene confermata solo dopo l'analisi.
+    - question: È possibile iniziare con un budget contenuto?
+      answer: Sì, quando esiste un intervento sufficientemente mirato. Possiamo partire da formazione, analisi o da un caso strategico circoscritto, mantenendo l'investimento proporzionato all'obiettivo.
+    - question: Come considerate privacy e sicurezza?
+      answer: Dati, accessi, infrastruttura, fornitori esterni, ruoli e controllo umano vengono considerati durante l'analisi e la progettazione, insieme agli aspetti di cybersecurity e AI governance pertinenti.
+
+mid_cta:
+  eyebrow: Prima consulenza gratuita
+  title: Hai un processo che vorresti semplificare?
+  text: In 30–45 minuti ricostruiamo il contesto e valutiamo se esiste un primo intervento sensato.
+  primary:
+    label: Prenota una call gratuita
+    url: /prenota-una-chiamata-consulenza-gratuita/
+  secondary:
+    label: Leggi gli approfondimenti
+    url: "#approfondimenti"
+
+deep_dive:
+  eyebrow: Approfondimenti
+  title: Come valutare AI e automazione in azienda
+  text: >-
+    Una guida basata sui problemi che incontriamo nei processi reali: dati,
+    integrazioni, controllo umano e criteri con cui valutare il risultato.
+  index_label: In questa guida
+  sections:
+    - id: consulenza-ai-padova
+      index_title: Da dove iniziare
+      title: Come si svolge una consulenza in intelligenza artificiale a Padova?
+      lead: >-
+        Una consulenza AI utile parte da un processo osservabile, non dalla scelta
+        anticipata di uno strumento o di un modello.
+      paragraphs:
+        - >-
+          A Padova e provincia possiamo lavorare direttamente in azienda, parlare
+          con le persone che svolgono l'attività e osservare i passaggi tra email,
+          documenti, gestionali e altri strumenti. Da remoto utilizziamo esempi,
+          condivisioni dello schermo e interviste operative per ricostruire lo stesso flusso.
+        - >-
+          Cerchiamo attività ripetitive, ricopiature, attese, errori e informazioni
+          difficili da recuperare. Poi verifichiamo dati disponibili, accessi ai
+          sistemi, eccezioni e decisioni che devono restare alle persone.
+      items:
+        - title: Processo
+          text: Chi svolge l'attività, quali passaggi segue e dove incontra difficoltà.
+        - title: Dati
+          text: Formati, quantità, qualità, autorizzazioni ed esempi rappresentativi.
+        - title: Sistemi
+          text: Gestionale, CRM, email, documenti, database e API da coinvolgere.
+        - title: Risultato
+          text: Tempo, errori, qualità dell'output e controllo umano con cui valutare la prova.
+
+    - id: automazione-integrazione
+      index_title: Automazione e integrazioni
+      title: Cosa può automatizzare l'AI in un processo aziendale?
+      paragraphs:
+        - >-
+          Molti processi non richiedono un nuovo software isolato. Occorre collegare
+          informazioni già presenti: una richiesta ricevuta via email può alimentare
+          il CRM, un documento può aggiornare una pratica e lo stato di una commessa
+          può essere sincronizzato tra più strumenti.
+        - >-
+          In un progetto Manalisk per un'azienda della mobilità elettrica con oltre
+          20 milioni di euro di fatturato, informazioni, documenti e attività erano
+          distribuiti tra gestionale, Microsoft 365, Teams e sistemi documentali.
+          Abbiamo automatizzato i workflow e collegato i sistemi, mantenendo controlli
+          e responsabilità nei passaggi necessari.
+      bullets:
+        - "**Ordini e richieste:** estrazione e preparazione dei dati per il gestionale."
+        - "**Backoffice:** aggiornamento di pratiche, documenti e scadenze."
+        - "**CRM e gestionali:** sincronizzazione di schede, attività e stati."
+        - "**Commesse:** informazioni e documentazione mantenute coerenti tra più strumenti."
+      note: >-
+        Automazione e AI non sono sinonimi. L'AI è utile soprattutto quando il
+        processo contiene testi, immagini o classificazioni non gestibili con sole regole rigide.
+
+    - id: documenti-ocr-nlp
+      index_title: Documenti, OCR e NLP
+      title: Come usare OCR e AI nella gestione documentale?
+      paragraphs:
+        - >-
+          Fatture, ordini, contratti, email, report e scansioni possono essere
+          trasformati in dati strutturati attraverso OCR, NLP e modelli di estrazione.
+          Il dato deve poi essere controllato e passato al sistema che lo utilizza.
+        - >-
+          In una precedente esperienza professionale abbiamo sviluppato una soluzione
+          per immagini specialistiche elaborate nell'ordine delle migliaia per commessa.
+          Nel flusso verificato, l'estrazione è passata da circa un minuto per immagine
+          a un'elaborazione quasi immediata, mantenendo la revisione dell'operatore.
+      bullets:
+        - Classificazione automatica dei documenti e assegnazione dei metadati.
+        - Estrazione di date, importi, riferimenti e informazioni di dominio.
+        - Ricerca per contenuto all'interno di PDF, scansioni e archivi.
+        - Collegamento dei dati estratti a gestionali, database e workflow.
+
+    - id: ai-generativa-claude-rag
+      index_title: Claude, ChatGPT e RAG
+      title: Come usare Claude, ChatGPT e RAG nel lavoro aziendale?
+      paragraphs:
+        - >-
+          Strumenti come Claude e ChatGPT possono supportare email, documentazione,
+          analisi e consultazione di archivi, ma funzionano meglio quando sono inseriti
+          in un processo definito e ricevono istruzioni, esempi e fonti coerenti.
+        - >-
+          Per un professionista legale abbiamo prima analizzato le sue attività e
+          svolto formazione sugli strumenti. Abbiamo quindi creato prompt, skill e
+          progetti Claude dedicati ai singoli casi d'uso. Per una delle attività
+          affrontate, il tempo è stato stimato da intere giornate a circa due ore.
+        - >-
+          Non sempre è necessario sviluppare software su misura: quando gli strumenti
+          esistenti sono adeguati, li configuriamo sul processo e concentriamo
+          l'investimento sulle attività che producono valore.
+      bullets:
+        - Prompt e procedure riutilizzabili per attività ricorrenti.
+        - Skill e progetti dedicati a specifici flussi professionali.
+        - Sistemi RAG per consultare documenti mostrando le fonti utilizzate.
+        - Bozze e risposte sottoposte al controllo della persona competente.
+      note: >-
+        La riduzione indicata per il caso legale è una stima basata sull'analisi del
+        flusso, non una misurazione cronometrata o una garanzia per altri casi.
+
+    - id: logistica-dati-strutturati
+      index_title: Email e processi logistici
+      title: Come trasformare email e messaggi in dati per il gestionale?
+      paragraphs:
+        - >-
+          Nei processi logistici molte informazioni arrivano come testo libero e
+          devono essere interpretate prima dell'inserimento nei sistemi. In una
+          precedente esperienza professionale, un operatore elaborava manualmente
+          ogni sera almeno 50 messaggi destinati alla gestione dei corrieri.
+        - >-
+          È stata sviluppata e verificata una soluzione che interpretava i messaggi,
+          organizzava le informazioni in JSON e le preparava per l'inserimento
+          automatico nel gestionale, lasciando all'operatore un controllo rapido.
+      note: >-
+        Il caso descrive una soluzione sviluppata e funzionante sul flusso previsto;
+        non viene presentato come un dato sull'utilizzo attuale da parte dell'azienda.
+
+    - id: machine-learning-dati
+      index_title: Dati e machine learning
+      title: Quando servono data analysis e modelli di machine learning?
+      paragraphs:
+        - >-
+          Dati provenienti da Excel, CRM, ERP e database possono essere riuniti per
+          analizzare costi, tempi, vendite, carichi di lavoro e scostamenti. Spesso
+          una dashboard o un report ben costruito è più utile di un modello complesso.
+        - >-
+          Clustering, sistemi di raccomandazione, visione artificiale e modelli
+          previsionali diventano sensati quando esistono dati rappresentativi e un
+          criterio con cui confrontare il risultato. Prima dello sviluppo valutiamo
+          qualità, quantità, variabilità e costo di manutenzione del modello.
+      bullets:
+        - Analisi e visualizzazione dei dati aziendali.
+        - Segmentazione e clustering quando le variabili sono significative.
+        - Previsioni di domanda o volumi con margini d'errore espliciti.
+        - Classificazione di immagini e supporto ai controlli tramite visione artificiale.
+
+    - id: primo-progetto-ai
+      index_title: Il primo progetto
+      title: Quanto tempo e investimento richiede un primo progetto AI?
+      paragraphs:
+        - >-
+          Il primo progetto dovrebbe essere abbastanza importante da produrre un
+          beneficio osservabile, ma sufficientemente circoscritto da poter essere
+          verificato senza trasformare subito l'intera organizzazione.
+        - >-
+          Se il caso è chiaro, dopo la call possiamo preparare una proposta. Quando
+          restano dubbi, approfondiamo processo ed esempi prima di stimare il lavoro.
+          Per un caso ben delimitato, una prima versione verificabile può spesso
+          essere realizzata entro circa due mesi.
+      bullets:
+        - Un referente interno e un processo chiaramente identificati.
+        - Dati ed esempi che includano anche eccezioni e casi problematici.
+        - Un criterio concreto per valutare la prova.
+        - Un investimento proporzionato al beneficio e alle risorse disponibili.
+      note: >-
+        Se il budget è limitato può essere più sensato iniziare dalla formazione o
+        da un intervento strategico molto mirato. Tempi e costi vengono confermati
+        soltanto dopo aver verificato dati, sistemi e affidabilità richiesta.
+
+final_cta:
+  eyebrow: Prima call gratuita
+  title: Raccontaci il processo che vuoi semplificare
+  text: Partiamo dall'attività reale per capire se conviene automatizzarla, applicare l'AI o intervenire in un altro modo.
+  primary:
+    label: Prenota la consulenza gratuita
+    url: /prenota-una-chiamata-consulenza-gratuita/
+  secondary:
+    label: Scrivi a info@manalisk.it
+    url: "mailto:info@manalisk.it?subject=Consulenza%20AI%20a%20Padova"
 ---
 
-# Consulenza in Intelligenza Artificiale a Padova  
+# Consulenza AI e automazione a Padova
 
 {{< lead class="catchphrase my-4" >}}
-Sei un'azienda di Padova interessata a implementare l'intelligenza artificiale nei tuoi processi? 
+Veniamo in azienda, osserviamo i processi insieme a chi li gestisce e realizziamo automazioni, integrazioni e soluzioni AI su misura.
 {{< /lead >}}
 
 {{< lead >}}
-**Manalisk** offre servizi di consulenza AI e formazione su misura per aiutarti a innovare, ottimizzare e crescere in un mercato sempre più competitivo. Siamo degli esperti in **Intelligenza Artificiale**, con sede a Padova e diversi anni di esperienza.
-Offriamo una prima **consulenza gratuita e senza impegno** per aziende e professionisti. Analizziamo i tuoi strumenti
-e processi aziendali e ti diciamo cosa puoi migliorare grazie all'**Intelligenza Artificiale**.
+Lavoriamo in presenza con aziende e professionisti di Padova e provincia. Quando non serve essere sul posto, seguiamo progetti da remoto in tutta Italia. La prima call è gratuita e dura normalmente 30–45 minuti.
 {{< /lead >}}
 
+{{< lbutton text="Prenota una call gratuita" url="/prenota-una-chiamata-consulenza-gratuita/" >}}
 
-{{< lead class="mb-5">}}
-Non sei di Padova? Non preoccuparti, lavoriamo in remoto in tutto il mondo!
-{{< /lead >}}
+> **Perché la presenza a Padova può fare la differenza**\
+> Possiamo vedere come persone, documenti e strumenti interagiscono nel lavoro quotidiano, ricostruire eccezioni e passaggi informali e confrontarci direttamente con chi svolge l'attività. La tecnologia viene scelta soltanto dopo aver compreso il processo reale.
 
+## Chi realizza i progetti AI di Manalisk?
 
-{{< lbutton text="Prenota una call gratuita" url="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG" >}}
+Manalisk riunisce professionisti con esperienza diretta nella ricerca scientifica, nello sviluppo e nell'applicazione dell'intelligenza artificiale in azienda. Non ci limitiamo a consigliare uno strumento: possiamo analizzare il processo, costruire la soluzione e integrarla nel lavoro esistente.
 
-<!-- TODO: Sei interessato alla cybersecurity? Visita la nostra [pagina dedicata](/services). -->
+{{< local-landing-team >}}
 
+[Conosci il team e le competenze di Manalisk](/about/).
 
-## Chi siamo
+## Quali aziende di Padova possiamo aiutare?
 
-Siamo dei **liberi professionisti esperti di intelligenza artificiale**, sia in ambito accademico che industriale. Siamo entrambi laureati Magistrali a pieni voti in Informatica all'Università di Padova. Uno di noi ha conseguito un dottorato di ricerca in AI e Cybersecurity, mentre l’altro ha collaborato come assistente ricercatore presso lo stesso ateneo.
+Lavoriamo soprattutto con **PMI, aziende manifatturiere, studi professionali e imprese tecnologiche** che vogliono ridurre attività manuali, collegare strumenti o utilizzare meglio documenti e dati. Possiamo collaborare anche con organizzazioni più grandi quando serve una competenza specialistica o un progetto circoscritto.
 
-Questa combinazione di ricerca, sviluppo e applicazione pratica ci consente di portare in azienda le soluzioni più recenti e performanti provenienti dal mondo accademico. I nostri anni di esperienza passati in Italia e all'estero ci permettono di adattare i modelli più recenti ai bisogni aziendali, nella **forma e misura richieste dal cliente**. 
+Non è necessario avere già un reparto AI o sapere quale tecnologia utilizzare. È invece importante poter coinvolgere chi conosce il processo e mettere a disposizione esempi sufficientemente rappresentativi.
 
-Se vuoi sapere di più su di Manalisk e la nostra missione, [clicca qui](/about).
+## Cosa possiamo osservare e automatizzare in azienda?
 
-## Cosa Facciamo
+Aiutiamo le aziende a integrare intelligenza artificiale e automazione nei loro strumenti e processi. In particolare:
 
-Aiutiamo le aziende a integrare soluzioni di intelligenza artificiale nei loro strumenti e processi. Ad esempio:
+- analizziamo i **processi aziendali** e identifichiamo attività ripetitive, colli di bottiglia e passaggi da semplificare;
+- realizziamo **automazioni e integrazioni** tra email, moduli, CRM, gestionali, database, Microsoft 365 e altri strumenti;
+- sviluppiamo **modelli di machine learning e AI generativa** per casi che richiedono soluzioni su misura;
+- miglioriamo la **gestione documentale** attraverso OCR, classificazione, estrazione di dati e ricerca semantica;
+- realizziamo sistemi basati su **LLM e RAG** per consultare archivi, supportare attività professionali e preparare contenuti con fonti e controllo umano;
+- analizziamo dati e valutiamo **dashboard, modelli previsionali, raccomandazione e visione artificiale** quando dati e obiettivo lo consentono.
 
-- Svolgiamo l'**analisi dei processi aziendali** e identifichiamo opportunità di **automazione**
-- Sviluppiamo e alleniamo **modelli di machine learning su misura**, implementando anche **AI generativa** per migliorare strumenti e processi aziendali
-- Ottimiziamo la **gestione documentale** e i flussi informativi in azienda, per aumentarne la produttività
-- **Integriamo strumenti AI** nei sistemi esistenti, rinnovando e migliorando il business
+[Approfondisci i servizi AI e automazione per aziende](/services/servizi-intelligenza-artificiale/).
 
-Se vuoi sapere di più sui servizi di Manalisk e cosa possiamo offrirti, [visita la pagina dedicata](/services).
+## Quali progetti ha realizzato Manalisk?
 
+### Gestione delle commesse nella mobilità elettrica
 
-## Come Lavoriamo
+Per un'azienda della **mobilità elettrica con oltre 20 milioni di euro di fatturato**, informazioni, documenti e attività delle commesse erano distribuiti tra gestionale, Microsoft 365, Teams e sistemi documentali. Abbiamo mappato il processo in azienda, automatizzato i workflow e collegato i sistemi coinvolti, mantenendo controlli e responsabilità nei passaggi necessari.
 
-Per portare l'Intelligenza Artificiale in azienda, in Manalisk seguiamo un approccio strutturato e convalidato nel tempo:
+La presenza locale ci ha permesso di dedicare una sessione in azienda all'osservazione e alla mappatura del flusso prima di definire l'intervento.
 
-1. **Ascoltiamo le esigenze del cliente** e analizziamo il contesto in cui opera
-1. **Identifichiamo delle opportunità** per migliorare il suo business grazie all'AI
-1. **Proponiamo una soluzione** su misura
-1. **Implementiamo la soluzione** e forniamo supporto operativo
+Il risultato è un processo con meno aggiornamenti manuali, informazioni più sincronizzate e maggiore tracciabilità lungo la gestione della commessa. Il cliente non viene indicato per tutelare la riservatezza del progetto.
 
-Se sei indeciso o non sai come procedere, non preoccuparti: **Prenota subito una call gratuita** e senza impegno [cliccando qui](/prenota-una-chiamata-consulenza-gratuita/), e ti aiuteremo a chiarire le idee!
+### Un intervento AI mirato per un professionista legale
 
-## La nostra Esperienza
+Abbiamo analizzato insieme a un professionista legale le attività svolte nei diversi casi, partendo dalla formazione sull'uso consapevole degli strumenti generativi. Abbiamo quindi creato **prompt, skill e progetti Claude** dedicati ai suoi flussi di lavoro.
 
-Nel nostro percorso professionale, maturato anche in contesti aziendali precedenti, abbiamo sviluppato diverse soluzioni di intelligenza artificiale per **migliorare i processi aziendali e risolvere problemi complessi**. Tra i progetti a cui abbiamo partecipato:
+Per uno dei casi d'uso affrontati, un'attività che richiedeva intere giornate è stata stimata in circa due ore. La stima deriva dall'analisi del processo e non da una misurazione cronometrata; il controllo professionale rimane parte del flusso.
 
-- Abbiamo creato un modello di machine learning per **classificare automaticamente documenti** bancari di numerose tipologie, aumentando significativamente la produttività dei dipendenti.
-- Abbiamo sviluppato una soluzione basata su LLM (Large Language Models, es. ChatGPT) per **migliorare i processi logistici** di un'azienda nel settore della produzione. Questo le ha permesso di automatizzare e velocizzare attività ripetitive, **ottimizzando l'impiego delle risorse e riducendo i costi** di gestione.  
-- Abbiamo progettato e realizzato un modello basato su tecnologia OCR (estrazione di testo dalle immagini) in grado di **estrarre informazioni strutturate** a partire da immagini di dominio specifico, consentendo all'azienda di **velocizzare il suo core business** e avere un grande **vantaggio rispetto ai competitor**. 
+Non sempre serve sviluppare software su misura. In questo caso abbiamo configurato strumenti già disponibili sul processo reale, limitando tempi e investimento senza rinunciare all'analisi e al controllo professionale.
 
-Oggi mettiamo questa esperienza al servizio dei nostri clienti. Abbiamo visto da vicino l’impatto dell’AI nei contesti aziendali. Ora lo portiamo nella tua realtà, con soluzioni pensate per generare risultati tangibili.
+### Le fondamenta digitali per una startup contro lo spreco alimentare
 
-## Perché Scegliere Manalisk
+Per una startup che si occupa di ridurre lo spreco alimentare abbiamo sviluppato una **piattaforma web per gestire utenti, mense, menu e feedback**. Non si tratta di un semplice sito: l'applicazione sostiene il processo operativo e organizza in modo strutturato le informazioni generate dal servizio.
 
-Crediamo che le competenze del nostro team si combinino perfettamente per offrire il miglior servizio alle aziende. Proponiamo:
+In questo caso il primo passo non era introdurre subito un modello AI, ma costruire una base software e dati affidabile. Questa infrastruttura permette di valutare in seguito funzionalità di analisi o intelligenza artificiale su informazioni già digitalizzate, quando esiste un obiettivo concreto che le giustifichi.
 
-- **Competenze trasversali**: abbiamo esperienze in diversi settori come **processi produttivi, logistica, servizi cloud, gestione documentale, e sicurezza informatica**, e lavoriamo con diverse tipologie di dati (testo, numeri, immagini, audio).
-- **Prezzi competitivi**: seguiamo il motto "work smarter, not harder", e grazie alla nostra esperienza proponiamo soluzioni efficaci a misura di budget.
-- **Presenza locale e globale**: siamo attivi a Padova e provincia, operando spesso presso la sede del cliente, ma la nostra esperienza di collaborazioni soprattutto estere ci permette di lavorare efficientemente anche da remoto. 
-- **Esperienza internazionale**: abbiamo collaborato con **aziende e università estere**, ottenendo una visione ampia sulle possibilità di innovazione e valorizzazione delle risorse.
-- **Didattica e divulgazione**: abbiamo insegnato, e insegniamo tuttora, in **Università, ITS e aziende**, promuovendo la diffusione dell'intelligenza artificiale e formando nuovi talenti.
+## Quali esperienze precedenti porta il team nei progetti?
 
-## Cerchi della Formazione?
+Prima della nascita di Manalisk abbiamo sviluppato soluzioni AI anche in altri contesti professionali. Non sono progetti realizzati da Manalisk, ma esperienze tecniche del team che contribuiscono alle competenze applicate oggi:
 
-Vorresti portare l'AI in azienda ma pensi di non essere pronto? Spesso iniziamo le nostre collaborazioni con le aziende partendo proprio dalla formazione. Conoscere questi strumenti darà a te e ai tuoi dipendenti diverse spunti su cosa sia possibile innovare. Proponiamo diversi corsi, anche su misura, pensati per:
-- Manager, dipendenti, decision maker, e personale amministrativo
-- Team tecnici e operativi
-- Istituzioni e scuole professionali
+- **Logistica e messaggi non strutturati:** almeno 50 messaggi venivano elaborati manualmente ogni sera prima dell'inserimento nel gestionale per la gestione dei corrieri. La soluzione sviluppata interpretava i messaggi, organizzava i dati in JSON e li preparava per l'inserimento automatico, lasciando all'operatore un controllo rapido.
+- **OCR su immagini specialistiche:** per commesse con migliaia di immagini, una soluzione di estrazione ha portato il tempo del flusso verificato da circa un minuto per immagine a un'elaborazione quasi immediata, mantenendo la revisione umana.
+<!-- TODO: aggiungere qui un altro caso sviluppato prima di Manalisk. -->
 
-Visita la nostra [pagina dedicata alla formazione](/formazione-intelligenza-artificiale-e-cybersecurity/) per saperne di più!
+Questi casi descrivono soluzioni sviluppate e funzionanti sul flusso previsto. Non vengono presentati come dati sull'utilizzo attuale presso le aziende.
 
-%%%SPLIT%%%
+## Come si svolge una consulenza AI a Padova?
 
-## Approfondimento: Come l’Intelligenza Artificiale può trasformare la tua azienda
+Il percorso viene adattato alla complessità del caso, ma normalmente segue questi passaggi:
 
-In un mondo sempre più orientato alla digitalizzazione, la **consulenza in intelligenza artificiale a Padova** può diventare la chiave per innovare il tuo business, ridurre i costi e aumentare l’efficienza. Ma in che modo l’**AI** può fare davvero la differenza per le aziende, soprattutto a livello locale?
+1. **Prima call gratuita, di 30–45 minuti:** ascoltiamo l'idea oppure ricostruiamo le attività più ripetitive insieme al cliente.
+2. **Analisi del processo:** verifichiamo persone, strumenti, dati, eccezioni e controlli necessari. A Padova e provincia possiamo osservare il lavoro direttamente presso la sede del cliente.
+3. **Scelta del primo intervento:** individuiamo un progetto sufficientemente utile ma circoscritto, oppure proponiamo formazione se è il passo più adatto.
+4. **Proposta o approfondimento:** se il caso è definito prepariamo il preventivo; altrimenti analizziamo esempi e requisiti prima di stimare il lavoro.
+5. **Prototipo e integrazione:** realizziamo una prima versione verificabile e, se il risultato è adeguato, la inseriamo progressivamente nel processo reale.
 
-In questa sezione vogliamo approfondire alcuni scenari pratici, mostrando i vantaggi concreti dell’introduzione di soluzioni di **machine learning, data analysis** e **gestione documentale intelligente**, partendo da casi reali e tecnologie oggi accessibili anche alle PMI.
+Per un caso ben circoscritto, arrivare a una prima versione entro circa **due mesi** è spesso un obiettivo ragionevole. La tempistica effettiva dipende da dati, sistemi coinvolti e affidabilità richiesta.
 
+## Perché scegliere Manalisk come partner AI a Padova?
 
+- **Esperienza dimostrabile:** ricerca scientifica, sviluppo software, progetti aziendali e formazione svolta direttamente dai professionisti coinvolti.
+- **Capacità di realizzazione:** possiamo passare dall'analisi allo sviluppo e all'integrazione, senza fermarci alla sola consulenza strategica.
+- **Conoscenza dei processi:** consideriamo persone, responsabilità, dati e strumenti, non soltanto il modello AI.
+- **Approccio proporzionato:** adattiamo il primo passo agli obiettivi e alle risorse disponibili. Con un budget limitato può essere più utile partire da formazione o da un intervento molto mirato.
+- **Privacy e sicurezza durante la progettazione:** valutiamo accessi, dati, servizi esterni, cybersecurity, AI governance e controllo umano in relazione al progetto.
+- **Presenza a Padova:** possiamo lavorare presso la sede del cliente a Padova e provincia, oltre a seguire progetti da remoto in Italia.
 
-### Automazione dei processi: il primo passo per innovare la tua impresa a Padova
+Manalisk riunisce anche competenze specialistiche nella [cybersecurity per aziende](/services/servizi-cybersecurity/) e nella [formazione su intelligenza artificiale e sicurezza informatica](/formazione-intelligenza-artificiale-e-cybersecurity/). Quando un progetto coinvolge tecnologia, persone e rischi informatici, il cliente può quindi confrontarsi con un partner capace di affiancarlo su più fronti.
 
-In molte aziende, soprattutto nel tessuto imprenditoriale di Padova e provincia, i processi interni risultano spesso ridondanti, lenti e soggetti a errori umani. L'automazione dei processi aziendali rappresenta oggi una leva strategica per aumentare l'efficienza, ridurre i costi operativi e liberare risorse da attività ripetitive e a basso valore aggiunto.
+## Cerchi formazione sull'intelligenza artificiale?
 
-Grazie all’uso avanzato di **modelli predittivi, algoritmi di machine learning e intelligenza artificiale**, siamo in grado di analizzare in profondità i flussi di lavoro esistenti, identificare colli di bottiglia e proporre soluzioni personalizzate per ogni realtà aziendale.
+La formazione può essere il primo passo quando management e personale vogliono comprendere possibilità, limiti e rischi degli strumenti prima di scegliere un progetto. Realizziamo percorsi per:
 
-Con il nostro servizio di **consulenza AI per l’automazione dei processi** a Padova, le imprese possono:
+- manager, decision maker e personale amministrativo;
+- team tecnici e operativi;
+- aziende, istituzioni e scuole professionali.
 
-* **Snellire i flussi di lavoro** grazie a sistemi automatizzati su misura per l'azienda;
-* **Ridurre drasticamente gli errori manuali**, aumentando la precisione e l'affidabilità dei dati gestiti;
-* **Automatizzare attività ripetitive** come l'inserimento dati, la gestione documentale, l'invio di email o notifiche interne;
-* **Migliorare l’esperienza cliente** grazie a **chatbot intelligenti basati su ChatGPT**, LLM, o tecnologie NLP simili, capaci di rispondere in modo naturale e veloce 24/7.
+Abbiamo erogato oltre **1.000 ore di formazione** in università, ITS e percorsi dedicati al lavoro. Nel complesso, tra consulenza, sviluppo e formazione, abbiamo affiancato oltre **20 aziende e professionisti** in più di dieci settori.
 
-Intervenire oggi sull’automazione dei processi significa non solo guadagnare competitività, ma anche **costruire un modello di business più agile e scalabile**. La nostra esperienza nell’**implementazione di soluzioni AI a Padova** ci permette di accompagnare le imprese in un percorso di trasformazione digitale concreto e misurabile.
-
-
-
-### Dati: una risorsa strategica da valorizzare per crescere in modo intelligente
-
-Molte aziende, pur disponendo di una grande quantità di dati interni, non riescono a sfruttarli appieno per migliorare le proprie performance. Spesso i dati aziendali restano inutilizzati o vengono analizzati in modo superficiale, perdendo così un’enorme opportunità strategica. Con la nostra **consulenza specializzata in data analysis e intelligenza artificiale a Padova**, aiutiamo le imprese a trasformare i dati grezzi in informazioni utili e azionabili.
-
-Attraverso strumenti avanzati di **analisi dei dati, machine learning e visualizzazione interattiva**, supportiamo le organizzazioni nel comprendere meglio:
-
-* I comportamenti e le preferenze dei clienti;
-* Le dinamiche interne dei processi aziendali;
-* Le inefficienze operative che limitano la produttività.
-
-Il nostro approccio è basato su **report automatici intelligenti**, che consentono una lettura chiara, sintetica e in tempo reale delle performance aziendali. Questo consente al management di prendere **decisioni rapide, consapevoli e basate sui dati** (*data-driven decision making*).
-
-Tra le tecnologie e gli strumenti che utilizziamo:
-
-* **Algoritmi di clustering** per l’analisi e segmentazione della clientela, utili per personalizzare le offerte e migliorare il marketing;
-* **Sistemi di raccomandazione intelligenti**, simili a quelli impiegati da piattaforme come Netflix o Amazon, per suggerire prodotti o servizi in base al comportamento degli utenti;
-* **KPI predittivi basati sull’intelligenza artificiale**, che permettono di anticipare trend, criticità e opportunità, agendo in modo proattivo.
-
-Investire oggi nella valorizzazione dei dati significa **potenziare la competitività dell’impresa**, ottimizzare le strategie aziendali e creare nuove fonti di valore.
-
-### ChatGPT e modelli linguistici: più valore alla comunicazione aziendale con l’Intelligenza Artificiale
-
-La comunicazione aziendale sta vivendo una trasformazione radicale grazie ai **Large Language Models (LLM)** come **ChatGPT**. Queste tecnologie basate sull’intelligenza artificiale stanno rivoluzionando il modo in cui le imprese gestiscono testi, interazioni e contenuti, rendendo i processi di scrittura, assistenza e organizzazione delle informazioni più rapidi, coerenti ed efficaci.
-
-Con la nostra **consulenza AI per aziende a Padova**, aiutiamo le imprese a integrare soluzioni basate su **modelli linguistici avanzati** per potenziare la produttività e migliorare l’esperienza utente, sia interna che esterna.
-
-Le principali applicazioni includono:
-
-* **Automazione delle risposte a email e richieste frequenti**, con chatbot e assistenti virtuali capaci di comprendere il contesto e formulare risposte naturali;
-* **Generazione automatica di contenuti aziendali**, tra cui documentazione tecnica, report, articoli per blog, newsletter e testi marketing;
-* **Creazione di knowledge base e FAQ dinamiche**, sempre aggiornate e accessibili 24/7;
-* **Supporto clienti automatizzato**, con interfacce conversazionali intelligenti che migliorano l’efficienza e riducono i tempi di attesa;
-* **Organizzazione della conoscenza interna**, tramite strumenti AI che classificano, riassumono e rendono facilmente reperibili le informazioni aziendali.
-
-Attraverso l’uso di **ChatGPT e modelli linguistici personalizzati**, è possibile non solo velocizzare i processi comunicativi, ma anche garantire **uniformità, precisione e scalabilità** nella produzione e gestione dei contenuti.
-
-Per le imprese di Padova e dintorni, investire oggi in **soluzioni di comunicazione basate su AI** significa distinguersi sul mercato, offrire un servizio clienti di livello superiore e liberare risorse umane da attività a basso valore aggiunto.
-
-
-### Gestione documentale intelligente: dal caos all’efficienza grazie all’Intelligenza Artificiale
-
-Ogni impresa, indipendentemente dal settore, è sommersa da documenti di ogni tipo: fatture, contratti, email, report, moduli e archivi cartacei. Senza una struttura efficace, la **gestione documentale diventa un ostacolo alla produttività**, con conseguente perdita di tempo, errori e difficoltà nel recupero delle informazioni. Le nostre **soluzioni di gestione documentale intelligente basate su AI**, pensate per le aziende di Padova e dintorni, portano ordine, automazione e rapidità nei flussi documentali.
-
-Grazie all’uso combinato di **tecnologie di riconoscimento ottico dei caratteri (OCR)**, **Natural Language Processing (NLP)** e machine learning, siamo in grado di offrire sistemi capaci di:
-
-* **Classificare automaticamente i documenti** per tipologia (fatture, contratti, corrispondenza email, documenti legali, ecc.);
-* **Estrarre dati chiave in modo intelligente**, come date, importi, nomi, numeri di contratto, clausole rilevanti o termini di pagamento;
-* **Collegare i documenti ai processi aziendali**, come la contabilità, il CRM o il gestionale ERP, favorendo l’integrazione e l’automazione dei flussi di lavoro;
-* **Recuperare le informazioni in base al contenuto**, tramite motori di ricerca semantica e filtri avanzati, anche all'interno di PDF o scansioni cartacee.
-
-I vantaggi concreti dell’**automazione documentale con intelligenza artificiale** includono:
-
-* **Riduzione drastica dei tempi di ricerca dei documenti** e miglioramento dell’accessibilità alle informazioni;
-* **Aumento della compliance normativa e della tracciabilità**, fondamentale per settori regolamentati come legale, sanitario o finanziario;
-* **Digitalizzazione intelligente degli archivi cartacei**, che consente di liberare spazio fisico e valorizzare lo storico aziendale.
-
-Offriamo soluzioni **modulari e scalabili**, personalizzabili sulle reali esigenze delle imprese locali, per accompagnare ogni organizzazione nel percorso verso una gestione digitale efficiente, sicura e data-driven.
-
-
-### Padova come polo per l’innovazione AI: tecnologia al servizio del territorio
-
-La nostra scelta di offrire **servizi di consulenza in intelligenza artificiale a Padova** nasce dalla profonda convinzione che il territorio sia uno dei più fertili in Italia per l’innovazione digitale. Il tessuto economico padovano è caratterizzato da una forte presenza di **aziende manifatturiere**, **eccellenze artigianali**, **studi professionali** e **start-up tecnologiche**, tutte accomunate da una crescente attenzione verso l’efficienza, la competitività e la trasformazione digitale.
-
-Collaboriamo attivamente con imprese e istituzioni locali per **rendere l’AI uno strumento concreto e accessibile**, modellato sulle specificità delle realtà venete. Il nostro obiettivo è **portare valore reale attraverso soluzioni su misura**, evitando approcci standardizzati e troppo generici.
-
-Le principali tipologie di clienti con cui lavoriamo a Padova includono:
-
-* **Aziende manifatturiere**, interessate a soluzioni di **automazione dei controlli di qualità** tramite visione artificiale, analisi predittiva e ottimizzazione dei processi produttivi;
-* **Studi professionali** (legali, fiscali, notarili, tecnici), che desiderano **snellire l’elaborazione documentale**, automatizzare la redazione di atti o contratti e migliorare la gestione delle pratiche;
-* **Startup tecnologiche**, che vedono nell’intelligenza artificiale un fattore chiave per **differenziare i propri prodotti e scalare rapidamente**, integrando LLM, algoritmi predittivi, o motori di raccomandazione nei propri software o servizi digitali.
-
-Siamo convinti che Padova possa consolidare il suo ruolo di **hub regionale per l’innovazione AI**, e noi vogliamo essere parte attiva di questo percorso, supportando le imprese nel passaggio da un approccio tradizionale a uno **data-driven, intelligente e sostenibile**.
-
-Se sei un’azienda del territorio e vuoi scoprire **come applicare l’AI alla tua realtà**, siamo pronti ad affiancarti con soluzioni pratiche, rapide da implementare e orientate ai risultati.
-
-
-### Una roadmap personalizzata verso l’adozione dell’intelligenza artificiale
-
-Ogni impresa ha caratteristiche, esigenze e obiettivi unici. Per questo motivo, il nostro approccio alla **consulenza in intelligenza artificiale** non si basa su soluzioni preconfezionate, ma su una **roadmap personalizzata**, costruita in base alla reale maturità digitale dell’azienda. Offriamo un **incontro di consulenza gratuito** per comprendere a fondo il contesto aziendale e definire un percorso di adozione dell’AI che sia **realistico, sostenibile e misurabile**.
-
-Durante questa prima fase, analizziamo insieme:
-
-* Il **budget disponibile**, per individuare soluzioni compatibili con le risorse economiche attuali;
-* Le **competenze e risorse interne**, valutando quanto sia necessario integrare nuove tecnologie o formare il personale;
-* Gli **obiettivi strategici a medio e lungo termine**, per garantire che l’adozione dell’AI sia allineata con la visione dell’impresa.
-
-Il nostro modello si basa su un **approccio progressivo**: iniziamo con **progetti pilota agili**, a basso impatto ma ad alto valore, che permettono di **testare concretamente le potenzialità dell’intelligenza artificiale**. Questi progetti sono sempre misurabili, con KPI chiari, in modo da fornire risultati tangibili in tempi brevi.
-
-Una volta validato il potenziale, possiamo **scalare verso soluzioni AI più complesse e integrate**, mantenendo sempre un focus sull’**ottimizzazione del ritorno sull’investimento (ROI)** e sulla sostenibilità nel tempo.
-
-Questo approccio modulare e personalizzato è particolarmente apprezzato dalle **PMI venete e padovane**, che vogliono avvicinarsi all’innovazione senza rischi eccessivi e con il supporto di un partner esperto e affidabile.
+[Scopri la formazione AI e cybersecurity per aziende](/formazione-intelligenza-artificiale-e-cybersecurity/).

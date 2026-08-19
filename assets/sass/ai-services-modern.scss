@@ -7,7 +7,7 @@
   --aim-soft: #edf6f7;
   --aim-line: rgba(16, 43, 52, 0.14);
   color: var(--aim-ink);
-  font-family: "Inter", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 
   h1, h2, h3, h4, p {
     margin-top: 0;
@@ -15,7 +15,7 @@
 
   h1, h2, h3 {
     color: var(--aim-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     letter-spacing: -0.035em;
   }
 
@@ -153,7 +153,7 @@
   strong {
     margin-bottom: 0.25rem;
     color: var(--aim-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 1.15rem;
   }
 
@@ -194,7 +194,7 @@
   }
 
   strong {
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 0.9rem;
   }
 }
@@ -241,7 +241,7 @@
 
   strong {
     margin-bottom: 0.4rem;
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 0.95rem;
   }
 
@@ -417,14 +417,14 @@
     background: var(--aim-teal);
     box-shadow: 0 0 0 5px var(--aim-soft);
     color: #fff;
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 0.78rem;
     font-weight: 800;
   }
 
   strong {
     color: var(--aim-ink);
-    font-family: "Sora", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 1.05rem;
   }
 
@@ -622,7 +622,7 @@
   h3,
   h4,
   .aim-steps strong {
-    font-family: "Inter", sans-serif;
+    font-family: "Archivo", sans-serif;
     letter-spacing: -0.025em;
   }
 
