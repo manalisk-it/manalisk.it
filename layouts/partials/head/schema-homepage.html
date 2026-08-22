@@ -13,7 +13,7 @@
     -}}
     {{- $people = $people | append $person -}}
   {{- end -}}
-  {{- $organization := dict
+{{- $organization := dict
     "@context" "https://schema.org"
     "@type" "Organization"
     "@id" (printf "%s#organization" .url)

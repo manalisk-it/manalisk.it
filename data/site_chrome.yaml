@@ -12,8 +12,6 @@ header:
       url: /services/servizi-cybersecurity/
     - label: Chi siamo
       url: /about/
-    - label: Contatti
-      url: /contact/
   cta:
     label: Prenota una call
     url: /contact/

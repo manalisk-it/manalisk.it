@@ -1,8 +1,8 @@
 {{ with hugo.Data.site_chrome.header }}
-<header class="home3-header">
+<header class="homepage-header">
   <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
     <div class="container">
-      <a class="home3-header__brand" href="{{ .brand_url }}" aria-label="{{ .brand_label }} - Home">
+      <a class="homepage-header__brand" href="{{ .brand_url }}" aria-label="{{ .brand_label }} - Home">
         {{ $header := . }}
         {{ with resources.Get .logo }}
         <img src="{{ .RelPermalink }}" alt="{{ $header.logo_alt }}" width="44" height="44">
@@ -10,17 +10,17 @@
         <span>{{ .brand_label }}</span>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#home3Navigation" aria-controls="home3Navigation" aria-expanded="false" aria-label="Apri il menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homepageNavigation" aria-controls="homepageNavigation" aria-expanded="false" aria-label="Apri il menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="home3Navigation">
-        <ul class="home3-header__links navbar-nav ms-auto">
+      <div class="collapse navbar-collapse" id="homepageNavigation">
+        <ul class="homepage-header__links navbar-nav ms-auto">
           {{ range .navigation }}
           <li class="nav-item"><a class="nav-link" href="{{ .url }}">{{ .label }}</a></li>
           {{ end }}
         </ul>
-        <a class="home3-header__cta" href="{{ .cta.url }}">{{ .cta.label }}</a>
+        <a class="homepage-header__cta" href="{{ .cta.url }}">{{ .cta.label }}</a>
       </div>
     </div>
   </nav>

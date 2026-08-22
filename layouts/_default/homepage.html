@@ -1,41 +1,41 @@
 {{ define "main" }}
-<main class="home3">
+<main class="homepage">
   {{ with .Params.hero }}
-  <section class="home3-hero">
+  <section class="homepage-hero">
     <div class="container">
-      <div class="home3-hero__copy">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-hero__copy">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <h1>{{ .title }}</h1>
-        <p class="home3-hero__lead">{{ .text }}</p>
+        <p class="homepage-hero__lead">{{ .text }}</p>
+        <div class="homepage-actions">
+          <a class="homepage-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+          <a class="homepage-text-link" href="{{ .secondary.url }}">{{ .secondary.label }} <span aria-hidden="true">→</span></a>
+        </div>
         {{ with .secondary_services }}
-        <p class="home3-hero__secondary">
+        <p class="homepage-hero__secondary">
           {{ .intro }}
           {{ range $index, $service := .links }}{{ if $index }} e {{ end }}<a href="{{ $service.url }}">{{ $service.label }}</a>{{ end }}.
         </p>
         {{ end }}
-        <div class="home3-actions">
-          <a class="home3-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
-          <a class="home3-text-link" href="{{ .secondary.url }}">{{ .secondary.label }} <span aria-hidden="true">→</span></a>
-        </div>
       </div>
     </div>
   </section>
   {{ end }}
 
   {{ with .Params.stats }}
-  <section class="home3-stats" aria-label="{{ .aria_label }}">
+  <section class="homepage-stats" aria-label="{{ .aria_label }}">
     <div class="container">
       {{ with .introduction }}
-      <div class="home3-stats__intro">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-stats__intro">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <p>{{ .text }}</p>
       </div>
       {{ end }}
-      <div class="home3-stats__grid">
+      <div class="homepage-stats__grid">
         {{ range .items }}
-        <div class="home3-stat">
+        <div class="homepage-stat">
           <strong>{{ .value }}</strong>
-          <div><p class="home3-stat__label">{{ .label }}</p><p>{{ .text }}</p></div>
+          <div><p class="homepage-stat__label">{{ .label }}</p><p>{{ .text }}</p></div>
         </div>
         {{ end }}
       </div>
@@ -44,25 +44,25 @@
   {{ end }}
 
   {{ with .Params.problems }}
-  <section class="home3-section home3-problems">
+  <section class="homepage-section homepage-problems">
     <div class="container">
-      <div class="home3-heading">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-heading">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <h2>{{ .title }}</h2>
         <p>{{ .text }}</p>
       </div>
-      <div class="home3-problems__list">
+      <div class="homepage-problems__list">
         {{ range $index, $item := .items }}
-        <article class="home3-problem">
-          <div class="home3-problem__label">
+        <article class="homepage-problem">
+          <div class="homepage-problem__label">
             <span>{{ printf "%02d" (add $index 1) }}</span>
             <p>{{ $item.area }}</p>
           </div>
-          <div class="home3-problem__copy">
+          <div class="homepage-problem__copy">
             <h3>{{ $item.title }}</h3>
             <p>{{ $item.text }}</p>
           </div>
-          <p class="home3-problem__examples">{{ $item.examples }}</p>
+          <p class="homepage-problem__examples">{{ $item.examples }}</p>
         </article>
         {{ end }}
       </div>
@@ -71,23 +71,23 @@
   {{ end }}
 
   {{ with .Params.services }}
-  <section class="home3-section home3-services">
+  <section class="homepage-section homepage-services">
     <div class="container">
-      <div class="home3-heading">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-heading">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <h2>{{ .title }}</h2>
       </div>
-      <div class="home3-services__grid">
+      <div class="homepage-services__grid">
         {{ with .ai }}
-        <article class="home3-service home3-service--ai">
-          <p class="home3-card-label">{{ .code }}</p>
+        <article class="homepage-service homepage-service--ai">
+          <p class="homepage-card-label">{{ .code }}</p>
           <h3>{{ .title }}</h3>
-          <p class="home3-service__intro">{{ .text }}</p>
-          <ul class="home3-service__list">
+          <p class="homepage-service__intro">{{ .text }}</p>
+          <ul class="homepage-service__list">
             {{ range .services }}<li>{{ . }}</li>{{ end }}
           </ul>
           {{ with .advanced }}
-          <div class="home3-service__advanced">
+          <div class="homepage-service__advanced">
             <h4>{{ .title }}</h4>
             <p>{{ .text }}</p>
           </div>
@@ -95,10 +95,10 @@
           <a href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
         </article>
         {{ end }}
-        <div class="home3-services__supporting">
+        <div class="homepage-services__supporting">
           {{ range .supporting }}
-          <article class="home3-service home3-service--{{ .theme }}">
-            <p class="home3-card-label">{{ .code }}</p>
+          <article class="homepage-service homepage-service--{{ .theme }}">
+            <p class="homepage-card-label">{{ .code }}</p>
             <h3>{{ .title }}</h3>
             <p>{{ .text }}</p>
             <a href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
@@ -111,16 +111,16 @@
   {{ end }}
 
   {{ with .Params.case_study }}
-  <section class="home3-section home3-case-study" id="{{ .id }}">
+  <section class="homepage-section homepage-case-study" id="{{ .id }}">
     <div class="container">
-      <div class="home3-case-study__header">
+      <div class="homepage-case-study__header">
         <div>
-          <p class="home3-eyebrow">{{ .eyebrow }}</p>
+          <p class="homepage-eyebrow">{{ .eyebrow }}</p>
           <h2>{{ .title }}</h2>
         </div>
         <p>{{ .introduction }}</p>
       </div>
-      <div class="home3-case-study__details">
+      <div class="homepage-case-study__details">
         {{ range $index, $detail := .details }}
         <article>
           <span>{{ printf "%02d" (add $index 1) }}</span>
@@ -128,34 +128,34 @@
         </article>
         {{ end }}
       </div>
-      <div class="home3-case-study__footer">
+      <div class="homepage-case-study__footer">
         <p>{{ .note }}</p>
-        <a class="home3-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
+        <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
   {{ end }}
 
   {{ with .Params.training }}
-  <section class="home3-section home3-training">
+  <section class="homepage-section homepage-training">
     <div class="container">
-      <div class="home3-heading home3-heading--wide">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-heading homepage-heading--wide">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <h2>{{ .title }}</h2>
         <p>{{ .text }}</p>
       </div>
-      <p class="home3-training__note">{{ .note }}</p>
+      <p class="homepage-training__note">{{ .note }}</p>
       {{ with .ai_act }}
-      <aside class="home3-training__ai-act" aria-labelledby="home3-ai-act-title">
+      <aside class="homepage-training__ai-act" aria-labelledby="homepage-ai-act-title">
         <div>
-          <p class="home3-card-label">{{ .eyebrow }}</p>
-          <h3 id="home3-ai-act-title">{{ .title }}</h3>
+          <p class="homepage-card-label">{{ .eyebrow }}</p>
+          <h3 id="homepage-ai-act-title">{{ .title }}</h3>
           <p>{{ .text }}</p>
         </div>
-        <a class="home3-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
+        <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
       </aside>
       {{ end }}
-      <div class="home3-training__audiences">
+      <div class="homepage-training__audiences">
         {{ range $index, $audience := .audiences }}
         <article>
           <span>{{ printf "%02d" (add $index 1) }}</span>
@@ -163,28 +163,28 @@
         </article>
         {{ end }}
       </div>
-      <a class="home3-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
+      <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
     </div>
   </section>
   {{ end }}
 
   {{ with .Params.compliance }}
-  <section class="home3-section home3-compliance">
+  <section class="homepage-section homepage-compliance">
     <div class="container">
-      <div class="home3-compliance__intro">
-        <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-compliance__intro">
+        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
         <h2>{{ .title }}</h2>
         <p>{{ .text }}</p>
       </div>
-      <div class="home3-compliance__items">
+      <div class="homepage-compliance__items">
         {{ range .items }}
         <article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>
         {{ end }}
       </div>
       {{ with .assessment }}
-      <aside class="home3-assessment">
+      <aside class="homepage-assessment">
         <div>
-          <p class="home3-card-label">{{ .eyebrow }}</p>
+          <p class="homepage-card-label">{{ .eyebrow }}</p>
           <h3>{{ .title }}</h3>
           <p>{{ .text }}</p>
         </div>
@@ -192,7 +192,7 @@
         <a href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
       </aside>
       {{ end }}
-      <div class="home3-compliance__footer">
+      <div class="homepage-compliance__footer">
         <p>{{ .note }}</p>
       </div>
     </div>
@@ -200,13 +200,13 @@
   {{ end }}
 
   {{ with .Params.method }}
-  <section class="home3-method">
+  <section class="homepage-method">
     <div class="container">
-      <div class="home3-method__intro">
-        <div><p class="home3-eyebrow">{{ .eyebrow }}</p><h2>{{ .title }}</h2></div>
+      <div class="homepage-method__intro">
+        <div><p class="homepage-eyebrow">{{ .eyebrow }}</p><h2>{{ .title }}</h2></div>
         <p>{{ .text }}</p>
       </div>
-      <ol class="home3-method__steps">
+      <ol class="homepage-method__steps">
         {{ range $index, $step := .steps }}
         <li><span>{{ printf "%02d" (add $index 1) }}</span><h3>{{ $step.title }}</h3><p>{{ $step.text }}</p></li>
         {{ end }}
@@ -216,24 +216,24 @@
   {{ end }}
 
   {{ with .Params.about }}
-  <section class="home3-section home3-about">
+  <section class="homepage-section homepage-about">
     <div class="container">
-      <div class="home3-about__grid">
-        <div class="home3-about__copy">
-          <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <div class="homepage-about__grid">
+        <div class="homepage-about__copy">
+          <p class="homepage-eyebrow">{{ .eyebrow }}</p>
           <h2>{{ .title }}</h2>
           <p>{{ .text }}</p>
           <ul>{{ range .credentials }}<li>{{ . }}</li>{{ end }}</ul>
-          <a class="home3-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
+          <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
         </div>
-        <div class="home3-about__people">
+        <div class="homepage-about__people">
           {{ range .people }}
           {{ $person := . }}
           <article>
             {{ with resources.Get .image }}<img src="{{ .RelPermalink }}" alt="{{ $person.image_alt }}">{{ end }}
             <div>
               <h3>{{ .name }}</h3>
-              <p class="home3-about__focus">{{ .focus }}</p>
+              <p class="homepage-about__focus">{{ .focus }}</p>
               {{ with .description }}<p>{{ . }}</p>{{ end }}
             </div>
           </article>
@@ -245,25 +245,25 @@
   {{ end }}
 
   {{ with .Params.faq }}
-  <section class="home3-section home3-faq">
+  <section class="homepage-section homepage-faq">
     <div class="container">
-      <div class="home3-faq__grid">
-        <div class="home3-heading">
-          <p class="home3-eyebrow">{{ .eyebrow }}</p><h2>{{ .title }}</h2><p>{{ .text }}</p>
+      <div class="homepage-faq__grid">
+        <div class="homepage-heading">
+          <p class="homepage-eyebrow">{{ .eyebrow }}</p><h2>{{ .title }}</h2><p>{{ .text }}</p>
         </div>
-        {{ partial "components/faq-accordion.html" (dict "items" .items "id" "home3Faq" "prefix" "home3-faq" "open_first" true) }}
+        {{ partial "components/faq-accordion.html" (dict "items" .items "id" "homepageFaq" "prefix" "homepage-faq" "open_first" true) }}
       </div>
     </div>
   </section>
   {{ end }}
 
   {{ with .Params.location }}
-  <section class="home3-location" aria-label="Dove lavoriamo">
+  <section class="homepage-location" aria-label="Dove lavoriamo">
     <div class="container">
       <p><strong>{{ .title }}</strong> {{ .text }}</p>
       {{ with .links }}
-      <div class="home3-location__links">
-        {{ range . }}<a class="home3-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>{{ end }}
+      <div class="homepage-location__links">
+        {{ range . }}<a class="homepage-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>{{ end }}
       </div>
       {{ end }}
     </div>
@@ -271,14 +271,14 @@
   {{ end }}
 
   {{ with .Params.final_cta }}
-  <section class="home3-final">
+  <section class="homepage-final">
     <div class="container">
-      <p class="home3-eyebrow">{{ .eyebrow }}</p>
+      <p class="homepage-eyebrow">{{ .eyebrow }}</p>
       <h2>{{ .title }}</h2>
       <p>{{ .text }}</p>
-      <div class="home3-actions">
-        <a class="home3-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
-        <a class="home3-final__link" href="{{ .secondary.url }}">{{ .secondary.label }}</a>
+      <div class="homepage-actions">
+        <a class="homepage-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+        <a class="homepage-final__link" href="{{ .secondary.url }}">{{ .secondary.label }}</a>
       </div>
     </div>
   </section>

@@ -3,10 +3,10 @@ title: "AI e automazione dei processi aziendali"
 seo_title: "AI e automazione dei processi aziendali | Manalisk"
 description: "Manalisk porta l'intelligenza artificiale nei processi aziendali con automazioni, integrazioni e soluzioni su misura. Offre anche formazione AI e cybersecurity."
 draft: false
-layout: home3
-page_class: home3-page
+layout: homepage
+page_class: homepage-page
 hide_breadcrumb: true
-schema_home3: true
+schema_homepage: true
 faq_schema: false
 
 organization:
@@ -33,15 +33,11 @@ hero:
   eyebrow: AI & automazione dei processi aziendali
   title: Portiamo l'AI nei processi della tua azienda
   text: >-
-    Automatizziamo attività ripetitive e colleghiamo i sistemi già adottati in
-    azienda per ridurre gli errori, aumentare la produttività e lasciare alle
-    persone più tempo per le attività che producono valore. Conosciamo i limiti
-    dell'AI: per ogni processo scegliamo la soluzione più affidabile, usando
-    automazioni tradizionali, modelli AI o una combinazione delle due.
+    Automatizziamo attività ripetitive e colleghiamo i sistemi aziendali per ridurre errori e lasciare alle persone più tempo per il lavoro che produce valore. Per ogni processo scegliamo la soluzione più affidabile: automazione tradizionale, AI o entrambe.
   secondary_services:
     intro: >-
       Non ci limitiamo a configurare strumenti AI: le nostre soluzioni nascono
-      da competenze maturate nella ricerca in AI e cybersecurity e nello sviluppo
+      da competenze maturate nella ricerca scientifica in AI e cybersecurity e nello sviluppo
       di software e modelli di AI, dal machine learning ai sistemi generativi.
       Mettiamo questa esperienza a disposizione di aziende e professionisti anche attraverso la
     links:

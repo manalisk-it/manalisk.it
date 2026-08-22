@@ -5,7 +5,7 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 
 ## Approved positioning and current direction
 
-- Use `home3` as the current visual reference for new work.
+- Use the production homepage as the current visual reference for new work.
 - Present Manalisk primarily as the team that brings AI into business processes
   through automation, integrations, and custom software.
 - Keep AI training and cybersecurity visible as important supporting services,
@@ -15,7 +15,7 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 - Describe the team consistently: Pier Paolo Tricomi covers AI, research, and
   training; Simeone Pizzi covers cybersecurity and software development; Nicola
   Bellotto covers privacy, AI governance, and business processes.
-- Use the shared `home3` navbar and footer as the production chrome throughout
+- Use the shared homepage navbar and footer as the production chrome throughout
   the site. Keep their navigation data centralized rather than duplicating it
   in individual pages.
 - Prefer concrete, informative language over promotional promises.
@@ -46,7 +46,7 @@ Follow these conventions when creating, restructuring, or reviewing pages.
   and footer.
 - Use a modern, restrained, informative visual style.
 - Use `"Hanken Grotesk", sans-serif` for body copy and `"Archivo", sans-serif`
-  for headings throughout the site, matching the approved `home3` typography.
+  for headings throughout the site, matching the approved homepage typography.
 - Use direct, practical headings and copy. Avoid agency language, inflated
   claims, abstract slogans, and filler that does not help the reader understand
   the service, process, output, or next step.

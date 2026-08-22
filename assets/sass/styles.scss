@@ -135,7 +135,7 @@ h3 {
 }
 
 
-.text-section-header, .home .container h2{
+.text-section-header, .home:not(.homepage-page) .container h2{
   color: #004154 !important;
   // font-weight: bold;
   font-size: 42px;
@@ -282,17 +282,12 @@ h1 {
     font-weight: 500;
 }
 
-@import 'book-call.scss';
-@import 'home.scss';
-@import 'about.scss';
 @import 'services.scss';
-@import 'seo-page.scss';
 @import 'shared-faq.scss';
 @import 'ai-training.scss';
 @import 'ai-services-modern.scss';
 @import 'modern-catalogue.scss';
-@import 'home-modern.scss';
-@import 'home3.scss';
+@import 'homepage.scss';
 @import 'local-service-landing.scss';
 @import 'contact-booking.scss';
 
