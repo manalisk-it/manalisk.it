@@ -1,9 +1,9 @@
-{{ with hugo.Data.site_chrome.footer }}
+{{ with site.Data.site_chrome.footer }}
 <footer class="homepage-footer">
   <div class="container">
     <div class="homepage-footer__grid">
       <div class="homepage-footer__brand">
-        <a href="{{ hugo.Data.site_chrome.header.brand_url }}">{{ hugo.Data.site_chrome.header.brand_label }}</a>
+        <a href="{{ site.Data.site_chrome.header.brand_url }}">{{ site.Data.site_chrome.header.brand_label }}</a>
         <p>{{ .tagline }}</p>
       </div>
       {{ range .columns }}
