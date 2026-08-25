@@ -17,23 +17,13 @@ hero:
     sviluppo software, nella sicurezza informatica, nella privacy e nella governance. Lavoriamo
     con aziende e organizzazioni per applicare l'AI dove può produrre un risultato
     concreto e verificabile, senza presentarla come la risposta a ogni problema.
-  positioning:
-    title: Prima il problema, poi la tecnologia
-    text: >-
-      Partiamo dal processo, dai dati disponibili e dai vincoli tecnici e
-      organizzativi. Verifichiamo le ipotesi su casi reali e valutiamo il risultato
-      prima di estendere un progetto. Se l'AI non serve, oppure non è sufficientemente
-      affidabile per quel contesto, lo diciamo.
-
 team_intro:
   eyebrow: Il team
-  title: Il Nostro Background
+  title: Chi lavora sui tuoi progetti
   text: >-
-    Manalisk è il nome con cui collaboriamo. Mettiamo in comune ricerca
-    accademica, esperienza tecnica, conoscenza dei processi e competenze su
-    privacy e governance per affrontare insieme l'adozione dell'AI. Lavoriamo
-    su questi temi da prima della diffusione di ChatGPT, tra ricerca, sviluppo
-    di modelli e applicazioni concrete.
+    Due dottorati di ricerca e una laurea magistrale, tutti all'Università di
+    Padova, tra intelligenza artificiale, informatica e diritto. Su ogni progetto
+    entra chi ha la competenza specifica, ma il referente resta uno.
 
 team:
   - name: "Pier Paolo Tricomi, Ph.D."
