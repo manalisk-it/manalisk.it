@@ -12,7 +12,7 @@ showBookingButton: false
 
 routes_intro:
   title: Scegli l'argomento della prima call
-  text: Prenota un primo confronto gratuito nell'ambito più vicino alla tua esigenza, oppure scrivici direttamente.
+  text: Prenota un primo confronto gratuito nell'ambito più vicino alla tua esigenza, oppure [scrivici a info@manalisk.it](mailto:info@manalisk.it).
 
 routes:
   - theme: ai

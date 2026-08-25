@@ -6,7 +6,7 @@
         <header class="contact-modern__heading">
           {{ with .Params.routes_intro.eyebrow }}<p class="contact-modern__eyebrow">{{ . }}</p>{{ end }}
           <h1 id="contact-routes-title">{{ .Params.routes_intro.title }}</h1>
-          <p>{{ .Params.routes_intro.text }}</p>
+          {{ .Params.routes_intro.text | markdownify }}
         </header>
         <div class="contact-modern__route-list">
           {{ range $route := .Params.routes }}
