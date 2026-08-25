@@ -241,7 +241,7 @@
     border: 1px solid var(--contact-line);
     border-left: 0.28rem solid var(--route-accent);
     border-radius: 0.65rem;
-    background: linear-gradient(105deg, rgba(18, 160, 176, 0.07), #fff 34%);
+    // background: linear-gradient(105deg, rgba(18, 160, 176, 0.07), #fff 34%);
 
     h2 {
       margin-bottom: 0.45rem;
@@ -263,12 +263,12 @@
 
   .contact-modern__route--cyber {
     --route-accent: #123244;
-    background: linear-gradient(105deg, rgba(18, 50, 68, 0.07), #fff 34%);
+    // background: linear-gradient(105deg, rgba(18, 50, 68, 0.07), #fff 34%);
   }
 
   .contact-modern__route--training {
     --route-accent: #8a5a16;
-    background: linear-gradient(105deg, rgba(138, 90, 22, 0.08), #fff 34%);
+    // background: linear-gradient(105deg, rgba(138, 90, 22, 0.08), #fff 34%);
   }
 }
 
