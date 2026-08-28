@@ -1,0 +1,42 @@
+// Sottoinsieme di Bootstrap effettivamente usato dal sito.
+//
+// bootstrap/bootstrap.scss importa tutti e 40 i moduli: il risultato erano
+// 320 kB di CSS di cui il 64% non veniva usato da nessuna pagina. Questo file
+// importa solo i moduli le cui classi compaiono davvero nell'HTML generato.
+// bootstrap/bootstrap.scss resta intatto, cosi' un aggiornamento di Bootstrap
+// non va perso: per riattivare un modulo basta togliere il commento qui sotto.
+
+// --- infrastruttura: sempre necessaria ---------------------------------
+@import "bootstrap/mixins/banner";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/variables-dark";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// --- base --------------------------------------------------------------
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";        // .lead, .h1-.h6
+@import "bootstrap/images";      // .img-fluid
+@import "bootstrap/containers";  // .container
+@import "bootstrap/grid";        // .row, .col-*, .row-cols-*, .g-*
+
+// --- componenti usati ---------------------------------------------------
+@import "bootstrap/transitions"; // .collapse, .collapsing (menu mobile, FAQ)
+@import "bootstrap/buttons";     // .btn
+@import "bootstrap/nav";         // .nav-item, .nav-link
+@import "bootstrap/navbar";      // .navbar, .navbar-toggler
+@import "bootstrap/card";        // .card, .card-title, .card-text
+@import "bootstrap/accordion";   // FAQ
+@import "bootstrap/breadcrumb";
+
+// --- moduli non usati da nessuna pagina: rimossi ------------------------
+// tables, forms, dropdown, button-group, pagination, badge, alert,
+// progress, list-group, close, toasts, modal, tooltip, popover, carousel,
+// spinners, offcanvas, placeholders
+
+// --- helper e utility ---------------------------------------------------
+@import "bootstrap/helpers";     // .stretched-link, .ratio, .vstack...
+@import "bootstrap/utilities/api"; // .d-flex, .mb-3, .text-center...
