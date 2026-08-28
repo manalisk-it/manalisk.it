@@ -1,8 +1,8 @@
 ---
-title: Prenota una call su AI e automazione
-seo_title: "Prenota una call su AI e automazione | Manalisk"
-linkTitle: Call AI e automazione
-description: Prenota una prima call gratuita di 30–45 minuti con Manalisk per parlare di intelligenza artificiale, automazione e processi aziendali.
+title: Prenota una prima call gratuita
+seo_title: "Prenota una prima call gratuita | Manalisk"
+linkTitle: Prenota una call
+description: Prenota una prima call gratuita di 30–45 minuti con Manalisk su AI e automazione, cybersecurity o formazione. Online, senza impegno.
 draft: false
 layout: booking-modern
 page_class: modern-catalogue-page booking-modern-page
@@ -14,21 +14,26 @@ email_subject: Prima call su AI e automazione
 
 hero:
   eyebrow: Prima call gratuita
-  title: Prenota una call su AI e automazione
+  title: Prenota una prima call gratuita
   text: In 30–45 minuti comprendiamo il tuo contesto, individuiamo un possibile punto di partenza e valutiamo insieme il passo successivo.
   meta: 30–45 minuti · online · senza impegno
   primary_label: Scegli giorno e orario
   email_label: Preferisci scriverci?
-  booking_note: Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+  booking_note: >-
+    Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+    Se preferisci una call già mirata, ci sono pagine dedicate a
+    [cybersecurity](/prenota-una-chiamata-consulenza-gratuita-cyber/) e
+    [formazione](/prenota-una-chiamata-consulenza-gratuita-formazione/).
 
 useful:
   eyebrow: Quando può essere utile
-  title: Possiamo partire da un'idea o da un processo da osservare
+  title: Possiamo partire da un'idea, da un processo o da un dubbio concreto
   text: Non serve conoscere già la tecnologia o avere un progetto completamente definito.
   items:
     - Hai un'idea per usare l'AI e vuoi capire come renderla concreta.
     - Vuoi ridurre attività ripetitive, passaggi manuali o trasferimenti di dati tra strumenti.
     - Stai valutando un'integrazione, un'automazione o un software su misura.
+    - Vuoi valutare la sicurezza di un'applicazione, di un'infrastruttura o di un sistema basato su AI.
     - Vuoi capire se sia più opportuno partire da un progetto, da un prototipo o dalla formazione.
 
 process:

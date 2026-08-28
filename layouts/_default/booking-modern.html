@@ -14,7 +14,7 @@
           <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.hero.email_label }}</a>
         </div>
         {{ with .Params.hero.booking_note }}
-          <p class="booking-modern__booking-note">{{ . }}</p>
+          <div class="booking-modern__booking-note">{{ . | markdownify }}</div>
         {{ end }}
       </div>
     </div>
