@@ -142,9 +142,10 @@ local_callout:
   eyebrow: Presenza locale
   title: Cerchi una consulenza AI a Padova?
   text: >-
-    La landing locale raccoglie informazioni per aziende e professionisti di
-    Padova e provincia, con possibilità di incontri in presenza.
-  label: Vai alla consulenza AI a Padova
+    Con le aziende di Padova e provincia lavoriamo anche di persona: veniamo a
+    vedere i processi, gli strumenti e chi li usa. Per il resto d'Italia
+    lavoriamo online.
+  label: Come lavoriamo a Padova
   url: /consulenza-intelligenza-artificiale-ai-padova/
 
 method:

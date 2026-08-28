@@ -145,9 +145,10 @@ local_callout:
   eyebrow: Presenza locale
   title: Cerchi una consulenza cybersecurity a Padova?
   text: >-
-    La landing locale raccoglie informazioni per aziende e professionisti di
-    Padova e provincia, con possibilità di incontri e attività in presenza.
-  label: Vai alla consulenza cybersecurity a Padova
+    Con le aziende di Padova e provincia lavoriamo anche di persona:
+    sopralluoghi, verifiche sui sistemi e incontri con chi li gestisce. Per il
+    resto d'Italia lavoriamo online.
+  label: Come lavoriamo a Padova
   url: /consulenza-cybersecurity-sicurezza-informatica-padova/
 
 method:

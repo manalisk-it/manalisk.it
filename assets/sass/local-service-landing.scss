@@ -271,16 +271,9 @@
 }
 
 .aim-local-callout {
-  padding: clamp(2rem, 4vw, 3rem) 0;
+  padding: clamp(1.6rem, 3vw, 2.4rem) 0;
   border-top: 1px solid rgba(16, 43, 52, 0.14);
   background: #fff;
-
-  > .container {
-    display: grid;
-    grid-template-columns: minmax(150px, .35fr) minmax(0, 1fr);
-    gap: clamp(1rem, 4vw, 3rem);
-    align-items: start;
-  }
 
   h2 {
     margin-bottom: .6rem;
@@ -311,7 +304,6 @@
   .local-landing__actions, .local-landing__actions .cta-button { width: 100%; }
   .local-landing__method li { padding-right: 0; }
   .local-landing__card, .local-landing__card:nth-child(odd), .local-landing__card:nth-child(even) { padding-right: 0; padding-left: 0; border-right: 0; }
-  .aim-local-callout > .container { grid-template-columns: 1fr; }
   .local-landing--local-conversion .local-landing__team { grid-template-columns: 1fr; }
   .local-landing--local-conversion .local-landing__team-member { display: grid; grid-template-columns: auto 1fr; gap: 1rem; }
   .local-landing--local-conversion .local-landing__team-member img { margin-bottom: 0; }

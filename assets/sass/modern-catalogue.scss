@@ -60,6 +60,7 @@
   display: inline-flex;
   min-height: 3.15rem;
   align-items: center;
+  gap: 0.3rem;
   padding: 0.8rem 0.35rem;
   color: var(--catalogue-accent-dark, #075b67);
   font-weight: 750;
@@ -246,7 +247,7 @@
 .catalogue-link-icon {
   width: 1.35rem;
   height: 1.35rem;
-  margin-right: 0.4rem;
+  margin-right: 0.1rem;
   object-fit: contain;
 }
 
