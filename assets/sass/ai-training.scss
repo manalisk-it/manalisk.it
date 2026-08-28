@@ -396,8 +396,9 @@
     line-height: 1.55;
   }
 
-  i {
-    margin-top: 0.25rem;
+  .ai-act-icon {
+    flex: 0 0 auto;
+    margin-top: 0.3rem;
     color: var(--act-teal);
   }
 }
