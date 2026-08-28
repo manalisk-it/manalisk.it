@@ -32,9 +32,9 @@
         {{ $profile := . }}
         <article class="catalogue-profile-card">
           <div class="catalogue-profile-media">
-            {{ $image := resources.Get .image }}
-            {{ with $image }}
-            <img src="{{ .RelPermalink }}" alt="{{ $profile.name }}" class="catalogue-profile-image">
+            {{ with resources.Get .image }}
+            {{ $portrait := .Fill "400x400 Center webp q85" }}
+            <img src="{{ $portrait.RelPermalink }}" alt="{{ $profile.name }}" class="catalogue-profile-image">
             {{ end }}
           </div>
           <div class="catalogue-profile-content">

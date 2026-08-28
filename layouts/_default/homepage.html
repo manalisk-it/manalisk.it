@@ -223,7 +223,7 @@
           {{ range .people }}
           {{ $person := . }}
           <article>
-            {{ with resources.Get .image }}<img src="{{ .RelPermalink }}" alt="{{ $person.image_alt }}">{{ end }}
+            {{ with resources.Get .image }}{{ $portrait := .Fill "400x400 Center webp q85" }}<img src="{{ $portrait.RelPermalink }}" alt="{{ $person.image_alt }}" loading="lazy">{{ end }}
             <div>
               <h3>{{ .name }}</h3>
               <p class="homepage-about__focus">{{ .focus }}</p>

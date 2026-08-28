@@ -5,7 +5,8 @@
       <a class="homepage-header__brand" href="{{ .brand_url }}" aria-label="{{ .brand_label }} - Home">
         {{ $header := . }}
         {{ with resources.Get .logo }}
-        <img src="{{ .RelPermalink }}" alt="{{ $header.logo_alt }}" width="44" height="44">
+        {{ $logo := .Resize "88x webp q90" }}
+        <img src="{{ $logo.RelPermalink }}" alt="{{ $header.logo_alt }}" width="44" height="44">
         {{ end }}
         <span>{{ .brand_label }}</span>
       </a>
