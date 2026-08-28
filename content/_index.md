@@ -160,8 +160,11 @@ case_study:
         mantenendo controlli e responsabilità nei passaggi necessari.
     - label: Risultato
       text: >-
-        Meno attività manuali, processi sincronizzati e migliore tracciabilità
-        delle informazioni lungo la gestione della commessa.
+        La preparazione di una commessa passa da 45–60 minuti a circa 5 minuti di
+        inserimento: canale di comunicazione, evento in calendario e archiviazione
+        delle foto si allineano da soli. La procedura manuale resta disponibile
+        come riserva, così un'anomalia non blocca mai l'operatività.
+  note: "Stima dei tempi concordata con il cliente in fase di proposta."
   link:
     label: Parliamo del tuo processo
     url: /prenota-una-chiamata-consulenza-gratuita/
