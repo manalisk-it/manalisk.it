@@ -13,7 +13,7 @@ header:
     - label: Chi siamo
       url: /about/
   cta:
-    label: Prenota una call
+    label: Prenota una call gratuita
     url: /contact/
 
 footer:
