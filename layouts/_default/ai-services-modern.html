@@ -21,11 +21,17 @@
   {{ with .Params.stats }}
   <section class="aim-authority" aria-label="Esperienza formativa Manalisk">
     <div class="container">
+      {{ with .introduction }}
+      <div class="aim-stats-intro">{{ .text | markdownify }}</div>
+      {{ end }}
       <div class="aim-stats">
-        {{ range . }}
+        {{ range .items }}
         <div>
           <strong>{{ .value }}</strong>
-          <span>{{ .label }}</span>
+          <div>
+            <p class="aim-stat-label">{{ .label }}</p>
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
         </div>
         {{ end }}
       </div>

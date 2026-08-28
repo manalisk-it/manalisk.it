@@ -26,14 +26,20 @@ hero:
   secondary_cta: Raccontaci cosa serve
 
 stats:
-  - value: 1.000+
-    label: ore di formazione erogate
-  - value: 15+
-    label: aziende già formate
-  - value: 10+
-    label: settori coinvolti
-  - value: Aziende, università e ITS
-    label: esperienza con pubblici e ruoli differenti
+  introduction:
+    text: >-
+      Formiamo aziende, università e ITS: pubblici e ruoli molto diversi, da chi
+      usa gli strumenti ogni giorno a chi deve decidere se adottarli.
+  items:
+    - value: 1.000+
+      label: ore di formazione erogate
+      text: in università, ITS e percorsi dedicati al lavoro
+    - value: 15+
+      label: aziende già formate
+      text: con esigenze e livelli di partenza differenti
+    - value: 10+
+      label: settori coinvolti
+      text: con processi, dati e livelli di maturità differenti
 
 services_intro:
   eyebrow: Corsi disponibili
