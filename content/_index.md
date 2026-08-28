@@ -34,17 +34,6 @@ hero:
   title: Portiamo l'AI nei processi della tua azienda
   text: >-
     Automatizziamo attività ripetitive e colleghiamo i sistemi aziendali per ridurre errori e lasciare alle persone più tempo per il lavoro che produce valore. Per ogni processo scegliamo la soluzione più affidabile: automazione tradizionale, AI o entrambe.
-  secondary_services:
-    intro: >-
-      Non ci limitiamo a configurare strumenti AI: le nostre soluzioni nascono
-      da competenze maturate nella ricerca scientifica in AI e cybersecurity e nello sviluppo
-      di software e modelli di AI, dal machine learning ai sistemi generativi.
-      Mettiamo questa esperienza a disposizione di aziende e professionisti anche attraverso la
-    links:
-      - label: formazione AI aziendale
-        url: /formazione-intelligenza-artificiale-e-cybersecurity/
-      - label: i servizi di cybersecurity
-        url: /services/servizi-cybersecurity/
   primary:
     label: Richiedi una consulenza gratuita
     url: /prenota-una-chiamata-consulenza-gratuita/
@@ -53,6 +42,14 @@ hero:
     url: "#caso-reale"
 stats:
   aria_label: Esperienza Manalisk
+  introduction:
+    text: >-
+      Non ci limitiamo a configurare strumenti AI: le nostre soluzioni nascono da
+      competenze maturate nella ricerca scientifica in AI e cybersecurity e nello
+      sviluppo di software e modelli di AI, dal machine learning ai sistemi generativi.
+      Mettiamo questa esperienza a disposizione di aziende e professionisti anche
+      attraverso la [formazione AI aziendale](/formazione-intelligenza-artificiale-e-cybersecurity/)
+      e [i servizi di cybersecurity](/services/servizi-cybersecurity/).
   items:
     - value: 20+
       label: aziende e professionisti affiancati
@@ -80,25 +77,21 @@ problems:
       text: >-
         Dati ricevuti via email, moduli o allegati possono essere estratti,
         controllati e preparati per il gestionale senza ricopiarli più volte.
-      examples: Acquisizione dati · controlli preliminari · aggiornamento gestionale
     - area: Documenti
       title: Classificare, compilare e recuperare informazioni
       text: >-
         Fatture, contratti, procedure e documenti tecnici possono essere
         organizzati e resi più semplici da consultare e verificare.
-      examples: Estrazione dati · classificazione · ricerca con fonti
     - area: Email e comunicazioni
       title: Gestire richieste senza smistarle tutte a mano
       text: >-
         I messaggi possono essere riconosciuti, assegnati al flusso corretto e
         accompagnati da una bozza da controllare prima dell'invio.
-      examples: Classificazione · instradamento · bozze con revisione
     - area: Backoffice e amministrazione
       title: Collegare attività che oggi passano tra più strumenti
       text: >-
         Informazioni già presenti possono alimentare documenti, scadenze e
         attività operative mantenendo approvazioni e responsabilità definite.
-      examples: Generazione documenti · scadenze · passaggi approvativi
 
 services:
   eyebrow: Cosa facciamo
@@ -169,7 +162,6 @@ case_study:
       text: >-
         Meno attività manuali, processi sincronizzati e migliore tracciabilità
         delle informazioni lungo la gestione della commessa.
-  note: "Il caso è raccontato in forma anonimizzata e senza metriche non verificabili."
   link:
     label: Parliamo del tuo processo
     url: /prenota-una-chiamata-consulenza-gratuita/
@@ -364,7 +356,7 @@ final_cta:
     Raccontaci come viene gestito oggi. Possiamo verificare se conviene
     automatizzarlo, semplificarlo o intervenire in un altro modo.
   primary:
-    label: Prenota una call
+    label: Prenota una call gratuita
     url: /prenota-una-chiamata-consulenza-gratuita/
   secondary:
     label: Scrivi a info@manalisk.it

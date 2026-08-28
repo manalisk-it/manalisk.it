@@ -11,12 +11,6 @@
           <a class="homepage-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
           <a class="homepage-text-link" href="{{ .secondary.url }}">{{ .secondary.label }} <span aria-hidden="true">→</span></a>
         </div>
-        {{ with .secondary_services }}
-        <p class="homepage-hero__secondary">
-          {{ .intro }}
-          {{ range $index, $service := .links }}{{ if $index }} e {{ end }}<a href="{{ $service.url }}">{{ $service.label }}</a>{{ end }}.
-        </p>
-        {{ end }}
       </div>
     </div>
   </section>
@@ -27,8 +21,8 @@
     <div class="container">
       {{ with .introduction }}
       <div class="homepage-stats__intro">
-        <p class="homepage-eyebrow">{{ .eyebrow }}</p>
-        <p>{{ .text }}</p>
+        {{ with .eyebrow }}<p class="homepage-eyebrow">{{ . }}</p>{{ end }}
+        {{ .text | markdownify }}
       </div>
       {{ end }}
       <div class="homepage-stats__grid">
@@ -62,7 +56,6 @@
             <h3>{{ $item.title }}</h3>
             <p>{{ $item.text }}</p>
           </div>
-          <p class="homepage-problem__examples">{{ $item.examples }}</p>
         </article>
         {{ end }}
       </div>
@@ -129,7 +122,7 @@
         {{ end }}
       </div>
       <div class="homepage-case-study__footer">
-        <p>{{ .note }}</p>
+        {{ with .note }}<p>{{ . }}</p>{{ end }}
         <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
