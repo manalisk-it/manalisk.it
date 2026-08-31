@@ -418,7 +418,7 @@
 
 .homepage-heading {
   max-width: 760px;
-  margin-bottom: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: clamp(1.2rem, 3vw, 1.5rem);
 
   > p:last-child:not(.homepage-eyebrow) {
     margin-bottom: 0;
@@ -827,7 +827,7 @@
 
 .homepage-training__note {
   max-width: 880px;
-  margin: -1.7rem 0 2rem;
+  margin: -1.5rem 0 2rem;
   padding-left: 1rem;
   border-left: 0.18rem solid #b17a2b;
   color: var(--homepage-muted);

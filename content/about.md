@@ -42,6 +42,10 @@ team:
         url: "https://www.linkedin.com/in/pier-paolo-tricomi-phd/"
         external: true
         icon: "/images/linkedin-icon.png"
+      - label: Google Scholar
+        url: "https://scholar.google.com/citations?hl=en&user=X1ItsuoAAAAJ"
+        external: true
+        icon: "/images/google-scholar-icon.svg"
       - label: Leggi il CV
         url: "/CVs/tricomi.pdf"
         external: true
@@ -64,6 +68,10 @@ team:
         url: "https://www.linkedin.com/in/sime1/"
         external: true
         icon: "/images/linkedin-icon.png"
+      - label: Google Scholar
+        url: "https://scholar.google.com/citations?user=LwBTEL4AAAAJ&hl=en"
+        external: true
+        icon: "/images/google-scholar-icon.svg"
       - label: Leggi il CV
         url: "/CVs/pizzi.pdf"
         external: true

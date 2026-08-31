@@ -66,7 +66,7 @@ stats:
 
 problems:
   eyebrow: Problemi che vediamo spesso
-  title: L'AI entra nei processi trasversali di ogni azienda
+  title: L'AI può velocizzare i processi trasversali di ogni azienda
   text: >-
     Non serve essere un'azienda tecnologica. Anche una realtà manifatturiera ha
     preventivi, ordini, amministrazione, documenti, fogli Excel, email e report. Partiamo
@@ -95,7 +95,7 @@ problems:
 
 services:
   eyebrow: Cosa facciamo
-  title: Interventi per processi, persone e sicurezza
+  title: Rendiamo i processi più efficienti, le persone più competenti, e i sistemi più sicuri
   ai:
     code: Intelligenza artificiale
     title: AI, automazione e soluzioni su misura
@@ -104,9 +104,9 @@ services:
       realizziamo automazioni o software su misura che si integrano nel lavoro esistente.
     services:
       - Automazione di attività e workflow ripetitivi
-      - Integrazione tra email, moduli, CRM, gestionali e database
+      - Integrazione tra email, moduli, documenti, PDF, Excel, CRM, gestionali e database
       - Estrazione e classificazione di dati da documenti e immagini
-      - Ricerca interna su procedure e archivi con fonti verificabili
+      - Ricerca interna su procedure e archivi con fonti affidabili everificabili
       - Analisi dei dati, report e dashboard aggiornabili
       - Prototipi e software AI personalizzati integrati nei sistemi esistenti
     advanced:
@@ -121,9 +121,9 @@ services:
   supporting:
     - theme: training
       code: Formazione
-      title: Competenze pratiche per persone, reparti e management
+      title: Competenze pratiche per dipendenti, reparti, IT e management
       text: >-
-        Percorsi pratici per usare l'AI con criteri condivisi, comprenderne i
+        Percorsi pratici per usare l'AI con criteri condivisi e sicuri, comprenderne i
         limiti e individuare attività su cui vale la pena intervenire.
       link:
         label: Scopri la formazione
@@ -149,55 +149,51 @@ case_study:
     - label: Contesto
       text: >-
         Informazioni, documenti e attività legate alle commesse erano distribuiti
-        tra gestionale, Microsoft 365, Teams e sistemi documentali.
+        tra gestionale, WhatsApp, Calendario e NAS aziendale.
     - label: Problema
       text: >-
-        Aggiornamenti manuali e passaggi tra strumenti rendevano più difficile
-        mantenere sincronizzati stato della commessa, attività e documentazione.
+        La gestione della commessa richiedeva molto lavoro ripetitivo a basso valore (es. inserimento dati, download e catalogazione dei files, creazione manuale di chat per le comunicazioni), con alto rischio di errori e usando sistemi poco sicuri.
     - label: Intervento
       text: >-
         Abbiamo automatizzato i workflow e collegato i sistemi coinvolti,
-        mantenendo controlli e responsabilità nei passaggi necessari.
+        mantenendo controlli e responsabilità umane nei passaggi necessari. Abbiamo valorizzato gli strumenti già a disposizione dell'azienda (Microsoft 365) e introdotto software su misura per rendere il lavoro più agevole e sicuro.
     - label: Risultato
       text: >-
         La preparazione di una commessa passa da 45–60 minuti a circa 5 minuti di
         inserimento: canale di comunicazione, evento in calendario e archiviazione
         delle foto si allineano da soli. La procedura manuale resta disponibile
         come riserva, così un'anomalia non blocca mai l'operatività.
-  note: "Stima dei tempi concordata con il cliente in fase di proposta."
+  note: "Stima dei tempi concordata con il cliente."
   link:
     label: Parliamo del tuo processo
     url: /prenota-una-chiamata-consulenza-gratuita/
 
 training:
   eyebrow: Formazione
-  title: Competenze utilizzabili dal giorno dopo
+  title: Insegnamo competenze utilizzabili fin da subito
   text: >-
-    Spesso il primo passo è capire che cosa può fare l'AI, dove sbaglia e quali
+    Spesso il primo passo è capire che cosa può fare l'AI, come farlo, dove sbaglia e quali
     dati non devono essere condivisi. Quando le persone conoscono strumenti e
-    limiti, possono iniziare a usarli su attività semplici con criteri condivisi.
+    limiti, possono iniziare a usarli su attività quotidiane con criteri condivisi e sicuri, velocizzando il proprio lavoro e aumentando la produttività.
     Dopo la formazione diventa anche più facile riconoscere opportunità per casi
-    d'uso e automazioni più complesse.
+    d'uso e automazioni più complesse ad alto valore per l'azienda.
   note: >-
-    Ogni percorso viene costruito sui ruoli, sugli strumenti e sugli obiettivi
-    dell'organizzazione. La formazione aiuta le persone a usare meglio gli
-    strumenti e fa emergere casi d'uso che possono diventare progetti di automazione.
+    Adattiamo ogni percorso sui ruoli, sugli strumenti e sugli obiettivi
+    dell'organizzazione. Durata e contenuti sono concordati con il cliente, con esempi e attività pratiche su dati e documenti reali.
   ai_act:
     eyebrow: AI literacy e AI Act
-    title: "Non basta distribuire uno strumento: le persone devono saperlo usare"
+    title: "La normativa Europea richiede competenze a chi usa l'AI"
     text: >-
-      L'articolo 4 dell'AI Act richiede a provider e deployer di adottare misure
-      per assicurare, per quanto possibile, un livello adeguato di alfabetizzazione
-      in materia di AI al personale coinvolto, considerando ruoli, strumenti e contesto d'uso. Non
-      esiste un corso uguale per tutti: costruiamo percorsi dedicati per personale,
-      management e team tecnici, con attenzione a limiti, rischi e responsabilità.
+      Dal 2 febbraio 2025 l'articolo 4 dell'AI Act chiede a chi fornisce e a chi utilizza sistemi di AI in ambito professionale di adottare misure che supportino un livello adeguato di alfabetizzazione in materia di AI nel personale coinvolto, considerando ruoli, strumenti e contesto d'uso. 
+      
+      Dal 2 agosto 2026 la vigilanza è affidata alle autorità nazionali. La norma non impone un corso uguale per tutti né una certificazione: costruiamo percorsi dedicati per personale, management e team tecnici, con attenzione a limiti, rischi e responsabilità.
     link:
       label: Scopri i corsi AI Act per aziende
       url: /formazione-ai-aziendale/
   audiences:
     - title: Corsi base per il personale
       text: >-
-        Funzionamento degli strumenti generativi, scrittura delle richieste,
+        Funzionamento degli strumenti generativi, scrittura di prompt e richieste,
         verifica dei risultati, privacy e uso responsabile nelle attività quotidiane.
     - title: Percorsi per reparti e funzioni aziendali
       text: >-
@@ -205,8 +201,7 @@ training:
         amministrazione, commerciale, marketing, HR o altri uffici.
     - title: Formazione avanzata per team IT e tecnici
       text: >-
-        Modelli linguistici, RAG, integrazione tramite API, valutazione dei
-        risultati, sicurezza e criteri per scegliere le tecnologie.
+        Analisi dati, LLM, RAG, Machine Learning, modelli di previsione, coding con l'AI, integrazione tramite API, valutazione dei risultati, sicurezza e criteri per scegliere le tecnologie.
     - title: Workshop per management e responsabili
       text: >-
         Opportunità, limiti, priorità, responsabilità e selezione dei casi d'uso
@@ -248,14 +243,13 @@ compliance:
   note: >-
     Gli obblighi effettivi dipendono dal ruolo dell'organizzazione, dal sistema,
     dai dati e dal contesto d'uso. Quando serve, la valutazione coinvolge competenze
-    tecniche e specialistiche sul singolo progetto.
+    tecniche e specialistiche adatte al progetto.
 
 method:
   eyebrow: Come lavoriamo
-  title: Dal processo alla produzione, per passaggi verificabili
+  title: Dal processo alla produzione, un passo alla volta
   text: >-
-    Un'automazione è utile solo se considera il processo, le eccezioni, i dati e
-    le persone che dovranno controllarla. Per questo procediamo per passaggi verificabili.
+    Un'automazione è utile solo se considera il processo, le eccezioni, i dati e le persone che dovranno controllarla. Per questo ogni passo si chiude con un risultato e una decisione per lo step successivo.
   steps:
     - title: Analisi
       text: Ricostruiamo processo, obiettivi, persone, strumenti, dati ed eccezioni.
@@ -267,39 +261,38 @@ method:
       text: Colleghiamo la soluzione ai sistemi e introduciamo controlli, documentazione, formazione e monitoraggio.
 
 about:
-  eyebrow: Competenze applicate
-  title: Dalla ricerca ai processi reali delle aziende
+  eyebrow: Chi siamo
+  title: Ricerca, sviluppo e governance nello stesso team
   text: >-
-    Lavoriamo con l'AI da prima della diffusione di ChatGPT. Uniamo ricerca
+    Lavoriamo con l'AI dal 2018, da prima che diventasse un tema di mercato. Uniamo ricerca
     scientifica, capacità di sviluppo e comprensione dei processi per verificare
     le soluzioni, costruirle e integrarle nel lavoro reale delle aziende.
   credentials:
-    - "AI e automazione: ricerca, modelli e sviluppo su misura"
-    - "Cybersecurity: applicazioni, cloud e infrastrutture"
-    - "Privacy e AI governance: dati, ruoli e processi"
-    - "Formazione: personale, management e team tecnici"
+    - "Oltre 20 aziende affiancate su AI e sicurezza"
+    - "PMI manifatturiere, studi professionali e aziende di servizi"
+    - "Ricerca e sviluppo su AI e cybersecurity dal 2018"
+    - "Competenze tecniche, scientifiche e legali in un'unica squadra"
+    - "Automazioni e software su misura, non soluzioni preconfezionate"
+    - "Dottorati di ricerca ed esperienza aziendale consolidata"
   people:
-    - name: Pier Paolo Tricomi, Ph.D.
-      focus: Intelligenza artificiale, ricerca e formazione
+    - name: Pier Paolo Tricomi 
+      focus: PhD in Computer Science · AI, Automazione, Cybersecurity e formazione
       description: >-
-        PhD in Computer Science, svolge ricerca in AI e cybersecurity e ha
-        pubblicato oltre 15 lavori scientifici in conferenze internazionali.
-        Porta questa esperienza in consulenza, sviluppo e formazione per aziende.
+        Dottorato di ricerca in Computer Science, oltre 15 pubblicazioni scientifiche internazionali su AI e cybersecurity. Progetta e realizza automazioni e soluzioni AI per aziende, e cura i percorsi di formazione. Lavora su questi sistemi da otto anni, da prima che diventassero di uso comune.
       image: images/PierPaoloTricomi.jpg
       image_alt: Ritratto di Pier Paolo Tricomi
     - name: Simeone Pizzi
-      focus: Cybersecurity, sviluppo software e ricerca
+      focus: Laurea magistrale in Informatica · Cybersecurity, AI e sviluppo software
       description: >-
-        Lavora su sicurezza applicativa, infrastrutture cloud e sviluppo software,
-        collegando verifiche tecniche e capacità di realizzare sistemi operativi.
+        Laurea magistrale in Informatica (110 e lode). Svolge penetration test e vulnerability assessment su applicazioni web/cloud, e sviluppa soluzioni AI su misura. Ha lavorato a un progetto di ricerca finanziato da Google sull'analisi automatica delle vulnerabilità Android.
       image: images/sime1.png
       image_alt: Ritratto di Simeone Pizzi
-    - name: Nicola Bellotto, Ph.D.
-      focus: Privacy, AI governance e processi aziendali
+    - name: Nicola Bellotto
+      focus: PhD in Giurisprudenza · Privacy, AI governance e conformità
       description: >-
         PhD in Giurisprudenza e consulente direzionale con oltre dieci anni di
         esperienza. Affianca aziende nazionali e multinazionali su privacy,
-        governance, rischi e revisione dei processi interni.
+        governance, AI Act, rischi e revisione dei processi interni. Sui progetti cura gli aspetti di conformità: trattamento dei dati, ruoli e responsabilità, obblighi introdotti dall'AI Act.
       image: images/NicolaBellotto2.jpg
       image_alt: Ritratto di Nicola Bellotto
   link:
