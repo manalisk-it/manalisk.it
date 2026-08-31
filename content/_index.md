@@ -62,36 +62,36 @@ stats:
       text: su intelligenza artificiale, dati, privacy e cybersecurity
     - value: 1.000+
       label: ore di formazione erogate
-      text: in università, ITS e percorsi dedicati al lavoro
+      text: in aziende, università e ITS
 
 problems:
   eyebrow: Problemi che vediamo spesso
   title: L'AI entra nei processi trasversali di ogni azienda
   text: >-
     Non serve essere un'azienda tecnologica. Anche una realtà manifatturiera ha
-    preventivi, ordini, amministrazione, documenti, email e report. Partiamo
+    preventivi, ordini, amministrazione, documenti, fogli Excel, email e report. Partiamo
     dai passaggi ripetitivi per capire cosa automatizzare e cosa lasciare alle persone.
   items:
     - area: Ordini e richieste
       title: Dall'arrivo della richiesta all'inserimento nei sistemi
       text: >-
         Dati ricevuti via email, moduli o allegati possono essere estratti,
-        controllati e preparati per il gestionale senza ricopiarli più volte.
+        controllati e preparati per il gestionale o in Excel senza ricopiarli più volte.
     - area: Documenti
-      title: Classificare, compilare e recuperare informazioni
+      title: Classificare, compilare, generare e recuperare informazioni
       text: >-
-        Fatture, contratti, procedure e documenti tecnici possono essere
+        Fatture, contratti, preventivi, procedure e documenti tecnici possono essere generati,
         organizzati e resi più semplici da consultare e verificare.
     - area: Email e comunicazioni
       title: Gestire richieste senza smistarle tutte a mano
       text: >-
-        I messaggi possono essere riconosciuti, assegnati al flusso corretto e
+        Le email e i messaggi WhatsApp possono essere riconosciuti, assegnati al flusso corretto e
         accompagnati da una bozza da controllare prima dell'invio.
     - area: Backoffice e amministrazione
-      title: Collegare attività che oggi passano tra più strumenti
+      title: Collegare attività e dati che passano tra più strumenti
       text: >-
-        Informazioni già presenti possono alimentare documenti, scadenze e
-        attività operative mantenendo approvazioni e responsabilità definite.
+        Informazioni e dati già presenti o inseriti possono alimentare documenti, scadenze e
+        attività operative mantenendo l'approvazione umana.
 
 services:
   eyebrow: Cosa facciamo
