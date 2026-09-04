@@ -31,9 +31,9 @@ team:
     description: >-
       Ha conseguito un dottorato di ricerca in AI & Cybersecurity all'Università
       di Padova. Ha studiato e svolto attività di ricerca presso Vrije Universiteit
-      Amsterdam, University of California, Irvine e Northwestern University.
+      Amsterdam, University of California, Irvine e Northwestern University negli Stati Uniti.
 
-      Si occupa di machine e deep learning, analisi dei dati, privacy, AI classica
+      Si occupa di automazione, machine e deep learning, analisi dei dati, privacy, AI classica
       e generativa. Lavora con aziende e professionisti e insegna da diversi anni
       temi di intelligenza artificiale e cybersecurity in aziende e università.
     image: "images/PierPaoloTricomi.jpg"

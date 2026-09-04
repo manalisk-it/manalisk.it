@@ -278,13 +278,13 @@ about:
     - name: Pier Paolo Tricomi 
       focus: PhD in Computer Science · AI, Automazione, Cybersecurity e formazione
       description: >-
-        Dottorato di ricerca in Computer Science, oltre 15 pubblicazioni scientifiche internazionali su AI e cybersecurity. Progetta e realizza automazioni e soluzioni AI per aziende, e cura i percorsi di formazione. Lavora su questi sistemi da otto anni, da prima che diventassero di uso comune.
+        Dottorato di ricerca in Computer Science e oltre 15 pubblicazioni scientifiche internazionali su AI e cybersecurity, con un periodo di ricerca alla Northwestern University (Chicago). Progetta e realizza automazioni e soluzioni AI per aziende, e cura i percorsi di formazione. Lavora su questi sistemi dal 2018, da prima che diventassero di uso comune.
       image: images/PierPaoloTricomi.jpg
       image_alt: Ritratto di Pier Paolo Tricomi
     - name: Simeone Pizzi
       focus: Laurea magistrale in Informatica · Cybersecurity, AI e sviluppo software
       description: >-
-        Laurea magistrale in Informatica (110 e lode). Svolge penetration test e vulnerability assessment su applicazioni web/cloud, e sviluppa soluzioni AI su misura. Ha lavorato a un progetto di ricerca finanziato da Google sull'analisi automatica delle vulnerabilità Android.
+        Laurea magistrale con Lode in Informatica a Padova. Svolge penetration test e vulnerability assessment su applicazioni web e infrastrutture cloud e on-premise. Sviluppa soluzioni AI su misura ed è esperto di sicurezza degli LLM. Ha lavorato a un progetto di ricerca finanziato da Google sull'analisi automatica delle vulnerabilità Android.
       image: images/sime1.png
       image_alt: Ritratto di Simeone Pizzi
     - name: Nicola Bellotto
@@ -292,7 +292,7 @@ about:
       description: >-
         PhD in Giurisprudenza e consulente direzionale con oltre dieci anni di
         esperienza. Affianca aziende nazionali e multinazionali su privacy,
-        governance, AI Act, rischi e revisione dei processi interni. Sui progetti cura gli aspetti di conformità: trattamento dei dati, ruoli e responsabilità, obblighi introdotti dall'AI Act.
+        governance, AI Act, rischi e revisione dei processi interni. Sui progetti cura gli aspetti di conformità: trattamento dei dati, ruoli e responsabilità, obblighi introdotti dall'AI Act. Svolge anche formazione aziendale e universitaria.
       image: images/NicolaBellotto2.jpg
       image_alt: Ritratto di Nicola Bellotto
   link:
@@ -306,35 +306,49 @@ faq:
   items:
     - question: Da dove si parte per automatizzare un processo?
       answer: >-
-        Ricostruiamo attività, eccezioni, strumenti e risultato atteso. Verifichiamo
-        quali dati sono disponibili, quali decisioni devono restare alle persone e
-        se un'automazione può produrre un vantaggio concreto rispetto al processo attuale.
+        Ricostruiamo attività, eccezioni, strumenti e risultato atteso, e verifichiamo
+        quali dati sono disponibili e quali decisioni devono restare alle persone.
+        Partiamo sempre da un processo circoscritto — per esempio le fatture fornitore
+        che oggi qualcuno ricopia a mano nel gestionale — e integriamo per passaggi,
+        introducendo controlli prima di estendere l'automazione.
+    - question: Quanto costa un progetto di automazione?
+      answer: >-
+        Dipende dal processo, ma non chiediamo di impegnarsi sull'intero progetto in
+        partenza. L'analisi iniziale ha un costo definito e contenuto [inserire formula:
+        forfait / giornate]; il preventivo per lo sviluppo arriva dopo, quando sappiamo
+        cosa serve davvero. Se dall'analisi emerge che non conviene procedere, lo diciamo.
+    - question: In quanto tempo si vedono i primi risultati?
+      answer: >-
+        L'analisi iniziale richiede in genere [X settimane], un primo prototipo su un
+        caso circoscritto [Y settimane]. Preferiamo un risultato piccolo e verificabile
+        in poche settimane a un progetto lungo con esito incerto.
+    - question: "Non sappiamo ancora dove ci servirebbe l'AI: possiamo partire lo stesso?"
+      answer: >-
+        Sì. Un'analisi circoscritta o un percorso di formazione sono spesso il primo
+        passo: danno criteri condivisi alle persone e fanno emergere le opportunità
+        dai reparti, senza avviare subito un progetto esteso. I casi d'uso individuati
+        vengono poi valutati uno per uno: non ogni idea richiede un progetto AI.
     - question: Dobbiamo sostituire i software che utilizziamo?
       answer: >-
         Non necessariamente. Quando accessi e integrazioni lo consentono, colleghiamo
         gestionali, CRM, email, moduli, database e altri strumenti già presenti.
         Prima controlliamo API, sicurezza e vincoli tecnici.
-    - question: Serve già sapere dove utilizzare l'AI?
+    - question: E se l'AI sbaglia?
       answer: >-
-        No. Un'analisi circoscritta o un percorso formativo possono aiutare a
-        raccogliere evidenze, sviluppare competenze e scegliere i passi successivi
-        senza avviare subito un progetto esteso.
-    - question: Quanto è invasivo integrare un'automazione nei processi esistenti?
-      answer: >-
-        Dipende dai sistemi coinvolti. Preferiamo partire da un processo circoscritto,
-        verificare API, dati ed eccezioni e integrare la soluzione per passaggi.
-        Quando possibile manteniamo gli strumenti esistenti e introduciamo controlli
-        prima di estendere l'automazione.
+        Nessun sistema è infallibile, ed è il motivo per cui le decisioni che contano
+        restano alle persone. Prima del rilascio definiamo cosa il sistema può fare da
+        solo, dove serve una conferma e come ci si accorge di un errore: controlli,
+        registrazione delle attività e criteri di valutazione concordati in anticipo.
     - question: Come vengono gestiti dati, privacy e sicurezza?
       answer: >-
         Valutiamo dati, accessi, infrastruttura e possibili vulnerabilità fin
         dall'inizio. Le misure possono includere controllo degli accessi, cifratura,
         registrazione delle attività e riduzione dei dati condivisi con servizi esterni.
-    - question: Fate anche formazione prima di un progetto?
+    - question: Dopo il rilascio restiamo dipendenti da voi?
       answer: >-
-        Sì. La formazione può essere il primo passo per dare criteri condivisi alle
-        persone e far emergere opportunità dai reparti. I casi d'uso individuati
-        vengono poi valutati separatamente: non ogni idea richiede un progetto AI.
+        No. L'automazione è vostra: consegniamo documentazione e formiamo chi la userà.
+        Possiamo occuparci di manutenzione e monitoraggio con un accordo dedicato, ma
+        è una scelta, non un vincolo tecnico.
 
 location:
   title: Siamo a Padova.
