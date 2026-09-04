@@ -1,7 +1,7 @@
 ---
 title: Servizi di Intelligenza Artificiale
 seo_title: "Servizi di intelligenza artificiale per aziende | Manalisk"
-linkTitle: Servizi AI
+linkTitle: AI e automazione
 description: Soluzioni AI per automatizzare attività, consultare documenti, estrarre informazioni e analizzare dati aziendali.
 draft: false
 layout: ai-services-modern
@@ -16,12 +16,10 @@ disable_article_schema: true
 og_type: website
 
 hero:
-  eyebrow: Servizi AI
+  eyebrow: Servizi AI e Automazione
   title: AI applicata ai processi aziendali
   text: >-
-    Partiamo da documenti, dati e attività che oggi richiedono troppo tempo.
-    Verifichiamo se l'AI può semplificarli, proviamo la soluzione su un caso reale
-    e la integriamo negli strumenti già utilizzati. Se l'AI non serve, lo diciamo.
+    Partiamo da documenti, dati, attività e processi che oggi richiedono troppo tempo. Verifichiamo se l'AI può semplificarli o automatizzarli, proviamo la soluzione su un caso reale e la integriamo negli strumenti già utilizzati. Quando l'AI non è la risposta migliore lo diciamo, e realizziamo l'automazione tradizionale che risolve il problema in modo più affidabile e meno costoso.
   primary_cta: Guarda gli ambiti di lavoro
   secondary_cta: Raccontaci il processo
 
