@@ -6,9 +6,9 @@
 
 {{ $iso8601 := "2006-01-02T15:04:05-07:00" -}}
 
-<meta property="og:title" content="{{ .Title }}">
+<meta property="og:title" content="{{ .Params.seo_title | default .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ .Params.og_type | default (cond (or .IsHome .Params.schema_homepage .Params.schema_local_service) "website" "article") }}">
 <meta property="og:url" content="{{ .Permalink }}">
 
 {{- with $.Params.images -}}
@@ -32,7 +32,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- if .IsPage }}
+{{- if and .IsPage (not .Params.schema_homepage) (not .Params.schema_local_service) (not .Params.disable_article_schema) }}
   <meta property="article:section" content="{{ .Section }}">
   {{ with .PublishDate }}
     <meta property="article:published_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>

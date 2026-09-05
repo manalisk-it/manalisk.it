@@ -1,0 +1,103 @@
+{{ define "main" }}
+{{ $calendarURL := .Params.calendar_url }}
+
+<main class="booking-modern">
+  <section class="booking-modern__hero">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <p class="booking-modern__eyebrow">{{ .Params.hero.eyebrow }}</p>
+        <h1>{{ .Params.hero.title }}</h1>
+        <p class="booking-modern__lead">{{ .Params.hero.text }}</p>
+        <p class="booking-modern__meta">{{ .Params.hero.meta }}</p>
+        <div class="booking-modern__actions">
+          <a class="cta-button" href="{{ $calendarURL }}" target="_blank" rel="noopener">{{ .Params.hero.primary_label }}</a>
+          <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.hero.email_label }}</a>
+        </div>
+        {{ with .Params.hero.booking_note }}
+          <div class="booking-modern__booking-note">{{ . | markdownify }}</div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-modern__section booking-modern__section--surface" aria-labelledby="booking-useful-title">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <header class="booking-modern__heading">
+          <p class="booking-modern__eyebrow">{{ .Params.useful.eyebrow }}</p>
+          <h2 id="booking-useful-title">{{ .Params.useful.title }}</h2>
+          {{ with .Params.useful.text }}<p>{{ . }}</p>{{ end }}
+        </header>
+        <ul class="booking-modern__list">
+          {{ range .Params.useful.items }}
+            <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-modern__section" aria-labelledby="booking-steps-title">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <header class="booking-modern__heading">
+          <p class="booking-modern__eyebrow">{{ .Params.process.eyebrow }}</p>
+          <h2 id="booking-steps-title">{{ .Params.process.title }}</h2>
+          {{ with .Params.process.text }}<p>{{ . }}</p>{{ end }}
+        </header>
+        <ol class="booking-modern__steps">
+          {{ range $index, $step := .Params.process.steps }}
+            <li>
+              <span aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+              <div>
+                <h3>{{ $step.title }}</h3>
+                <p>{{ $step.text }}</p>
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-modern__section booking-modern__section--surface" aria-labelledby="booking-after-title">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <div class="booking-modern__after">
+          <p class="booking-modern__eyebrow">{{ .Params.after.eyebrow }}</p>
+          <h2 id="booking-after-title">{{ .Params.after.title }}</h2>
+          {{ range .Params.after.paragraphs }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.faq }}
+  <section class="booking-modern__section booking-modern__faq" aria-labelledby="booking-faq-title">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <header class="booking-modern__heading">
+          <p class="booking-modern__eyebrow">Domande frequenti</p>
+          <h2 id="booking-faq-title">{{ .title }}</h2>
+        </header>
+        {{ partial "components/faq-accordion.html" (dict "items" .items "id" "bookingModernFaq" "prefix" "booking-modern-faq" "open_first" true) }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="booking-modern__final" aria-labelledby="booking-final-title">
+    <div class="container">
+      <div class="booking-modern__reader">
+        <p class="booking-modern__eyebrow">{{ .Params.final_cta.eyebrow }}</p>
+        <h2 id="booking-final-title">{{ .Params.final_cta.title }}</h2>
+        <p>{{ .Params.final_cta.text }}</p>
+        <div class="booking-modern__actions">
+          <a class="cta-button" href="{{ $calendarURL }}" target="_blank" rel="noopener">{{ .Params.final_cta.primary_label }}</a>
+          <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.final_cta.email_label }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

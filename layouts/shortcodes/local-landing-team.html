@@ -1,0 +1,16 @@
+{{ with .Page.Params.team_visual }}
+<div class="local-landing__team" aria-label="{{ .aria_label }}">
+  {{ range .members }}
+  {{ $source := resources.Get .image }}
+  {{ $portrait := $source.Fill "180x180 Center webp q85" }}
+  <article class="local-landing__team-member">
+    <img src="{{ $portrait.RelPermalink }}" width="180" height="180" alt="{{ .alt }}" loading="lazy">
+    <div>
+      <h3>{{ .name }}</h3>
+      <p class="local-landing__team-role">{{ .role }}</p>
+      <p>{{ .proof }}</p>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

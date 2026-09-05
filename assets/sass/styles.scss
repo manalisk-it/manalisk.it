@@ -1,5 +1,5 @@
 @use 'sass:color';
-@import "bootstrap/bootstrap.scss";
+@import "bootstrap-subset.scss";
 
 // $primary: #00684A;
 // $primary-hover: rgb(0, 155, 110);
@@ -135,7 +135,7 @@ h3 {
 }
 
 
-.text-section-header, .home .container h2{
+.text-section-header, .home:not(.homepage-page) .container h2{
   color: #004154 !important;
   // font-weight: bold;
   font-size: 42px;
@@ -282,13 +282,14 @@ h1 {
     font-weight: 500;
 }
 
-@import 'book-call.scss';
-@import 'home.scss';
-@import 'about.scss';
 @import 'services.scss';
-@import 'seo-page.scss';
+@import 'shared-faq.scss';
 @import 'ai-training.scss';
 @import 'ai-services-modern.scss';
+@import 'modern-catalogue.scss';
+@import 'homepage.scss';
+@import 'local-service-landing.scss';
+@import 'contact-booking.scss';
 
 .cta-button {
   background: linear-gradient(135deg, #00b5cc, #007f8a); /* Gradiente blu acqua */
@@ -300,7 +301,7 @@ h1 {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.3s ease, opacity 1s ease !important; /* Puoi lasciarla o rimuoverla */
+  transition: background 180ms ease, transform 180ms ease, box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1), opacity 180ms ease !important;
   text-decoration: none; /* 🔥 Rimuove la sottolineatura */
 }
 
@@ -632,5 +633,36 @@ h1 {
 .card-text {
   p {
     margin-bottom: 0.6em;
+  }
+}
+
+// Allineamento di font e colori per le pagine ancora sul layout di base:
+// elenco approfondimenti, singolo articolo e informativa privacy.
+// Scope volutamente stretto (body.post / body.legacy-page) per non toccare
+// le pagine con design dedicato, dove titoli e link hanno colori propri.
+body.post,
+body.legacy-page {
+  background: #fff;
+  color: var(--homepage-ink);
+  font-family: "Hanken Grotesk", sans-serif;
+
+  #content { background: #fff; }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--homepage-ink);
+    font-family: "Archivo", sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  a:not(.btn):not(.nav-link):not(.homepage-header__cta) {
+    color: var(--homepage-accent-dark);
+    text-underline-offset: 0.18rem;
+
+    &:hover, &:focus-visible { color: var(--homepage-accent); }
+  }
+
+  blockquote {
+    border-left: 3px solid var(--homepage-accent);
+    color: var(--homepage-muted);
   }
 }

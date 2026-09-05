@@ -1,17 +1,48 @@
 ---
-title: "Contattaci"
+title: Contatta Manalisk
+seo_title: "Contatti e prenotazioni | Manalisk"
+linkTitle: Contatti
+description: Contatta Manalisk per progetti di AI e automazione, cybersecurity o formazione. Siamo a Padova e lavoriamo anche da remoto in tutta Italia.
 draft: false
-menu:
-  main:
-    weight: 90
+layout: contact-modern
+page_class: modern-catalogue-page contact-modern-page
+disable_article_schema: true
+og_type: website
+showBookingButton: false
+
+routes_intro:
+  title: Scegli l'argomento della prima call
+  text: Prenota un primo confronto gratuito nell'ambito più vicino alla tua esigenza, oppure [scrivici a info@manalisk.it](mailto:info@manalisk.it).
+
+routes:
+  - theme: ai
+    label: AI e automazione
+    title: Migliorare processi, strumenti e attività ripetitive
+    text: Per idee AI, automazioni, integrazioni e software su misura. Possiamo partire da un progetto già immaginato oppure da un processo da osservare.
+    link_label: Prenota una call sull'AI
+    url: /prenota-una-chiamata-consulenza-gratuita/
+  - theme: cyber
+    label: Cybersecurity
+    title: Verificare applicazioni, infrastrutture e rischi concreti
+    text: Per dubbi sulla sicurezza di software, SaaS, cloud, accessi o sistemi basati su AI e per definire verifiche tecniche proporzionate.
+    link_label: Prenota una call sulla cybersecurity
+    url: /prenota-una-chiamata-consulenza-gratuita-cyber/
+  - theme: training
+    label: Formazione
+    title: Costruire percorsi utili per persone e organizzazioni
+    text: Per corsi su intelligenza artificiale, AI Literacy e cybersecurity rivolti ad aziende, professionisti, università e ITS.
+    link_label: Prenota una call sulla formazione
+    url: /prenota-una-chiamata-consulenza-gratuita-formazione/
+
+direct:
+  eyebrow: Email
+  title: Scrivici direttamente
+  text: Per collaborazioni, richieste generali o se non sai ancora quale percorso scegliere. Non inviare credenziali o dati sensibili nel primo messaggio.
+  email_label: Scrivi a info@manalisk.it
+  email_subject: Richiesta informazioni per Manalisk
+
+location:
+  eyebrow: Dove lavoriamo
+  title: Padova e provincia in presenza, online nel resto d'Italia
+  text: Possiamo incontrare aziende e professionisti di Padova e provincia quando è utile conoscere direttamente processi, persone, reti o dispositivi. Per le altre località lavoriamo online.
 ---
-
-# Contattaci
-
-Se vuoi avere più informazioni, mandaci un'email all'indirizzo [info@manalisk.it](mailto:info@manalisk.it).
-
-Possiamo fissare una [chiamata o incontro gratuito](/prenota-una-chiamata-consulenza-gratuita/) e discutere su come portare l'AI nella tua azienda!
-
-Abbiamo sede a Padova, ma lavoriamo spesso in remoto!
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44818.20807797197!2d11.850046217811284!3d45.406556604564386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda5841ab30cf%3A0xc18236edaa1a2e2c!2sPadova%20PD!5e0!3m2!1sit!2sit!4v1743072121243!5m2!1sit!2sit" height="450" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

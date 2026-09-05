@@ -1,0 +1,261 @@
+{{ define "main" }}
+{{ $isLinear := eq .Params.layout_variant "linear" }}
+{{ $isClassic := eq .Params.layout_variant "classic" }}
+<main class="local-landing local-landing--{{ .Params.theme }}{{ if $isLinear }} local-landing--linear{{ end }}{{ if $isClassic }} local-landing--classic{{ end }}{{ with .Params.visual_variant }} local-landing--{{ . }}{{ end }}">
+  {{ if $isClassic }}
+  <section class="local-landing__classic">
+    <div class="container">
+      <article class="local-landing__classic-content">
+        {{ .Content }}
+      </article>
+    </div>
+  </section>
+  {{ with .Params.faq }}{{ partial "local-service-landing/faq.html" . }}{{ end }}
+  {{ else }}
+  {{ with .Params.hero }}
+  <section class="local-landing__hero">
+    <div class="container">
+      <div class="local-landing__hero-grid">
+        <div>
+          <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+          <h1>{{ .title }}</h1>
+          <p class="local-landing__lead">{{ .text }}</p>
+          <div class="local-landing__actions">
+            <a class="cta-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+            <a class="modern-text-link" href="{{ .secondary.url }}">{{ .secondary.label }} <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <aside class="local-landing__local-card" aria-label="{{ .local_card.aria_label }}">
+          <p class="local-landing__card-label">{{ .local_card.label }}</p>
+          <h2>{{ .local_card.title }}</h2>
+          <p>{{ .local_card.text }}</p>
+          <ul>
+            {{ range .local_card.items }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.context }}
+  <section class="local-landing__section local-landing__context">
+    <div class="container{{ if not $isLinear }} local-landing__narrow{{ end }}">
+      <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      {{ with .link }}<a class="modern-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.services }}
+  <section class="local-landing__section local-landing__section--soft" id="ambiti">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__cards">
+        {{ range .items }}
+        <article class="local-landing__card">
+          <p class="local-landing__card-label">{{ .label }}</p>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          {{ with .examples }}<ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if not $isLinear }}{{ with .Params.examples }}
+  <section class="local-landing__section">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__examples">
+        {{ range .items }}
+        <article>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          {{ with .result }}<p class="local-landing__result"><strong>Output:</strong> {{ . }}</p>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}{{ end }}
+
+  {{ with .Params.method }}
+  <section class="local-landing__section local-landing__method">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <ol>
+        {{ range $index, $step := .steps }}
+        <li><span>{{ printf "%02d" (add $index 1) }}</span><div><h3>{{ $step.title }}</h3><p>{{ $step.text }}</p></div></li>
+        {{ end }}
+      </ol>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $isLinear }}{{ with .Params.examples }}
+  <section class="local-landing__section">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__examples">
+        {{ range .items }}
+        <article>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          {{ with .result }}<p class="local-landing__result"><strong>Output:</strong> {{ . }}</p>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}{{ end }}
+
+  {{ with .Params.authority }}
+  <section class="local-landing__section">
+    <div class="container local-landing__split">
+      <div>
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+      </div>
+      <div class="local-landing__authority-copy">
+        <p>{{ .text }}</p>
+        <ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        <a class="modern-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $isLinear }}{{ with .Params.related }}
+  <section class="local-landing__section local-landing__section--soft">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__links">
+        {{ range .items }}
+        <article><h3>{{ .title }}</h3><p>{{ .text }}</p><a class="modern-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a></article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}{{ end }}
+
+  {{ if $isLinear }}
+    {{ with .Params.faq }}{{ partial "local-service-landing/faq.html" . }}{{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ with .Params.mid_cta }}
+  <section class="local-landing__mid-cta">
+    <div class="container">
+      <div>
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__actions local-landing__actions--center">
+        <a class="cta-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+        <a class="local-landing__mid-link" href="{{ .secondary.url }}">{{ .secondary.label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.deep_dive }}
+  <section class="local-landing__deep-dive" id="approfondimenti">
+    <div class="container local-landing__article">
+      <header class="local-landing__article-header">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </header>
+      <nav class="local-landing__article-index" aria-label="Indice degli approfondimenti">
+        <p>{{ .index_label | default "In questa guida" }}</p>
+        <ol>
+          {{ range .sections }}<li><a href="#{{ .id }}">{{ .index_title | default .title }}</a></li>{{ end }}
+        </ol>
+      </nav>
+      <div class="local-landing__article-body">
+        {{ range .sections }}
+        <section id="{{ .id }}">
+          <h2>{{ .title }}</h2>
+          {{ with .lead }}<p class="local-landing__article-lead">{{ . | markdownify }}</p>{{ end }}
+          {{ range .paragraphs }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .items }}
+          <div class="local-landing__article-items">
+            {{ range . }}
+            <article>
+              <h3>{{ .title }}</h3>
+              <p>{{ .text | markdownify }}</p>
+            </article>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ with .bullets }}<ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>{{ end }}
+          {{ with .note }}<aside class="local-landing__article-note">{{ . | markdownify }}</aside>{{ end }}
+        </section>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if and (not $isLinear) (not $isClassic) }}{{ with .Params.related }}
+  <section class="local-landing__section local-landing__section--soft">
+    <div class="container">
+      <div class="local-landing__heading">
+        <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+      </div>
+      <div class="local-landing__links">
+        {{ range .items }}
+        <article><h3>{{ .title }}</h3><p>{{ .text }}</p><a class="modern-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a></article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}{{ end }}
+
+  {{ if and (not $isLinear) (not $isClassic) }}
+    {{ with .Params.faq }}{{ partial "local-service-landing/faq.html" . }}{{ end }}
+  {{ end }}
+
+  {{ with .Params.final_cta }}
+  <section class="local-landing__final">
+    <div class="container">
+      <p class="local-landing__eyebrow">{{ .eyebrow }}</p>
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      <div class="local-landing__actions local-landing__actions--center">
+        <a class="cta-button" href="{{ .primary.url }}">{{ .primary.label }}</a>
+        <a class="modern-text-link" href="{{ .secondary.url }}">{{ .secondary.label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

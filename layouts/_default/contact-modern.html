@@ -1,0 +1,57 @@
+{{ define "main" }}
+<main class="contact-modern">
+  <section class="contact-modern__routes" aria-labelledby="contact-routes-title">
+    <div class="container">
+      <div class="contact-modern__reader">
+        <header class="contact-modern__heading">
+          {{ with .Params.routes_intro.eyebrow }}<p class="contact-modern__eyebrow">{{ . }}</p>{{ end }}
+          <h1 id="contact-routes-title">{{ .Params.routes_intro.title }}</h1>
+          {{ .Params.routes_intro.text | markdownify }}
+        </header>
+        <div class="contact-modern__route-list">
+          {{ range $route := .Params.routes }}
+            <article class="contact-modern__route contact-modern__route--{{ $route.theme }}">
+              <p class="contact-modern__route-label">{{ $route.label }}</p>
+              <h2>{{ $route.title }}</h2>
+              <p>{{ $route.text }}</p>
+              <a class="modern-text-link" href="{{ $route.url }}">{{ $route.link_label }} <span aria-hidden="true">→</span></a>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-modern__details" aria-label="Altri modi per contattare Manalisk">
+    <div class="container">
+      <div class="contact-modern__reader">
+        <div class="contact-modern__details-grid">
+          <article>
+            <p class="contact-modern__eyebrow">{{ .Params.direct.eyebrow }}</p>
+            <h2>{{ .Params.direct.title }}</h2>
+            <p>{{ .Params.direct.text }}</p>
+            <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.direct.email_subject | urlquery }}">{{ .Params.direct.email_label }} <span aria-hidden="true">→</span></a>
+          </article>
+          <article>
+            <p class="contact-modern__eyebrow">{{ .Params.location.eyebrow }}</p>
+            <h2>{{ .Params.location.title }}</h2>
+            <p>{{ .Params.location.text }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $schema := dict
+  "@context" "https://schema.org"
+  "@type" "ContactPage"
+  "name" .Title
+  "description" .Description
+  "url" .Permalink
+  "mainEntity" (dict "@type" "Organization" "name" "Manalisk" "url" "https://manalisk.it/" "email" "info@manalisk.it")
+}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{ end }}

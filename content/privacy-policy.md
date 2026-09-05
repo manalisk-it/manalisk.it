@@ -2,13 +2,14 @@
 title: "Privacy Policy"
 description: "Privacy Policy per il sito manalisk.it"
 draft: false
+page_class: modern-catalogue-page legacy-page
 menu:
   footer:
     weight: 90
 ---
 # Informativa sulla Privacy
 
-**Ultimo aggiornamento:** 18 Aprile 2025
+**Ultimo aggiornamento:** 5 Settembre 2026
 
 La presente informativa sulla privacy descrive come le informazioni vengono gestite in relazione al sito web "Manalisk" (il "Sito").
 
@@ -23,7 +24,11 @@ Le uniche informazioni che potremmo raccogliere sono quelle che tu scegli di for
 
 ## Hosting
 
-Questo Sito è ospitato su Netlify. Netlify potrebbe raccogliere dati relativi all'accesso al Sito per garantire la sicurezza e la funzionalità della piattaforma (ad esempio, indirizzi IP, tipo di browser, sistema operativo). Questi dati sono solitamente anonimi e aggregati. Per informazioni specifiche sulle pratiche di privacy di Netlify, ti invitiamo a consultare la loro informativa sulla privacy: [Informativa sulla privacy di Netlify](https://www.netlify.com/privacy/).
+Questo Sito è ospitato su Cloudflare Pages. Cloudflare potrebbe raccogliere dati relativi all'accesso al Sito per garantire la sicurezza e la funzionalità della piattaforma (ad esempio, indirizzi IP, tipo di browser, sistema operativo). Questi dati sono solitamente anonimi e aggregati. Per informazioni specifiche sulle pratiche di privacy di Cloudflare, ti invitiamo a consultare la loro informativa sulla privacy: [Informativa sulla privacy di Cloudflare](https://www.cloudflare.com/privacypolicy/).
+
+## Prenotazione delle call
+
+I pulsanti di prenotazione presenti sul Sito portano a una pagina di Google Calendar, gestita da Google. I dati che inserisci in quel modulo (ad esempio nome, indirizzo email e le informazioni che decidi di aggiungere) vengono trattati da Google secondo la sua informativa e ci vengono trasmessi per organizzare l'incontro richiesto. Fino a quando resti sul nostro Sito non viene inviato a Google alcun dato.
 
 
 ## Condivisione dei Dati

@@ -1,0 +1,43 @@
+header:
+  brand_label: Manalisk
+  brand_url: /
+  logo: images/manalisk.png
+  logo_alt: Drago, simbolo di Manalisk
+  navigation:
+    - label: AI e automazione
+      url: /services/servizi-intelligenza-artificiale/
+    - label: Formazione
+      url: /formazione-intelligenza-artificiale-e-cybersecurity/
+    - label: Cybersecurity
+      url: /services/servizi-cybersecurity/
+    - label: Chi siamo
+      url: /about/
+  cta:
+    label: Prenota una call gratuita
+    url: /prenota-una-chiamata-consulenza-gratuita/
+
+footer:
+  tagline: AI e automazione applicate ai processi aziendali, con formazione e cybersecurity.
+  columns:
+    - title: Servizi
+      links:
+        - label: AI e automazione
+          url: /services/servizi-intelligenza-artificiale/
+        - label: Formazione
+          url: /formazione-intelligenza-artificiale-e-cybersecurity/
+        - label: Cybersecurity
+          url: /services/servizi-cybersecurity/
+    - title: Manalisk
+      links:
+        - label: Chi siamo
+          url: /about/
+        - label: Approfondimenti
+          url: /post/
+        - label: Contatti e prenotazioni
+          url: /contact/
+    - title: Contatti
+      links:
+        - label: info@manalisk.it
+          url: mailto:info@manalisk.it
+        - label: Privacy policy
+          url: /privacy-policy/

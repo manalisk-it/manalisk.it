@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
 {{ $variant := .Params.variant | default "" }}
+{{ $serviceContactLabel := .Params.service_contact_label | default "Parliamo di questo servizio" }}
+{{ $primaryButtonClass := .Params.primary_button_class | default "" }}
 
 <main class="ai-services-modern{{ with $variant }} ai-services-modern--{{ . }}{{ end }}">
   <section class="aim-hero">
@@ -10,8 +12,8 @@
       <h1>{{ .Params.hero.title }}</h1>
       <p class="aim-lead">{{ .Params.hero.text }}</p>
       <div class="aim-actions">
-        <a class="aim-button aim-button--primary" href="#servizi">{{ .Params.hero.primary_cta }}</a>
-        <a class="aim-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
+        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="{{ $bookingURL }}">{{ .Params.hero.primary_cta }}</a>
+        <a class="modern-text-link" href="#servizi">{{ .Params.hero.secondary_cta }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -19,11 +21,17 @@
   {{ with .Params.stats }}
   <section class="aim-authority" aria-label="Esperienza formativa Manalisk">
     <div class="container">
+      {{ with .introduction }}
+      <div class="aim-stats-intro">{{ .text | markdownify }}</div>
+      {{ end }}
       <div class="aim-stats">
-        {{ range . }}
+        {{ range .items }}
         <div>
           <strong>{{ .value }}</strong>
-          <span>{{ .label }}</span>
+          <div>
+            <p class="aim-stat-label">{{ .label }}</p>
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
         </div>
         {{ end }}
       </div>
@@ -95,9 +103,9 @@
               {{ end }}
             </ul>
             {{ if .link }}
-            <a href="{{ .link }}">{{ .link_text }}</a>
+            <a class="modern-text-link aim-service-link" href="{{ .link }}">{{ .link_text }}</a>
             {{ else }}
-            <a href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">{{ .contact_label | default "Parliamo di questo servizio" }}</a>
+            <a class="modern-text-link aim-service-link" href="mailto:info@manalisk.it?subject={{ .contact_subject | urlquery }}">{{ .contact_label | default $serviceContactLabel }}</a>
             {{ end }}
           </div>
         </article>
@@ -105,6 +113,19 @@
       </div>
     </div>
   </section>
+
+  {{ with .Params.local_callout }}
+  <aside class="aim-local-callout">
+    <div class="container aim-container">
+      <p class="aim-eyebrow">{{ .eyebrow }}</p>
+      <div>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+        <a class="modern-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </aside>
+  {{ end }}
 
   <section class="aim-method" id="metodo">
     <div class="container aim-container">
@@ -135,7 +156,7 @@
       <h2>{{ .Params.final_cta.title }}</h2>
       <p>{{ .Params.final_cta.text }}</p>
       <div class="aim-actions aim-actions--center">
-        <a class="aim-button aim-button--primary" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
+        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="{{ $bookingURL }}">{{ .Params.final_cta.primary }}</a>
         <a class="aim-email" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.final_cta.email }}</a>
       </div>
     </div>

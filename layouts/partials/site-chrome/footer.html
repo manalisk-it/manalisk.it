@@ -1,0 +1,26 @@
+{{ with site.Data.site_chrome.footer }}
+<footer class="homepage-footer">
+  <div class="container">
+    <div class="homepage-footer__grid">
+      <div class="homepage-footer__brand">
+        <a href="{{ site.Data.site_chrome.header.brand_url }}">{{ site.Data.site_chrome.header.brand_label }}</a>
+        <p>{{ .tagline }}</p>
+      </div>
+      {{ range .columns }}
+      <div class="homepage-footer__column">
+        <h2>{{ .title }}</h2>
+        <ul>
+          {{ range .links }}
+          <li><a href="{{ .url }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+    <div class="homepage-footer__bottom">
+      <p>{{ $.Site.Copyright | safeHTML }}</p>
+      <p>AI · automazione · formazione · cybersecurity</p>
+    </div>
+  </div>
+</footer>
+{{ end }}

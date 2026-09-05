@@ -1,379 +1,243 @@
 {{ define "main" }}
 {{ $bookingURL := .Params.calendar_url | default "/prenota-una-chiamata-consulenza-gratuita/" }}
+{{ $contactEmail := .Params.contact_email }}
 
 <main class="ai-act-landing">
+  {{ with .Params.hero }}
   <section class="ai-act-hero">
     <div class="container ai-act-container">
-      <p class="ai-act-eyebrow">Articolo 4 AI Act · Regolamento aggiornato</p>
-      <h1>Formazione AI Act per dipendenti e dirigenti</h1>
-      <p class="ai-act-lead">
-        Due percorsi distinti per usare e governare l'intelligenza artificiale in modo
-        responsabile, proporzionato al ruolo e documentabile.
-      </p>
+      <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+      <h1>{{ .title }}</h1>
+      <p class="ai-act-lead">{{ .text }}</p>
       <div class="ai-act-actions">
-        <a class="ai-act-button ai-act-button--primary" href="#percorsi">Confronta i percorsi</a>
-        <a class="ai-act-button ai-act-button--secondary" href="{{ $bookingURL }}">Parliamo della tua azienda</a>
+        <a class="ai-act-button cta-button" href="{{ $bookingURL }}">{{ .primary_label }}</a>
+        <a class="modern-text-link" href="{{ .secondary_url }}">{{ .secondary_label }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
+  {{ end }}
 
+  {{ with .Params.requirement }}
   <section class="ai-act-requirement">
     <div class="container ai-act-container">
       <div class="ai-act-requirement-grid">
         <div>
-          <p class="ai-act-eyebrow">Cosa richiede l'AI Act</p>
-          <h2>Non esiste un corso standard.<br>Esiste la responsabilità di agire.</h2>
+          <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+          <h2>{{ .title }}</h2>
         </div>
         <div class="ai-act-requirement-copy">
-          <p>
-            L'articolo 4, aggiornato dal Regolamento (UE) 2026/1744, richiede a provider
-            e deployer di adottare misure per sostenere lo sviluppo dell'alfabetizzazione
-            AI delle persone che operano con sistemi di intelligenza artificiale per loro conto.
-          </p>
+          <p>{{ .text }}</p>
           <ul>
-            <li><strong>Non impone</strong> un corso, una durata o un certificato universale.</li>
-            <li><strong>Richiede</strong> misure adeguate a competenze, esperienza, ruolo e contesto d'uso.</li>
-            <li><strong>Rende utile</strong> distinguere chi utilizza l'AI da chi decide come governarla.</li>
+            {{ range .points }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
           </ul>
-          <a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/ita" target="_blank" rel="noopener">
-            Consulta il testo su EUR-Lex <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          <a href="{{ .source_url }}" target="_blank" rel="noopener">
+            {{ .source_label }} <svg class="ai-act-icon ai-act-icon--external" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true" focusable="false"><path d="M6.5 3.5h-3v9h9v-3M9.75 2.5h3.75v3.75M13.5 2.5 8 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <p class="ai-act-note">
-            La formazione supporta il percorso organizzativo dell'azienda e non sostituisce
-            una valutazione legale nei casi complessi o ad alto rischio.
-          </p>
+          <p class="ai-act-note">{{ .note }}</p>
         </div>
       </div>
     </div>
   </section>
+  {{ end }}
 
-  <section class="ai-act-authority" aria-label="Esperienza formativa Manalisk">
+  {{ with .Params.stats }}
+  <section class="homepage-stats" aria-label="{{ $.Params.stats_aria_label }}">
     <div class="container">
-      <div class="ai-act-stats">
-        <div><strong>1.000+</strong><span>ore di formazione erogate</span></div>
-        <div><strong>15+</strong><span>aziende già formate</span></div>
-        <div><strong>10+</strong><span>settori coinvolti</span></div>
-        <div><strong>Aziende, università e ITS</strong><span>esperienza con pubblici e ruoli differenti</span></div>
+      <div class="homepage-stats__grid">
+        {{ range . }}
+        <div class="homepage-stat">
+          <strong>{{ .value }}</strong>
+          <div><p class="homepage-stat__label">{{ .label }}</p>{{ with .text }}<p>{{ . }}</p>{{ end }}</div>
+        </div>
+        {{ end }}
       </div>
     </div>
   </section>
+  {{ end }}
 
   <section class="ai-act-section" id="percorsi">
     <div class="container">
+      {{ with .Params.programs_intro }}
       <div class="ai-act-heading">
-        <p class="ai-act-eyebrow">Due responsabilità, due percorsi</p>
-        <h2>La stessa lezione non serve a tutti</h2>
-        <p>
-          Chi usa ChatGPT per lavorare deve riconoscere rischi e comportamenti corretti.
-          Chi dirige deve prendere decisioni su strumenti, regole e responsabilità.
-        </p>
+        <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
       </div>
+      {{ end }}
 
       <div class="ai-act-packages">
-        <article class="ai-act-package">
+        {{ range .Params.programs }}
+        <article class="ai-act-package{{ if .management }} ai-act-package--management{{ end }}">
           <div class="ai-act-package-top">
-            <p class="ai-act-package-label">Per chi utilizza l'AI</p>
-            <h3>AI Act Essentials</h3>
-            <p class="ai-act-package-subtitle">Uso responsabile dell'AI per dipendenti</p>
+            <p class="ai-act-package-label">{{ .label }}</p>
+            <h3>{{ .title }}</h3>
+            <p class="ai-act-package-subtitle">{{ .subtitle }}</p>
           </div>
           <dl class="ai-act-meta">
-            <div><dt>Durata</dt><dd>4 ore</dd></div>
-            <div><dt>Partecipanti</dt><dd>fino a 20</dd></div>
-            <div><dt>Modalità</dt><dd>in presenza o online</dd></div>
+            {{ range .metadata }}
+            <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+            {{ end }}
           </dl>
-          <h4>Cosa imparano i partecipanti</h4>
+          <h4>{{ .details_label }}</h4>
           <ul class="ai-act-checklist">
-            <li>Dati personali, aziendali e riservati</li>
-            <li>Allucinazioni e verifica degli output</li>
-            <li>Strumenti autorizzati e shadow AI</li>
-            <li>Copyright e responsabilità sui contenuti</li>
-            <li>Prompt injection, phishing e rischi essenziali</li>
-            <li>Regole e policy interne dell'azienda</li>
+            {{ range .topics }}
+            <li>{{ . }}</li>
+            {{ end }}
           </ul>
           <div class="ai-act-price">
-            <span>Per edizione</span>
-            <strong>750 €</strong>
+            <span>{{ .price_label }}</span>
+            <strong>{{ .price }}</strong>
           </div>
-          <a class="ai-act-button ai-act-button--primary" href="mailto:info@manalisk.it?subject=AI%20Act%20Essentials%20per%20dipendenti">Richiedi questo percorso</a>
+          <a class="ai-act-button cta-button" href="mailto:{{ $contactEmail }}?subject={{ .contact_subject | urlquery }}">{{ .contact_label }}</a>
         </article>
-
-        <article class="ai-act-package ai-act-package--management">
-          <div class="ai-act-package-top">
-            <p class="ai-act-package-label">Per chi governa l'AI</p>
-            <h3>AI Act for Management</h3>
-            <p class="ai-act-package-subtitle">Decisioni e governance per dirigenti</p>
-          </div>
-          <dl class="ai-act-meta">
-            <div><dt>Durata</dt><dd>3 ore</dd></div>
-            <div><dt>Partecipanti</dt><dd>fino a 10</dd></div>
-            <div><dt>Modalità</dt><dd>in presenza o online</dd></div>
-          </dl>
-          <h4>Cosa affrontiamo insieme</h4>
-          <ul class="ai-act-checklist">
-            <li>Ruolo e responsabilità dell'organizzazione</li>
-            <li>Mappatura di strumenti e casi d'uso</li>
-            <li>Utilizzi ordinari, sensibili e ad alto rischio</li>
-            <li>Supervisione umana e criteri di procurement</li>
-            <li>Policy interna e strumenti autorizzati</li>
-            <li>Priorità e piano d'azione aziendale</li>
-          </ul>
-          <div class="ai-act-price">
-            <span>Per edizione</span>
-            <strong>1.200 €</strong>
-          </div>
-          <a class="ai-act-button ai-act-button--dark" href="mailto:info@manalisk.it?subject=AI%20Act%20for%20Management">Richiedi questo percorso</a>
-        </article>
+        {{ end }}
       </div>
 
+      {{ with .Params.bundle }}
       <div class="ai-act-bundle">
         <div>
-          <p class="ai-act-package-label">Percorso completo · Risparmi 150 €</p>
-          <h3>Dipendenti + dirigenti</h3>
-          <p>
-            Le due sessioni vengono coordinate sugli stessi strumenti, casi d'uso e regole
-            aziendali, mantenendo contenuti e linguaggio adatti ai rispettivi ruoli.
-          </p>
+          <p class="ai-act-package-label">{{ .label }}</p>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
         </div>
         <div class="ai-act-bundle-offer">
-          <span>Due edizioni</span>
-          <strong>1.800 €</strong>
-          <a class="ai-act-button ai-act-button--dark" href="mailto:info@manalisk.it?subject=Percorso%20AI%20Act%20completo">Richiedi il percorso completo</a>
+          <span>{{ .price_label }}</span>
+          <strong>{{ .price }}</strong>
+          <a class="ai-act-button cta-button" href="mailto:{{ $contactEmail }}?subject={{ .contact_subject | urlquery }}">{{ .contact_label }}</a>
         </div>
       </div>
+      {{ end }}
 
-      <p class="ai-act-price-note">
-        Importi finali: IVA non applicata in regime forfettario. I prezzi includono la
-        personalizzazione essenziale sui casi d'uso dell'azienda. Eventuali trasferte e
-        sessioni aggiuntive vengono concordate nel preventivo.
-      </p>
+      {{ with .Params.price_note }}
+      <p class="ai-act-price-note">{{ . }}</p>
+      {{ end }}
     </div>
   </section>
 
+  {{ with .Params.deliverables }}
   <section class="ai-act-section ai-act-section--soft">
     <div class="container ai-act-container">
       <div class="ai-act-deliverables">
         <div>
-          <p class="ai-act-eyebrow">Un'attività documentabile</p>
-          <h2>Cosa resta all'azienda</h2>
+          <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+          <h2>{{ .title }}</h2>
         </div>
         <ul>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Breve raccolta preliminare di strumenti, ruoli e casi d'uso, per adattare esempi e contenuti alla realtà aziendale</span></li>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Materiali didattici e riferimenti utilizzati durante il corso</span></li>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Riepilogo dell'attività svolta e attestati di partecipazione, se richiesti</span></li>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Checklist operativa coerente con il percorso scelto</span></li>
+          {{ range .items }}
+          <li><svg class="ai-act-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M2.5 8.5 6 12 13.5 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ . }}</span></li>
+          {{ end }}
         </ul>
       </div>
     </div>
   </section>
+  {{ end }}
 
+  {{ with .Params.custom_program }}
   <section class="ai-act-section">
     <div class="container ai-act-container">
       <div class="ai-act-custom">
         <div>
-          <p class="ai-act-eyebrow">Esigenze più articolate?</p>
-          <h2>Corso su misura</h2>
-          <p>
-            Progettiamo percorsi dedicati per più sedi, gruppi numerosi, funzioni sensibili,
-            team tecnici o organizzazioni che utilizzano sistemi AI in contesti specifici.
-            Possiamo combinare i due moduli e approfondire i casi d'uso della tua realtà.
-          </p>
+          <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+          <h2>{{ .title }}</h2>
+          <p>{{ .text }}</p>
         </div>
-        <a class="ai-act-button ai-act-button--primary" href="{{ $bookingURL }}">Raccontaci il tuo contesto</a>
+        <a class="ai-act-button cta-button" href="{{ $bookingURL }}">{{ .cta_label }}</a>
       </div>
     </div>
   </section>
+  {{ end }}
 
+  {{ with .Params.faqs }}
   <section class="ai-act-section ai-act-faq">
     <div class="container ai-act-container">
+      {{ with $.Params.faq_intro }}
       <div class="ai-act-heading">
-        <p class="ai-act-eyebrow">Domande frequenti</p>
-        <h2>Le risposte essenziali</h2>
+        <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
       </div>
-      <div class="accordion accordion-flush" id="aiActFaq">
-        <div class="accordion-item">
-          <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">La formazione AI Act è obbligatoria?</button></h3>
-          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#aiActFaq"><div class="accordion-body">L'articolo 4 richiede a provider e deployer di adottare misure per sostenere l'alfabetizzazione AI delle persone interessate. Non prescrive però uno specifico corso, una durata minima o un certificato universale: le misure vanno proporzionate al ruolo e al contesto.</div></div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Chi usa ChatGPT solo per rivedere una mail deve partecipare?</button></h3>
-          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#aiActFaq"><div class="accordion-body">È opportuno che conosca almeno le regole sui dati, la verifica degli output e gli strumenti autorizzati. Il percorso per dipendenti è progettato proprio per gli utilizzi quotidiani e non richiede competenze tecniche.</div></div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Rilasciate una certificazione AI Act?</button></h3>
-          <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#aiActFaq"><div class="accordion-body">Non esiste una certificazione AI Act universale prevista dall'articolo 4 e non è necessario un attestato specifico. L'azienda può conservare un registro interno delle iniziative adottate. Su richiesta rilasciamo un semplice attestato di partecipazione, insieme al programma e al riepilogo dell'attività svolta.</div></div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Possiamo svolgere entrambi i percorsi?</button></h3>
-          <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#aiActFaq"><div class="accordion-body">Sì. Possiamo coordinare la sessione per dipendenti con quella per dirigenti e adattare entrambe alle stesse regole, agli strumenti e ai casi d'uso aziendali.</div></div>
-        </div>
-      </div>
+      {{ end }}
+      {{ partial "components/faq-accordion.html" (dict "items" . "id" "aiActFaq" "prefix" "ai-act-faq" "open_first" true) }}
     </div>
   </section>
+  {{ end }}
 
+  {{ with .Params.final_cta }}
   <section class="ai-act-final">
     <div class="container ai-act-container">
-      <p class="ai-act-eyebrow">Prima call gratuita</p>
-      <h2>Partiamo da come state già usando l'AI</h2>
-      <p>Valutiamo insieme persone, strumenti e priorità per scegliere il percorso più adatto.</p>
+      <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
       <div class="ai-act-actions ai-act-actions--center">
-        <a class="ai-act-button ai-act-button--light" href="{{ $bookingURL }}">Prenota una call</a>
-        <a class="ai-act-final-email" href="mailto:info@manalisk.it?subject=Formazione%20AI%20Act">Scrivi a info@manalisk.it</a>
+        <a class="ai-act-button cta-button" href="{{ $bookingURL }}">{{ .primary_label }}</a>
+        <a class="modern-text-link" href="mailto:{{ $contactEmail }}?subject={{ .email_subject | urlquery }}">{{ .email_label }}</a>
       </div>
     </div>
   </section>
+  {{ end }}
 
+  {{ with .Params.seo }}
   <section class="ai-act-seo">
     <div class="container ai-act-seo-container">
       <header class="ai-act-seo-header">
-        <p class="ai-act-eyebrow">Approfondimento</p>
-        <h2>Formazione AI Act in azienda: scadenze, obblighi e sistemi ad alto rischio</h2>
-        <p>
-          Una guida operativa per orientarsi tra articolo 4, AI literacy, Digital Omnibus,
-          uso di ChatGPT sul lavoro e obblighi applicabili ai sistemi di intelligenza
-          artificiale ad alto rischio.
-        </p>
+        <p class="ai-act-eyebrow">{{ .eyebrow }}</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
       </header>
 
-      <nav class="ai-act-seo-index" aria-label="Indice dell'approfondimento AI Act">
-        <a href="#scadenze-ai-act">Scadenze AI Act</a>
-        <a href="#digital-omnibus">Digital Omnibus</a>
-        <a href="#chi-deve-formarsi">Chi deve formarsi</a>
-        <a href="#ai-alto-rischio">AI ad alto rischio</a>
-        <a href="#documentare-formazione">Come documentare</a>
+      <nav class="ai-act-seo-index" aria-label="{{ .index_aria_label }}">
+        {{ range .index }}
+        <a href="#{{ .target }}">{{ .label }}</a>
+        {{ end }}
       </nav>
 
       <article class="ai-act-seo-content">
-        <h2 id="scadenze-ai-act">Le principali scadenze dell'AI Act</h2>
-        <p>
-          Il Regolamento europeo sull'intelligenza artificiale, Regolamento (UE)
-          2024/1689, è entrato in vigore il 1° agosto 2024. Le prime disposizioni,
-          comprese quelle sull'alfabetizzazione in materia di AI e sulle pratiche
-          vietate, si applicano dal 2 febbraio 2025.
-        </p>
-        <p>
-          Il 27 luglio 2026 è entrato in vigore il Regolamento (UE) 2026/1744,
-          conosciuto come Digital Omnibus sull'AI, che ha aggiornato il testo
-          dell'AI Act. Molte altre disposizioni generali si applicano dal 2 agosto
-          2026. Per i sistemi classificati ad alto rischio in base all'allegato III,
-          le sezioni principali del capo III si applicheranno dal 2 dicembre 2027;
-          per i sistemi ad alto rischio collegati alla normativa di prodotto
-          dell'allegato I, dal 2 agosto 2028.
-        </p>
+        {{ range .sections }}
+        <h2{{ with .id }} id="{{ . }}"{{ end }}>{{ .title }}</h2>
+        {{ range .paragraphs }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .items }}
+        <ul>
+          {{ range . }}
+          <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .closing }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .callout }}
         <div class="ai-act-seo-callout">
-          <strong>L'articolo 4 è già applicabile.</strong>
-          <span>Non occorre attendere le scadenze previste per i sistemi ad alto rischio per iniziare a sviluppare competenze e regole interne.</span>
+          <strong>{{ .title }}</strong>
+          <span>{{ .text }}</span>
         </div>
+        {{ end }}
+        {{ end }}
 
-        <h2 id="digital-omnibus">Cosa cambia con il Digital Omnibus per la formazione AI</h2>
-        <p>
-          Il nuovo articolo 4 richiede a provider e deployer di sistemi AI di adottare
-          misure per sostenere lo sviluppo dell'alfabetizzazione AI del personale e
-          delle altre persone che utilizzano o gestiscono questi sistemi per loro conto.
-          Le misure devono considerare conoscenze tecniche, esperienza, istruzione,
-          formazione, contesto d'uso e persone sulle quali il sistema viene utilizzato.
-        </p>
-        <p>
-          La modifica chiarisce inoltre che l'organizzazione non deve garantire uno
-          specifico livello individuale di alfabetizzazione AI. Non nasce quindi un
-          “patentino AI”, non viene stabilito un numero minimo di ore e non esiste un
-          programma identico per tutte le aziende. Rimane però necessario poter
-          dimostrare di avere affrontato il tema con misure proporzionate.
-        </p>
-
-        <h2 id="chi-deve-formarsi">Chi deve ricevere formazione sull'AI Act?</h2>
-        <p>
-          La platea dipende da come l'intelligenza artificiale viene realmente
-          utilizzata. Anche chi usa strumenti generativi come ChatGPT, Microsoft
-          Copilot o assistenti analoghi per scrivere, riassumere, tradurre o analizzare
-          documenti dovrebbe conoscere almeno i limiti dello strumento, le regole sui
-          dati e la necessità di verificare gli output.
-        </p>
-        <p>
-          Dirigenti, imprenditori e responsabili di funzione hanno invece bisogno di
-          competenze differenti: devono decidere quali strumenti autorizzare, quali
-          utilizzi vietare o sottoporre a controllo, come organizzare la supervisione
-          umana e quando richiedere una valutazione specialistica.
-        </p>
-        <ul>
-          <li><strong>Personale operativo:</strong> dati, allucinazioni, copyright, sicurezza e verifica.</li>
-          <li><strong>Management:</strong> governance, responsabilità, procurement, policy e priorità.</li>
-          <li><strong>Funzioni sensibili:</strong> approfondimenti per HR, legale, compliance, istruzione, credito e servizi essenziali.</li>
-          <li><strong>Team tecnici:</strong> rischi del sistema, documentazione, monitoraggio e supervisione umana.</li>
-        </ul>
-
-        <h2 id="ai-alto-rischio">Quando un sistema AI è considerato ad alto rischio?</h2>
-        <p>
-          L'AI Act adotta un approccio basato sul rischio. Un sistema non diventa ad
-          alto rischio solo perché utilizza un modello potente o perché contiene la
-          parola “AI”: contano finalità, contesto e impatto sulle persone. La
-          classificazione deriva principalmente dall'articolo 6 e dagli allegati I e III.
-        </p>
-        <p>Tra gli ambiti che possono comprendere sistemi AI ad alto rischio rientrano:</p>
-        <ul>
-          <li>selezione del personale, valutazione dei candidati, promozioni, cessazioni e monitoraggio delle prestazioni;</li>
-          <li>accesso all'istruzione, valutazione degli studenti e orientamento dei percorsi formativi;</li>
-          <li>accesso a servizi essenziali, credito, assicurazioni e prestazioni pubbliche;</li>
-          <li>componenti di sicurezza nelle infrastrutture critiche;</li>
-          <li>alcuni impieghi biometrici, di polizia, migrazione, controllo delle frontiere e amministrazione della giustizia.</li>
-        </ul>
-        <p>
-          Non tutti i sistemi utilizzati in questi settori sono automaticamente ad alto
-          rischio. La classificazione richiede di verificare lo scopo concreto del
-          sistema, le eccezioni previste e il ruolo dell'organizzazione nella catena del
-          valore.
-        </p>
-
-        <h2>AI literacy e corso generico sull'intelligenza artificiale non sono la stessa cosa</h2>
-        <p>
-          Un corso introduttivo può spiegare come funziona l'AI generativa o come
-          scrivere un prompt efficace. Un percorso di AI literacy orientato all'AI Act
-          deve collegare queste conoscenze al lavoro reale: opportunità e limiti,
-          possibili danni, uso dei dati, controllo umano, strumenti autorizzati e
-          responsabilità delle persone.
-        </p>
-        <p>
-          Per questo una formazione efficace parte dagli strumenti effettivamente
-          utilizzati e distingue i contenuti in base al ruolo. Lo stesso programma non
-          può essere ugualmente utile per un dipendente amministrativo, un responsabile
-          HR e un dirigente che approva l'acquisto di un sistema AI.
-        </p>
-
-        <h2 id="documentare-formazione">Come documentare la formazione AI aziendale</h2>
-        <p>
-          L'AI Act non richiede uno specifico certificato. La Commissione europea
-          indica che l'organizzazione può mantenere un registro interno delle attività
-          formative e delle altre iniziative adottate. In pratica è utile conservare:
-        </p>
-        <ul>
-          <li>data, durata e modalità della formazione;</li>
-          <li>programma e materiali utilizzati;</li>
-          <li>ruoli o persone coinvolte;</li>
-          <li>eventuali verifiche dell'apprendimento;</li>
-          <li>policy, linee guida o checklist distribuite;</li>
-          <li>aggiornamenti programmati quando cambiano strumenti o casi d'uso.</li>
-        </ul>
-        <p>
-          Un attestato di partecipazione può essere una prova aggiuntiva dell'attività
-          svolta, ma non costituisce una certificazione universale di conformità
-          all'AI Act. La qualità della misura dipende soprattutto dalla sua coerenza con
-          persone, rischi e utilizzi effettivi dell'organizzazione.
-        </p>
-
+        {{ with .closing }}
         <div class="ai-act-seo-closing">
-          <h2>Vuoi capire quale percorso è adatto alla tua azienda?</h2>
-          <p>
-            Confronta la <a href="#percorsi">formazione AI Act per dipendenti e dirigenti</a>
-            oppure contattaci per un programma costruito sui tuoi strumenti e processi.
-          </p>
+          <h2>{{ .title }}</h2>
+          <p>{{ .text | markdownify }}</p>
         </div>
+        {{ end }}
       </article>
     </div>
   </section>
+  {{ end }}
 </main>
 {{ end }}
 
 {{ define "scripts" }}
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Formazione AI Act per aziende","provider":{"@type":"Organization","name":"Manalisk","url":"https://manalisk.it/"},"areaServed":"IT","serviceType":"Formazione aziendale AI Act per dipendenti e dirigenti","url":"{{ .Permalink }}"}
-</script>
+{{ $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Service"
+  "name" (.Params.schema_name | default .Title)
+  "provider" (dict "@type" "Organization" "name" "Manalisk" "url" "https://manalisk.it/")
+  "areaServed" "IT"
+  "serviceType" (.Params.schema_service_type | default .Title)
+  "url" .Permalink
+}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 {{ end }}

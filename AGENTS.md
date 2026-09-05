@@ -3,6 +3,26 @@
 This repository contains the Manalisk website, built with Hugo and Bootstrap.
 Follow these conventions when creating, restructuring, or reviewing pages.
 
+## Approved positioning and current direction
+
+- Use the production homepage as the current visual reference for new work.
+- Present Manalisk primarily as the team that brings AI into business processes
+  through automation, integrations, and custom software.
+- Keep AI training and cybersecurity visible as important supporting services,
+  while maintaining AI and automation as the primary positioning.
+- Do not present compliance as a standalone Manalisk service and do not promote
+  or link to `servizi-compliance`.
+- Describe the team consistently: Pier Paolo Tricomi covers AI, research, and
+  training; Simeone Pizzi covers cybersecurity and software development; Nicola
+  Bellotto covers privacy, AI governance, and business processes.
+- Use the shared homepage navbar and footer as the production chrome throughout
+  the site. Keep their navigation data centralized rather than duplicating it
+  in individual pages.
+- Prefer concrete, informative language over promotional promises.
+- Local landing pages should target genuine geographic intent, remain distinct
+  from national service pages, and use contextual links from relevant pages
+  instead of adding new production-navbar entries.
+
 ## Hugo architecture
 
 - Keep content and presentation separate.
@@ -16,20 +36,51 @@ Follow these conventions when creating, restructuring, or reviewing pages.
 - Reuse an existing layout when pages share the same information architecture.
 - Put styling under `assets/sass/`; do not add page styling inline.
 - A normal content change should require editing only the relevant content file.
+- Legal explanations, course packages, prices, durations, FAQs, statistics,
+  calls to action, contact subjects, and long-form page sections must remain
+  editable from content/front matter rather than being embedded in templates.
 
 ## Visual identity
 
 - Preserve the existing Manalisk logo, colors, typography, navbar, breadcrumb,
   and footer.
 - Use a modern, restrained, informative visual style.
+- Use `"Hanken Grotesk", sans-serif` for body copy and `"Archivo", sans-serif`
+  for headings throughout the site, matching the approved homepage typography.
+- Use direct, practical headings and copy. Avoid agency language, inflated
+  claims, abstract slogans, and filler that does not help the reader understand
+  the service, process, output, or next step.
 - Internal service pages must look like pages in a service catalogue, not like
   campaign landing pages.
 - Avoid oversized hero sections, exaggerated slogans, excessive whitespace,
   and promotional bands that dominate internal pages.
 - Prefer clear vertical reading, compact introductions, informative cards, and
   discreet calls to action.
+- Prefer alternating plain white sections with the shared cool neutral surface
+  `linear-gradient(145deg, #fbfdfd, #f2f8f9)`. Keep decorative colors limited
+  and reserve the brighter cyan accent mainly for actions and interactive
+  states.
 - Dedicated landing pages may use stronger visual emphasis, but must remain
   recognizably part of the same website.
+
+## Shared catalogue design system
+
+- Reuse `modern-catalogue-page` for the shared page background, integrated
+  breadcrumb, typography variables, and neutral catalogue palette.
+- Reuse `cta-button` for primary calls to action. Primary buttons must have no
+  resting shadow; the shadow appears only on hover with a smooth transition.
+- Reuse `modern-text-link` for secondary calls to action and discreet card
+  links.
+- Keep page-specific classes limited to genuine structural differences. Put
+  shared colors, spacing, typography, breadcrumb, button, and link behavior in
+  reusable Sass classes or variables rather than copying rules into individual
+  page selectors.
+- Breadcrumbs should be integrated into the page surface, use Hanken Grotesk, follow the
+  Bootstrap container axis, and use the main ink color at rest with the cyan
+  accent reserved for hover.
+- When a new page needs the same service catalogue information architecture,
+  prefer the existing shared layout and structured front matter over a new
+  page-specific layout.
 
 ## Layout and responsive design
 
