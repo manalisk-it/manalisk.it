@@ -10,8 +10,8 @@
       <h1>{{ .title }}</h1>
       <p class="ai-act-lead">{{ .text }}</p>
       <div class="ai-act-actions">
-        <a class="ai-act-button cta-button" href="{{ .primary_url }}">{{ .primary_label }}</a>
-        <a class="modern-text-link" href="{{ $bookingURL }}">{{ .secondary_label }}</a>
+        <a class="ai-act-button cta-button" href="{{ $bookingURL }}">{{ .primary_label }}</a>
+        <a class="modern-text-link" href="{{ .secondary_url }}">{{ .secondary_label }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -43,11 +43,14 @@
   {{ end }}
 
   {{ with .Params.stats }}
-  <section class="ai-act-authority" aria-label="{{ $.Params.stats_aria_label }}">
+  <section class="homepage-stats" aria-label="{{ $.Params.stats_aria_label }}">
     <div class="container">
-      <div class="ai-act-stats">
+      <div class="homepage-stats__grid">
         {{ range . }}
-        <div><strong>{{ .value }}</strong><span>{{ .label }}</span></div>
+        <div class="homepage-stat">
+          <strong>{{ .value }}</strong>
+          <div><p class="homepage-stat__label">{{ .label }}</p>{{ with .text }}<p>{{ . }}</p>{{ end }}</div>
+        </div>
         {{ end }}
       </div>
     </div>

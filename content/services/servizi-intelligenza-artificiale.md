@@ -20,8 +20,8 @@ hero:
   title: AI applicata ai processi aziendali
   text: >-
     Partiamo da documenti, dati, attività e processi che oggi richiedono troppo tempo. Verifichiamo se l'AI può semplificarli o automatizzarli, proviamo la soluzione su un caso reale e la integriamo negli strumenti già utilizzati. Quando l'AI non è la risposta migliore lo diciamo, e realizziamo l'automazione tradizionale che risolve il problema in modo più affidabile e meno costoso.
-  primary_cta: Guarda gli ambiti di lavoro
-  secondary_cta: Raccontaci il processo
+  primary_cta: Raccontaci il processo
+  secondary_cta: Guarda gli ambiti di lavoro
 
 services_intro:
   eyebrow: Ambiti di lavoro
@@ -36,7 +36,7 @@ services:
     description: >-
       Colleghiamo gestionali, moduli, email e altri strumenti per evitare copie
       manuali, aggiornamenti ripetuti e passaggi di informazioni tra sistemi.
-    duration: 2–12 settimane
+    duration: Durata progetto 2–12 settimane
     output: Automazioni e integrazioni
     contact_subject: Automazioni e integrazioni AI
     examples:
@@ -49,7 +49,7 @@ services:
     description: >-
       Digitalizziamo, classifichiamo e rendiamo ricercabili archivi che oggi
       richiedono consultazione manuale o dipendono dalla memoria delle persone.
-    duration: 2–16 settimane
+    duration: Durata progetto 2–16 settimane
     output: Software personalizzato
     contact_subject: AI per documenti aziendali
     examples:
@@ -62,7 +62,7 @@ services:
     description: >-
       Creiamo sistemi che rispondono a domande usando procedure, contratti e
       documenti aziendali, indicando i passaggi da cui proviene ogni risposta.
-    duration: 2–12 settimane
+    duration: Durata progetto 2–12 settimane
     output: Software personalizzato
     contact_subject: Smart Search e RAG
     examples:
@@ -75,7 +75,7 @@ services:
     description: >-
       Leggiamo PDF, email, contratti, tabelle e immagini per estrarre le
       informazioni necessarie e passarle a database, fogli di lavoro o gestionali.
-    duration: 3–15 settimane
+    duration: Durata progetto 3–15 settimane
     output: Software personalizzato
     contact_subject: Estrazione di dati strutturati
     examples:
@@ -88,7 +88,7 @@ services:
     description: >-
       Riuniamo dati provenienti da Excel, database, CRM o ERP e li trasformiamo
       in analisi e visualizzazioni utilizzabili nelle decisioni quotidiane.
-    duration: 1–4 settimane
+    duration: Durata progetto 1–4 settimane
     output: Report o dashboard
     contact_subject: Analisi dei dati
     examples:
@@ -101,7 +101,7 @@ services:
     description: >-
       Verifichiamo se quantità e qualità dei dati permettono di stimare domanda,
       volumi, costi o flussi futuri con un margine d'errore utile.
-    duration: 4–16 settimane
+    duration: Durata progetto 4–16 settimane
     output: Modello personalizzato
     contact_subject: Previsioni con machine learning
     examples:
@@ -114,7 +114,7 @@ services:
     description: >-
       Analizziamo attività, dati e vincoli per scegliere un primo caso d'uso
       realistico, definire le priorità e arrivare a un prototipo verificabile.
-    duration: 2–12 settimane
+    duration: Durata progetto 2–12 settimane
     output: Roadmap o software
     contact_subject: Consulenza AI su misura
     examples:
@@ -127,7 +127,7 @@ services:
     description: >-
       Prepariamo percorsi per management, personale operativo e team tecnici,
       usando esempi ed esercitazioni vicini al lavoro dei partecipanti.
-    duration: 4–36 ore
+    duration: Durata 4–36 ore
     output: In presenza o online
     link: /formazione-intelligenza-artificiale-e-cybersecurity/
     link_text: Scopri i percorsi formativi

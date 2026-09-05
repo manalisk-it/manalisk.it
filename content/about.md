@@ -33,9 +33,10 @@ team:
       di Padova. Ha studiato e svolto attività di ricerca presso Vrije Universiteit
       Amsterdam, University of California, Irvine e Northwestern University negli Stati Uniti.
 
-      Si occupa di automazione, machine e deep learning, analisi dei dati, privacy, AI classica
-      e generativa. Lavora con aziende e professionisti e insegna da diversi anni
-      temi di intelligenza artificiale e cybersecurity in aziende e università.
+      Sui progetti analizza il processo, progetta l'automazione e la realizza:
+      dall'integrazione dei sistemi già presenti in azienda ai modelli di machine
+      learning e alle soluzioni basate su LLM. Cura inoltre i percorsi di formazione,
+      insegnando da diversi anni intelligenza artificiale e cybersecurity in aziende, università e ITS.
     image: "images/PierPaoloTricomi.jpg"
     links:
       - label: Profilo LinkedIn
@@ -57,11 +58,14 @@ team:
       di Padova. Ha lavorato nel trasferimento tecnologico e nello sviluppo SaaS,
       occupandosi di sistemi di rilevamento del phishing basati su LLM, estrazione
       di dati da testo, penetration testing, vulnerability assessment, sviluppo
-      back-end e infrastrutture cloud AWS.
+      back-end e infrastrutture cloud AWS. Come assegnista di ricerca ha lavorato su
+      tecniche di analisi statica per individuare vulnerabilità nelle applicazioni
+      Android, e ha svolto attività didattica come Teaching Assistant e Tutor Didattico.
 
-      Come assegnista di ricerca ha lavorato su tecniche di analisi statica per
-      individuare vulnerabilità nelle applicazioni Android. Ha inoltre svolto
-      attività didattica come Teaching Assistant e Tutor Didattico.
+      Sui progetti sviluppa le soluzioni AI su misura e le componenti software, e si
+      occupa della sicurezza: penetration test e vulnerability assessment su
+      applicazioni web e infrastrutture cloud e on-premise, con attenzione ai rischi
+      specifici dei sistemi basati su LLM.
     image: "images/sime1.png"
     links:
       - label: Profilo LinkedIn

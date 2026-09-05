@@ -635,3 +635,34 @@ h1 {
     margin-bottom: 0.6em;
   }
 }
+
+// Allineamento di font e colori per le pagine ancora sul layout di base:
+// elenco approfondimenti, singolo articolo e informativa privacy.
+// Scope volutamente stretto (body.post / body.legacy-page) per non toccare
+// le pagine con design dedicato, dove titoli e link hanno colori propri.
+body.post,
+body.legacy-page {
+  background: #fff;
+  color: var(--homepage-ink);
+  font-family: "Hanken Grotesk", sans-serif;
+
+  #content { background: #fff; }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--homepage-ink);
+    font-family: "Archivo", sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  a:not(.btn):not(.nav-link):not(.homepage-header__cta) {
+    color: var(--homepage-accent-dark);
+    text-underline-offset: 0.18rem;
+
+    &:hover, &:focus-visible { color: var(--homepage-accent); }
+  }
+
+  blockquote {
+    border-left: 3px solid var(--homepage-accent);
+    color: var(--homepage-muted);
+  }
+}

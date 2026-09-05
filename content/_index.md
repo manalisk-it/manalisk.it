@@ -7,7 +7,7 @@ layout: homepage
 page_class: homepage-page
 hide_breadcrumb: true
 schema_homepage: true
-faq_schema: false
+faq_schema: true
 
 organization:
   name: Manalisk
@@ -106,7 +106,7 @@ services:
       - Automazione di attività e workflow ripetitivi
       - Integrazione tra email, moduli, documenti, PDF, Excel, CRM, gestionali e database
       - Estrazione e classificazione di dati da documenti e immagini
-      - Ricerca interna su procedure e archivi con fonti affidabili everificabili
+      - Ricerca interna su procedure e archivi con fonti affidabili e verificabili
       - Analisi dei dati, report e dashboard aggiornabili
       - Prototipi e software AI personalizzati integrati nei sistemi esistenti
     advanced:
@@ -143,8 +143,9 @@ case_study:
   eyebrow: Caso reale · automazione dei processi
   title: Gestione delle commesse per un'azienda con oltre 20 milioni di euro di fatturato
   introduction: >-
-    Il progetto ha riguardato un processo operativo distribuito tra più strumenti.
-    Il cliente non viene indicato per tutelare la riservatezza del lavoro svolto.
+    Un esempio tra i progetti seguiti, che spaziano dalla realizzazione di software su misura agli
+    interventi AI negli studi professionali. Il cliente non viene indicato per tutelare
+    la riservatezza del lavoro svolto.
   details:
     - label: Contesto
       text: >-
@@ -167,6 +168,9 @@ case_study:
   link:
     label: Parliamo del tuo processo
     url: /prenota-una-chiamata-consulenza-gratuita/
+  # link_secondary:
+    # label: Vedi gli altri progetti
+    # url: /consulenza-intelligenza-artificiale-ai-padova/#quali-progetti-ha-realizzato-manalisk
 
 training:
   eyebrow: Formazione
@@ -262,7 +266,7 @@ method:
 
 about:
   eyebrow: Chi siamo
-  title: Ricerca, sviluppo e governance nello stesso team
+  title: Sviluppo, ricerca e governance nello stesso team
   text: >-
     Lavoriamo con l'AI dal 2018, da prima che diventasse un tema di mercato. Uniamo ricerca
     scientifica, capacità di sviluppo e comprensione dei processi per verificare
@@ -275,10 +279,13 @@ about:
     - "Automazioni e software su misura, non soluzioni preconfezionate"
     - "Dottorati di ricerca ed esperienza aziendale consolidata"
   people:
-    - name: Pier Paolo Tricomi 
-      focus: PhD in Computer Science · AI, Automazione, Cybersecurity e formazione
+    - name: Pier Paolo Tricomi
+      focus: PhD in Computer Science · AI, automazione, cybersecurity e formazione
       description: >-
-        Dottorato di ricerca in Computer Science e oltre 15 pubblicazioni scientifiche internazionali su AI e cybersecurity, con un periodo di ricerca alla Northwestern University (Chicago). Progetta e realizza automazioni e soluzioni AI per aziende, e cura i percorsi di formazione. Lavora su questi sistemi dal 2018, da prima che diventassero di uso comune.
+        Dottorato di ricerca in Computer Science, lavora su AI e automazione dal 2018,
+        da prima che diventassero di uso comune. Progetta e realizza automazioni e
+        soluzioni AI per le aziende, e cura i percorsi di formazione. Ha pubblicato
+        oltre 15 articoli scientifici internazionali su AI e cybersecurity e ha svolto periodi di ricerca in due Università degli Stati Uniti.
       image: images/PierPaoloTricomi.jpg
       image_alt: Ritratto di Pier Paolo Tricomi
     - name: Simeone Pizzi
@@ -308,20 +315,16 @@ faq:
       answer: >-
         Ricostruiamo attività, eccezioni, strumenti e risultato atteso, e verifichiamo
         quali dati sono disponibili e quali decisioni devono restare alle persone.
-        Partiamo sempre da un processo circoscritto — per esempio le fatture fornitore
-        che oggi qualcuno ricopia a mano nel gestionale — e integriamo per passaggi,
+        Partiamo sempre da un processo circoscritto, per esempio le fatture fornitore
+        che oggi qualcuno ricopia a mano nel gestionale, e integriamo per passaggi,
         introducendo controlli prima di estendere l'automazione.
     - question: Quanto costa un progetto di automazione?
       answer: >-
         Dipende dal processo, ma non chiediamo di impegnarsi sull'intero progetto in
-        partenza. L'analisi iniziale ha un costo definito e contenuto [inserire formula:
-        forfait / giornate]; il preventivo per lo sviluppo arriva dopo, quando sappiamo
-        cosa serve davvero. Se dall'analisi emerge che non conviene procedere, lo diciamo.
+        partenza. La prima call è gratuita e spesso basta a capire se ha senso: in molti casi diamo già lì un ordine di grandezza. Quando il quadro è più articolato proponiamo un'analisi iniziale a costo fisso, concordato prima e scorporato dal progetto se si procede. Il preventivo per lo sviluppo arriva dopo, quando sappiamo cosa serve davvero. Se dall'analisi emerge che non conviene procedere, lo diciamo.
     - question: In quanto tempo si vedono i primi risultati?
       answer: >-
-        L'analisi iniziale richiede in genere [X settimane], un primo prototipo su un
-        caso circoscritto [Y settimane]. Preferiamo un risultato piccolo e verificabile
-        in poche settimane a un progetto lungo con esito incerto.
+        L'analisi iniziale richiede in genere 1-2 settimane. Il primo prototipo su un caso circoscritto arriva di solito entro un mese dall'avvio, una volta disponibili accessi e dati necessari. Preferiamo un risultato piccolo e verificabile in poche settimane a un progetto lungo con esito incerto.
     - question: "Non sappiamo ancora dove ci servirebbe l'AI: possiamo partire lo stesso?"
       answer: >-
         Sì. Un'analisi circoscritta o un percorso di formazione sono spesso il primo
@@ -332,18 +335,26 @@ faq:
       answer: >-
         Non necessariamente. Quando accessi e integrazioni lo consentono, colleghiamo
         gestionali, CRM, email, moduli, database e altri strumenti già presenti.
-        Prima controlliamo API, sicurezza e vincoli tecnici.
+        Prima controlliamo API, sicurezza e vincoli tecnici. Spesso aiutiamo le aziende a utilizzare al meglio gli strumenti già disponibili (es. Microsoft 365, Google Workspace, Claude).
     - question: E se l'AI sbaglia?
       answer: >-
-        Nessun sistema è infallibile, ed è il motivo per cui le decisioni che contano
-        restano alle persone. Prima del rilascio definiamo cosa il sistema può fare da
-        solo, dove serve una conferma e come ci si accorge di un errore: controlli,
-        registrazione delle attività e criteri di valutazione concordati in anticipo.
-    - question: Come vengono gestiti dati, privacy e sicurezza?
+        In buona parte di un'automazione l'AI non c'è: sono passaggi deterministici che fanno sempre la stessa cosa. L'AI la usiamo dove serve davvero, e lì decidiamo insieme prima del rilascio cosa il sistema può fare da solo e dove serve una conferma umana. Quando un passaggio non è in grado di procedere in modo affidabile, l'automazione si ferma e avvisa, invece di proseguire e propagare l'errore. Ogni operazione resta tracciata: un errore si vede subito ed è possibile ricostruire cosa è successo.
+    - question: I nostri dati finiscono nei modelli di AI?
+      answer: >-
+        I dati inviati non vengono usati per addestrare i modelli: lavoriamo con piani e servizi in cui questo è escluso, e decidiamo caso per caso cosa esce davvero dall'azienda. In molti passaggi non serve inviare nulla
+        all'esterno. Quando i dati sono particolarmente sensibili valutiamo soluzioni
+        che restano sulla vostra infrastruttura.
+    - question: Come vengono gestiti privacy e sicurezza?
       answer: >-
         Valutiamo dati, accessi, infrastruttura e possibili vulnerabilità fin
-        dall'inizio. Le misure possono includere controllo degli accessi, cifratura,
-        registrazione delle attività e riduzione dei dati condivisi con servizi esterni.
+        dall'inizio, non a rilascio avvenuto. Sviluppiamo tenendo conto di GDPR,
+        AI Act e policy aziendali, e mettiamo al corrente i clienti di eventuali non
+        conformità. Sul piano tecnico: controllo degli accessi, cifratura,
+        registrazione delle attività e riduzione dei dati condivisi con servizi
+        esterni. Gli account e i server su cui gira l'automazione sono intestati alla
+        vostra azienda: l'infrastruttura resta vostra anche se un domani cambiate
+        fornitore. Se la sicurezza è il tema centrale, trovate più dettagli nella
+        pagina di [consulenza cybersecurity](/consulenza-cybersecurity-sicurezza-informatica-padova/).
     - question: Dopo il rilascio restiamo dipendenti da voi?
       answer: >-
         No. L'automazione è vostra: consegniamo documentazione e formiamo chi la userà.

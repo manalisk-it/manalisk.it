@@ -57,8 +57,6 @@ faq:
       answer: L'output viene concordato prima dell'avvio. In genere comprende evidenze tecniche, criticità ordinate per priorità e indicazioni di remediation. Quando previsto può includere un retest per verificare le correzioni.
     - question: Fate anche formazione per i dipendenti?
       answer: Sì. Organizziamo percorsi pratici su sicurezza dei dispositivi, phishing, ransomware, password, privacy e comportamenti quotidiani, adattando linguaggio ed esempi ai ruoli coinvolti.
-    - question: Offrite un servizio di compliance normativa?
-      answer: No. Manalisk non offre un servizio autonomo di compliance. Privacy, NIS2, sistemi ISO e governance vengono considerati quando sono pertinenti al progetto tecnico e organizzativo.
 
 mid_cta:
   eyebrow: Prima consulenza gratuita
@@ -130,7 +128,7 @@ deep_dive:
         - Portali, e-commerce, SaaS e API devono gestire autenticazione, autorizzazioni, input, sessioni e dati in modo coerente. Negli ambienti cloud occorre inoltre verificare identità, permessi, risorse esposte, configurazioni di rete e capacità di registrare gli eventi rilevanti.
         - L'uso di Claude o di altri assistenti AI durante lo sviluppo non rende automaticamente il software sicuro o insicuro. Il codice, le dipendenze, l'infrastruttura e le configurazioni devono essere valutati rispetto al funzionamento reale e ai dati trattati.
         - Quando un'applicazione integra direttamente un LLM, la superficie da verificare comprende anche prompt injection diretta o indiretta, possibile esposizione di dati, gestione degli output e permessi assegnati al modello o agli strumenti che può utilizzare. Il rischio cambia molto tra un assistente che prepara una bozza e un agente autorizzato a leggere documenti o compiere azioni.
-        - Un'azienda ci ha chiesto di definire una verifica prima della pubblicazione di un SaaS sviluppato anche con Claude. Abbiamo proposto un'analisi dell'infrastruttura e controlli mirati sulle configurazioni e sui componenti potenzialmente vulnerabili. La proposta è ancora in valutazione e non viene presentata come un progetto già svolto.
+        - Un'azienda ci ha chiesto di definire una verifica prima della pubblicazione di un SaaS sviluppato anche con Claude. Abbiamo proposto un'analisi dell'infrastruttura e controlli mirati sulle configurazioni e sui componenti potenzialmente vulnerabili.
       bullets:
         - Autenticazione, autorizzazioni e gestione delle sessioni.
         - API, input e possibili esposizioni dei dati.
@@ -138,7 +136,7 @@ deep_dive:
         - Regole di rete, risorse pubbliche, log e monitoraggio.
         - Prompt injection, fonti esterne e possibile esposizione delle informazioni.
         - Permessi degli agenti, strumenti collegati e trattamento degli output.
-      note: Per progettare o integrare soluzioni AI nel processo aziendale puoi consultare anche i servizi Manalisk dedicati all'intelligenza artificiale e all'automazione.
+      note: Per progettare o integrare soluzioni AI nel processo aziendale puoi consultare i [servizi AI e automazione](/services/servizi-intelligenza-artificiale/) o la [consulenza AI a Padova](/consulenza-intelligenza-artificiale-ai-padova/).
 
     - id: report-remediation-retest
       index_title: Report e remediation
@@ -174,7 +172,6 @@ deep_dive:
       paragraphs:
         - La presenza locale è utile per riunioni di perimetrazione, verifiche che coinvolgono reti o dispositivi in sede e confronto con più referenti. Molte attività tecniche possono però essere svolte da remoto attraverso accessi concordati e canali protetti.
         - La prima call non sostituisce l'assessment. Serve a raccogliere le informazioni minime, verificare che l'attività sia autorizzabile e definire quale approfondimento tecnico sia necessario prima della proposta.
-      note: Manalisk non offre un servizio autonomo di compliance. Privacy, NIS2, sistemi ISO e governance vengono considerati quando sono rilevanti per il progetto tecnico e organizzativo.
 
 final_cta:
   eyebrow: Prima call gratuita
@@ -234,7 +231,7 @@ Partiamo dal problema e dal perimetro reale. In base al contesto possiamo occupa
 
 ## Quale esperienza portiamo nei progetti di cybersecurity?
 
-Nel percorso professionale dei membri di Manalisk, maturato tra Manalisk, startup, aziende e ricerca, abbiamo lavorato su attività come:
+Nella nostra esperienza professionale, tra Manalisk, aziende, startup e ricerca, abbiamo lavorato su attività come:
 
 - **Formazione per dipendenti e organizzazioni:** percorsi introduttivi su sicurezza dei dispositivi, phishing, ransomware, privacy, password e comportamenti quotidiani, adattati a persone non tecniche e ai problemi incontrati nel lavoro.
 - **Assessment e penetration test di web application:** verifiche per software house su applicazioni e sistemi cloud, con individuazione di criticità e indicazioni per proteggere dati e utenti.
@@ -244,17 +241,12 @@ Nel percorso professionale dei membri di Manalisk, maturato tra Manalisk, startu
 - **Rilevamento del phishing con LLM:** sviluppo di un sistema basato su modelli linguistici per analizzare principalmente il testo delle email e riconoscere tentativi di phishing più sofisticati.
 - **Sicurezza degli LLM:** attività di red teaming e valutazione dei comportamenti di modelli generativi in challenge specializzate.
 
-La formazione è stata svolta anche direttamente con Manalisk; le altre attività comprendono esperienze maturate dai professionisti che oggi operano insieme nel team.
-
-<!-- TODO: confermare il numero di aziende e partecipanti ai corsi prima di pubblicare eventuali statistiche. -->
-<!-- TODO: verificare con Simeone nome, profilo e posizione della challenge Gray Swan. Possibile riferimento: UK AISI × Gray Swan Agent Red-Teaming Challenge. -->
-<!-- TODO: integrare contesto, output e limiti pubblicabili dei singoli casi senza indicare clienti riservati. -->
 
 ## Possiamo verificare un software sviluppato con Claude o altri strumenti AI?
 
 Un'azienda ci ha chiesto una consulenza prima della pubblicazione di un SaaS sviluppato anche con Claude, perché non disponeva di elementi sufficienti per valutarne la sicurezza. Abbiamo proposto un'analisi dell'infrastruttura e controlli mirati sulle configurazioni e sui componenti potenzialmente vulnerabili.
 
-La proposta è ancora in valutazione: non presentiamo quindi questa richiesta come un progetto già realizzato. È però un dubbio realistico per startup e aziende che utilizzano assistenti AI nello sviluppo. Il software generato con l'AI non è automaticamente sicuro o insicuro: deve essere verificato rispetto ad architettura, configurazioni, dipendenze, accessi e dati trattati.
+È un dubbio realistico per startup e aziende che utilizzano assistenti AI nello sviluppo. Il software generato con l'AI non è automaticamente sicuro o insicuro: deve essere verificato rispetto ad architettura, configurazioni, dipendenze, accessi e dati trattati.
 
 Se l'esigenza riguarda invece la progettazione o l'integrazione dell'intelligenza artificiale, puoi consultare i nostri [servizi AI e automazione](/services/servizi-intelligenza-artificiale/) o la pagina dedicata alla [consulenza AI a Padova](/consulenza-intelligenza-artificiale-ai-padova/).
 
@@ -280,7 +272,7 @@ Il percorso dipende dal sistema e dal dubbio da verificare, ma normalmente segue
 - **Output utilizzabili:** evidenze, priorità e remediation vengono presentate in modo che il team tecnico possa intervenire.
 - **Presenza a Padova:** possiamo incontrare i referenti e svolgere in sede le attività che richiedono accesso a reti o dispositivi locali.
 
-Manalisk unisce cybersecurity, [sviluppo e integrazione di soluzioni AI](/services/servizi-intelligenza-artificiale/) e [formazione per aziende](/formazione-intelligenza-artificiale-e-cybersecurity/). Le competenze interne su privacy, NIS2, sistemi ISO e governance permettono di considerare anche gli aspetti organizzativi pertinenti, senza presentarli come un servizio autonomo di compliance Manalisk.
+Manalisk unisce cybersecurity, [sviluppo e integrazione di soluzioni AI](/services/servizi-intelligenza-artificiale/) e [formazione per aziende](/formazione-intelligenza-artificiale-e-cybersecurity/). Le competenze interne su privacy, NIS2, sistemi ISO e governance permettono di considerare anche gli aspetti organizzativi pertinenti.
 
 ## Cerchi formazione sulla sicurezza informatica?
 

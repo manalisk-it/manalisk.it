@@ -10,7 +10,7 @@
         <p class="booking-modern__lead">{{ .Params.hero.text }}</p>
         <p class="booking-modern__meta">{{ .Params.hero.meta }}</p>
         <div class="booking-modern__actions">
-          <a class="cta-button" href="{{ $calendarURL }}">{{ .Params.hero.primary_label }}</a>
+          <a class="cta-button" href="{{ $calendarURL }}" target="_blank" rel="noopener">{{ .Params.hero.primary_label }}</a>
           <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.hero.email_label }}</a>
         </div>
         {{ with .Params.hero.booking_note }}
@@ -93,7 +93,7 @@
         <h2 id="booking-final-title">{{ .Params.final_cta.title }}</h2>
         <p>{{ .Params.final_cta.text }}</p>
         <div class="booking-modern__actions">
-          <a class="cta-button" href="{{ $calendarURL }}">{{ .Params.final_cta.primary_label }}</a>
+          <a class="cta-button" href="{{ $calendarURL }}" target="_blank" rel="noopener">{{ .Params.final_cta.primary_label }}</a>
           <a class="modern-text-link" href="mailto:info@manalisk.it?subject={{ .Params.email_subject | urlquery }}">{{ .Params.final_cta.email_label }}</a>
         </div>
       </div>

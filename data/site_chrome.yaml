@@ -31,7 +31,7 @@ footer:
       links:
         - label: Chi siamo
           url: /about/
-        - label: Blog
+        - label: Approfondimenti
           url: /post/
         - label: Contatti e prenotazioni
           url: /contact/

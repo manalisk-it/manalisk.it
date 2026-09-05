@@ -123,6 +123,7 @@
       </div>
       <div class="homepage-case-study__footer">
         {{ with .note }}<p>{{ . }}</p>{{ end }}
+        {{ with .link_secondary }}<a class="homepage-text-link" href="{{ .url }}">{{ .label }} <span aria-hidden="true">→</span></a>{{ end }}
         <a class="homepage-text-link" href="{{ .link.url }}">{{ .link.label }} <span aria-hidden="true">→</span></a>
       </div>
     </div>

@@ -1,5 +1,8 @@
 ---
 title: "I nostri servizi"
+build:
+  render: never
+  list: never
 ---
 
 Siamo specializzati in servizi di **Cybersecurity** e **Intelligenza Artificiale** per aziende di ogni dimensione. Offriamo soluzioni personalizzate, consulenza e formazione per proteggere i tuoi dati e innovare i tuoi processi.

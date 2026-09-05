@@ -14,12 +14,13 @@
   "mainEntity": [
   {{ range $i, $item := .items -}}
     {{- if $i }}, {{ end }}
+    {{- $answer := replaceRE `\[([^\]]+)\]\([^)]+\)` "$1" $item.answer -}}
     {
       "@type": "Question",
       "name": {{ $item.question }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ replace $item.answer "\n" "<br>" | safeJSStr }}
+        "text": {{ replace $answer "\n" "<br>" | safeJSStr }}
       }
     }
   {{- end }}

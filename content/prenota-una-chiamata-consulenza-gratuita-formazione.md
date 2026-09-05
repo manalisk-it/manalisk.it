@@ -19,7 +19,11 @@ hero:
   meta: 30–45 minuti · online · senza impegno
   primary_label: Scegli giorno e orario
   email_label: Preferisci scriverci?
-  booking_note: Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+  booking_note: >-
+    Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+    Se l'esigenza riguarda invece l'AI e l'automazione o la cybersecurity, ci sono
+    pagine dedicate per [AI e automazione](/prenota-una-chiamata-consulenza-gratuita/)
+    e [cybersecurity](/prenota-una-chiamata-consulenza-gratuita-cyber/).
 
 useful:
   eyebrow: Quando può essere utile
@@ -53,8 +57,8 @@ after:
 faq:
   title: Cosa sapere prima di prenotare
   items:
-    - question: Quanto dura la prima call?
-      answer: La prima call dura normalmente 30–45 minuti ed è gratuita e senza impegno.
+    - question: Quanto costa un corso?
+      answer: I corsi di base partono da 750 € per edizione e i prezzi sono indicati nella pagina [formazione AI e cybersecurity](/formazione-intelligenza-artificiale-e-cybersecurity/). Un percorso costruito su misura viene quotato dopo la call, in base a durata, numero di partecipanti e personalizzazione.
     - question: Devo avere già un programma definito?
       answer: No. È sufficiente conoscere il pubblico e il risultato desiderato. Possiamo proporre un corso esistente oppure costruire insieme un percorso personalizzato.
     - question: Fate formazione sia sull'AI sia sulla cybersecurity?

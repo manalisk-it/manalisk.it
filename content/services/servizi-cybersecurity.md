@@ -21,8 +21,8 @@ hero:
     Controlliamo infrastrutture, applicazioni e processi per individuare
     vulnerabilità, esposizioni e punti deboli. Poi definiamo gli interventi in
     base al rischio reale, alle priorità e alle risorse disponibili.
-  primary_cta: Guarda gli ambiti di lavoro
-  secondary_cta: Raccontaci il problema
+  primary_cta: Raccontaci il problema
+  secondary_cta: Guarda gli ambiti di lavoro
 
 services_intro:
   eyebrow: Ambiti di lavoro
@@ -38,7 +38,7 @@ services:
       Analizziamo in modo sistematico le infrastrutture digitali per individuare
       sistemi non aggiornati, configurazioni errate, esposizioni a internet e
       accessi non controllati, indicando le azioni pratiche per ridurre il rischio.
-    duration: 1–4 settimane
+    duration: Durata progetto 1–4 settimane
     output: Report tecnico
     contact_subject: Vulnerability Assessment
     examples:
@@ -51,7 +51,7 @@ services:
       Simuliamo in modo controllato un attacco realistico contro infrastrutture,
       applicazioni o reti per capire fin dove potrebbe arrivare un attaccante,
       quali dati potrebbe ottenere e quale sarebbe l'impatto.
-    duration: 2–12 settimane
+    duration: Durata progetto 2–12 settimane
     output: Report tecnico
     contact_subject: Penetration Testing
     examples:
@@ -65,7 +65,7 @@ services:
       Progettiamo campagne realistiche e controllate per valutare il comportamento
       delle persone e capire dove intervenire con formazione mirata e azioni di
       miglioramento.
-    duration: 3–15 settimane
+    duration: Durata progetto 3–15 settimane
     output: Report dettagliato
     contact_subject: Campagne di phishing simulato
     examples:
@@ -79,7 +79,7 @@ services:
       Raccogliamo e analizziamo le evidenze tecniche dopo un incidente per ricostruire
       il vettore di attacco, valutarne l'impatto, supportare la bonifica e fornire
       elementi utili alla comunicazione con legali, clienti e autorità.
-    duration: 1–4 settimane
+    duration: Durata progetto 1–4 settimane
     output: Report tecnico
     contact_subject: Digital Forensics
     examples:
@@ -93,7 +93,7 @@ services:
       Installiamo e configuriamo sistemi di monitoraggio continuo per rilevare
       attività sospette, accessi non autorizzati, modifiche critiche e tentativi
       di intrusione su server, reti, cloud ed endpoint.
-    duration: 4–16 settimane
+    duration: Durata progetto 4–16 settimane
     output: Sistema personalizzato
     contact_subject: Sistemi di monitoraggio
     examples:
@@ -106,7 +106,7 @@ services:
     description: >-
       Progettiamo strategie di backup e ripristino per ridurre il rischio di perdita
       dei dati e i tempi di inattività in caso di guasto, errore o attacco informatico.
-    duration: 2–8 settimane
+    duration: Durata progetto 2–8 settimane
     output: Report e linee guida
     contact_subject: Backup e disaster recovery
     examples:
@@ -120,7 +120,7 @@ services:
       Affianchiamo le aziende nella pianificazione e realizzazione della migrazione
       al cloud, mantenendo ogni fase allineata ai principi di sicurezza, compliance
       e resilienza.
-    duration: 2–8 settimane
+    duration: Durata progetto 2–8 settimane
     output: Affiancamento tecnico
     contact_subject: Transizione sicura al cloud
     examples:
@@ -133,7 +133,7 @@ services:
     description: >-
       Progettiamo percorsi formativi per aumentare consapevolezza e competenze,
       adattando contenuti, linguaggio ed esercitazioni al ruolo dei partecipanti.
-    duration: 4–36 ore
+    duration: Durata 4–36 ore
     output: In presenza o online
     link: /formazione-intelligenza-artificiale-e-cybersecurity/
     link_text: Scopri i percorsi formativi

@@ -58,8 +58,8 @@ after:
 faq:
   title: Cosa sapere prima di prenotare
   items:
-    - question: Quanto dura la prima call?
-      answer: La prima call dura normalmente 30–45 minuti ed è gratuita e senza impegno.
+    - question: Quanto costa un progetto?
+      answer: Dipende dal processo, e la prima call è gratuita proprio per capirlo senza impegno. Quando il quadro è chiaro possiamo dare già in call un ordine di grandezza; quando è più articolato proponiamo un'analisi iniziale a costo fisso, concordato prima e scorporato dal progetto se si procede.
     - question: Devo avere già un progetto AI definito?
       answer: No. Puoi arrivare con un'idea oppure descriverci le attività e i processi che oggi richiedono più tempo. Ti aiutiamo a individuare un possibile punto di partenza.
     - question: Devo preparare dati o documenti?

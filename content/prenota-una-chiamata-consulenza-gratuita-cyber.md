@@ -19,7 +19,11 @@ hero:
   meta: 30–45 minuti · online · senza impegno
   primary_label: Scegli giorno e orario
   email_label: Preferisci scriverci?
-  booking_note: Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+  booking_note: >-
+    Nel modulo di prenotazione puoi indicare l'argomento nel campo “Interesse”.
+    Se l'esigenza riguarda invece l'AI e l'automazione o la formazione, ci sono
+    pagine dedicate per [AI e automazione](/prenota-una-chiamata-consulenza-gratuita/)
+    e [formazione](/prenota-una-chiamata-consulenza-gratuita-formazione/).
 
 useful:
   eyebrow: Quando può essere utile
@@ -48,13 +52,17 @@ after:
   title: Prima del preventivo può servire un approfondimento tecnico
   paragraphs:
     - In molti casi chiediamo documentazione o accessi controllati per comprendere architettura, configurazioni e superficie da verificare. Quando necessario possiamo firmare un NDA prima di ricevere informazioni riservate.
-    - Solo dopo aver chiarito perimetro, autorizzazioni, vincoli e output possiamo formulare una proposta attendibile. La prima call non viene presentata come una verifica completa della sicurezza.
+    - Solo dopo aver chiarito perimetro, autorizzazioni, vincoli e output possiamo formulare una proposta attendibile.
 
 faq:
   title: Cosa sapere prima di prenotare
   items:
-    - question: Quanto dura la prima call?
-      answer: La prima call dura normalmente 30–45 minuti ed è gratuita e senza impegno.
+    - question: "Abbiamo subito un attacco o un accesso sospetto: possiamo contattarvi lo stesso?"
+      answer: >-
+        Sì. Indicalo nel messaggio o nel campo “Interesse” e organizziamo la call il
+        prima possibile. In una situazione ancora in corso le priorità sono limitare
+        gli accessi, preservare le evidenze ed evitare interventi che le cancellino;
+        ne parliamo prima di definire qualsiasi attività.
     - question: Devo sapere già quale verifica richiedere?
       answer: No. È sufficiente descrivere il sistema, il dubbio o l'obiettivo. Valutiamo insieme quali informazioni servano per scegliere un'attività proporzionata.
     - question: La call comprende già un assessment di sicurezza?

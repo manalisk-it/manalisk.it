@@ -22,7 +22,7 @@ team_visual:
   members:
     - name: Pier Paolo Tricomi, Ph.D.
       role: AI, ricerca e formazione
-      proof: Otto anni di esperienza in AI, ricerca a Padova, UCI e Northwestern e formazione per più di 15 aziende.
+      proof: Esperienza in AI dal 2018, ricerca a Padova, UCI e Northwestern e formazione per più di 15 aziende.
       image: images/PierPaoloTricomi.jpg
       alt: Pier Paolo Tricomi, consulente e ricercatore AI di Manalisk
     - name: Simeone Pizzi
@@ -185,9 +185,7 @@ deep_dive:
           È stata sviluppata e verificata una soluzione che interpretava i messaggi,
           organizzava le informazioni in JSON e le preparava per l'inserimento
           automatico nel gestionale, lasciando all'operatore un controllo rapido.
-      note: >-
-        Il caso descrive una soluzione sviluppata e funzionante sul flusso previsto;
-        non viene presentato come un dato sull'utilizzo attuale da parte dell'azienda.
+      note: Il caso descrive una soluzione sviluppata e verificata sul flusso previsto.
 
     - id: machine-learning-dati
       index_title: Dati e machine learning
@@ -287,6 +285,8 @@ Aiutiamo le aziende a integrare intelligenza artificiale e automazione nei loro 
 
 ## Quali progetti ha realizzato Manalisk?
 
+Riportiamo alcuni esempi di progetti realizzati, che spaziano dalla realizzazione di software su misura agli interventi AI negli studi professionali. 
+
 ### Gestione delle commesse nella mobilità elettrica
 
 Per un'azienda della **mobilità elettrica con oltre 20 milioni di euro di fatturato**, informazioni, documenti e attività delle commesse erano distribuiti tra gestionale, Microsoft 365, Teams e sistemi documentali. Abbiamo mappato il processo in azienda, automatizzato i workflow e collegato i sistemi coinvolti, mantenendo controlli e responsabilità nei passaggi necessari.
@@ -315,9 +315,8 @@ Prima della nascita di Manalisk abbiamo sviluppato soluzioni AI anche in altri c
 
 - **Logistica e messaggi non strutturati:** almeno 50 messaggi venivano elaborati manualmente ogni sera prima dell'inserimento nel gestionale per la gestione dei corrieri. La soluzione sviluppata interpretava i messaggi, organizzava i dati in JSON e li preparava per l'inserimento automatico, lasciando all'operatore un controllo rapido.
 - **OCR su immagini specialistiche:** per commesse con migliaia di immagini, una soluzione di estrazione ha portato il tempo del flusso verificato da circa un minuto per immagine a un'elaborazione quasi immediata, mantenendo la revisione umana.
-<!-- TODO: aggiungere qui un altro caso sviluppato prima di Manalisk. -->
 
-Questi casi descrivono soluzioni sviluppate e funzionanti sul flusso previsto. Non vengono presentati come dati sull'utilizzo attuale presso le aziende.
+Questi casi descrivono soluzioni sviluppate e verificate sul flusso previsto.
 
 ## Come si svolge una consulenza AI a Padova?
 
@@ -351,5 +350,7 @@ La formazione può essere il primo passo quando management e personale vogliono 
 - aziende, istituzioni e scuole professionali.
 
 Abbiamo erogato oltre **1.000 ore di formazione** in università, ITS e percorsi dedicati al lavoro. Nel complesso, tra consulenza, sviluppo e formazione, abbiamo affiancato oltre **20 aziende e professionisti** in più di dieci settori.
+
+Per gli obblighi di alfabetizzazione introdotti dall'articolo 4 dell'AI Act abbiamo due percorsi dedicati, uno per chi utilizza gli strumenti e uno per chi deve governarne l'uso: [formazione AI Act per dipendenti e dirigenti](/formazione-ai-aziendale/).
 
 [Scopri la formazione AI e cybersecurity per aziende](/formazione-intelligenza-artificiale-e-cybersecurity/).

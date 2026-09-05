@@ -6,7 +6,7 @@ menuitem: Formazione
 page_class: ai-training-page modern-catalogue-page
 draft: false
 showBookingButton: false
-calendar_url: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2XTmgeCf4jNsahgYAEmBCXYg5gYfWCMERwsBixzVUoblL1d7UzWBsy2YyArbhDWtvq1YoW40uG"
+calendar_url: /prenota-una-chiamata-consulenza-gratuita-formazione/
 contact_email: info@manalisk.it
 schema_name: Formazione AI Act per aziende
 schema_service_type: Formazione aziendale AI Act per dipendenti e dirigenti
@@ -18,9 +18,9 @@ hero:
   text: >-
     Due percorsi distinti per usare e governare l'intelligenza artificiale in
     modo responsabile, proporzionato al ruolo e documentabile.
-  primary_label: Confronta i percorsi
-  primary_url: "#percorsi"
-  secondary_label: Parliamo della tua azienda
+  primary_label: Parliamo della tua azienda
+  secondary_label: Confronta i percorsi
+  secondary_url: "#percorsi"
 
 requirement:
   eyebrow: Cosa richiede l'AI Act
@@ -43,12 +43,16 @@ requirement:
 stats:
   - value: 1.000+
     label: ore di formazione erogate
+    text: in aziende, università e ITS
   - value: 15+
     label: aziende già formate
+    text: con esigenze e livelli di partenza differenti
   - value: 10+
     label: settori coinvolti
-  - value: Aziende, università e ITS
-    label: esperienza con pubblici e ruoli differenti
+    text: con processi e livelli di maturità differenti
+  - value: 5+
+    label: anni di insegnamento
+    text: dai team operativi al management
 
 programs_intro:
   eyebrow: Due responsabilità, due percorsi

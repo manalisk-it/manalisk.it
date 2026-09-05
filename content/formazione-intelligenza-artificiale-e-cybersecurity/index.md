@@ -22,8 +22,8 @@ hero:
     Progettiamo corsi di intelligenza artificiale e cybersecurity per aziende,
     università, ITS e professionisti. Adattiamo programma, linguaggio ed esempi
     alle competenze di partenza e a ciò che i partecipanti devono saper fare.
-  primary_cta: Guarda i corsi
-  secondary_cta: Raccontaci cosa serve
+  primary_cta: Raccontaci cosa serve
+  secondary_cta: Guarda i corsi
 
 stats:
   introduction:
@@ -46,8 +46,11 @@ services_intro:
   title: Corsi di base e percorsi su misura
   text: >-
     Puoi scegliere un corso di base oppure costruire con noi un percorso dedicato.
-    I prezzi indicati sono orientativi; sono disponibili condizioni dedicate per
-    pacchetti formativi multipli.
+    I prezzi indicati si riferiscono a una singola edizione e includono la
+    personalizzazione essenziale sui casi d'uso dell'azienda. Trasferte, sessioni aggiuntive, contenuti specifici e durate diverse vengono
+    concordate nel preventivo, e sono disponibili condizioni dedicate per pacchetti
+    formativi multipli. IVA non applicata in
+    regime forfettario.
 
 services:
   - kicker: Intelligenza artificiale
@@ -60,7 +63,7 @@ services:
     metadata:
       - 4 ore
       - 5–25 partecipanti
-      - 750 € indicativi
+      - 750 €
       - Livello base
     details_label: Argomenti trattati
     contact_subject: Formazione Intelligenza Artificiale per il Business
@@ -80,7 +83,7 @@ services:
     metadata:
       - 4 ore
       - 5–25 partecipanti
-      - 750 € indicativi
+      - 750 €
       - Livello base
     details_label: Argomenti trattati
     contact_subject: Formazione Elementi di Sicurezza Digitale
@@ -107,6 +110,8 @@ services:
     highlight: false
     contact_subject: AI Act Essentials per dipendenti
     contact_label: Richiedi questo percorso
+    link: /formazione-ai-aziendale/
+    link_text: Scopri il percorso AI Act
     examples:
       - "**Dati e riservatezza:** informazioni personali, aziendali e contenuti che non devono essere inseriti negli strumenti."
       - "**Output da verificare:** allucinazioni, errori e responsabilità sui contenuti prodotti."
@@ -128,6 +133,8 @@ services:
     highlight: false
     contact_subject: AI Act for Management
     contact_label: Richiedi questo percorso
+    link: /formazione-ai-aziendale/
+    link_text: Scopri il percorso AI Act
     examples:
       - "**Responsabilità:** ruolo dell'organizzazione e supervisione umana."
       - "**Strumenti e casi d'uso:** mappatura degli utilizzi ordinari, sensibili e ad alto rischio."
@@ -141,7 +148,7 @@ services:
       introduttivi per team trasversali alle sessioni avanzate per tecnici e
       specialisti. Definiamo insieme contenuti, esempi e casi d'uso rilevanti.
     metadata:
-      - Durata da definire
+      - Durata concordata
       - In presenza o online
       - Programma su misura
     details_label: Possibili percorsi

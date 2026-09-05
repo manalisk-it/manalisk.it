@@ -12,8 +12,8 @@
       <h1>{{ .Params.hero.title }}</h1>
       <p class="aim-lead">{{ .Params.hero.text }}</p>
       <div class="aim-actions">
-        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="#servizi">{{ .Params.hero.primary_cta }}</a>
-        <a class="modern-text-link" href="{{ $bookingURL }}">{{ .Params.hero.secondary_cta }}</a>
+        <a class="aim-button aim-button--primary{{ with $primaryButtonClass }} {{ . }}{{ end }}" href="{{ $bookingURL }}">{{ .Params.hero.primary_cta }}</a>
+        <a class="modern-text-link" href="#servizi">{{ .Params.hero.secondary_cta }} <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
