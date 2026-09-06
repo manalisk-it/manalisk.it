@@ -1501,6 +1501,22 @@
     grid-template-columns: 1fr;
   }
 
+  // In colonna singola l'ordine di lettura cambia: testo, schede del team,
+  // link e infine le credenziali.
+  .homepage-about__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .homepage-about__copy { display: contents; }
+  .homepage-about__copy .homepage-eyebrow { order: 1; }
+  .homepage-about__copy h2 { order: 2; }
+  .homepage-about__copy > p:not(.homepage-eyebrow) { order: 3; }
+  .homepage-about__people { order: 4; margin-top: 0.6rem; }
+  .homepage-about__copy > a { order: 5; align-self: start; margin-top: 1.4rem; }
+  .homepage-about__copy > ul { order: 6; margin-top: 1.4rem; }
+
   .homepage-stats__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1659,14 +1675,33 @@
 
   .homepage-about__people article {
     display: grid;
-    grid-template-columns: 7rem minmax(0, 1fr);
-    align-items: center;
+  }
+
+  // Scheda persona su mobile: foto tonda in alto a sinistra, nome e sottotitolo
+  // accanto, bio a piena larghezza sotto.
+  .homepage-about__people article {
+    grid-template-columns: 5rem minmax(0, 1fr);
+    grid-template-areas:
+      "foto  nome"
+      "foto  focus"
+      "bio   bio";
+    align-items: start;
+    gap: 0 0.9rem;
+    padding: 0.9rem;
+
+    > div { display: contents; }
 
     img {
-      width: 7rem;
-      height: 7rem;
-      aspect-ratio: 1;
+      grid-area: foto;
+      width: 5rem;
+      height: 5rem;
+      align-self: start;
+      border-radius: 50%;
     }
+
+    h3 { grid-area: nome; }
+    .homepage-about__focus { grid-area: focus; }
+    p:not(.homepage-about__focus) { grid-area: bio; margin-top: 0.55rem; }
   }
 
   .homepage-footer__grid {
